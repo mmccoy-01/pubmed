@@ -1,0 +1,25 @@
+(
+  Hedgehog[Title/Abstract]
+  OR SHH[Title/Abstract]
+  OR GLI1[Title/Abstract]
+  OR GLI2[Title/Abstract]
+  OR Gas1[Title/Abstract]
+  OR Boc[Title/Abstract]
+  OR Cdon[Title/Abstract]
+  OR Ptch1[Title/Abstract]
+  OR Smoothened[Title/Abstract]
+)
+AND
+(
+  taste[Title/Abstract]
+  OR gustatory[Title/Abstract]
+  OR lingual[Title/Abstract]
+  OR papillae[Title/Abstract]
+  OR fungiform[Title/Abstract]
+  OR circumvallate[Title/Abstract]
+  OR epithelium[Title/Abstract]
+  OR epithelial[Title/Abstract]
+  OR morphogenesis[Title/Abstract]
+  OR homeostasis[Title/Abstract]
+  OR stem cell[Title/Abstract]
+)
