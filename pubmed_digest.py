@@ -148,6 +148,14 @@ DB_PATH = DATA_DIR / "pubmed_digest.sqlite3"
 REQUEST_TIMEOUT = 60
 MAX_HTTP_RETRIES = 4
 DEFAULT_CANDIDATE_POOL_SIZE = 50
+DEFAULT_SOURCES = tuple(
+    source.strip().lower()
+    for source in os.getenv("PUBMED_SOURCES", "pubmed,biorxiv,arxiv").split(",")
+    if source.strip()
+)
+VALID_SOURCES = {"pubmed", "biorxiv", "arxiv"}
+ARXIV_REQUEST_TIMEOUT = int(os.getenv("ARXIV_REQUEST_TIMEOUT", "15"))
+DEFAULT_SCORING_RULES_PATH = ROOT / "config" / "scoring_rules.json"
 DEFAULT_SCORING_MODEL_PREFERENCES = ["gpt-5.4-mini", "gpt-5.4-nano", "gpt-5.4"]
 DEFAULT_FINAL_MODEL_PREFERENCES = ["gpt-5.4", "gpt-5.4-mini", "gpt-5.4-nano"]
 
@@ -209,6 +217,12 @@ def http_get_text(url: str, params: dict[str, Any]) -> str:
 def http_get_text_absolute(url: str) -> str:
     request = urllib.request.Request(url, headers={"User-Agent": "pubmed-digest/0.1"})
     with open_with_retry(request) as response:
+        return response.read().decode("utf-8", errors="replace")
+
+
+def http_get_text_absolute_with_timeout(url: str, timeout: int) -> str:
+    request = urllib.request.Request(url, headers={"User-Agent": "pubmed-digest/0.1"})
+    with urllib.request.urlopen(request, timeout=timeout) as response:
         return response.read().decode("utf-8", errors="replace")
 
 
@@ -308,6 +322,25 @@ def resolve_model_selection(
 
 def available_topics() -> list[str]:
     return sorted(TOPIC_PRESETS)
+
+
+def normalize_sources(raw_sources: str | list[str] | tuple[str, ...] | None) -> set[str]:
+    if raw_sources is None:
+        sources = set(DEFAULT_SOURCES)
+    elif isinstance(raw_sources, str):
+        sources = {source.strip().lower() for source in raw_sources.split(",") if source.strip()}
+    else:
+        sources = {source.strip().lower() for source in raw_sources if source.strip()}
+
+    unknown = sources - VALID_SOURCES
+    if unknown:
+        raise ValueError(
+            f"Unknown source(s): {', '.join(sorted(unknown))}. "
+            f"Valid sources: {', '.join(sorted(VALID_SOURCES))}"
+        )
+    if not sources:
+        raise ValueError("At least one source must be enabled.")
+    return sources
 
 
 def resolve_query(topic: str | None, query: str | None, topic_file: Path | None) -> tuple[str, str]:
@@ -635,7 +668,10 @@ def search_arxiv_cs(days_back: int, retmax: int, topic_label: str, query: str) -
         "sortBy": "submittedDate",
         "sortOrder": "descending",
     }
-    feed = http_get_text_absolute("https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params))
+    feed = http_get_text_absolute_with_timeout(
+        "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params),
+        timeout=ARXIV_REQUEST_TIMEOUT,
+    )
     root = ET.fromstring(feed)
     ns = {"atom": "http://www.w3.org/2005/Atom", "arxiv": "http://arxiv.org/schemas/atom"}
     cutoff = dt.datetime.now(dt.timezone.utc) - dt.timedelta(days=days_back)
@@ -748,6 +784,7 @@ def build_candidate_pmids(
     days_back: int,
     candidate_pool_size: int,
     journal_whitelist_path: Path | None,
+    sources: set[str],
 ) -> tuple[list[str], dict[str, Any]]:
     stages: list[dict[str, Any]] = []
     collected: list[str] = []
@@ -882,20 +919,34 @@ def build_candidate_pmids(
     stage_retmax = max(candidate_pool_size * 3, 100)
     pubmed_stage_target = min(candidate_pool_size, MEDLINE_STAGE_TARGET)
     biorxiv_stage_target = min(candidate_pool_size, BIORXIV_STAGE_TARGET)
-    if journal_whitelist_path:
-        whitelist_entries = load_journal_whitelist_entries(journal_whitelist_path)
-        whitelist_query = build_whitelist_journal_query(whitelist_entries)
-        add_pubmed_stage("journal_whitelist", f"({query}) AND {whitelist_query}", stage_retmax, pubmed_stage_target)
-        if len(collected) < pubmed_stage_target:
-            add_pubmed_stage("medline_fallback", f"({query}) AND MEDLINE[sb]", stage_retmax, pubmed_stage_target)
+    if "pubmed" in sources:
+        if journal_whitelist_path:
+            whitelist_entries = load_journal_whitelist_entries(journal_whitelist_path)
+            whitelist_query = build_whitelist_journal_query(whitelist_entries)
+            add_pubmed_stage("journal_whitelist", f"({query}) AND {whitelist_query}", stage_retmax, pubmed_stage_target)
+            if len(collected) < pubmed_stage_target:
+                add_pubmed_stage("medline_fallback", f"({query}) AND MEDLINE[sb]", stage_retmax, pubmed_stage_target)
+        else:
+            add_pubmed_stage("default", query, stage_retmax, pubmed_stage_target)
     else:
-        add_pubmed_stage("default", query, stage_retmax, pubmed_stage_target)
-    if len(collected) < biorxiv_stage_target:
-        add_biorxiv_stage("biorxiv_fallback", stage_retmax, biorxiv_stage_target)
-    if len(collected) < candidate_pool_size:
-        add_arxiv_stage("arxiv_cs_fallback", stage_retmax, candidate_pool_size)
+        stages.append({"stage": "pubmed_skipped", "source": "pubmed", "skipped": True, "pool_size_after_stage": len(collected)})
 
-    return collected[:candidate_pool_size], {"stages": stages, "candidate_pool_size": candidate_pool_size}
+    if "biorxiv" in sources and len(collected) < biorxiv_stage_target:
+        add_biorxiv_stage("biorxiv_fallback", stage_retmax, biorxiv_stage_target)
+    elif "biorxiv" not in sources:
+        stages.append({"stage": "biorxiv_skipped", "source": "biorxiv", "skipped": True, "pool_size_after_stage": len(collected)})
+
+    if "arxiv" in sources and len(collected) < candidate_pool_size:
+        add_arxiv_stage("arxiv_cs_fallback", stage_retmax, candidate_pool_size)
+    elif "arxiv" not in sources:
+        stages.append({"stage": "arxiv_skipped", "source": "arxiv", "skipped": True, "pool_size_after_stage": len(collected)})
+
+    return collected[:candidate_pool_size], {
+        "stages": stages,
+        "candidate_pool_size": candidate_pool_size,
+        "sources": sorted(sources),
+        "arxiv_request_timeout_seconds": ARXIV_REQUEST_TIMEOUT,
+    }
 
 
 def fetch_summaries(pmids: list[str]) -> dict[str, dict[str, Any]]:
@@ -1067,7 +1118,9 @@ def fetch_new_papers(
     journal_whitelist: set[str] | None = None,
     journal_whitelist_path: Path | None = None,
     candidate_pool_size: int = DEFAULT_CANDIDATE_POOL_SIZE,
+    sources: set[str] | None = None,
 ) -> tuple[list[Paper], dict[str, Any]]:
+    resolved_sources = normalize_sources(sources)
     candidate_ids, search_metadata = build_candidate_pmids(
         conn=conn,
         query=query,
@@ -1075,14 +1128,26 @@ def fetch_new_papers(
         days_back=days_back,
         candidate_pool_size=candidate_pool_size,
         journal_whitelist_path=journal_whitelist_path,
+        sources=resolved_sources,
     )
     if not candidate_ids:
         return [], search_metadata
 
     pubmed_pmids = [item.split(":", 1)[1] for item in candidate_ids if item.startswith("pubmed:")]
     summaries = fetch_summaries(pubmed_pmids)
-    biorxiv_entries = fetch_biorxiv_entry_map(days_back, max(candidate_pool_size * 3, 100), topic_label, query)
-    arxiv_entries = fetch_arxiv_entry_map(days_back, max(candidate_pool_size * 3, 100), topic_label, query)
+    biorxiv_entries = (
+        fetch_biorxiv_entry_map(days_back, max(candidate_pool_size * 3, 100), topic_label, query)
+        if "biorxiv" in resolved_sources
+        else {}
+    )
+    if "arxiv" in resolved_sources and any(item.startswith("arxiv:") for item in candidate_ids):
+        try:
+            arxiv_entries = fetch_arxiv_entry_map(days_back, max(candidate_pool_size * 3, 100), topic_label, query)
+        except Exception as exc:  # noqa: BLE001
+            print(f"warning: arXiv fetch failed while hydrating records; continuing without arXiv papers: {exc}", file=sys.stderr)
+            arxiv_entries = {}
+    else:
+        arxiv_entries = {}
     if journal_whitelist:
         filtered_candidates = []
         for candidate_id in candidate_ids:
@@ -1234,7 +1299,223 @@ def analyze_paper(paper: Paper, client: OpenAI, model: str, topic_label: str) ->
     return parsed
 
 
-def analyze_papers(papers: list[Paper], api_key: str | None, model: str, topic_label: str) -> list[dict[str, Any]]:
+
+def load_scoring_rules(path: Path | None) -> dict[str, Any] | None:
+    if path is None:
+        return None
+    if not path.exists():
+        return None
+    with path.open("r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def contains_term(text: str, term: str) -> bool:
+    if not term:
+        return False
+    haystack = text.casefold()
+    needle = term.casefold()
+    if re.fullmatch(r"[A-Za-z0-9_+.-]+", needle):
+        return re.search(rf"(?<![A-Za-z0-9_+.-]){re.escape(needle)}(?![A-Za-z0-9_+.-])", haystack) is not None
+    return needle in haystack
+
+
+def matched_terms_in_text(text: str, terms: list[str]) -> list[str]:
+    return [term for term in terms if contains_term(text, term)]
+
+
+def fielded_term_score(paper: Paper, terms: list[str], weight: float, field_weights: dict[str, float]) -> tuple[float, list[str]]:
+    title = paper.title or ""
+    abstract = paper.abstract or ""
+    journal = paper.journal or ""
+    matched: list[str] = []
+    score = 0.0
+    for term in terms:
+        term_score = 0.0
+        term_matched = False
+        if contains_term(title, term):
+            term_score += weight * float(field_weights.get("title_multiplier", 2.0))
+            term_matched = True
+        if contains_term(abstract, term):
+            term_score += weight * float(field_weights.get("abstract_multiplier", 1.0))
+            term_matched = True
+        if contains_term(journal, term):
+            term_score += weight * float(field_weights.get("journal_multiplier", 0.5))
+            term_matched = True
+        if term_matched:
+            matched.append(term)
+            score += term_score
+    return score, matched
+
+
+def local_recommendation_label(score: float) -> str:
+    if score >= 80:
+        return "core must-read"
+    if score >= 60:
+        return "highly relevant"
+    if score >= 40:
+        return "worth-reading"
+    if score >= 20:
+        return "bridge/peripheral"
+    if score >= 0:
+        return "low-priority"
+    return "likely false positive"
+
+
+def analyze_paper_locally(paper: Paper, scoring_rules: dict[str, Any]) -> dict[str, Any]:
+    field_weights = scoring_rules.get("field_weights", {})
+    title_abstract_journal = "\n".join([paper.title or "", paper.abstract or "", paper.journal or ""])
+
+    category_matches: dict[str, list[str]] = {}
+    category_scores: dict[str, float] = {}
+    evidence: list[str] = []
+    tags: list[str] = []
+    raw_positive_score = 0.0
+
+    for category in scoring_rules.get("positive_categories", []):
+        category_id = category.get("id", "unknown")
+        terms = category.get("terms", [])
+        score, matched = fielded_term_score(
+            paper,
+            terms,
+            float(category.get("weight", 1)),
+            field_weights,
+        )
+        max_score = category.get("max_score")
+        if max_score is not None:
+            score = min(score, float(max_score))
+        if matched:
+            category_matches[category_id] = matched
+            category_scores[category_id] = round(score, 2)
+            raw_positive_score += score
+            label = category.get("label", category_id)
+            evidence.append(f"{label}: {', '.join(matched[:8])}")
+            tags.append(label)
+        else:
+            category_matches[category_id] = []
+            category_scores[category_id] = 0.0
+
+    penalties: dict[str, float] = {}
+    total_penalty = 0.0
+    concerns: list[str] = []
+    for category in scoring_rules.get("negative_categories", []):
+        category_id = category.get("id", "unknown")
+        matched = matched_terms_in_text(title_abstract_journal, category.get("terms", []))
+        if not matched:
+            penalties[category_id] = 0.0
+            continue
+        softeners = matched_terms_in_text(title_abstract_journal, category.get("softening_terms", []))
+        penalty = float(category.get("penalty", 0))
+        if softeners:
+            penalty *= 0.5
+        max_penalty = category.get("max_penalty")
+        if max_penalty is not None:
+            penalty = max(penalty, float(max_penalty))
+        penalties[category_id] = round(penalty, 2)
+        total_penalty += penalty
+        label = category.get("label", category_id)
+        if softeners:
+            concerns.append(f"Possible {label.lower()} signal, softened by bridge terms: {', '.join(softeners[:5])}.")
+        else:
+            concerns.append(f"Possible {label.lower()} signal: {', '.join(matched[:5])}.")
+
+    interaction_bonuses: dict[str, float] = {}
+    total_interaction_bonus = 0.0
+    for rule in scoring_rules.get("interaction_bonus_rules", []):
+        fires = False
+        if "requires_any_from_each_category" in rule:
+            fires = all(category_matches.get(cat_id) for cat_id in rule.get("requires_any_from_each_category", []))
+        elif "requires_terms_any" in rule:
+            terms_fire = any(contains_term(title_abstract_journal, term) for term in rule.get("requires_terms_any", []))
+            category_fire = True
+            if rule.get("requires_category_any"):
+                category_fire = any(category_matches.get(cat_id) for cat_id in rule.get("requires_category_any", []))
+            fires = terms_fire and category_fire
+        if fires:
+            bonus = float(rule.get("bonus", 0))
+            interaction_bonuses[rule.get("id", "unknown")] = bonus
+            total_interaction_bonus += bonus
+            evidence.append(f"Interaction bonus: {rule.get('label', rule.get('id', 'unknown'))}")
+        else:
+            interaction_bonuses[rule.get("id", "unknown")] = 0.0
+
+    source_info = scoring_rules.get("source_modifiers", {}).get(paper.source_db, {})
+    source_bonus = float(source_info.get("bonus", 0))
+
+    raw_score = raw_positive_score + total_interaction_bonus + source_bonus + total_penalty
+    promotion_flags: list[dict[str, Any]] = []
+    promotion_bonus = 0.0
+    for rule in scoring_rules.get("preprint_promotion_rules", []):
+        if paper.source_db not in set(rule.get("eligible_sources", [])):
+            continue
+        if raw_score < float(rule.get("minimum_raw_score", 0)):
+            continue
+        required_terms = rule.get("requires_terms_any", [])
+        if required_terms and not any(contains_term(title_abstract_journal, term) for term in required_terms):
+            continue
+        bonus = float(rule.get("promotion_bonus", 0))
+        promotion_bonus += bonus
+        flag = {
+            "id": rule.get("id"),
+            "label": rule.get("label"),
+            "promotion_bonus": bonus,
+            "promote_to_editorial_review": bool(rule.get("promote_to_editorial_review", False)),
+        }
+        promotion_flags.append(flag)
+        evidence.append(f"Preprint promotion: {rule.get('label', rule.get('id', 'unknown'))}")
+
+    final_score = raw_score + promotion_bonus
+    final_score_rounded = int(round(final_score))
+    topic_relevance_score = max(0, min(10, round(final_score / 10, 1)))
+    label = local_recommendation_label(final_score)
+
+    why_it_matters = evidence[:4] if evidence else ["Matched the retrieval query, but did not strongly match the local ontology."]
+    if source_info.get("label"):
+        why_it_matters.append(f"Source modifier: {source_info['label']}.")
+    if not concerns:
+        concerns = ["No major local rule-based concerns flagged."]
+
+    if evidence:
+        summary = f"Locally scored against the {scoring_rules.get('ontology_name', 'custom')} ontology. Strongest signals: {'; '.join(evidence[:3])}."
+    else:
+        summary = "Collected by the query, but the local ontology did not find strong priority signals."
+
+    return {
+        "topic_relevance_score": topic_relevance_score,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": final_score_rounded,
+        "recommendation_label": label,
+        "one_paragraph_summary": summary,
+        "why_it_matters": why_it_matters,
+        "concerns": concerns,
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+            "positive_categories": category_scores,
+            "penalties": penalties,
+            "interaction_bonuses": interaction_bonuses,
+            "source_bonus": source_bonus,
+            "promotion_bonus": promotion_bonus,
+            "raw_positive_score": round(raw_positive_score, 2),
+            "total_penalty": round(total_penalty, 2),
+            "total_interaction_bonus": round(total_interaction_bonus, 2),
+            "final_score": final_score_rounded,
+        },
+        "matched_terms": category_matches,
+        "tags": tags,
+        "promotion_flags": promotion_flags,
+    }
+
+def analyze_papers(
+    papers: list[Paper],
+    api_key: str | None,
+    model: str,
+    topic_label: str,
+    scoring_rules: dict[str, Any] | None = None,
+) -> list[dict[str, Any]]:
     results = []
     client = OpenAI(api_key=api_key) if api_key else None
     for paper in papers:
@@ -1255,15 +1536,18 @@ def analyze_papers(papers: list[Paper], api_key: str | None, model: str, topic_l
                     "target_reader": "Unknown",
                 }
         else:
-            analysis = {
-                "topic_relevance_score": 0,
-                "recommendation_label": "unscored",
-                "overall_recommendation_score": 0,
-                "one_paragraph_summary": "No OPENAI_API_KEY provided, so this paper was collected but not ranked.",
-                "why_it_matters": [],
-                "concerns": ["Set OPENAI_API_KEY to enable scoring and digest ranking."],
-                "target_reader": "Unknown",
-            }
+            if scoring_rules:
+                analysis = analyze_paper_locally(paper, scoring_rules)
+            else:
+                analysis = {
+                    "topic_relevance_score": 0,
+                    "recommendation_label": "unscored",
+                    "overall_recommendation_score": 0,
+                    "one_paragraph_summary": "No OPENAI_API_KEY provided and no local scoring rules were loaded, so this paper was collected but not ranked.",
+                    "why_it_matters": [],
+                    "concerns": ["Set OPENAI_API_KEY or provide --scoring-rules config/scoring_rules.json to enable ranking."],
+                    "target_reader": "Unknown",
+                }
         results.append({"paper": asdict(paper), "analysis": analysis})
     results.sort(key=lambda item: item["analysis"].get("overall_recommendation_score", 0), reverse=True)
     return results
@@ -1398,6 +1682,7 @@ def write_outputs(
                 "",
                 f"- Score: {score} ({label})",
                 f"- Subscores: impact {analysis.get('impact_score', 'n/a')}/10, interestingness {analysis.get('interestingness_score', 'n/a')}/10, awe {analysis.get('awe_factor', 'n/a')}/10, surprise {analysis.get('surprise_factor', 'n/a')}/10, rigor {analysis.get('rigor_score', 'n/a')}/10, topic relevance {analysis.get('topic_relevance_score', analysis.get('llm_relevance', 'n/a'))}/10",
+                f"- Scoring method: {analysis.get('scoring_method', 'openai' if analysis.get('model') else 'unscored')}",
                 f"- Journal: {paper['journal']}",
                 f"- Date: {paper['pubdate']}",
                 f"- Authors: {authors}",
@@ -1410,6 +1695,22 @@ def write_outputs(
             lines.append(f"- Full text: [{full_text_label}]({paper['pmc_url']})")
         if paper.get("doi"):
             lines.append(f"- DOI: {paper['doi']}")
+        breakdown = analysis.get("score_breakdown")
+        if breakdown:
+            top_categories = sorted(
+                breakdown.get("positive_categories", {}).items(),
+                key=lambda item: item[1],
+                reverse=True,
+            )[:4]
+            if top_categories:
+                formatted = ", ".join(f"{name}: {value}" for name, value in top_categories if value)
+                if formatted:
+                    lines.append(f"- Top local signals: {formatted}")
+            if breakdown.get("total_penalty"):
+                lines.append(f"- Local penalties: {breakdown.get('total_penalty')}")
+            if analysis.get("promotion_flags"):
+                promo_labels = ", ".join(flag.get("label", flag.get("id", "promotion")) for flag in analysis.get("promotion_flags", []))
+                lines.append(f"- Promotion flags: {promo_labels}")
         lines.extend(
             [
                 "",
@@ -1501,8 +1802,28 @@ def parse_args() -> argparse.Namespace:
         help="Build up to this many candidate papers before ranking them.",
     )
     parser.add_argument(
+        "--sources",
+        default=",".join(DEFAULT_SOURCES),
+        help="Comma-separated source lanes to use: pubmed,biorxiv,arxiv. Defaults to PUBMED_SOURCES or all three.",
+    )
+    parser.add_argument(
+        "--skip-arxiv",
+        action="store_true",
+        help="Convenience flag equivalent to removing arxiv from --sources.",
+    )
+    parser.add_argument(
         "--journal-whitelist",
         help="Path to a newline-delimited journal whitelist file.",
+    )
+    parser.add_argument(
+        "--scoring-rules",
+        default=os.getenv("SCORING_RULES_PATH", str(DEFAULT_SCORING_RULES_PATH)),
+        help="Path to local JSON scoring rules used when OPENAI_API_KEY is not set.",
+    )
+    parser.add_argument(
+        "--disable-local-scoring",
+        action="store_true",
+        help="Disable local rule-based scoring when OPENAI_API_KEY is not set.",
     )
     parser.add_argument(
         "--mark-seen-without-scoring",
@@ -1529,6 +1850,15 @@ def main() -> int:
         return 2
     journal_whitelist_path = Path(args.journal_whitelist).expanduser() if args.journal_whitelist else None
     journal_whitelist = load_journal_whitelist(journal_whitelist_path) if journal_whitelist_path else None
+    try:
+        sources = normalize_sources(args.sources)
+        if args.skip_arxiv:
+            sources.discard("arxiv")
+            if not sources:
+                raise ValueError("--skip-arxiv removed the only enabled source. Use --sources pubmed,biorxiv or similar.")
+    except ValueError as exc:
+        print(str(exc), file=sys.stderr)
+        return 2
     papers, search_metadata = fetch_new_papers(
         conn=conn,
         query=resolved_query,
@@ -1539,18 +1869,38 @@ def main() -> int:
         journal_whitelist=journal_whitelist,
         journal_whitelist_path=journal_whitelist_path,
         candidate_pool_size=args.candidate_pool_size,
+        sources=sources,
     )
     if not papers:
         print("No new matching PubMed papers found.")
         return 0
 
     api_key = os.getenv("OPENAI_API_KEY")
+    scoring_rules = None
+    if not api_key and not args.disable_local_scoring:
+        scoring_rules_path = Path(args.scoring_rules).expanduser() if args.scoring_rules else DEFAULT_SCORING_RULES_PATH
+        if not scoring_rules_path.is_absolute():
+            scoring_rules_path = ROOT / scoring_rules_path
+        scoring_rules = load_scoring_rules(scoring_rules_path)
+        if scoring_rules:
+            print(f"Loaded local scoring rules from {scoring_rules_path}")
+        else:
+            print(f"No local scoring rules found at {scoring_rules_path}; papers will be unscored.")
     scoring_model, final_model = resolve_model_selection(
         api_key=api_key,
         scoring_model=args.model,
         final_model=args.final_model,
     )
-    records = analyze_papers(papers, api_key=api_key, model=scoring_model, topic_label=topic_label)
+    if not api_key and scoring_rules:
+        scoring_model = scoring_rules.get("ontology_name", "local-rule-scoring")
+        final_model = "local-score-sort"
+    records = analyze_papers(
+        papers,
+        api_key=api_key,
+        model=scoring_model,
+        topic_label=topic_label,
+        scoring_rules=scoring_rules,
+    )
     final_records = rerank_records(records, api_key=api_key, model=final_model, top_k=args.retmax, topic_label=topic_label)
     markdown_path, json_path = write_outputs(
         final_records,
@@ -1582,7 +1932,10 @@ def main() -> int:
     print(f"Wrote Markdown digest to {markdown_path}")
     print(f"Wrote JSON export to {json_path}")
     if not api_key:
-        print("OPENAI_API_KEY is not set, so papers were collected but not ranked.")
+        if scoring_rules:
+            print("OPENAI_API_KEY is not set; papers were ranked with local scoring rules.")
+        else:
+            print("OPENAI_API_KEY is not set, so papers were collected but not ranked.")
     return 0
 
 
