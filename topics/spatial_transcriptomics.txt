@@ -1,7 +1,0 @@
-"spatial transcriptomics"[Title/Abstract]
-AND
-(
-  "foundation model"[Title/Abstract]
-  OR "large language model"[Title/Abstract]
-  OR "machine learning"[Title/Abstract]
-)

@@ -1,0 +1,476 @@
+{
+    "ontology_name": "taste_hedgehog_literature_triage",
+    "version": "0.1.0",
+    "description": "Rule-based scoring ontology for triaging papers related to Hedgehog signaling, Gas1/co-receptors, taste organ biology, epithelial morphogenesis, and developmental-to-adult homeostasis.",
+    "score_scale": {
+        "recommended_min": -25,
+        "recommended_max": 100,
+        "interpretation": {
+            "80_to_100": "core must-read",
+            "60_to_79": "highly relevant",
+            "40_to_59": "worth reading or skimming",
+            "20_to_39": "peripheral or bridge paper",
+            "0_to_19": "low priority",
+            "below_0": "likely false positive"
+        }
+    },
+    "field_weights": {
+        "title_multiplier": 2.0,
+        "abstract_multiplier": 1.0,
+        "journal_multiplier": 0.5
+    },
+    "positive_categories": [
+        {
+            "id": "core_hedgehog_pathway",
+            "label": "Core Hedgehog pathway",
+            "weight": 10,
+            "max_score": 20,
+            "terms": [
+                "hedgehog",
+                "sonic hedgehog",
+                "shh",
+                "ihh",
+                "dhh",
+                "gli1",
+                "gli2",
+                "gli3",
+                "ptch1",
+                "ptch2",
+                "smoothened",
+                "smo"
+            ]
+        },
+        {
+            "id": "hedgehog_coreceptors_modulators",
+            "label": "Hedgehog co-receptors and modulators",
+            "weight": 12,
+            "max_score": 24,
+            "terms": [
+                "gas1",
+                "boc",
+                "cdon",
+                "hhip",
+                "hedgehog interacting protein",
+                "patched",
+                "primary cilia",
+                "cilium",
+                "ciliary"
+            ]
+        },
+        {
+            "id": "taste_lingual_system",
+            "label": "Taste and lingual system",
+            "weight": 14,
+            "max_score": 28,
+            "terms": [
+                "taste",
+                "taste bud",
+                "taste buds",
+                "gustatory",
+                "lingual",
+                "tongue",
+                "papillae",
+                "papilla",
+                "fungiform",
+                "circumvallate",
+                "foliate",
+                "vallate",
+                "chorda tympani",
+                "geniculate ganglion"
+            ]
+        },
+        {
+            "id": "epithelial_morphogenesis",
+            "label": "Epithelial morphogenesis and tissue architecture",
+            "weight": 8,
+            "max_score": 20,
+            "terms": [
+                "epithelium",
+                "epithelial",
+                "morphogenesis",
+                "organogenesis",
+                "patterning",
+                "placode",
+                "appendage",
+                "boundary",
+                "tissue architecture",
+                "spatial organization"
+            ]
+        },
+        {
+            "id": "development_homeostasis_continuity",
+            "label": "Development-to-homeostasis continuity",
+            "weight": 9,
+            "max_score": 24,
+            "terms": [
+                "development",
+                "developmental",
+                "embryonic",
+                "postnatal",
+                "adult homeostasis",
+                "homeostasis",
+                "regeneration",
+                "turnover",
+                "maintenance",
+                "renewal",
+                "lineage",
+                "cell fate",
+                "progenitor",
+                "stem cell",
+                "niche"
+            ]
+        },
+        {
+            "id": "crosstalk_niche_dependency",
+            "label": "Crosstalk, niche dependency, and trophic support",
+            "weight": 9,
+            "max_score": 24,
+            "terms": [
+                "epithelial-mesenchymal",
+                "epithelial mesenchymal",
+                "mesenchyme",
+                "mesenchymal",
+                "crosstalk",
+                "cross-talk",
+                "niche",
+                "trophic",
+                "innervation",
+                "denervation",
+                "nerve",
+                "neuroepithelial",
+                "neuro-epithelial",
+                "gdnf",
+                "ret"
+            ]
+        },
+        {
+            "id": "transcriptional_regulatory_logic",
+            "label": "Transcriptional and chromatin regulatory logic",
+            "weight": 8,
+            "max_score": 20,
+            "terms": [
+                "transcriptional repression",
+                "repressor",
+                "activator",
+                "gli repressor",
+                "gli activator",
+                "enhancer",
+                "silencer",
+                "cis-regulatory",
+                "cis regulatory",
+                "chromatin",
+                "atac-seq",
+                "single-cell atac",
+                "motif enrichment",
+                "regulatory element",
+                "gene regulatory network"
+            ]
+        },
+        {
+            "id": "preferred_methods",
+            "label": "Preferred mechanistic methods",
+            "weight": 7,
+            "max_score": 21,
+            "terms": [
+                "conditional knockout",
+                "knockout",
+                "knock-in",
+                "creer",
+                "cre/lox",
+                "lineage tracing",
+                "fate mapping",
+                "single-cell rna-seq",
+                "scrna-seq",
+                "rna-seq",
+                "atac-seq",
+                "in situ",
+                "immunostaining",
+                "immunofluorescence",
+                "perturbation",
+                "loss-of-function",
+                "gain-of-function",
+                "mouse model",
+                "murine"
+            ]
+        },
+        {
+            "id": "bridge_systems",
+            "label": "Bridge systems and analogical models",
+            "weight": 5,
+            "max_score": 15,
+            "terms": [
+                "tooth",
+                "dental",
+                "ameloblast",
+                "hair follicle",
+                "intestinal crypt",
+                "corneal epithelium",
+                "limbal epithelium",
+                "ectodermal appendage",
+                "limb bud",
+                "digit patterning",
+                "somite",
+                "craniofacial"
+            ]
+        }
+    ],
+    "negative_categories": [
+        {
+            "id": "oncology_only_penalty",
+            "label": "Cancer-only or oncology-dominant context",
+            "penalty": -12,
+            "max_penalty": -20,
+            "terms": [
+                "cancer",
+                "tumor",
+                "tumour",
+                "carcinoma",
+                "glioblastoma",
+                "medulloblastoma",
+                "osteosarcoma",
+                "sarcoma",
+                "metastasis",
+                "chemoresistance",
+                "clinical trial",
+                "phase ii",
+                "phase iii",
+                "inhibitor efficacy"
+            ],
+            "softening_terms": [
+                "stem cell niche",
+                "adult stem cell",
+                "development",
+                "morphogenesis",
+                "epithelium",
+                "epithelial",
+                "lineage",
+                "cell fate"
+            ],
+            "logic_note": "Apply full penalty only when cancer terms are present and developmental/tissue-homeostasis bridge terms are absent. Apply smaller penalty when cancer appears alongside relevant mechanistic tissue biology."
+        },
+        {
+            "id": "clinical_behavioral_penalty",
+            "label": "Clinical, behavioral, or perception-only context",
+            "penalty": -8,
+            "max_penalty": -15,
+            "terms": [
+                "psychophysics",
+                "flavor perception",
+                "dietary habit",
+                "questionnaire",
+                "patient-reported",
+                "clinical case",
+                "case report",
+                "treatment outcome",
+                "drug efficacy"
+            ],
+            "softening_terms": [
+                "mouse",
+                "murine",
+                "mechanism",
+                "signaling",
+                "epithelium",
+                "stem cell",
+                "progenitor"
+            ]
+        },
+        {
+            "id": "weak_mechanism_penalty",
+            "label": "Descriptive or low-mechanism paper",
+            "penalty": -5,
+            "max_penalty": -10,
+            "terms": [
+                "descriptive",
+                "survey",
+                "review",
+                "scoping review",
+                "bibliometric",
+                "expression pattern only"
+            ],
+            "softening_terms": [
+                "conditional knockout",
+                "lineage tracing",
+                "perturbation",
+                "mechanism",
+                "functional analysis"
+            ]
+        },
+        {
+            "id": "pure_in_vitro_penalty",
+            "label": "Pure in vitro or immortalized cell-line context",
+            "penalty": -6,
+            "max_penalty": -12,
+            "terms": [
+                "cell line",
+                "immortalized",
+                "in vitro",
+                "culture only",
+                "hela",
+                "hek293"
+            ],
+            "softening_terms": [
+                "in vivo",
+                "mouse",
+                "murine",
+                "organoid",
+                "ex vivo",
+                "tissue"
+            ]
+        }
+    ],
+    "interaction_bonus_rules": [
+        {
+            "id": "core_project_match",
+            "label": "Core project match",
+            "bonus": 25,
+            "requires_any_from_each_category": [
+                "core_hedgehog_pathway",
+                "taste_lingual_system",
+                "development_homeostasis_continuity"
+            ]
+        },
+        {
+            "id": "gas1_bridge_match",
+            "label": "Gas1/co-receptor bridge match",
+            "bonus": 18,
+            "requires_terms_any": [
+                "gas1",
+                "boc",
+                "cdon",
+                "hhip"
+            ],
+            "requires_category_any": [
+                "epithelial_morphogenesis",
+                "development_homeostasis_continuity",
+                "bridge_systems"
+            ]
+        },
+        {
+            "id": "mechanistic_tissue_logic",
+            "label": "Mechanistic tissue logic",
+            "bonus": 12,
+            "requires_any_from_each_category": [
+                "epithelial_morphogenesis",
+                "crosstalk_niche_dependency",
+                "preferred_methods"
+            ]
+        },
+        {
+            "id": "chromatin_signal_interpretation",
+            "label": "Chromatin-level signaling interpretation",
+            "bonus": 12,
+            "requires_any_from_each_category": [
+                "core_hedgehog_pathway",
+                "transcriptional_regulatory_logic"
+            ]
+        }
+    ],
+    "source_modifiers": {
+        "pubmed": {
+            "bonus": 2,
+            "label": "Established indexed literature"
+        },
+        "biorxiv": {
+            "bonus": 3,
+            "label": "Emerging biology preprint"
+        },
+        "arxiv": {
+            "bonus": 1,
+            "label": "Methods/computational preprint"
+        }
+    },
+    "preprint_promotion_rules": [
+        {
+            "id": "high_signal_biorxiv_promotion",
+            "label": "High-signal bioRxiv promotion",
+            "eligible_sources": [
+                "biorxiv"
+            ],
+            "minimum_raw_score": 45,
+            "requires_terms_any": [
+                "gas1",
+                "boc",
+                "cdon",
+                "hhip",
+                "taste",
+                "gustatory",
+                "lingual",
+                "papillae",
+                "fungiform",
+                "circumvallate"
+            ],
+            "promotion_bonus": 15,
+            "promote_to_editorial_review": true
+        },
+        {
+            "id": "methods_arxiv_promotion",
+            "label": "Methods/tool arXiv promotion",
+            "eligible_sources": [
+                "arxiv"
+            ],
+            "minimum_raw_score": 35,
+            "requires_terms_any": [
+                "single-cell",
+                "scrna-seq",
+                "atac-seq",
+                "spatial",
+                "lineage",
+                "segmentation",
+                "3d",
+                "imaging",
+                "morphogenesis"
+            ],
+            "promotion_bonus": 8,
+            "promote_to_editorial_review": true
+        }
+    ],
+    "editor_pick_categories": [
+        {
+            "id": "most_directly_relevant",
+            "label": "Most directly relevant"
+        },
+        {
+            "id": "best_mechanistic_insight",
+            "label": "Best mechanistic insight"
+        },
+        {
+            "id": "best_bridge_paper",
+            "label": "Best bridge/analogy paper"
+        },
+        {
+            "id": "best_methods_tool_paper",
+            "label": "Best methods/tool paper"
+        },
+        {
+            "id": "most_surprising_high_upside",
+            "label": "Most surprising or high-upside paper"
+        }
+    ],
+    "dashboard_tags": [
+        "Pathway: Hedgehog",
+        "Pathway: SHH/GLI",
+        "Modulator: Gas1/Boc/Cdon/Hhip",
+        "Tissue: Lingual epithelium",
+        "Tissue: Taste papillae",
+        "Concept: Adult homeostasis",
+        "Concept: Morphogenesis",
+        "Concept: Niche dependency",
+        "Concept: Epithelial-mesenchymal crosstalk",
+        "Concept: Transcriptional repression",
+        "Method: Conditional mouse genetics",
+        "Method: Lineage tracing",
+        "Method: scRNA-seq/ATAC-seq",
+        "Bridge: Tooth/root morphogenesis",
+        "Bridge: Limb bud patterning",
+        "Bridge: Ectodermal appendages",
+        "Flag: Possible false positive",
+        "Flag: Preprint promotion"
+    ],
+    "recommended_source_mix": {
+        "weekly_digest_size": 20,
+        "pubmed_target": 16,
+        "biorxiv_target": 3,
+        "arxiv_target": 1,
+        "note": "Use this as a soft quota. Exceptional preprints can be promoted above quota when preprint promotion rules fire."
+    }
+}
