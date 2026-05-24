@@ -1,4 +1,4 @@
-# # Gustatory Development & Signaling Digest
+# Gustatory Development & Signaling Digest
 
 Forked from https://github.com/felizvida/pubmed
 
