@@ -26,6 +26,14 @@ jobs:
           python -m pip install --upgrade pip
           python -m pip install openai requests python-dotenv
 
+      - name: Restore seen-paper cache
+        uses: actions/cache@v4
+        with:
+          path: data/
+          key: seen-papers-${{ github.ref_name }}
+          restore-keys: |
+            seen-papers-
+
       - name: Run weekly digest
         env:
           NCBI_EMAIL: ${{ secrets.NCBI_EMAIL }}
