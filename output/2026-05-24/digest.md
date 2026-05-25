@@ -2,10 +2,10 @@
 
 - Query window: last 14 day(s)
 - Topic: file:topics/taste_hedgehog.txt
-- Papers found: 18
+- Papers found: 17
 - Journal whitelist: none
 - Candidate pool target: 50
-- Candidates scored: 18
+- Candidates scored: 17
 - Scoring model: taste_hedgehog_literature_triage
 - Final ranking model: local-score-sort
 
@@ -36,32 +36,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 2. [Mesenchymal tumors with GLI1 gene alterations: a clinicopathological analysis of five cases].
-
-- Score: 81 (core must-read)
-- Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 8.1/10
-- Scoring method: local_rules
-- Journal: Zhonghua bing li xue za zhi = Chinese journal of pathology
-- Date: 2026 May 8
-- Authors: Liu XG, Wang Y, Lyu YK, Ao QL, Duan YQ
-- Source: pubmed
-- PubMed: [42103617](https://pubmed.ncbi.nlm.nih.gov/42103617/)
-- DOI: 10.3760/cma.j.cn112151-20250818-00559
-- Top local signals: crosstalk_niche_dependency: 24.0, core_hedgehog_pathway: 20.0, taste_lingual_system: 14.0, epithelial_morphogenesis: 8.0
-- Local penalties: -6.0
-
-Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: gli1, ptch1; Taste and lingual system: tongue; Epithelial morphogenesis and tissue architecture: epithelial.
-
-**Why it matters**
-- Core Hedgehog pathway: gli1, ptch1
-- Taste and lingual system: tongue
-- Epithelial morphogenesis and tissue architecture: epithelial
-- Crosstalk, niche dependency, and trophic support: mesenchymal
-
-**Concerns**
-- Possible cancer-only or oncology-dominant context signal, softened by bridge terms: epithelial.
-
-### 3. Primary cilia protect against intervertebral disc degeneration and spine scoliosis by regulating Hedgehog-P53-mediated cell apoptosis signaling.
+### 2. Primary cilia protect against intervertebral disc degeneration and spine scoliosis by regulating Hedgehog-P53-mediated cell apoptosis signaling.
 
 - Score: 68 (highly relevant)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 6.8/10
@@ -85,7 +60,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 4. Roles of sonic hedgehog signaling in retinal patterning and neurogenesis during mammalian eye development.
+### 3. Roles of sonic hedgehog signaling in retinal patterning and neurogenesis during mammalian eye development.
 
 - Score: 64 (highly relevant)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 6.5/10
@@ -109,7 +84,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 5. Multiscale Convergence of Signaling, Epigenetic, and Environmental Networks in Mammalian Palatogenesis and Cleft Palate Pathogenesis.
+### 4. Multiscale Convergence of Signaling, Epigenetic, and Environmental Networks in Mammalian Palatogenesis and Cleft Palate Pathogenesis.
 
 - Score: 63 (highly relevant)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 6.3/10
@@ -134,7 +109,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - Possible descriptive or low-mechanism paper signal: review.
 
-### 6. Embryologic and fetal development of meibomian glands: Implications in aging and dry eye disease.
+### 5. Embryologic and fetal development of meibomian glands: Implications in aging and dry eye disease.
 
 - Score: 56 (worth-reading)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 5.6/10
@@ -159,7 +134,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - Possible descriptive or low-mechanism paper signal: review.
 
-### 7. Methodology for human-induced pluripotent stem cell-derived excitatory and inhibitory neuron coculture with astrocytes for Alzheimer's disease modelling.
+### 6. Methodology for human-induced pluripotent stem cell-derived excitatory and inhibitory neuron coculture with astrocytes for Alzheimer's disease modelling.
 
 - Score: 55 (worth-reading)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 5.5/10
@@ -185,7 +160,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - Possible pure in vitro or immortalized cell-line context signal: in vitro.
 
-### 8. TGFβ signaling is required during human and chick Neural Crest formation.
+### 7. TGFβ signaling is required during human and chick Neural Crest formation.
 
 - Score: 52 (worth-reading)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 5.2/10
@@ -209,7 +184,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 9. iPSC-Derived Bronchial Airways-On-Chip for the Assessment of Cytokine Secretion Triggered by Volatile Organic Compounds.
+### 8. iPSC-Derived Bronchial Airways-On-Chip for the Assessment of Cytokine Secretion Triggered by Volatile Organic Compounds.
 
 - Score: 51 (worth-reading)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 5.1/10
@@ -234,7 +209,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - Possible pure in vitro or immortalized cell-line context signal: in vitro.
 
-### 10. Transition from acute kidney injury to chronic kidney disease: molecular mechanisms and therapeutic interventions.
+### 9. Transition from acute kidney injury to chronic kidney disease: molecular mechanisms and therapeutic interventions.
 
 - Score: 47 (worth-reading)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 4.7/10
@@ -259,7 +234,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 11. Regulation of somatic stem cell development through positional and proliferative signals during Drosophila melanogaster pupal ovary development resembles the framework governing adult stem cell behavior.
+### 10. Regulation of somatic stem cell development through positional and proliferative signals during Drosophila melanogaster pupal ovary development resembles the framework governing adult stem cell behavior.
 
 - Score: 36 (bridge/peripheral)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 3.6/10
@@ -282,7 +257,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 12. TGFβ-mediated dural progenitor cell migration into the coronal suture is crucial for preventing craniosynostosis.
+### 11. TGFβ-mediated dural progenitor cell migration into the coronal suture is crucial for preventing craniosynostosis.
 
 - Score: 35 (bridge/peripheral)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 3.5/10
@@ -305,7 +280,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 13. Hepatocyte hedgehog signaling controls ferroptosis to alleviate aging-related organ dysfunction.
+### 12. Hepatocyte hedgehog signaling controls ferroptosis to alleviate aging-related organ dysfunction.
 
 - Score: 31 (bridge/peripheral)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 3.1/10
@@ -328,7 +303,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - No major local rule-based concerns flagged.
 
-### 14. [Retracted] Hsp90 inhibitor 17‑AAG inhibits stem cell‑like properties and chemoresistance in osteosarcoma cells via the Hedgehog signaling pathway.
+### 13. [Retracted] Hsp90 inhibitor 17‑AAG inhibits stem cell‑like properties and chemoresistance in osteosarcoma cells via the Hedgehog signaling pathway.
 
 - Score: 28 (bridge/peripheral)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 2.8/10
@@ -352,7 +327,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - Possible cancer-only or oncology-dominant context signal: osteosarcoma, chemoresistance.
 
-### 15. Inhibition of Sonic Hedgehog signaling pathway by GANT61 alleviates adenomyosis by suppressing epithelial-to-mesenchymal transition, cell migration and proliferation.
+### 14. Inhibition of Sonic Hedgehog signaling pathway by GANT61 alleviates adenomyosis by suppressing epithelial-to-mesenchymal transition, cell migration and proliferation.
 
 - Score: 26 (bridge/peripheral)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 2.6/10
@@ -376,7 +351,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 **Concerns**
 - Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo, mouse, tissue.
 
-### 16. Oncogenic signaling pathways in ameloblastoma and their implications for precision based therapy.
+### 15. Oncogenic signaling pathways in ameloblastoma and their implications for precision based therapy.
 
 - Score: 20 (bridge/peripheral)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 2.0/10
@@ -402,7 +377,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 - Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development, epithelial.
 - Possible descriptive or low-mechanism paper signal, softened by bridge terms: mechanism.
 
-### 17. Targeting Glioblastoma Stem Cells: Therapeutic Strategies and Clinical Perspectives.
+### 16. Targeting Glioblastoma Stem Cells: Therapeutic Strategies and Clinical Perspectives.
 
 - Score: 19 (low-priority)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 1.9/10
@@ -428,7 +403,7 @@ Locally scored against the taste_hedgehog_literature_triage ontology. Strongest 
 - Possible cancer-only or oncology-dominant context signal: tumor, glioblastoma.
 - Possible descriptive or low-mechanism paper signal: review.
 
-### 18. Claudin-6 Protein Expression in Atypical Teratoid/Rhabdoid Tumors Is Strongly Enriched in the Molecular Subgroup AT/RT-TYR.
+### 17. Claudin-6 Protein Expression in Atypical Teratoid/Rhabdoid Tumors Is Strongly Enriched in the Molecular Subgroup AT/RT-TYR.
 
 - Score: -1 (likely false positive)
 - Subscores: impact n/a/10, interestingness n/a/10, awe n/a/10, surprise n/a/10, rigor n/a/10, topic relevance 0/10

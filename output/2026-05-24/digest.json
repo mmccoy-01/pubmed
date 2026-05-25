@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-05-24T00:05:47.941825+00:00",
+  "generated_at": "2026-05-24T23:52:23.156242+00:00",
   "days_back": 14,
   "topic": "file:topics/taste_hedgehog.txt",
   "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
@@ -11,11 +11,11 @@
         "source": "pubmed",
         "retmax": 150,
         "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
-        "returned": 18,
+        "returned": 17,
         "slots_available": 50,
-        "added": 18,
+        "added": 17,
         "tightened": false,
-        "pool_size_after_stage": 18
+        "pool_size_after_stage": 17
       },
       {
         "stage": "biorxiv_fallback",
@@ -23,17 +23,17 @@
         "retmax": 150,
         "query": "Hedgehog, SHH, GLI1, GLI2, Gas1, Boc, Cdon, Ptch1, Smoothened, taste, gustatory, lingual, papillae, fungiform",
         "returned": 0,
-        "slots_available": 32,
+        "slots_available": 33,
         "added": 0,
         "tightened": false,
-        "pool_size_after_stage": 18,
+        "pool_size_after_stage": 17,
         "error": null
       },
       {
         "stage": "arxiv_skipped",
         "source": "arxiv",
         "skipped": true,
-        "pool_size_after_stage": 18
+        "pool_size_after_stage": 17
       }
     ],
     "candidate_pool_size": 50,
@@ -42,7 +42,7 @@
       "pubmed"
     ],
     "arxiv_request_timeout_seconds": 15,
-    "papers_fetched": 18
+    "papers_fetched": 17
   },
   "scoring_model": "taste_hedgehog_literature_triage",
   "final_model": "local-score-sort",
@@ -178,115 +178,6 @@
           "Crosstalk, niche dependency, and trophic support",
           "Preferred mechanistic methods",
           "Bridge systems and analogical models"
-        ],
-        "promotion_flags": []
-      }
-    },
-    {
-      "paper": {
-        "paper_id": "42103617",
-        "source_db": "pubmed",
-        "seen_key": "pubmed:42103617",
-        "title": "[Mesenchymal tumors with GLI1 gene alterations: a clinicopathological analysis of five cases].",
-        "authors": [
-          "Liu XG",
-          "Wang Y",
-          "Lyu YK",
-          "Ao QL",
-          "Duan YQ"
-        ],
-        "journal": "Zhonghua bing li xue za zhi = Chinese journal of pathology",
-        "pubdate": "2026 May 8",
-        "doi": "10.3760/cma.j.cn112151-20250818-00559",
-        "pmcid": null,
-        "abstract": "Objective: To investigate the clinicopathological and genetic characteristics of mesenchymal tumors with GLI1 gene alterations. Methods: Five cases diagnosed at the Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China from 2021 to 2025 were collected. HE and immunohistochemical slides were reviewed. Tumor-associated genetic alterations were detected using a next generation sequencing (NGS) panel of pan-solid tumor genes (468 genes, 116 DNA+352 RNA). Fluorescence in situ hybridization (FISH) was performed to detect GLI1 gene translocation and amplification. Clinical and follow-up data were analyzed. Results: There were 3 females and 2 males, aged 48, 16, 47, 47 and 37 years, respectively. The tumor locations were the tongue, small intestine, ovary, and buttock. Histologically, tumor cells arranged in nest and lobular arrangements; within a partially myxoid stroma with necrosis and calcification, surrounded by a rich fibrovascular network around and a pseudocapsule in some cases. The tumor cells were predominantly round to oval, with fewer short spindled forms, showing mild to moderate atypia and distinct nucleoli. Immunohistochemically, tumor cells variably expressed CD56, S-100, and smooth muscle actin, but were negative for broad-spectrum epithelial markers. GLI1 immunohistochemistry showed diffuse, strong positivity (2 cases stained). Ki-67 proliferation index ranged from 1% to 30%. NGS identified PTCH1::GLI1 fusions in three cases and GLI1 amplification in two. All patients underwent complete surgical resection without adjuvant therapy. During the follow-up (4-16 months), one case recurred, while four remained disease-free. Conclusions: Mesenchymal neoplasm with GLI1 gene alterations is a type of tumor with low malignant potential, representing the biological behavior of low-grade sarcoma. However, it is currently not recognized by the World Health Organization classification. Surgical resection is the preferred treatment. While immunophenotyping lacks specificity, and GLI1 immunohistochemistry could aid in its diagnosis. Definitive diagnosis and differential diagnosis of this tumor require characteristic morphological features combined with molecular confirmation of GLI1 gene fusion or amplification.",
-        "full_text": "",
-        "source": "abstract_only",
-        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42103617/",
-        "link_label": "PubMed",
-        "pmc_url": null
-      },
-      "analysis": {
-        "topic_relevance_score": 8.1,
-        "impact_score": "n/a",
-        "interestingness_score": "n/a",
-        "awe_factor": "n/a",
-        "surprise_factor": "n/a",
-        "rigor_score": "n/a",
-        "overall_recommendation_score": 81,
-        "recommendation_label": "core must-read",
-        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: gli1, ptch1; Taste and lingual system: tongue; Epithelial morphogenesis and tissue architecture: epithelial.",
-        "why_it_matters": [
-          "Core Hedgehog pathway: gli1, ptch1",
-          "Taste and lingual system: tongue",
-          "Epithelial morphogenesis and tissue architecture: epithelial",
-          "Crosstalk, niche dependency, and trophic support: mesenchymal",
-          "Source modifier: Established indexed literature."
-        ],
-        "concerns": [
-          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: epithelial."
-        ],
-        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
-        "scoring_method": "local_rules",
-        "score_breakdown": {
-          "positive_categories": {
-            "core_hedgehog_pathway": 20.0,
-            "hedgehog_coreceptors_modulators": 0.0,
-            "taste_lingual_system": 14.0,
-            "epithelial_morphogenesis": 8.0,
-            "development_homeostasis_continuity": 0.0,
-            "crosstalk_niche_dependency": 24.0,
-            "transcriptional_regulatory_logic": 0.0,
-            "preferred_methods": 7.0,
-            "bridge_systems": 0.0
-          },
-          "penalties": {
-            "oncology_only_penalty": -6.0,
-            "clinical_behavioral_penalty": 0.0,
-            "weak_mechanism_penalty": 0.0,
-            "pure_in_vitro_penalty": 0.0
-          },
-          "interaction_bonuses": {
-            "core_project_match": 0.0,
-            "gas1_bridge_match": 0.0,
-            "mechanistic_tissue_logic": 12.0,
-            "chromatin_signal_interpretation": 0.0
-          },
-          "source_bonus": 2.0,
-          "promotion_bonus": 0.0,
-          "raw_positive_score": 73.0,
-          "total_penalty": -6.0,
-          "total_interaction_bonus": 12.0,
-          "final_score": 81
-        },
-        "matched_terms": {
-          "core_hedgehog_pathway": [
-            "gli1",
-            "ptch1"
-          ],
-          "hedgehog_coreceptors_modulators": [],
-          "taste_lingual_system": [
-            "tongue"
-          ],
-          "epithelial_morphogenesis": [
-            "epithelial"
-          ],
-          "development_homeostasis_continuity": [],
-          "crosstalk_niche_dependency": [
-            "mesenchymal"
-          ],
-          "transcriptional_regulatory_logic": [],
-          "preferred_methods": [
-            "in situ"
-          ],
-          "bridge_systems": []
-        },
-        "tags": [
-          "Core Hedgehog pathway",
-          "Taste and lingual system",
-          "Epithelial morphogenesis and tissue architecture",
-          "Crosstalk, niche dependency, and trophic support",
-          "Preferred mechanistic methods"
         ],
         "promotion_flags": []
       }
@@ -2112,115 +2003,6 @@
           "Crosstalk, niche dependency, and trophic support",
           "Preferred mechanistic methods",
           "Bridge systems and analogical models"
-        ],
-        "promotion_flags": []
-      }
-    },
-    {
-      "paper": {
-        "paper_id": "42103617",
-        "source_db": "pubmed",
-        "seen_key": "pubmed:42103617",
-        "title": "[Mesenchymal tumors with GLI1 gene alterations: a clinicopathological analysis of five cases].",
-        "authors": [
-          "Liu XG",
-          "Wang Y",
-          "Lyu YK",
-          "Ao QL",
-          "Duan YQ"
-        ],
-        "journal": "Zhonghua bing li xue za zhi = Chinese journal of pathology",
-        "pubdate": "2026 May 8",
-        "doi": "10.3760/cma.j.cn112151-20250818-00559",
-        "pmcid": null,
-        "abstract": "Objective: To investigate the clinicopathological and genetic characteristics of mesenchymal tumors with GLI1 gene alterations. Methods: Five cases diagnosed at the Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology, Wuhan, China from 2021 to 2025 were collected. HE and immunohistochemical slides were reviewed. Tumor-associated genetic alterations were detected using a next generation sequencing (NGS) panel of pan-solid tumor genes (468 genes, 116 DNA+352 RNA). Fluorescence in situ hybridization (FISH) was performed to detect GLI1 gene translocation and amplification. Clinical and follow-up data were analyzed. Results: There were 3 females and 2 males, aged 48, 16, 47, 47 and 37 years, respectively. The tumor locations were the tongue, small intestine, ovary, and buttock. Histologically, tumor cells arranged in nest and lobular arrangements; within a partially myxoid stroma with necrosis and calcification, surrounded by a rich fibrovascular network around and a pseudocapsule in some cases. The tumor cells were predominantly round to oval, with fewer short spindled forms, showing mild to moderate atypia and distinct nucleoli. Immunohistochemically, tumor cells variably expressed CD56, S-100, and smooth muscle actin, but were negative for broad-spectrum epithelial markers. GLI1 immunohistochemistry showed diffuse, strong positivity (2 cases stained). Ki-67 proliferation index ranged from 1% to 30%. NGS identified PTCH1::GLI1 fusions in three cases and GLI1 amplification in two. All patients underwent complete surgical resection without adjuvant therapy. During the follow-up (4-16 months), one case recurred, while four remained disease-free. Conclusions: Mesenchymal neoplasm with GLI1 gene alterations is a type of tumor with low malignant potential, representing the biological behavior of low-grade sarcoma. However, it is currently not recognized by the World Health Organization classification. Surgical resection is the preferred treatment. While immunophenotyping lacks specificity, and GLI1 immunohistochemistry could aid in its diagnosis. Definitive diagnosis and differential diagnosis of this tumor require characteristic morphological features combined with molecular confirmation of GLI1 gene fusion or amplification.",
-        "full_text": "",
-        "source": "abstract_only",
-        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42103617/",
-        "link_label": "PubMed",
-        "pmc_url": null
-      },
-      "analysis": {
-        "topic_relevance_score": 8.1,
-        "impact_score": "n/a",
-        "interestingness_score": "n/a",
-        "awe_factor": "n/a",
-        "surprise_factor": "n/a",
-        "rigor_score": "n/a",
-        "overall_recommendation_score": 81,
-        "recommendation_label": "core must-read",
-        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: gli1, ptch1; Taste and lingual system: tongue; Epithelial morphogenesis and tissue architecture: epithelial.",
-        "why_it_matters": [
-          "Core Hedgehog pathway: gli1, ptch1",
-          "Taste and lingual system: tongue",
-          "Epithelial morphogenesis and tissue architecture: epithelial",
-          "Crosstalk, niche dependency, and trophic support: mesenchymal",
-          "Source modifier: Established indexed literature."
-        ],
-        "concerns": [
-          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: epithelial."
-        ],
-        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
-        "scoring_method": "local_rules",
-        "score_breakdown": {
-          "positive_categories": {
-            "core_hedgehog_pathway": 20.0,
-            "hedgehog_coreceptors_modulators": 0.0,
-            "taste_lingual_system": 14.0,
-            "epithelial_morphogenesis": 8.0,
-            "development_homeostasis_continuity": 0.0,
-            "crosstalk_niche_dependency": 24.0,
-            "transcriptional_regulatory_logic": 0.0,
-            "preferred_methods": 7.0,
-            "bridge_systems": 0.0
-          },
-          "penalties": {
-            "oncology_only_penalty": -6.0,
-            "clinical_behavioral_penalty": 0.0,
-            "weak_mechanism_penalty": 0.0,
-            "pure_in_vitro_penalty": 0.0
-          },
-          "interaction_bonuses": {
-            "core_project_match": 0.0,
-            "gas1_bridge_match": 0.0,
-            "mechanistic_tissue_logic": 12.0,
-            "chromatin_signal_interpretation": 0.0
-          },
-          "source_bonus": 2.0,
-          "promotion_bonus": 0.0,
-          "raw_positive_score": 73.0,
-          "total_penalty": -6.0,
-          "total_interaction_bonus": 12.0,
-          "final_score": 81
-        },
-        "matched_terms": {
-          "core_hedgehog_pathway": [
-            "gli1",
-            "ptch1"
-          ],
-          "hedgehog_coreceptors_modulators": [],
-          "taste_lingual_system": [
-            "tongue"
-          ],
-          "epithelial_morphogenesis": [
-            "epithelial"
-          ],
-          "development_homeostasis_continuity": [],
-          "crosstalk_niche_dependency": [
-            "mesenchymal"
-          ],
-          "transcriptional_regulatory_logic": [],
-          "preferred_methods": [
-            "in situ"
-          ],
-          "bridge_systems": []
-        },
-        "tags": [
-          "Core Hedgehog pathway",
-          "Taste and lingual system",
-          "Epithelial morphogenesis and tissue architecture",
-          "Crosstalk, niche dependency, and trophic support",
-          "Preferred mechanistic methods"
         ],
         "promotion_flags": []
       }
