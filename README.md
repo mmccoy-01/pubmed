@@ -1,6 +1,6 @@
 # Gustatory Development & Signaling Digest
 
-Forked from https://github.com/felizvida/pubmed and hosted at www.katalepsara.com/PhD_Dashboard.
+Forked from https://github.com/felizvida/pubmed and hosted at katalepsara.com/PhD_Dashboard.
 
 A personalized, ontology-driven literature digest focused on gustatory system biology, developmental signaling, Hedgehog pathway regulation, tissue homeostasis, and epithelial sensory organ maintenance.
 
