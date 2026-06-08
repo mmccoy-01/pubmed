@@ -1,0 +1,1329 @@
+{
+  "generated_at": "2026-06-08T07:25:55.597900+00:00",
+  "days_back": 7,
+  "topic": "file:topics/taste_hedgehog.txt",
+  "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+  "journal_whitelist_path": null,
+  "search_metadata": {
+    "stages": [
+      {
+        "stage": "default",
+        "source": "pubmed",
+        "retmax": 150,
+        "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+        "returned": 6,
+        "slots_available": 50,
+        "added": 6,
+        "tightened": false,
+        "pool_size_after_stage": 6
+      },
+      {
+        "stage": "biorxiv_fallback",
+        "source": "biorxiv",
+        "retmax": 150,
+        "query": "Hedgehog, SHH, GLI1, GLI2, Gas1, Boc, Cdon, Ptch1, Smoothened, taste, gustatory, lingual, papillae, fungiform",
+        "returned": 0,
+        "slots_available": 44,
+        "added": 0,
+        "tightened": false,
+        "pool_size_after_stage": 6,
+        "error": null
+      },
+      {
+        "stage": "arxiv_skipped",
+        "source": "arxiv",
+        "skipped": true,
+        "pool_size_after_stage": 6
+      }
+    ],
+    "candidate_pool_size": 50,
+    "sources": [
+      "biorxiv",
+      "pubmed"
+    ],
+    "arxiv_request_timeout_seconds": 15,
+    "papers_fetched": 6
+  },
+  "scoring_model": "taste_hedgehog_literature_triage",
+  "final_model": "local-score-sort",
+  "records": [
+    {
+      "paper": {
+        "paper_id": "42225241",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42225241",
+        "title": "Microtubule binding protein Togaram1 is required for proper development of mammalian forebrain and neural primary cilia.",
+        "authors": [
+          "Nassar CQ",
+          "Shetty SJ",
+          "Dwyer ND"
+        ],
+        "journal": "Developmental biology",
+        "pubdate": "2026 May 31",
+        "doi": "10.1016/j.ydbio.2026.05.011",
+        "pmcid": null,
+        "abstract": "Proper forebrain development relies on precise spatial and temporal control of early neural stem cell (NSC) proliferation and later neurogenesis. Brain malformations can arise when these processes are defective. Joubert Syndrome (JS) is a neurodevelopmental disorder that is diagnosed by a mid-hindbrain malformation, but can also include forebrain defects such as microcephaly, which are less studied. One gene recently linked to Joubert Syndrome with microcephaly is Togaram1, which encodes a TOG domain microtubule binding protein shown to affect primary cilia. In the embryonic dorsal forebrain, NSCs have primary cilia on their apical membranes that play a role in regulating proliferation and neurogenesis, but how they do this is not well understood. Here we investigate the role of Togaram1 in mammalian forebrain development using a mouse knockout. We find that Togaram1 is crucial for forebrain size, thickness, and morphology. In particular, knockout forebrains at embryonic day (E) 12.5 have sporadic indentations of the lateral ventricles, and the neuronal layer is thin with gaps and heterotopias. The dorsal forebrains of Togaram1 knockouts display increased and ectopic mitosis, as well as increased apoptosis. The primary cilia of Togaram1 knockout NSCs and neurons are reduced in length. Finally, Shh pathway function is disrupted in knockout brains. This study begins to elucidate the role of Togaram1 in forebrain morphogenesis and the involvement of NSC primary cilia in forebrain malformations.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42225241/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 7.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 75,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: shh; Hedgehog co-receptors and modulators: primary cilia; Epithelial morphogenesis and tissue architecture: morphogenesis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: shh",
+          "Hedgehog co-receptors and modulators: primary cilia",
+          "Epithelial morphogenesis and tissue architecture: morphogenesis",
+          "Development-to-homeostasis continuity: development, developmental, embryonic, stem cell",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 73.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 75
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "primary cilia"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "embryonic",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "knockout"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42244985",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42244985",
+        "title": "Conditional knockout of Dkk3 drives Lgr5+ progenitor reprogramming into hair cells in the mouse cochlea.",
+        "authors": [
+          "Xiao H",
+          "Wang X",
+          "Ye Z",
+          "Tan X",
+          "Ma Y",
+          "Ma X",
+          "Tong W",
+          "Zhang L",
+          "Lin Y",
+          "Tang X",
+          "Zhang H",
+          "Wan J",
+          "Zhang Q",
+          "Chai R",
+          "Zhang S"
+        ],
+        "journal": "Theranostics",
+        "pubdate": "2026",
+        "doi": "10.7150/thno.131808",
+        "pmcid": "PMC13232479",
+        "abstract": "BACKGROUND: Neonatal cochlear Lgr5+ progenitors possess a transient regenerative capacity that diminishes rapidly after birth, severely limiting the potential for hearing restoration. Identifying the molecular mechanisms that restrict this plasticity is critical for developing effective regenerative therapies to treat hearing loss (HL).\n\nMETHODS: To uncover regulators of cochlear progenitor plasticity, we performed an integrative transcriptomic analysis across spatial, injury, and lineage contexts. Following the identification of candidate regulators, we investigated the function of Dkk3, a canonical Wnt antagonist, using in vitro Lgr5+ sphere formation assays and in vivo conditional knockout (cKO) models in neonatal progenitors. We assessed hair cell (HC) generation and maturation using lineage tracing, histological analysis of stereocilia and synapses, and electrophysiological recordings. Furthermore, we employed single-nucleus transcriptomics (snRNA-seq) of the Dkk3 cKO cochlea to elucidate the underlying molecular signaling networks.\n\nRESULTS: Our screen identified 14 candidate regulators, highlighting Dkk3 as a previously uncharacterized factor in the auditory epithelium that functions as a physiological gatekeeper of Lgr5+ progenitor plasticity. In vitro, Dkk3 knockdown significantly enhanced Lgr5+ sphere formation. In vivo, Dkk3 cKO induced the spontaneous generation of HCs through direct trans-differentiation. Crucially, these ectopic HCs achieved structural maturity, characterized by organized stereocilia and synaptic connections, displayed partial electrophysiological activity, and survived long-term into adulthood without disrupting native auditory function. Mechanistically, snRNA-seq analysis and RT-qPCR validation suggested that Dkk3 cKO may activate a pro-regenerative network involving the Wnt, Hedgehog, and mTOR signaling pathways.\n\nCONCLUSIONS: Our findings establish Dkk3 as a key molecular inhibitor of sensory fate reprogramming in the cochlea. These results suggest that targeting Dkk3 represents a promising therapeutic strategy for functional and durable HC reprogramming.",
+        "full_text": "Introduction\nSensorineural hearing loss (SNHL) affects millions worldwide, compromising quality of life and imposing substantial socioeconomic burdens1. However, no pharmacological therapies have been developed to treat or effectively reverse sensory deficits2. Cochlear hair cells (HCs) are mechanosensory receptors critical for auditory transduction, converting sound vibrations into neural signals that enable hearing3. One of the main causes of permanent HL is the degeneration of sensory HCs in the inner ear, which typically occurs due to aging, ototoxic agents, and noise-induced trauma4, 5. Non-mammalian vertebrates regenerate HCs throughout their lifespan via proliferation and differentiation of supporting cells (SC) following injury6, 7. Although mammal SCs retain some regenerative potential during early development and in response to injury in the neonatal cochlea, this capacity is almost lost in adult mammals, presenting a fundamental barrier to restoring hearing function following HC loss8-10.\n\nThe discovery of Lgr5+ cochlear progenitors with innate regenerative potential marked a turning point in hearing research11. These progenitors are capable of differentiating into HCs under specific conditions, a finding that has opened promising avenues for hearing restoration12-14. However, existing approaches have achieved only partial success, such as overexpression of pro-regenerative genes like Atoh115 or modulation of signaling pathways like Wnt and Notch16. The HCs induced by these methods are frequently transient and structurally immature, often failing to establish synaptic connections or undergoing rapid apoptosis17-19. Recent evidence demonstrates that optimized strategies, such as the co-expression of Atoh1, Gfi1, and Pou4f3, or reprogramming via drug-like molecules, can successfully drive HC maturation and synaptic integration19-21. The need to deliver multiple genetic factors still strains the limits of clinical vector capacity. Consequently, identifying novel upstream regulators to optimize this process remains critical for achieving effective hearing restoration.\n\nTo systematically identify the molecular mechanisms restricting progenitor plasticity, we conducted an intersectional transcriptomic analysis integrating three complementary RNA-seq datasets. We compared: (1) apical Lgr5+ progenitors (ALPs) and basal Lgr5+ progenitors (BLPs) to probe spatial heterogeneity and the intrinsic regenerative competence of the apex; (2) untreated Lgr5+ progenitors (ULPs) and neomycin-treated Lgr5+ progenitors (NLPs) to capture the acute transcriptional response to damage; and (3) Lgr5+ progenitors vs. Lgr5- SC to define the core lineage identity22-24. This screening strategy identified 14 candidate regulators consistently associated with regenerative competence across all three contexts. Among these, we focused on Dkk3, a canonical Wnt antagonist whose function in the auditory epithelium remained unexplored.\n\nHere, we identify Dkk3 as a critical physiological negative regulator of cochlear Lgr5+ progenitor plasticity. We show that Dkk3 knockdown enhances the Lgr5+ sphere-forming efficiency in vitro. In transgenic Dkk3 conditional knockout (cKO) mice, we demonstrate that Dkk3 cKO in Lgr5+ progenitors drives the spontaneous generation of HCs via direct trans-differentiation. Crucially, unlike the transient cells often reported in single-factor studies, the ectopic HCs generated in Dkk3 cKO mice achieve molecular and structural differentiation with organized stereocilia and synaptic connections. Furthermore, these cells possess partial electrophysiological activity and survive long-term into adulthood without inducing deleterious effects on native auditory function. Single-nucleus RNA sequencing (snRNA-seq) of Dkk3 cKO cochlear, supported by targeted validation, further revealed activation of a pro-regenerative network involving Wnt, Hedgehog, and mTOR signaling pathways. These findings establish Dkk3 knockout as a robust strategy for inducing stable cellular reprogramming, providing a compelling rationale for future combinatorial treatments aimed at functional hearing restoration.\n\nIntegrative transcriptomics identifies Dkk3 as a negative regulator of cochlear progenitor plasticity\nTo identify core molecular mechanisms that restrict cochlear progenitor plasticity, we performed an intersectional transcriptomic analysis integrating three complementary RNA-seq datasets previously generated by our group. These datasets represented distinct axes of plasticity: spatial heterogeneity (ALPs vs. BLPs), injury response (NLPs vs. ULPs), and lineage identity (Lgr5+ Progenitors vs. Lgr5- SCs). Using uniform filtering thresholds (fold change > 2.0, p < 0.05), this cross-analysis narrowed down 440 overlapping genes to a core set of 14 candidates consistently differentially expressed across all three comparisons (Figure 1A; Supplemental Table 1). To understand the biological landscape of these shared signatures, we performed Gene Ontology (GO) enrichment analysis on this 440-gene set. The results highlighted biological processes related to inner ear development, cell differentiation, and Wnt signaling pathways (Figure 1B). From this broader set, we further narrowed our focus to a core set of 14 candidates that were consistently differentially expressed across all three comparisons. Notably, the 14 shared genes included known deafness-associated mutants (Otoa, Col9a1)25-27 and regulators of cell growth and differentiation (Net1, Serpine2, Ndrg2)28-32. Other candidate factors include transcription factors (Fos, Fosb)33, extracellular matrix and adhesion molecules (Cntn1, Cyr61)34, 35, and the calcium-binding protein Capsl36. Additionally, we identified key metabolic or transport regulators, specifically the metalloendopeptidase Mme, known for peptide metabolism37, and the GABA transporter Slc6a11, essential for mediating GABA reuptake and regulating tonic inhibition38.\n\nAmong these candidates, we prioritized Dkk3, a canonical Wnt antagonist whose physiological function in the auditory epithelium remained unexplored39. In wild-type mice, Dkk3 protein levels declined more than 2-fold from postnatal day (P) 3 to P30 (Figure 1C, D), a temporal pattern coinciding with the progressive maturation of the organ of Corti and the loss of regenerative potential. snRNA-seq data40 and RNAscope in situ hybridization localized Dkk3 to the Organ of Corti (OC), including inner phalangeal (IPhC), Deiters\u2019 (DC), and pillar cells (PC) in P2 wild-type (WT) mice cochlea. Notably, RNAscope in situ hybridization demonstrated that Dkk3 and Lgr5 primarily co-localize in the third row of DCs (Figure 1E, F; Figure S1). Consistent with this, re-analysis of human fetal cochlea at 15 and 17 weeks revealed conserved Dkk3 expression in DC and outer pillar cells (OPC)41 (Figure S2).\n\nTo investigate whether Dkk3 functionally restricts progenitor plasticity, we utilized the in vitro Lgr5+ sphere-forming assay, an established surrogate for assessing stemness and regenerative capacity42. We first validated Dkk3 knockdown efficiency in HEI-OC1 cells, identifying siRNA-281 as the most efficient knockdown construct in HEI-OC1 cells (Figure 1G, H). Next, we FACS-isolated Lgr5-EGFP+ progenitors from P1 neonatal mice and cultured them under suspension conditions (Figure 1I). Dkk3 knockdown significantly enhanced the sphere-forming efficiency, increasing the number of spheres by more than two-fold without affecting organoid size (Figure 1J-L). These findings nominate Dkk3 as a key regulator of Lgr5+ progenitor plasticity and a promising candidate for modulating HC generation in vivo.\n\nDkk3 cKO in Lgr5+ progenitors triggers numerous ectopic HCs in vivo\nTo further explore the role of Dkk3 in vivo, Dkk3flox mice were generated (Figure S3A) and validated successful recombination via genotyping (Figure S3B). Tamoxifen was intraperitoneally (i.p.) administered at P1 to induce Dkk3 knockout specifically in Lgr5+ progenitors (Figure S3C). Both mRNA and protein levels of Dkk3 were significantly reduced in Dkk3 cKO mice compared to controls (Figure S3D-F), confirming efficient gene knockout. Furthermore, RNAscope in situ hybridization confirmed the specific depletion of Dkk3 mRNA signal within the Lgr5-positive cellular regions, particularly in the third row of DCs (Figure S3G).\n\nWe next assessed the regenerative capacity of Dkk3 cKO at P7 (Figure 2A). Compared to Lgr5CreER/+ and Dkk3f/f controls, Dkk3 cKO mice exhibited numerous ectopic IHCs and OHCs in three turns of the cochlea (Figure 2B). Dkk3 cKO mice exhibited a basal-to-apical increase gradient in ectopic IHC numbers across the cochlea, with fold increases of at least 8-fold (base), 3-fold (middle), and 4-fold (apex) relative to Dkk3f/f control (Figure 2C). The number of ectopic OHCs in three cochlear turns of Dkk3 cKO mice was more than 4-fold, 6-fold, and 7-fold of that of Dkk3f/f mice, respectively (Figure 2D). These results demonstrate that Dkk3 knockout in Lgr5+ progenitors is sufficient to trigger ectopic HC formation (Figure 2E).\n\nDkk3 cKO drives hair cell spontaneous generation via direct trans-differentiation of Lgr5+ progenitors\nHC regeneration generally occurs through two main mechanisms: (1) direct trans-differentiation of SCs and/or (2) mitotic regeneration involving proliferation and differentiation cascades13, 43. While our earlier in vitro work showed that Dkk3 KD could boost Lgr5+ sphere-forming efficiency, the generative pathway in vivo remained unclear.\n\nTo resolve this, we designed EdU labeling and lineage tracing experiments to verify the specific regeneration route. After activating Cre recombinase, neonatal Dkk3 cKO mice were administered EdU to label dividing cells (Figure 3A). No EdU+ SCs were detected in either Dkk3 cKO or control mice (Figure 3B), which suggests that ectopic HCs may not be generated through mitosis. We performed genetic lineage tracing of Lgr5+ progenitors by crossing Lgr5CreER/+ drivers with Rosa26-tdTomato reporters, tagging both Lgr5+ progenitors and their daughter cells during HC generation.\n\nIn the next experiment, we used Lgr5CreER/+Dkk3f/fRosa26-tdTomato mice for lineage tracing, with Lgr5CreER/+Rosa26-tdTomato mice used as control (Figure 3C). Dkk3 cKO mice showed a significant increase in tdTomato+ IHCs (at least 8-fold) and OHCs (at least 3-fold) compared to controls (Figure 3D). Additionally, tdTomato+ HCs demonstrated a base-to-apex increasing gradient throughout the cochlea (Figures 3E-G). Collectively, the absence of EdU incorporation combined with robust lineage tracing confirms that Dkk3 knockout drives HC spontaneous generation via direct trans-differentiation of Lgr5+ progenitors.\n\nStructural and functional characterization of ectopic HC in P7 Dkk3 cKO mice\nTo assess the developmental status of ectopic HCs in P7 Dkk3 cKO cochleae, we examined the molecular, structural, synaptic, and electrophysiological properties. Ectopic HCs expressed the pan-HC marker Calbindin 1, while Prestin and Otoferlin serve as functional markers for mature OHC and IHC, respectively44, 45. Their expression levels were comparable to those observed in native HCs (Figure S4A, B), confirming subtype-specific molecular maturation comparable to age-matched native controls. Phalloidin staining and scanning electron microscopy (SEM) revealed normally structured stereociliary bundles in ectopic HCs (Figure 4A-C). The V-shaped orientation of stereocilia exhibited a tonotopic gradient along the cochlear axis, consistent with that of age-matched native HCs in the controls (Figure 4D). Subsequently, CtBP2 staining was used to label the synapses of the IHCs, revealing that the ectopic IHCs exhibited synapse counts comparable to those of native IHC controls (Figure 4E, F).\n\nTo evaluate the functional properties of ectopic OHCs, we performed whole-cell patch-clamp recordings and compared their electrophysiological properties to those of native OHCs. In Dkk3 cKO mice at P7, native OHCs exhibited a higher propensity for action potential generation compared to ectopic OHCs (Figure 4G, H). We further analyzed voltage-gated potassium currents (I\u2096) and identified the presence of fast-inactivating K\u207a currents (I\u2096\u2090) in ectopic OHCs (Figure 4I, J). Notably, the resting membrane potential (RMP) differed significantly between groups: ectopic OHCs displayed an RMP of \u201320.92 \u00b1 6.36 mV, whereas native OHCs had a more hyperpolarized RMP of \u201331.76 \u00b1 2.83 mV (Figure 4K). Additionally, stepwise current injections revealed progressively reduced amplitudes of both the fast and slow components of averaged potassium currents in ectopic OHCs relative to native HCs (Figure 4L, M). Together, these findings demonstrate that Dkk3 cKO drives the formation of ectopic HCs that are molecularly and structurally differentiated, possessing organized stereocilia and synaptic ribbons, comparable to age-matched controls. These cells also successfully acquire core biophysical machinery, including voltage-gated currents and excitability, while displaying a signature consistent with a nascent developmental state. Accordingly, we designate this specific population as \u2018immature HCs\u2019 to facilitate the subsequent single-nucleus transcriptomic analysis.\n\nSingle-nucleus RNA sequencing suggests the fate conversion pathway from SCs to HCs\nTo investigate the impact of Dkk3 cKO in SC on their trans-differentiation into HC, we performed snRNA-seq on auditory sensory epithelial cells isolated from both control and Dkk3 cKO mice (Figure 5A). After initial quality control, we retained 13,952 high-quality nuclei from control and 17,153 from Dkk3 cKO samples (Figure S5A, B). Cell type annotation was performed based on established marker genes for known cochlear cell types (Figure S5C), leading to the identification of 11 distinct cell clusters in each group. To mitigate batch effects between conditions while preserving biologically meaningful variation, we systematically evaluated six integration algorithms\u2014Harmony, scVI, scANVI, Scanorama, ComBat, and BBKNN (Figure 5B; Figure S6A). Among these, Harmony demonstrated superior performance in effectively removing technical artifacts while retaining true biological variance (Figures S6B, C). We therefore selected Harmony for data integration and downstream analyses. Following integration and additional filtration to exclude low-quality cells, a total of 23,769 nuclei (control: 12,750; Dkk3 cKO: 11,019) were retained for subsequent analysis (Figure 5B).\n\nGiven the focus of this study on the trans-differentiation process from SCs to HCs, we isolated Lgr5+ SCs (including DCs, PCs, and IPhCs) and HCs from P7 mouse cochleae for re-clustering and cell type annotation. Using well-established marker genes for SCs and HCs, we identified three distinct populations: SCs, mature HCs, and a distinct cluster co-expressing both SC and HC markers, which we designated as \u201cimmature HCs\u201d\u2014putatively representing a transitional state during SC-to-HC trans-differentiation (Figure 5C, D). To further elucidate the developmental positioning of this population within the trans-differentiation continuum, we performed cell trajectory analysis. The results revealed a continuous differentiation path from SCs through the immature HC state toward mature IHC and OHC in both control and Dkk3 cKO groups. The results showed that in the control group and Dkk3 cKO group, SC continued to differentiate into mature IHC and OHC through immature HC state, and immature HC in the Dkk3 cKO group was more inclined towards the end of the differentiation trajectory (Figure 5E, F). Notably, the Dkk3 cKO group exhibited a 43.82% increase in OHCs and a 16.54 % increase in IHCs compared with controls, suggesting that Dkk3 cKO in SCs promotes trans-differentiation into HCs (Figure 5G). Subsequent differential expression gene (DEG) analysis between Dkk3 cKO and control groups identified 2365 upregulated and 88 downregulated genes. GO enrichment analysis indicated that upregulated genes were significantly associated with inner ear development-related biological processes (Figure 5H). KEGG pathway analysis further demonstrated potential enrichment of the Wnt and Hedgehog signaling pathways in the Dkk3 cKO group (Figure 5I).\n\nTo validate these bioinformatic predictions and comprehensively assess the molecular landscape triggered by Dkk3 knockout, we performed RT-qPCR quantification on basilar membrane (BM) tissues isolated from P7 mice. This targeted validation screened a broad spectrum of signaling cascades identified in our pathway enrichment analysis. Consistent with the snRNA-seq profiles, Dkk3 cKO cochleae exhibited significant upregulation of key genes associated with the Wnt (Lgr5, Tcf7l2) and Hedgehog (Fbxw11, Smurf1) pathways, providing a direct mechanistic basis for the observed phenotype (Figure S7D, E). Furthermore, we validated significant alterations in Ras, mTOR, MAPK, Hippo, and TGF-\u03b2 signaling pathways (Figure S7A, B, C, F, G). We also observed the upregulation of cell cycle regulators (E2f3, Mdm2) (Figure S7H). In the absence of EdU incorporation, this distinct molecular signature suggests that Dkk3 knockout induces a state of cellular plasticity characterized by the reactivation of developmental and cell-cycle machinery, thereby facilitating direct trans-differentiation rather than proliferative expansion.\n\nRegenerated ectopic HCs in Dkk3 cKO mice could survive until adulthood\nTo further evaluate the functional consequences of Dkk3 cKO, we assessed auditory function in P30 Dkk3 cKO mice using auditory brainstem response (ABR) measurements. Hearing thresholds across frequencies from 4 to 32 kHz were comparable to those of control groups (Figure 6A\u2013C). Moreover, neither the latency nor the amplitude of peak I differed significantly between groups (Figure 6D, E).\n\nWe next confirmed the structural persistence of these ectopic cells via immunofluorescence. Although the absolute number of ectopic HCs decreased compared to the neonatal peak at P7, which likely reflects a process of developmental pruning, a substantial population survived into adulthood (Figure 6F, G). Importantly, these persistent cells maintained a stable mature phenotype. They continued to express specific markers for OHCs and IHCs (Figure 6H, I) and retained structurally intact stereociliary bundles (Figure 6J). These findings indicate that Dkk3 knockout initiates a reprogramming signal to support long-term molecular and morphological stability without inducing deleterious effects on the native auditory organ.\n\nDiscussion\nSNHL, resulting from HC loss due to noise exposure, ototoxic drugs, or aging, remains irreversible in mammals due to the inability of the cochlea to reactivate the intrinsic regenerative process. Lgr5+ progenitors have emerged as promising targets for HC regeneration strategies. Based on the existing research, some progress has been made, including overexpression of key transcription factors46, 47, nerve growth factors48, 49, cochlear secretory factors50, and signaling pathway regulators51, 52. However, generating fully mature and functional HCs remains challenging.\n\nIn this study, we identified Dkk3 as a critical negative regulator of cochlear Lgr5+ progenitor plasticity. By integrating transcriptomic analysis of Lgr5+ progenitors across different spatial, injury-response, and lineage-specific contexts, we identified Dkk3 as one of 14 candidate genes linked to regenerative potential. Previous research suggests Dkk3 is essential for regulating the fate and differentiation of muscle cells53, 54. Dkk3 inhibits muscle stem cell differentiation and impairs generation in vivo, yet its knockout improves muscle repair in obese models55. The loss of Dkk3 enhances induced pluripotent stem cell (iPSC) generation in vitro and drives proliferation in hepatocytes and Lgr5+ liver progenitors in mice56. Consistent with these roles, we found that Dkk3 KD significantly increased the sphere-forming efficiency of Lgr5+ progenitors in vitro. While the seeding density required for these primary cell assays (2,000 cells/well) precludes strict clonal analysis, the robust increase in sphere number indicates a significant enhancement of population-level regenerative capacity and survival.\n\nDkk3 cKO in Lgr5+ progenitors robustly stimulated the generation of ectopic IHC and OHC across all cochlear turns in vivo. Lineage tracing and EdU assays confirmed that these ectopic HCs arise via direct trans-differentiation rather than mitotic generation. Although in vitro results suggested a pro-proliferative role for Dkk3 knockdown, the absence of EdU+ SCs in vivo indicates that the regenerative outcome is context-dependent, likely influenced by the native cochlear microenvironment. Our findings establish Dkk3 knockout as a potent mechanism to promote the innate regenerative capacity of cochlear SC, driving robust HC generation through direct trans-differentiation.\n\nPrevious efforts to regenerate HCs have primarily relied on overexpressing transcription factors like Atoh1, either alone or in combination. While these approaches can induce HC fate, the resulting cells typically suffer from transient survival, disorganized stereocilia, incomplete marker expression, and an inability to functionally integrate, often leaving auditory deficits unresolved57, 58,59, 60. In contrast, our Dkk3 cKO model resolves several of these limitations. The ectopic HC in Dkk3 cKO mice exhibited remarkable molecular and structural maturity, expressing key markers such as Prestin and Otoferlin, forming organized stereociliary bundles, and establishing synaptic connections comparable to native HC. Importantly, these newly formed HC persist into adulthood without compromising auditory function, as evidenced by normal ABR thresholds and wave I parameters. These results show that the mammalian cochlea can sustain ectopic sensory cells over the long term, provided the relevant inhibitory constraints are removed.\n\nNotably, snRNA-seq analyses revealed that Dkk3 does not act in isolation but rather functions as a master suppressor. Its knockout may trigger the coordinated activation of a broad pro-regenerative network, including Ras, Wnt, Hedgehog, mTOR, MAPK, and Hippo signaling pathways52, 61-63. Furthermore, our targeted validation highlighted a significant upregulation of Ras expression. Considering the well-established Ras-MAPK signaling cascade64, this upregulation is consistent with the activation of MAPK pathways, which are known to support SC proliferation and HC survival65-67. While each of these pathways has been individually implicated in HC development, their simultaneous upregulation creates a highly permissive landscape that facilitates both fate conversion and subsequent differentiation processes, such as cell polarity establishment and synaptogenesis. This multi-pathway activation likely explains the superior structural organization and differentiation status observed in our model compared to single-pathway interventions.\n\nAlthough these reprogrammed HC achieve structural stability, they display a nascent electrophysiological profile, characterized by elevated resting membrane potentials and immature potassium currents. However, the fact that these cells successfully integrate into the sensory epithelium and persist long-term provides critical proof-of-concept that the physical and metabolic support systems of the adult cochlea are sufficient to maintain spontaneously regenerated HCs.\n\nLooking forward, the multi-pathway mechanism activated by Dkk3 knockout provides a strong rationale for combinatorial therapeutic strategies. For instance, coupling Dkk3 suppression with Atoh1 overexpression may synergize to enhance both the initiation of HC fate and long-term functional maturation19. Similarly, supplementing Dkk3 inhibition with neurotrophic factors48, 68 or ion channel modulators69 could further promote synaptic integration and electrophysiological maturity. Our study establishes Dkk3 inhibition not only as a novel target for inducing direct cellular reprogramming but also as a foundational framework for developing durable, multi-modal therapies for functional hearing restoration.\n\nMice and genotyping\nDkk3flox mice (Cyagen, S-CKO-11394) and Lgr5CreER/+mice (Jackson Laboratory, stock 008875) were maintained under a specific pathogen-free (SPF) barrier system. The mouse tail tips used for genotyping were digested in 90 \u03bcl 50 mM NaOH at 98 \u00b0C for 1 hour, and 10 \u03bcL Tris-HCl (pH = 8) was added to terminate digestion. Primer sequences for PCR amplification are detailed in Supplemental Table S2. All animal protocols were approved by the Southeast University Institutional Animal Care and Use Committee (No. 20210302031) and conducted under NIH guidelines for humane animal experimentation, with sample sizes statistically optimized to ensure rigor while minimizing animal usage.\n\nDkk3 cKO induction and proliferation assessment\nTo induce cKO of Dkk3 in Lgr5+ progenitors, both Dkk3 cKO and control mice received i.p. injections of tamoxifen (Sigma, T5648; 0.075 mg/g body weight) at P1 to activate Cre recombinase. To assess SC proliferative activity, Lgr5CreER/+ and Dkk3f/f mice received i.p. injections of EdU (Sigma, 900584; 0.05 mg/g body weight) from P3 to P5. Proliferating EdU+ SCs were labeled and detected using the Click-iTTM EdU imaging kit (Invitrogen, C10337).\n\nFrozen section preparation\nTemporal bones from P2 mice were dissected in PBS and fixed in 4% PFA overnight at 4 \u00b0C. After PBS rinsing, samples were immersed in 15%, 20%, and 30% sucrose solutions, followed by sucrose: OCT mixtures (1:1, 3:7, 1:9), under vacuum infiltration for 1 hour, and incubated overnight at 4 \u00b0C for each step. Tissues were then embedded in pure OCT under vacuum for 1 hour and incubated overnight at 4 \u00b0C. Specimens were oriented with the oval or round window facing downward, frozen at \u201320 \u00b0C for 1 hour, and stored at \u201380 \u00b0C. Coronal sections (14 \u03bcm) were obtained at \u201323 \u00b0C using a freezing microtome (RWD, FS800) and mounted on adhesive slides (Citotest, 188105).\n\nRNAscope in situ hybridization\nCryosections were dried at 60\u00b0C for 30 minutes, fixed in pre-cooled 10% NBF for 15 minutes, and dehydrated through an ethanol series. Endogenous peroxidase activity was blocked with hydrogen peroxide (10 minutes, room temperature). Antigen retrieval was performed in boiling RNAscope\u00ae Target Retrieval Reagent for 5 minutes, followed by post-fixation in 10% NBF (30 minutes, room temperature). Protease III treatment was conducted at 40 \u00b0C for 30 minutes. Sections were hybridized with a Dkk3 (C1) probe (ACDBio, Catalog No. 400931) at 40 \u00b0C for 2 hours. Signals were amplified using AMP1\u20133 reagents and Opal 520 fluorophore (Opal, ASOP520), with HRP blocking between steps. Finally, sections were counterstained with DAPI and mounted with DAKO fluorescent medium. The above reagents are sourced from the RNAscope in situ hybridization kit (Advanced Cell Diagnostics, 323110; 323180).\n\nImmunofluorescence\nFollowing fixation and decalcification, mouse cochleae were micro-dissected into apical, medial, and basal regions in ice-cold PBS. Tissue sections were blocked in blocking medium supplemented with 5% donkey serum, 1% bovine serum albumin, 0.5% Triton X-100, and 0.02% sodium azide for 2 hours. After primary antibody incubation at 4\u00b0C overnight, the species-matched Alexa fluor-conjugated secondary antibodies were incubated for 1 hour. Samples were mounted using DAKO fluorescent mounting medium (Dako, S3023) and stored in the dark at 4 \u00b0C. The antibodies used are detailed in Supplementary Table 3.\n\nScanning electron microscopy\nCochlear specimens underwent sequential processing beginning with 2.5% glutaraldehyde fixation (4 \u00b0C, 24 hours) and 0.5M EDTA decalcification (25 \u00b0C, 90 min). Ethanol dehydration gradients (50%, 70%, 90%, 100%; 15 min per step) preceded critical point drying (Leica CPD300) with liquid CO\u2082. Specimen preparation included conductive mounting (carbon adhesive) and 30-100s Au sputter-coating (Quorum Q150T ES plus). Ultramicrostructural analysis was performed using field-emission SEM (FEI Nova Nano 450) under high vacuum conditions.\n\nWestern blotting\nTissue lysates were prepared in RIPA buffer (Epizyme, PC101) supplemented with protease inhibitor cocktail (Roche, 04693132001). Protein quantification via BCA assay (Epizyme; E112-01) standardized sample loading (20 \u03bcg/lane) for electrophoretic separation on 10% SDS-PAGE gels (Epizyme; E303-01) at 120V for 100 min. Following wet-transfer to PVDF membranes (Millipore; IPVH00010), blocking was conducted with 5% skim milk (Beyotime; P0216) in TBST for 2 hours at room temperature. Membranes underwent sequential incubations with primary antibodies and HRP-conjugated secondaries. Chemiluminescent detection employed an ECL kit (Vazyme; E422) with image acquisition on a Tanon 2500R system. The antibodies used are detailed in Supplementary Table 3.\n\nCell culture and transfection\nHEI-OC1 cells were cultured in DMEM (Gibco; 11995500) containing 10% FBS (Pansera; P30-2602) and 100 \u03bcg/mL ampicillin (Beyotime; ST008) under standard conditions (37 \u00b0C, 10% CO\u2082). Cells were digested using 0.25% trypsin-EDTA (Gibco, 25200072) and planted into the 6-well plate (Greiner, 657160). 25 pmol siRNA (Shanghai Gene Pharma) was transfected into cells by using Lipofectamine RNAiMAX (Invitrogen, 13778075) in Opti-MEM Reduced Serum Medium (Gibco, 31985062). siRNA sequences with no homology to target cells were used as negative controls (NC). Shanghai Gene Pharma synthesized siRNA, and the siRNA sequences are listed in Supplemental Table 4.\n\nRNA extraction and RT-PCR\nTotal RNA was isolated from cochleae or HEI-OC1 cells using TRIzol\u2122 reagent (Invitrogen, 15596026). Following phase separation with 200 \u03bcL chloroform (Sinopharm Chemical Reagent Co., Ltd., 10006818), RNA was precipitated with 500 \u03bcL isopropanol (Sinopharm Chemical Reagent Co., Ltd., 40064360) and washed with 75% ethanol. Purified RNA was resuspended in DEPC-treated water, and concentration/purity was quantified using a Nano-500 spectrophotometer (Allsheng, nano-500). Reverse transcription was conducted with 1 \u03bcg total RNA using the RevertAid First Strand cDNA Synthesis Kit (Thermo Fisher Scientific, K1622). RT-qPCR analysis was performed using the QuantStudio\u2122 3 Real-Time PCR System (Thermo Fisher Scientific) and FastStart Universal SYBR Green Master Mix (Roche, 4913914001). And the primers used are listed in Supplemental Table 5.\n\nFlow cytometry\nLgr5+ progenitors were isolated from P1 Lgr5-EGFP-IRES-creERT2 transgenic mice (n\u224830). Cochleae were micro-dissected in ice-cold PBS (1\u00d7, Gibco, 10010023) and enzymatically dissociated using 150 \u03bcL 0.25% trypsin (Gibco, 15050065) at 37 \u00b0C for 10 min. Mechanical dissociation was completed by pipetting up to 300 \u03bcL trypsin inhibitor (Worthington Biochemical, LS003570), followed by filtration through a 40-\u03bcm cell strainer (BD Falcon, 352340). Lgr5+ progenitor populations were isolated by FACS (BD, FACSAria III) based on GFP fluorescence intensity.\n\nSphere assay\nFACS-sorted Lgr5+ cells were cultured in ultra-low attachment 96-well plates at a density of 2000 cells per well (Corning, 3474) using advanced-DMEM/F12 medium (Gibco, 12634010) supplemented with 1% N-2 (Gibco, 1750248), 2% B-27 (Gibco, 17504044), 20 ng/mL EGF (Sigma-Aldrich, E9644), 50 ng/mL IGF-I (Sigma-Aldrich, I8779), 20 ng/mL heparan sulfate (Sigma-Aldrich, H4777), 10 ng/mL FGF2 (Sigma-Aldrich, F0291), and 0.1% ampicillin (Beyotime, ST008). For gene knockdown, 1 pmol siRNA targeting candidate genes (per well) was transfected into Lgr5+ cells on day 1 of culture by using RNAiMAX (Invitrogen, 13778075). After 5 days, organoid spheres derived from Lgr5+ progenitors were imaged in brightfield using an inverted fluorescence microscope (Zeiss). Sphere diameter and count were quantified from whole-well images using ImageJ.\n\nAuditory brainstem response measurement in adult mice\nMice were anesthetized with intraperitoneal injection of amobarbital. Subdermal needle electrodes were inserted at the top of the skull and the mastoid region of both ears. Acoustic stimuli (tone bursts from 4 to 32 kHz) were delivered through a tube speaker placed 10 cm from the test ear. Stimulus intensity was decreased in 5-dB steps from 90 to 10 dB SPL. Auditory evoked potentials were filtered, amplified, and averaged (256 repetitions per intensity). Threshold was defined as the lowest intensity level at which a reproducible wave I pattern was visible. The tested mice were placed on a heating pad to maintain body temperature.\n\nElectrophysiological recording\nElectrophysiological recordings from cochlear tissues were performed as previously described70. Briefly, we dissected the apical turn of the cochlea from P7\u20138 Dkk3flox/flox or Dkk3-cKO mice of both sexes. Whole-cell patch-clamp recordings were conducted on native HCs and ectopic HCs under identical conditions. The tissues were embedded and continuously perfused with ice-cold, sterile HEPES-buffered artificial cerebrospinal fluid (ACSF). The ACSF composition was as follows (in mM): 115 NaCl, 6 KCl, 1.3 NaH2PO4, 11.2 NaHCO3, 11 D-glucose, 1.3 MgCl2, and 1.3 CaCl271. Cochlear cells were visualized using an inverted microscope equipped with differential interference contrast optics and a 60\u00d7/1.00 NA water-immersion objective. Native and ectopic HCs were distinguished based on their cellular arrangement and ciliary morphology under 60\u00d7 magnification. Recordings were acquired using an Olympus BX51WI microscope and Axon 7500B amplifiers. Patch pipettes with resistances of 10\u201315 M\u03a9 were filled with an internal solution containing (in mM): 135 KCl, 3.5 MgCl2, 0.1 CaCl2, 5 EGTA-KOH, 5 HEPES-KOH, 2.5 Na2ATP (pH 7.35, 325 mOsm). During recordings, both native HCs and HC-like cells were held at a membrane potential of \u201360 mV. Signals were low-pass filtered at 2 kHz, and data were analyzed using Clampfit 10.2 and GraphPad Prism 9.\n\n10\u00d7 chromium snRNA-seq\nsnRNA-seq was performed on cochlear tissue isolated from Lgr5CreER/+ (control) and Lgr5CreER/+ Dkk3 f/f (Dkk3 cKO) mice at P7, following tamoxifen administration at P1. For each genotype, cochleae from 28 individuals were pooled to generate a single biological replicate. Nuclei were isolated and resuspended at a concentration of 700\u20131200 nuclei/\u03bcl for use with the 10\u00d7 Genomics Chromium Next GEM Single Cell 3\u02b9 Reagent Kits v3.1 (Catalog No. 1000268), following the manufacturer\u2019s protocol. Libraries were sequenced on an Illumina NovaSeq 6000 platform (OE Biotech Co., Ltd). Reads were aligned to the mm10_3.0.0 reference genome, and gene expression matrices were generated and quantified using the 10\u00d7 Genomics Cell Ranger pipeline (v3.8.0.1) with default parameters. The resulting filtered count matrix was used for all subsequent analyses.\n\nSnRNA-seq data quality control and cell type annotation\nSingle-cell data analysis was conducted using R (v4.1.3) with Seurat (v4.3.0) and Python (v3.9) with Scanpy (v1.10.3) to enable integrated cross-platform analysis. Initial quality control of the raw gene-barcode matrices derived from 10\u00d7 Genomics sequencing was performed using Scanpy. Cells were filtered based on the following thresholds: those with fewer than 500 detected genes, more than 5,000 UMIs, or mitochondrial gene content exceeding 5% were classified as low quality and excluded. After filtering, 12,750 high-quality cells from the control group and 11,019 from the Dkk3 cKO group were retained for downstream analysis. Normalization and log-transformation were applied using standard Scanpy workflows. Highly variable genes were identified using the highly_variable_genes function without imposing an upper bound. Dimensionality reduction was followed by unsupervised clustering using the Leiden algorithm. Resulting clusters were visualized in two dimensions with UMAP. Cell types were annotated based on established marker genes previously reported in the murine cochlea40, 72.\n\nBatch effect correction and integration analysis\nsnRNA-seq data were processed using Scanpy (v1.10.3) following established preprocessing workflows, including quality control filtering, normalization of the cell\u2013gene count matrix, and incorporation of sample metadata73. Dataset integration was carried out with scVI-tools (single-cell Variational Inference; v1.1.2)74. To balance biological conservation and batch-effect removal, we systematically evaluated multiple integration algorithms using the single-cell integration benchmarking framework scIB75. Methods tested included BBKNN, Scanorama, Harmony, ComBat, scVI, and scANVI, each implemented under default settings as recommended by the original authors (see GitHub repository for code details). We evaluated the integration methods using the scIB framework, scoring them on both batch effect removal and the preservation of biological variance. Harmony emerged as the top-performing method and was therefore chosen for all subsequent downstream steps.\n\nGene ontology enrichment analysis for RNA-seq\nDEGs were identified across three comparative groups: ALPs and BLPs, Lgr5+ progenitors, and Lgr5-SCs22-24. DEGs were defined using a uniform threshold (| log2(fold change) |> 1.0, p < 0.05) and visualized via Venn diagrams generated with the R package ggvenn. GO enrichment analysis was performed using clusterProfiler (v4.6.0) by using the R package, and the statistical significance threshold level for the GO annotation analysis was p < 0.05.\n\nCell trajectory analysis\nTo investigate SC to HC trans-differentiation, Lgr5-high SCs (including pillar cells, Deiters' cells, and inner phalangeal cells) and HCs from P7 developmental stages were subclustered after dimensionality reduction. 283 high-quality cells were obtained from the control group, and 443 were obtained from the Dkk3 cKO group for subsequent analysis. Following integration using Harmony, we annotated cell identities into three subtypes: SCs, HCs, and a distinct SC\u2013HC intermediate population. The co-expression of canonical SC and HC markers in the SC\u2013HC group suggests that these cells may represent a transitional state during SC-to-HC differentiation.\n\nTo investigate this hypothesis, we performed pseudotemporal trajectory analysis using Monocle2 (v2.22.0). Data from HCs, SCs, and SC\u2013HC cells from both control and Dkk3 cKO groups were converted to loom format and imported into R. We constructed a CellDataSet object using the newCellDataSet function, retaining genes detected in at least five cell types. Differential gene expression testing was carried out with the differentialGeneTest function, and genes with q-values < 0.001 were selected for trajectory reconstruction. Dimensionality reduction was performed using the reduceDimension function (max_components = 2, method = \u201cDDRTree\u201d). Cells were ordered along the inferred trajectory using orderCells, and results were visualized with plot_cell_trajectory.\n\nGO and KEGG enrichment for snRNA-seq\nDEG analysis was performed between the control and Dkk3 cKO groups using DESeq2 (v1.44.0) in combination with zingeR (v0.1.0) to model cell-level weights, accounting for dropout characteristics inherent in snRNA-seq data76, 77. Genes were considered differentially expressed based on a uniform threshold of |log\u2082FC| \u2265 0.4 and an adjusted p-value < 0.05. Results were summarized and visualized using Venn diagrams generated with the R package ggvenn. GO and KEGG enrichment analysis was conducted using clusterProfiler (v 4.6.0), with terms considered significantly enriched at a threshold of p < 0.05.\n\nStatistical analysis\nExperimental data were derived from \u22653 independent biological replicates, presented as mean \u00b1 standard error of mean. Statistical significance was determined by two-tailed unpaired Student's t-tests (GraphPad Prism v10.0.1). p-value < 0.05 was considered statistically significant.",
+        "source": "pmc_full_text",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42244985/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13232479/"
+      },
+      "analysis": {
+        "topic_relevance_score": 6.2,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 62,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Epithelial morphogenesis and tissue architecture: epithelium; Development-to-homeostasis continuity: lineage, progenitor.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Epithelial morphogenesis and tissue architecture: epithelium",
+          "Development-to-homeostasis continuity: lineage, progenitor",
+          "Preferred mechanistic methods: conditional knockout, knockout, lineage tracing",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo, mouse."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 21.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 63.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 62
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelium"
+          ],
+          "development_homeostasis_continuity": [
+            "lineage",
+            "progenitor"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "conditional knockout",
+            "knockout",
+            "lineage tracing"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42220158",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42220158",
+        "title": "Plasticity in Cancer Cells: The Master Engine of Therapeutic Resistance and Tumor Evolution.",
+        "authors": [
+          "Ahmad A"
+        ],
+        "journal": "Current molecular medicine",
+        "pubdate": "2026 May 25",
+        "doi": "10.2174/0115665240472692260521045539",
+        "pmcid": null,
+        "abstract": "Cancer cell plasticity refers to the ability of cancer cells to change their phenotype and is one of the primary requirements for metastasis. It is considered one of the main contributors to intratumoral heterogeneity, a key factor in the development of cancer, and is known to alter responses and resistance to different forms of therapy. However, tumour cells are impaired in various cellular signalling pathways, such as mitogen-activated protein kinases, phosphoinositide-3-kinases, Wnt, Hedgehog, and Notch, as well as in epithelial-mesenchymal transition (EMT) and phenotypic plasticity. Cancer stem cells (CSCs) are considered an integral part of tumour plasticity, as they have the capacity to proliferate, differentiate, and initiate the growth of tumours. Recent studies suggest that targeting signals from the tumor microenvironment, plasticity-related pathways, and epigenetic regulators may offer promising therapeutic options to improve long-term response and reduce phenotypic dysregulation. This approach, which emphasizes plasticity as a primary biological driving force rather than a secondary one, allows cancer cells to change from an epithelial, mesenchymal, stem cell, or dormant state to a drug-resistant state in response to environmental stimuli. Taken together, these results suggest that cellular plasticity is important in tumour development and treatment failure. Therefore, targeting pathways associated with plasticity, modifying the tumour microenvironment, and using adaptive therapies may improve long-term tumour control.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42220158/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 5.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 50,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Epithelial morphogenesis and tissue architecture: epithelial; Development-to-homeostasis continuity: development, stem cell.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Development-to-homeostasis continuity: development, stem cell",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal, mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development, epithelial."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 18.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 54.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 50
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal",
+            "mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42244536",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42244536",
+        "title": "A Rare Nestin-Expressing Granule Cell Precursor Subpopulation Underlies SHH Medulloblastoma Formation.",
+        "authors": [
+          "El Nagar S",
+          "Liang Y",
+          "Stephen DN",
+          "Wu SH",
+          "Joyner AL"
+        ],
+        "journal": "bioRxiv : the preprint server for biology",
+        "pubdate": "2026 May 26",
+        "doi": "10.64898/2026.05.26.727818",
+        "pmcid": "PMC13232223",
+        "abstract": "Granule cell precursors (GCPs) drive the major postnatal expansion of the cerebellum and are the cells of origin of sonic hedgehog medulloblastoma (SHH MB). Although GCPs are often treated as a uniform population, increasing evidence suggests they are heterogeneous, and whether specific subpopulations show distinct tumorigenic competence remains unclear. Here, we identified a rare Nestin-expressing GCP subpopulation in the normal early postnatal cerebellum and showed that it is spatially restricted, molecularly distinct and highly competent to form tumors. These cells are enriched in the posterior external granule layer and co-express Atoh1 . Using different SHH MB mouse models, we showed that when this rare subpopulation of GCPs is targeted they can give rise to SHH MB with an efficiency comparable to targeting a larger number of Atoh1 -expressing GCPs and that tumors derived from Nestin-expressing GCPs arise in the posterior-lateral cerebellum. Single cell RNA sequencing revealed that Nestin-expressing GCP have a transcriptome indicating reduced neuronal differentiation and enrichment for stem cell genes compared to bulk GCPs and more closely align with SHH MB cells. Together, our findings reveal functionally important heterogeneity within the GCP lineage and suggest that SHH MB arises preferentially from a small subpopulation of GCPs that express Nestin.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42244536/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13232223/"
+      },
+      "analysis": {
+        "topic_relevance_score": 4.7,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 47,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog, shh; Development-to-homeostasis continuity: postnatal, lineage, stem cell; Preferred mechanistic methods: mouse model.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog, shh",
+          "Development-to-homeostasis continuity: postnatal, lineage, stem cell",
+          "Preferred mechanistic methods: mouse model",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: lineage."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 51.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 47
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog",
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "postnatal",
+            "lineage",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "mouse model"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42231162",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42231162",
+        "title": "The roles of cytoplasmic dynein complex in various ocular disorders.",
+        "authors": [
+          "Zhou X",
+          "Xie J",
+          "Tong W",
+          "Fu J"
+        ],
+        "journal": "Molecular medicine (Cambridge, Mass.)",
+        "pubdate": "2026 Jun 2",
+        "doi": "10.1186/s10020-026-01523-3",
+        "pmcid": null,
+        "abstract": "BACKGROUND: The cytoplasmic dynein complex mediates retrograde transport of various intracellular components and plays a critical role in mitosis, nuclear migration, organelle positioning, vesicle trafficking, misfolded protein clearance, and intercellular signaling.\n\nMAIN BODY: Mutations in human cytoplasmic dynein subunits and regulators have been directly linked to various neurological diseases and are increasingly recognized as contributors to ocular degenerative diseases. However, the precise mechanisms underlying ocular morphogenesis and degeneration remain poorly understood. Various animal models, including Drosophila, mouse, and zebrafish, have been established to investigate the pathogenesis of cytoplasmic dynein complex-related ocular disorders. Findings from these models indicate that dynein complex-related ocular pathologies often involve endoplasmic reticulum stress, impaired Notch signaling, and disrupted Sonic Hedgehog pathways. Systematically integrating gene functional data and molecular mechanism clues derived from different models can help refine the \"gene-phenotype-mechanism\" correlation network and may ultimately advance precision diagnosis and targeted therapy.\n\nCONCLUSION: Emerging evidence has highlighted the cytoplasmic dynein complex as a key factor in ocular development and disease. Integrating findings across model systems may enable more precise diagnosis and the development of targeted interventions for dynein-related ocular disorders.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42231162/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 3.9,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 39,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog; Epithelial morphogenesis and tissue architecture: morphogenesis; Development-to-homeostasis continuity: development.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog",
+          "Epithelial morphogenesis and tissue architecture: morphogenesis",
+          "Development-to-homeostasis continuity: development",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 37.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 39
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis"
+          ],
+          "development_homeostasis_continuity": [
+            "development"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42233283",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42233283",
+        "title": "Spatial dissection of ADC/RPT targets defines heterogeneous expression landscapes and therapeutic implications in rhabdoid tumors.",
+        "authors": [
+          "Reitsam NG",
+          "Fincke VE",
+          "Hernandez Ramirez MD",
+          "Mucha M",
+          "Sipos E",
+          "Lisa S",
+          "Enke JS",
+          "Lossner M",
+          "Vokuhl C",
+          "Lapa C",
+          "Hasselblatt M",
+          "Fr\u00fchwald M",
+          "M\u00e4rkl B",
+          "Johann PD"
+        ],
+        "journal": "Neuro-oncology",
+        "pubdate": "2026 Jun 2",
+        "doi": "10.1093/neuonc/noag133",
+        "pmcid": null,
+        "abstract": "BACKGROUND: Rhabdoid tumors (RT) are among the most aggressive pediatric malignancies, characterized by early onset in life, loss of SWI/SNF complex members (SMARCB1 or SMARCA4), and dismal outcomes despite multimodal therapy. Refractory and relapsing RT remain almost uniformly fatal, and targeted or immune-based approaches have yet to demonstrate clinical benefit.\n\nMETHODS: To explore novel therapeutic vulnerabilities, we systematically investigated the expression of clinically actionable surface proteins that could serve as targets for antibody-drug conjugates (ADCs), radiopharmaceutical therapy (RPT), or cellular immunotherapies. Based on large-scale transcriptomic analyses, we prioritized FAP (fibroblast activation protein), CXCR4 (chemokine receptor 4), and IL13RA2 (interleukin receptor 13 RA2) and performed comprehensive protein-level validation by immunohistochemistry in an unprecedented cohort of 60 rhabdoid tumors spanning all molecular subgroups (ATRT-TYR, ATRT-SHH, ATRT-MYC and eMRT).\n\nRESULTS: Integrating these data with spatial and single-nucleus transcriptomic profiling, we identified subgroup- and cell-type-specific expression patterns, including heterogeneous FAP distribution between stromal and tumor compartments and a distinct IL13RA2-positive rhabdoid cell population with melanosomal and stem-like features: Overall 51/60 tumors demonstrated positivity, defined as immunohistochemical H-score above or at least equal to 10, for FAP in the stroma and 34/60 tumors for CXCR4, indicating that a substantial fraction of rhabdoid tumors may be amenable to targeted therapies directed against these epitopes.\n\nCONCLUSION: These findings define a set of biologically and clinically relevant surface targets in RT and provide a translational blueprint for rational ADC and RPT target development in pediatric cancer.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42233283/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 0.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 5,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: development.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: development",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 9.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 5
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ],
+  "scored_records": [
+    {
+      "paper": {
+        "paper_id": "42225241",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42225241",
+        "title": "Microtubule binding protein Togaram1 is required for proper development of mammalian forebrain and neural primary cilia.",
+        "authors": [
+          "Nassar CQ",
+          "Shetty SJ",
+          "Dwyer ND"
+        ],
+        "journal": "Developmental biology",
+        "pubdate": "2026 May 31",
+        "doi": "10.1016/j.ydbio.2026.05.011",
+        "pmcid": null,
+        "abstract": "Proper forebrain development relies on precise spatial and temporal control of early neural stem cell (NSC) proliferation and later neurogenesis. Brain malformations can arise when these processes are defective. Joubert Syndrome (JS) is a neurodevelopmental disorder that is diagnosed by a mid-hindbrain malformation, but can also include forebrain defects such as microcephaly, which are less studied. One gene recently linked to Joubert Syndrome with microcephaly is Togaram1, which encodes a TOG domain microtubule binding protein shown to affect primary cilia. In the embryonic dorsal forebrain, NSCs have primary cilia on their apical membranes that play a role in regulating proliferation and neurogenesis, but how they do this is not well understood. Here we investigate the role of Togaram1 in mammalian forebrain development using a mouse knockout. We find that Togaram1 is crucial for forebrain size, thickness, and morphology. In particular, knockout forebrains at embryonic day (E) 12.5 have sporadic indentations of the lateral ventricles, and the neuronal layer is thin with gaps and heterotopias. The dorsal forebrains of Togaram1 knockouts display increased and ectopic mitosis, as well as increased apoptosis. The primary cilia of Togaram1 knockout NSCs and neurons are reduced in length. Finally, Shh pathway function is disrupted in knockout brains. This study begins to elucidate the role of Togaram1 in forebrain morphogenesis and the involvement of NSC primary cilia in forebrain malformations.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42225241/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 7.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 75,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: shh; Hedgehog co-receptors and modulators: primary cilia; Epithelial morphogenesis and tissue architecture: morphogenesis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: shh",
+          "Hedgehog co-receptors and modulators: primary cilia",
+          "Epithelial morphogenesis and tissue architecture: morphogenesis",
+          "Development-to-homeostasis continuity: development, developmental, embryonic, stem cell",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 73.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 75
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "primary cilia"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "embryonic",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "knockout"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42244985",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42244985",
+        "title": "Conditional knockout of Dkk3 drives Lgr5+ progenitor reprogramming into hair cells in the mouse cochlea.",
+        "authors": [
+          "Xiao H",
+          "Wang X",
+          "Ye Z",
+          "Tan X",
+          "Ma Y",
+          "Ma X",
+          "Tong W",
+          "Zhang L",
+          "Lin Y",
+          "Tang X",
+          "Zhang H",
+          "Wan J",
+          "Zhang Q",
+          "Chai R",
+          "Zhang S"
+        ],
+        "journal": "Theranostics",
+        "pubdate": "2026",
+        "doi": "10.7150/thno.131808",
+        "pmcid": "PMC13232479",
+        "abstract": "BACKGROUND: Neonatal cochlear Lgr5+ progenitors possess a transient regenerative capacity that diminishes rapidly after birth, severely limiting the potential for hearing restoration. Identifying the molecular mechanisms that restrict this plasticity is critical for developing effective regenerative therapies to treat hearing loss (HL).\n\nMETHODS: To uncover regulators of cochlear progenitor plasticity, we performed an integrative transcriptomic analysis across spatial, injury, and lineage contexts. Following the identification of candidate regulators, we investigated the function of Dkk3, a canonical Wnt antagonist, using in vitro Lgr5+ sphere formation assays and in vivo conditional knockout (cKO) models in neonatal progenitors. We assessed hair cell (HC) generation and maturation using lineage tracing, histological analysis of stereocilia and synapses, and electrophysiological recordings. Furthermore, we employed single-nucleus transcriptomics (snRNA-seq) of the Dkk3 cKO cochlea to elucidate the underlying molecular signaling networks.\n\nRESULTS: Our screen identified 14 candidate regulators, highlighting Dkk3 as a previously uncharacterized factor in the auditory epithelium that functions as a physiological gatekeeper of Lgr5+ progenitor plasticity. In vitro, Dkk3 knockdown significantly enhanced Lgr5+ sphere formation. In vivo, Dkk3 cKO induced the spontaneous generation of HCs through direct trans-differentiation. Crucially, these ectopic HCs achieved structural maturity, characterized by organized stereocilia and synaptic connections, displayed partial electrophysiological activity, and survived long-term into adulthood without disrupting native auditory function. Mechanistically, snRNA-seq analysis and RT-qPCR validation suggested that Dkk3 cKO may activate a pro-regenerative network involving the Wnt, Hedgehog, and mTOR signaling pathways.\n\nCONCLUSIONS: Our findings establish Dkk3 as a key molecular inhibitor of sensory fate reprogramming in the cochlea. These results suggest that targeting Dkk3 represents a promising therapeutic strategy for functional and durable HC reprogramming.",
+        "full_text": "Introduction\nSensorineural hearing loss (SNHL) affects millions worldwide, compromising quality of life and imposing substantial socioeconomic burdens1. However, no pharmacological therapies have been developed to treat or effectively reverse sensory deficits2. Cochlear hair cells (HCs) are mechanosensory receptors critical for auditory transduction, converting sound vibrations into neural signals that enable hearing3. One of the main causes of permanent HL is the degeneration of sensory HCs in the inner ear, which typically occurs due to aging, ototoxic agents, and noise-induced trauma4, 5. Non-mammalian vertebrates regenerate HCs throughout their lifespan via proliferation and differentiation of supporting cells (SC) following injury6, 7. Although mammal SCs retain some regenerative potential during early development and in response to injury in the neonatal cochlea, this capacity is almost lost in adult mammals, presenting a fundamental barrier to restoring hearing function following HC loss8-10.\n\nThe discovery of Lgr5+ cochlear progenitors with innate regenerative potential marked a turning point in hearing research11. These progenitors are capable of differentiating into HCs under specific conditions, a finding that has opened promising avenues for hearing restoration12-14. However, existing approaches have achieved only partial success, such as overexpression of pro-regenerative genes like Atoh115 or modulation of signaling pathways like Wnt and Notch16. The HCs induced by these methods are frequently transient and structurally immature, often failing to establish synaptic connections or undergoing rapid apoptosis17-19. Recent evidence demonstrates that optimized strategies, such as the co-expression of Atoh1, Gfi1, and Pou4f3, or reprogramming via drug-like molecules, can successfully drive HC maturation and synaptic integration19-21. The need to deliver multiple genetic factors still strains the limits of clinical vector capacity. Consequently, identifying novel upstream regulators to optimize this process remains critical for achieving effective hearing restoration.\n\nTo systematically identify the molecular mechanisms restricting progenitor plasticity, we conducted an intersectional transcriptomic analysis integrating three complementary RNA-seq datasets. We compared: (1) apical Lgr5+ progenitors (ALPs) and basal Lgr5+ progenitors (BLPs) to probe spatial heterogeneity and the intrinsic regenerative competence of the apex; (2) untreated Lgr5+ progenitors (ULPs) and neomycin-treated Lgr5+ progenitors (NLPs) to capture the acute transcriptional response to damage; and (3) Lgr5+ progenitors vs. Lgr5- SC to define the core lineage identity22-24. This screening strategy identified 14 candidate regulators consistently associated with regenerative competence across all three contexts. Among these, we focused on Dkk3, a canonical Wnt antagonist whose function in the auditory epithelium remained unexplored.\n\nHere, we identify Dkk3 as a critical physiological negative regulator of cochlear Lgr5+ progenitor plasticity. We show that Dkk3 knockdown enhances the Lgr5+ sphere-forming efficiency in vitro. In transgenic Dkk3 conditional knockout (cKO) mice, we demonstrate that Dkk3 cKO in Lgr5+ progenitors drives the spontaneous generation of HCs via direct trans-differentiation. Crucially, unlike the transient cells often reported in single-factor studies, the ectopic HCs generated in Dkk3 cKO mice achieve molecular and structural differentiation with organized stereocilia and synaptic connections. Furthermore, these cells possess partial electrophysiological activity and survive long-term into adulthood without inducing deleterious effects on native auditory function. Single-nucleus RNA sequencing (snRNA-seq) of Dkk3 cKO cochlear, supported by targeted validation, further revealed activation of a pro-regenerative network involving Wnt, Hedgehog, and mTOR signaling pathways. These findings establish Dkk3 knockout as a robust strategy for inducing stable cellular reprogramming, providing a compelling rationale for future combinatorial treatments aimed at functional hearing restoration.\n\nIntegrative transcriptomics identifies Dkk3 as a negative regulator of cochlear progenitor plasticity\nTo identify core molecular mechanisms that restrict cochlear progenitor plasticity, we performed an intersectional transcriptomic analysis integrating three complementary RNA-seq datasets previously generated by our group. These datasets represented distinct axes of plasticity: spatial heterogeneity (ALPs vs. BLPs), injury response (NLPs vs. ULPs), and lineage identity (Lgr5+ Progenitors vs. Lgr5- SCs). Using uniform filtering thresholds (fold change > 2.0, p < 0.05), this cross-analysis narrowed down 440 overlapping genes to a core set of 14 candidates consistently differentially expressed across all three comparisons (Figure 1A; Supplemental Table 1). To understand the biological landscape of these shared signatures, we performed Gene Ontology (GO) enrichment analysis on this 440-gene set. The results highlighted biological processes related to inner ear development, cell differentiation, and Wnt signaling pathways (Figure 1B). From this broader set, we further narrowed our focus to a core set of 14 candidates that were consistently differentially expressed across all three comparisons. Notably, the 14 shared genes included known deafness-associated mutants (Otoa, Col9a1)25-27 and regulators of cell growth and differentiation (Net1, Serpine2, Ndrg2)28-32. Other candidate factors include transcription factors (Fos, Fosb)33, extracellular matrix and adhesion molecules (Cntn1, Cyr61)34, 35, and the calcium-binding protein Capsl36. Additionally, we identified key metabolic or transport regulators, specifically the metalloendopeptidase Mme, known for peptide metabolism37, and the GABA transporter Slc6a11, essential for mediating GABA reuptake and regulating tonic inhibition38.\n\nAmong these candidates, we prioritized Dkk3, a canonical Wnt antagonist whose physiological function in the auditory epithelium remained unexplored39. In wild-type mice, Dkk3 protein levels declined more than 2-fold from postnatal day (P) 3 to P30 (Figure 1C, D), a temporal pattern coinciding with the progressive maturation of the organ of Corti and the loss of regenerative potential. snRNA-seq data40 and RNAscope in situ hybridization localized Dkk3 to the Organ of Corti (OC), including inner phalangeal (IPhC), Deiters\u2019 (DC), and pillar cells (PC) in P2 wild-type (WT) mice cochlea. Notably, RNAscope in situ hybridization demonstrated that Dkk3 and Lgr5 primarily co-localize in the third row of DCs (Figure 1E, F; Figure S1). Consistent with this, re-analysis of human fetal cochlea at 15 and 17 weeks revealed conserved Dkk3 expression in DC and outer pillar cells (OPC)41 (Figure S2).\n\nTo investigate whether Dkk3 functionally restricts progenitor plasticity, we utilized the in vitro Lgr5+ sphere-forming assay, an established surrogate for assessing stemness and regenerative capacity42. We first validated Dkk3 knockdown efficiency in HEI-OC1 cells, identifying siRNA-281 as the most efficient knockdown construct in HEI-OC1 cells (Figure 1G, H). Next, we FACS-isolated Lgr5-EGFP+ progenitors from P1 neonatal mice and cultured them under suspension conditions (Figure 1I). Dkk3 knockdown significantly enhanced the sphere-forming efficiency, increasing the number of spheres by more than two-fold without affecting organoid size (Figure 1J-L). These findings nominate Dkk3 as a key regulator of Lgr5+ progenitor plasticity and a promising candidate for modulating HC generation in vivo.\n\nDkk3 cKO in Lgr5+ progenitors triggers numerous ectopic HCs in vivo\nTo further explore the role of Dkk3 in vivo, Dkk3flox mice were generated (Figure S3A) and validated successful recombination via genotyping (Figure S3B). Tamoxifen was intraperitoneally (i.p.) administered at P1 to induce Dkk3 knockout specifically in Lgr5+ progenitors (Figure S3C). Both mRNA and protein levels of Dkk3 were significantly reduced in Dkk3 cKO mice compared to controls (Figure S3D-F), confirming efficient gene knockout. Furthermore, RNAscope in situ hybridization confirmed the specific depletion of Dkk3 mRNA signal within the Lgr5-positive cellular regions, particularly in the third row of DCs (Figure S3G).\n\nWe next assessed the regenerative capacity of Dkk3 cKO at P7 (Figure 2A). Compared to Lgr5CreER/+ and Dkk3f/f controls, Dkk3 cKO mice exhibited numerous ectopic IHCs and OHCs in three turns of the cochlea (Figure 2B). Dkk3 cKO mice exhibited a basal-to-apical increase gradient in ectopic IHC numbers across the cochlea, with fold increases of at least 8-fold (base), 3-fold (middle), and 4-fold (apex) relative to Dkk3f/f control (Figure 2C). The number of ectopic OHCs in three cochlear turns of Dkk3 cKO mice was more than 4-fold, 6-fold, and 7-fold of that of Dkk3f/f mice, respectively (Figure 2D). These results demonstrate that Dkk3 knockout in Lgr5+ progenitors is sufficient to trigger ectopic HC formation (Figure 2E).\n\nDkk3 cKO drives hair cell spontaneous generation via direct trans-differentiation of Lgr5+ progenitors\nHC regeneration generally occurs through two main mechanisms: (1) direct trans-differentiation of SCs and/or (2) mitotic regeneration involving proliferation and differentiation cascades13, 43. While our earlier in vitro work showed that Dkk3 KD could boost Lgr5+ sphere-forming efficiency, the generative pathway in vivo remained unclear.\n\nTo resolve this, we designed EdU labeling and lineage tracing experiments to verify the specific regeneration route. After activating Cre recombinase, neonatal Dkk3 cKO mice were administered EdU to label dividing cells (Figure 3A). No EdU+ SCs were detected in either Dkk3 cKO or control mice (Figure 3B), which suggests that ectopic HCs may not be generated through mitosis. We performed genetic lineage tracing of Lgr5+ progenitors by crossing Lgr5CreER/+ drivers with Rosa26-tdTomato reporters, tagging both Lgr5+ progenitors and their daughter cells during HC generation.\n\nIn the next experiment, we used Lgr5CreER/+Dkk3f/fRosa26-tdTomato mice for lineage tracing, with Lgr5CreER/+Rosa26-tdTomato mice used as control (Figure 3C). Dkk3 cKO mice showed a significant increase in tdTomato+ IHCs (at least 8-fold) and OHCs (at least 3-fold) compared to controls (Figure 3D). Additionally, tdTomato+ HCs demonstrated a base-to-apex increasing gradient throughout the cochlea (Figures 3E-G). Collectively, the absence of EdU incorporation combined with robust lineage tracing confirms that Dkk3 knockout drives HC spontaneous generation via direct trans-differentiation of Lgr5+ progenitors.\n\nStructural and functional characterization of ectopic HC in P7 Dkk3 cKO mice\nTo assess the developmental status of ectopic HCs in P7 Dkk3 cKO cochleae, we examined the molecular, structural, synaptic, and electrophysiological properties. Ectopic HCs expressed the pan-HC marker Calbindin 1, while Prestin and Otoferlin serve as functional markers for mature OHC and IHC, respectively44, 45. Their expression levels were comparable to those observed in native HCs (Figure S4A, B), confirming subtype-specific molecular maturation comparable to age-matched native controls. Phalloidin staining and scanning electron microscopy (SEM) revealed normally structured stereociliary bundles in ectopic HCs (Figure 4A-C). The V-shaped orientation of stereocilia exhibited a tonotopic gradient along the cochlear axis, consistent with that of age-matched native HCs in the controls (Figure 4D). Subsequently, CtBP2 staining was used to label the synapses of the IHCs, revealing that the ectopic IHCs exhibited synapse counts comparable to those of native IHC controls (Figure 4E, F).\n\nTo evaluate the functional properties of ectopic OHCs, we performed whole-cell patch-clamp recordings and compared their electrophysiological properties to those of native OHCs. In Dkk3 cKO mice at P7, native OHCs exhibited a higher propensity for action potential generation compared to ectopic OHCs (Figure 4G, H). We further analyzed voltage-gated potassium currents (I\u2096) and identified the presence of fast-inactivating K\u207a currents (I\u2096\u2090) in ectopic OHCs (Figure 4I, J). Notably, the resting membrane potential (RMP) differed significantly between groups: ectopic OHCs displayed an RMP of \u201320.92 \u00b1 6.36 mV, whereas native OHCs had a more hyperpolarized RMP of \u201331.76 \u00b1 2.83 mV (Figure 4K). Additionally, stepwise current injections revealed progressively reduced amplitudes of both the fast and slow components of averaged potassium currents in ectopic OHCs relative to native HCs (Figure 4L, M). Together, these findings demonstrate that Dkk3 cKO drives the formation of ectopic HCs that are molecularly and structurally differentiated, possessing organized stereocilia and synaptic ribbons, comparable to age-matched controls. These cells also successfully acquire core biophysical machinery, including voltage-gated currents and excitability, while displaying a signature consistent with a nascent developmental state. Accordingly, we designate this specific population as \u2018immature HCs\u2019 to facilitate the subsequent single-nucleus transcriptomic analysis.\n\nSingle-nucleus RNA sequencing suggests the fate conversion pathway from SCs to HCs\nTo investigate the impact of Dkk3 cKO in SC on their trans-differentiation into HC, we performed snRNA-seq on auditory sensory epithelial cells isolated from both control and Dkk3 cKO mice (Figure 5A). After initial quality control, we retained 13,952 high-quality nuclei from control and 17,153 from Dkk3 cKO samples (Figure S5A, B). Cell type annotation was performed based on established marker genes for known cochlear cell types (Figure S5C), leading to the identification of 11 distinct cell clusters in each group. To mitigate batch effects between conditions while preserving biologically meaningful variation, we systematically evaluated six integration algorithms\u2014Harmony, scVI, scANVI, Scanorama, ComBat, and BBKNN (Figure 5B; Figure S6A). Among these, Harmony demonstrated superior performance in effectively removing technical artifacts while retaining true biological variance (Figures S6B, C). We therefore selected Harmony for data integration and downstream analyses. Following integration and additional filtration to exclude low-quality cells, a total of 23,769 nuclei (control: 12,750; Dkk3 cKO: 11,019) were retained for subsequent analysis (Figure 5B).\n\nGiven the focus of this study on the trans-differentiation process from SCs to HCs, we isolated Lgr5+ SCs (including DCs, PCs, and IPhCs) and HCs from P7 mouse cochleae for re-clustering and cell type annotation. Using well-established marker genes for SCs and HCs, we identified three distinct populations: SCs, mature HCs, and a distinct cluster co-expressing both SC and HC markers, which we designated as \u201cimmature HCs\u201d\u2014putatively representing a transitional state during SC-to-HC trans-differentiation (Figure 5C, D). To further elucidate the developmental positioning of this population within the trans-differentiation continuum, we performed cell trajectory analysis. The results revealed a continuous differentiation path from SCs through the immature HC state toward mature IHC and OHC in both control and Dkk3 cKO groups. The results showed that in the control group and Dkk3 cKO group, SC continued to differentiate into mature IHC and OHC through immature HC state, and immature HC in the Dkk3 cKO group was more inclined towards the end of the differentiation trajectory (Figure 5E, F). Notably, the Dkk3 cKO group exhibited a 43.82% increase in OHCs and a 16.54 % increase in IHCs compared with controls, suggesting that Dkk3 cKO in SCs promotes trans-differentiation into HCs (Figure 5G). Subsequent differential expression gene (DEG) analysis between Dkk3 cKO and control groups identified 2365 upregulated and 88 downregulated genes. GO enrichment analysis indicated that upregulated genes were significantly associated with inner ear development-related biological processes (Figure 5H). KEGG pathway analysis further demonstrated potential enrichment of the Wnt and Hedgehog signaling pathways in the Dkk3 cKO group (Figure 5I).\n\nTo validate these bioinformatic predictions and comprehensively assess the molecular landscape triggered by Dkk3 knockout, we performed RT-qPCR quantification on basilar membrane (BM) tissues isolated from P7 mice. This targeted validation screened a broad spectrum of signaling cascades identified in our pathway enrichment analysis. Consistent with the snRNA-seq profiles, Dkk3 cKO cochleae exhibited significant upregulation of key genes associated with the Wnt (Lgr5, Tcf7l2) and Hedgehog (Fbxw11, Smurf1) pathways, providing a direct mechanistic basis for the observed phenotype (Figure S7D, E). Furthermore, we validated significant alterations in Ras, mTOR, MAPK, Hippo, and TGF-\u03b2 signaling pathways (Figure S7A, B, C, F, G). We also observed the upregulation of cell cycle regulators (E2f3, Mdm2) (Figure S7H). In the absence of EdU incorporation, this distinct molecular signature suggests that Dkk3 knockout induces a state of cellular plasticity characterized by the reactivation of developmental and cell-cycle machinery, thereby facilitating direct trans-differentiation rather than proliferative expansion.\n\nRegenerated ectopic HCs in Dkk3 cKO mice could survive until adulthood\nTo further evaluate the functional consequences of Dkk3 cKO, we assessed auditory function in P30 Dkk3 cKO mice using auditory brainstem response (ABR) measurements. Hearing thresholds across frequencies from 4 to 32 kHz were comparable to those of control groups (Figure 6A\u2013C). Moreover, neither the latency nor the amplitude of peak I differed significantly between groups (Figure 6D, E).\n\nWe next confirmed the structural persistence of these ectopic cells via immunofluorescence. Although the absolute number of ectopic HCs decreased compared to the neonatal peak at P7, which likely reflects a process of developmental pruning, a substantial population survived into adulthood (Figure 6F, G). Importantly, these persistent cells maintained a stable mature phenotype. They continued to express specific markers for OHCs and IHCs (Figure 6H, I) and retained structurally intact stereociliary bundles (Figure 6J). These findings indicate that Dkk3 knockout initiates a reprogramming signal to support long-term molecular and morphological stability without inducing deleterious effects on the native auditory organ.\n\nDiscussion\nSNHL, resulting from HC loss due to noise exposure, ototoxic drugs, or aging, remains irreversible in mammals due to the inability of the cochlea to reactivate the intrinsic regenerative process. Lgr5+ progenitors have emerged as promising targets for HC regeneration strategies. Based on the existing research, some progress has been made, including overexpression of key transcription factors46, 47, nerve growth factors48, 49, cochlear secretory factors50, and signaling pathway regulators51, 52. However, generating fully mature and functional HCs remains challenging.\n\nIn this study, we identified Dkk3 as a critical negative regulator of cochlear Lgr5+ progenitor plasticity. By integrating transcriptomic analysis of Lgr5+ progenitors across different spatial, injury-response, and lineage-specific contexts, we identified Dkk3 as one of 14 candidate genes linked to regenerative potential. Previous research suggests Dkk3 is essential for regulating the fate and differentiation of muscle cells53, 54. Dkk3 inhibits muscle stem cell differentiation and impairs generation in vivo, yet its knockout improves muscle repair in obese models55. The loss of Dkk3 enhances induced pluripotent stem cell (iPSC) generation in vitro and drives proliferation in hepatocytes and Lgr5+ liver progenitors in mice56. Consistent with these roles, we found that Dkk3 KD significantly increased the sphere-forming efficiency of Lgr5+ progenitors in vitro. While the seeding density required for these primary cell assays (2,000 cells/well) precludes strict clonal analysis, the robust increase in sphere number indicates a significant enhancement of population-level regenerative capacity and survival.\n\nDkk3 cKO in Lgr5+ progenitors robustly stimulated the generation of ectopic IHC and OHC across all cochlear turns in vivo. Lineage tracing and EdU assays confirmed that these ectopic HCs arise via direct trans-differentiation rather than mitotic generation. Although in vitro results suggested a pro-proliferative role for Dkk3 knockdown, the absence of EdU+ SCs in vivo indicates that the regenerative outcome is context-dependent, likely influenced by the native cochlear microenvironment. Our findings establish Dkk3 knockout as a potent mechanism to promote the innate regenerative capacity of cochlear SC, driving robust HC generation through direct trans-differentiation.\n\nPrevious efforts to regenerate HCs have primarily relied on overexpressing transcription factors like Atoh1, either alone or in combination. While these approaches can induce HC fate, the resulting cells typically suffer from transient survival, disorganized stereocilia, incomplete marker expression, and an inability to functionally integrate, often leaving auditory deficits unresolved57, 58,59, 60. In contrast, our Dkk3 cKO model resolves several of these limitations. The ectopic HC in Dkk3 cKO mice exhibited remarkable molecular and structural maturity, expressing key markers such as Prestin and Otoferlin, forming organized stereociliary bundles, and establishing synaptic connections comparable to native HC. Importantly, these newly formed HC persist into adulthood without compromising auditory function, as evidenced by normal ABR thresholds and wave I parameters. These results show that the mammalian cochlea can sustain ectopic sensory cells over the long term, provided the relevant inhibitory constraints are removed.\n\nNotably, snRNA-seq analyses revealed that Dkk3 does not act in isolation but rather functions as a master suppressor. Its knockout may trigger the coordinated activation of a broad pro-regenerative network, including Ras, Wnt, Hedgehog, mTOR, MAPK, and Hippo signaling pathways52, 61-63. Furthermore, our targeted validation highlighted a significant upregulation of Ras expression. Considering the well-established Ras-MAPK signaling cascade64, this upregulation is consistent with the activation of MAPK pathways, which are known to support SC proliferation and HC survival65-67. While each of these pathways has been individually implicated in HC development, their simultaneous upregulation creates a highly permissive landscape that facilitates both fate conversion and subsequent differentiation processes, such as cell polarity establishment and synaptogenesis. This multi-pathway activation likely explains the superior structural organization and differentiation status observed in our model compared to single-pathway interventions.\n\nAlthough these reprogrammed HC achieve structural stability, they display a nascent electrophysiological profile, characterized by elevated resting membrane potentials and immature potassium currents. However, the fact that these cells successfully integrate into the sensory epithelium and persist long-term provides critical proof-of-concept that the physical and metabolic support systems of the adult cochlea are sufficient to maintain spontaneously regenerated HCs.\n\nLooking forward, the multi-pathway mechanism activated by Dkk3 knockout provides a strong rationale for combinatorial therapeutic strategies. For instance, coupling Dkk3 suppression with Atoh1 overexpression may synergize to enhance both the initiation of HC fate and long-term functional maturation19. Similarly, supplementing Dkk3 inhibition with neurotrophic factors48, 68 or ion channel modulators69 could further promote synaptic integration and electrophysiological maturity. Our study establishes Dkk3 inhibition not only as a novel target for inducing direct cellular reprogramming but also as a foundational framework for developing durable, multi-modal therapies for functional hearing restoration.\n\nMice and genotyping\nDkk3flox mice (Cyagen, S-CKO-11394) and Lgr5CreER/+mice (Jackson Laboratory, stock 008875) were maintained under a specific pathogen-free (SPF) barrier system. The mouse tail tips used for genotyping were digested in 90 \u03bcl 50 mM NaOH at 98 \u00b0C for 1 hour, and 10 \u03bcL Tris-HCl (pH = 8) was added to terminate digestion. Primer sequences for PCR amplification are detailed in Supplemental Table S2. All animal protocols were approved by the Southeast University Institutional Animal Care and Use Committee (No. 20210302031) and conducted under NIH guidelines for humane animal experimentation, with sample sizes statistically optimized to ensure rigor while minimizing animal usage.\n\nDkk3 cKO induction and proliferation assessment\nTo induce cKO of Dkk3 in Lgr5+ progenitors, both Dkk3 cKO and control mice received i.p. injections of tamoxifen (Sigma, T5648; 0.075 mg/g body weight) at P1 to activate Cre recombinase. To assess SC proliferative activity, Lgr5CreER/+ and Dkk3f/f mice received i.p. injections of EdU (Sigma, 900584; 0.05 mg/g body weight) from P3 to P5. Proliferating EdU+ SCs were labeled and detected using the Click-iTTM EdU imaging kit (Invitrogen, C10337).\n\nFrozen section preparation\nTemporal bones from P2 mice were dissected in PBS and fixed in 4% PFA overnight at 4 \u00b0C. After PBS rinsing, samples were immersed in 15%, 20%, and 30% sucrose solutions, followed by sucrose: OCT mixtures (1:1, 3:7, 1:9), under vacuum infiltration for 1 hour, and incubated overnight at 4 \u00b0C for each step. Tissues were then embedded in pure OCT under vacuum for 1 hour and incubated overnight at 4 \u00b0C. Specimens were oriented with the oval or round window facing downward, frozen at \u201320 \u00b0C for 1 hour, and stored at \u201380 \u00b0C. Coronal sections (14 \u03bcm) were obtained at \u201323 \u00b0C using a freezing microtome (RWD, FS800) and mounted on adhesive slides (Citotest, 188105).\n\nRNAscope in situ hybridization\nCryosections were dried at 60\u00b0C for 30 minutes, fixed in pre-cooled 10% NBF for 15 minutes, and dehydrated through an ethanol series. Endogenous peroxidase activity was blocked with hydrogen peroxide (10 minutes, room temperature). Antigen retrieval was performed in boiling RNAscope\u00ae Target Retrieval Reagent for 5 minutes, followed by post-fixation in 10% NBF (30 minutes, room temperature). Protease III treatment was conducted at 40 \u00b0C for 30 minutes. Sections were hybridized with a Dkk3 (C1) probe (ACDBio, Catalog No. 400931) at 40 \u00b0C for 2 hours. Signals were amplified using AMP1\u20133 reagents and Opal 520 fluorophore (Opal, ASOP520), with HRP blocking between steps. Finally, sections were counterstained with DAPI and mounted with DAKO fluorescent medium. The above reagents are sourced from the RNAscope in situ hybridization kit (Advanced Cell Diagnostics, 323110; 323180).\n\nImmunofluorescence\nFollowing fixation and decalcification, mouse cochleae were micro-dissected into apical, medial, and basal regions in ice-cold PBS. Tissue sections were blocked in blocking medium supplemented with 5% donkey serum, 1% bovine serum albumin, 0.5% Triton X-100, and 0.02% sodium azide for 2 hours. After primary antibody incubation at 4\u00b0C overnight, the species-matched Alexa fluor-conjugated secondary antibodies were incubated for 1 hour. Samples were mounted using DAKO fluorescent mounting medium (Dako, S3023) and stored in the dark at 4 \u00b0C. The antibodies used are detailed in Supplementary Table 3.\n\nScanning electron microscopy\nCochlear specimens underwent sequential processing beginning with 2.5% glutaraldehyde fixation (4 \u00b0C, 24 hours) and 0.5M EDTA decalcification (25 \u00b0C, 90 min). Ethanol dehydration gradients (50%, 70%, 90%, 100%; 15 min per step) preceded critical point drying (Leica CPD300) with liquid CO\u2082. Specimen preparation included conductive mounting (carbon adhesive) and 30-100s Au sputter-coating (Quorum Q150T ES plus). Ultramicrostructural analysis was performed using field-emission SEM (FEI Nova Nano 450) under high vacuum conditions.\n\nWestern blotting\nTissue lysates were prepared in RIPA buffer (Epizyme, PC101) supplemented with protease inhibitor cocktail (Roche, 04693132001). Protein quantification via BCA assay (Epizyme; E112-01) standardized sample loading (20 \u03bcg/lane) for electrophoretic separation on 10% SDS-PAGE gels (Epizyme; E303-01) at 120V for 100 min. Following wet-transfer to PVDF membranes (Millipore; IPVH00010), blocking was conducted with 5% skim milk (Beyotime; P0216) in TBST for 2 hours at room temperature. Membranes underwent sequential incubations with primary antibodies and HRP-conjugated secondaries. Chemiluminescent detection employed an ECL kit (Vazyme; E422) with image acquisition on a Tanon 2500R system. The antibodies used are detailed in Supplementary Table 3.\n\nCell culture and transfection\nHEI-OC1 cells were cultured in DMEM (Gibco; 11995500) containing 10% FBS (Pansera; P30-2602) and 100 \u03bcg/mL ampicillin (Beyotime; ST008) under standard conditions (37 \u00b0C, 10% CO\u2082). Cells were digested using 0.25% trypsin-EDTA (Gibco, 25200072) and planted into the 6-well plate (Greiner, 657160). 25 pmol siRNA (Shanghai Gene Pharma) was transfected into cells by using Lipofectamine RNAiMAX (Invitrogen, 13778075) in Opti-MEM Reduced Serum Medium (Gibco, 31985062). siRNA sequences with no homology to target cells were used as negative controls (NC). Shanghai Gene Pharma synthesized siRNA, and the siRNA sequences are listed in Supplemental Table 4.\n\nRNA extraction and RT-PCR\nTotal RNA was isolated from cochleae or HEI-OC1 cells using TRIzol\u2122 reagent (Invitrogen, 15596026). Following phase separation with 200 \u03bcL chloroform (Sinopharm Chemical Reagent Co., Ltd., 10006818), RNA was precipitated with 500 \u03bcL isopropanol (Sinopharm Chemical Reagent Co., Ltd., 40064360) and washed with 75% ethanol. Purified RNA was resuspended in DEPC-treated water, and concentration/purity was quantified using a Nano-500 spectrophotometer (Allsheng, nano-500). Reverse transcription was conducted with 1 \u03bcg total RNA using the RevertAid First Strand cDNA Synthesis Kit (Thermo Fisher Scientific, K1622). RT-qPCR analysis was performed using the QuantStudio\u2122 3 Real-Time PCR System (Thermo Fisher Scientific) and FastStart Universal SYBR Green Master Mix (Roche, 4913914001). And the primers used are listed in Supplemental Table 5.\n\nFlow cytometry\nLgr5+ progenitors were isolated from P1 Lgr5-EGFP-IRES-creERT2 transgenic mice (n\u224830). Cochleae were micro-dissected in ice-cold PBS (1\u00d7, Gibco, 10010023) and enzymatically dissociated using 150 \u03bcL 0.25% trypsin (Gibco, 15050065) at 37 \u00b0C for 10 min. Mechanical dissociation was completed by pipetting up to 300 \u03bcL trypsin inhibitor (Worthington Biochemical, LS003570), followed by filtration through a 40-\u03bcm cell strainer (BD Falcon, 352340). Lgr5+ progenitor populations were isolated by FACS (BD, FACSAria III) based on GFP fluorescence intensity.\n\nSphere assay\nFACS-sorted Lgr5+ cells were cultured in ultra-low attachment 96-well plates at a density of 2000 cells per well (Corning, 3474) using advanced-DMEM/F12 medium (Gibco, 12634010) supplemented with 1% N-2 (Gibco, 1750248), 2% B-27 (Gibco, 17504044), 20 ng/mL EGF (Sigma-Aldrich, E9644), 50 ng/mL IGF-I (Sigma-Aldrich, I8779), 20 ng/mL heparan sulfate (Sigma-Aldrich, H4777), 10 ng/mL FGF2 (Sigma-Aldrich, F0291), and 0.1% ampicillin (Beyotime, ST008). For gene knockdown, 1 pmol siRNA targeting candidate genes (per well) was transfected into Lgr5+ cells on day 1 of culture by using RNAiMAX (Invitrogen, 13778075). After 5 days, organoid spheres derived from Lgr5+ progenitors were imaged in brightfield using an inverted fluorescence microscope (Zeiss). Sphere diameter and count were quantified from whole-well images using ImageJ.\n\nAuditory brainstem response measurement in adult mice\nMice were anesthetized with intraperitoneal injection of amobarbital. Subdermal needle electrodes were inserted at the top of the skull and the mastoid region of both ears. Acoustic stimuli (tone bursts from 4 to 32 kHz) were delivered through a tube speaker placed 10 cm from the test ear. Stimulus intensity was decreased in 5-dB steps from 90 to 10 dB SPL. Auditory evoked potentials were filtered, amplified, and averaged (256 repetitions per intensity). Threshold was defined as the lowest intensity level at which a reproducible wave I pattern was visible. The tested mice were placed on a heating pad to maintain body temperature.\n\nElectrophysiological recording\nElectrophysiological recordings from cochlear tissues were performed as previously described70. Briefly, we dissected the apical turn of the cochlea from P7\u20138 Dkk3flox/flox or Dkk3-cKO mice of both sexes. Whole-cell patch-clamp recordings were conducted on native HCs and ectopic HCs under identical conditions. The tissues were embedded and continuously perfused with ice-cold, sterile HEPES-buffered artificial cerebrospinal fluid (ACSF). The ACSF composition was as follows (in mM): 115 NaCl, 6 KCl, 1.3 NaH2PO4, 11.2 NaHCO3, 11 D-glucose, 1.3 MgCl2, and 1.3 CaCl271. Cochlear cells were visualized using an inverted microscope equipped with differential interference contrast optics and a 60\u00d7/1.00 NA water-immersion objective. Native and ectopic HCs were distinguished based on their cellular arrangement and ciliary morphology under 60\u00d7 magnification. Recordings were acquired using an Olympus BX51WI microscope and Axon 7500B amplifiers. Patch pipettes with resistances of 10\u201315 M\u03a9 were filled with an internal solution containing (in mM): 135 KCl, 3.5 MgCl2, 0.1 CaCl2, 5 EGTA-KOH, 5 HEPES-KOH, 2.5 Na2ATP (pH 7.35, 325 mOsm). During recordings, both native HCs and HC-like cells were held at a membrane potential of \u201360 mV. Signals were low-pass filtered at 2 kHz, and data were analyzed using Clampfit 10.2 and GraphPad Prism 9.\n\n10\u00d7 chromium snRNA-seq\nsnRNA-seq was performed on cochlear tissue isolated from Lgr5CreER/+ (control) and Lgr5CreER/+ Dkk3 f/f (Dkk3 cKO) mice at P7, following tamoxifen administration at P1. For each genotype, cochleae from 28 individuals were pooled to generate a single biological replicate. Nuclei were isolated and resuspended at a concentration of 700\u20131200 nuclei/\u03bcl for use with the 10\u00d7 Genomics Chromium Next GEM Single Cell 3\u02b9 Reagent Kits v3.1 (Catalog No. 1000268), following the manufacturer\u2019s protocol. Libraries were sequenced on an Illumina NovaSeq 6000 platform (OE Biotech Co., Ltd). Reads were aligned to the mm10_3.0.0 reference genome, and gene expression matrices were generated and quantified using the 10\u00d7 Genomics Cell Ranger pipeline (v3.8.0.1) with default parameters. The resulting filtered count matrix was used for all subsequent analyses.\n\nSnRNA-seq data quality control and cell type annotation\nSingle-cell data analysis was conducted using R (v4.1.3) with Seurat (v4.3.0) and Python (v3.9) with Scanpy (v1.10.3) to enable integrated cross-platform analysis. Initial quality control of the raw gene-barcode matrices derived from 10\u00d7 Genomics sequencing was performed using Scanpy. Cells were filtered based on the following thresholds: those with fewer than 500 detected genes, more than 5,000 UMIs, or mitochondrial gene content exceeding 5% were classified as low quality and excluded. After filtering, 12,750 high-quality cells from the control group and 11,019 from the Dkk3 cKO group were retained for downstream analysis. Normalization and log-transformation were applied using standard Scanpy workflows. Highly variable genes were identified using the highly_variable_genes function without imposing an upper bound. Dimensionality reduction was followed by unsupervised clustering using the Leiden algorithm. Resulting clusters were visualized in two dimensions with UMAP. Cell types were annotated based on established marker genes previously reported in the murine cochlea40, 72.\n\nBatch effect correction and integration analysis\nsnRNA-seq data were processed using Scanpy (v1.10.3) following established preprocessing workflows, including quality control filtering, normalization of the cell\u2013gene count matrix, and incorporation of sample metadata73. Dataset integration was carried out with scVI-tools (single-cell Variational Inference; v1.1.2)74. To balance biological conservation and batch-effect removal, we systematically evaluated multiple integration algorithms using the single-cell integration benchmarking framework scIB75. Methods tested included BBKNN, Scanorama, Harmony, ComBat, scVI, and scANVI, each implemented under default settings as recommended by the original authors (see GitHub repository for code details). We evaluated the integration methods using the scIB framework, scoring them on both batch effect removal and the preservation of biological variance. Harmony emerged as the top-performing method and was therefore chosen for all subsequent downstream steps.\n\nGene ontology enrichment analysis for RNA-seq\nDEGs were identified across three comparative groups: ALPs and BLPs, Lgr5+ progenitors, and Lgr5-SCs22-24. DEGs were defined using a uniform threshold (| log2(fold change) |> 1.0, p < 0.05) and visualized via Venn diagrams generated with the R package ggvenn. GO enrichment analysis was performed using clusterProfiler (v4.6.0) by using the R package, and the statistical significance threshold level for the GO annotation analysis was p < 0.05.\n\nCell trajectory analysis\nTo investigate SC to HC trans-differentiation, Lgr5-high SCs (including pillar cells, Deiters' cells, and inner phalangeal cells) and HCs from P7 developmental stages were subclustered after dimensionality reduction. 283 high-quality cells were obtained from the control group, and 443 were obtained from the Dkk3 cKO group for subsequent analysis. Following integration using Harmony, we annotated cell identities into three subtypes: SCs, HCs, and a distinct SC\u2013HC intermediate population. The co-expression of canonical SC and HC markers in the SC\u2013HC group suggests that these cells may represent a transitional state during SC-to-HC differentiation.\n\nTo investigate this hypothesis, we performed pseudotemporal trajectory analysis using Monocle2 (v2.22.0). Data from HCs, SCs, and SC\u2013HC cells from both control and Dkk3 cKO groups were converted to loom format and imported into R. We constructed a CellDataSet object using the newCellDataSet function, retaining genes detected in at least five cell types. Differential gene expression testing was carried out with the differentialGeneTest function, and genes with q-values < 0.001 were selected for trajectory reconstruction. Dimensionality reduction was performed using the reduceDimension function (max_components = 2, method = \u201cDDRTree\u201d). Cells were ordered along the inferred trajectory using orderCells, and results were visualized with plot_cell_trajectory.\n\nGO and KEGG enrichment for snRNA-seq\nDEG analysis was performed between the control and Dkk3 cKO groups using DESeq2 (v1.44.0) in combination with zingeR (v0.1.0) to model cell-level weights, accounting for dropout characteristics inherent in snRNA-seq data76, 77. Genes were considered differentially expressed based on a uniform threshold of |log\u2082FC| \u2265 0.4 and an adjusted p-value < 0.05. Results were summarized and visualized using Venn diagrams generated with the R package ggvenn. GO and KEGG enrichment analysis was conducted using clusterProfiler (v 4.6.0), with terms considered significantly enriched at a threshold of p < 0.05.\n\nStatistical analysis\nExperimental data were derived from \u22653 independent biological replicates, presented as mean \u00b1 standard error of mean. Statistical significance was determined by two-tailed unpaired Student's t-tests (GraphPad Prism v10.0.1). p-value < 0.05 was considered statistically significant.",
+        "source": "pmc_full_text",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42244985/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13232479/"
+      },
+      "analysis": {
+        "topic_relevance_score": 6.2,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 62,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Epithelial morphogenesis and tissue architecture: epithelium; Development-to-homeostasis continuity: lineage, progenitor.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Epithelial morphogenesis and tissue architecture: epithelium",
+          "Development-to-homeostasis continuity: lineage, progenitor",
+          "Preferred mechanistic methods: conditional knockout, knockout, lineage tracing",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo, mouse."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 21.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 63.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 62
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelium"
+          ],
+          "development_homeostasis_continuity": [
+            "lineage",
+            "progenitor"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "conditional knockout",
+            "knockout",
+            "lineage tracing"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42220158",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42220158",
+        "title": "Plasticity in Cancer Cells: The Master Engine of Therapeutic Resistance and Tumor Evolution.",
+        "authors": [
+          "Ahmad A"
+        ],
+        "journal": "Current molecular medicine",
+        "pubdate": "2026 May 25",
+        "doi": "10.2174/0115665240472692260521045539",
+        "pmcid": null,
+        "abstract": "Cancer cell plasticity refers to the ability of cancer cells to change their phenotype and is one of the primary requirements for metastasis. It is considered one of the main contributors to intratumoral heterogeneity, a key factor in the development of cancer, and is known to alter responses and resistance to different forms of therapy. However, tumour cells are impaired in various cellular signalling pathways, such as mitogen-activated protein kinases, phosphoinositide-3-kinases, Wnt, Hedgehog, and Notch, as well as in epithelial-mesenchymal transition (EMT) and phenotypic plasticity. Cancer stem cells (CSCs) are considered an integral part of tumour plasticity, as they have the capacity to proliferate, differentiate, and initiate the growth of tumours. Recent studies suggest that targeting signals from the tumor microenvironment, plasticity-related pathways, and epigenetic regulators may offer promising therapeutic options to improve long-term response and reduce phenotypic dysregulation. This approach, which emphasizes plasticity as a primary biological driving force rather than a secondary one, allows cancer cells to change from an epithelial, mesenchymal, stem cell, or dormant state to a drug-resistant state in response to environmental stimuli. Taken together, these results suggest that cellular plasticity is important in tumour development and treatment failure. Therefore, targeting pathways associated with plasticity, modifying the tumour microenvironment, and using adaptive therapies may improve long-term tumour control.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42220158/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 5.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 50,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Epithelial morphogenesis and tissue architecture: epithelial; Development-to-homeostasis continuity: development, stem cell.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Development-to-homeostasis continuity: development, stem cell",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal, mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development, epithelial."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 18.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 54.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 50
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal",
+            "mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42244536",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42244536",
+        "title": "A Rare Nestin-Expressing Granule Cell Precursor Subpopulation Underlies SHH Medulloblastoma Formation.",
+        "authors": [
+          "El Nagar S",
+          "Liang Y",
+          "Stephen DN",
+          "Wu SH",
+          "Joyner AL"
+        ],
+        "journal": "bioRxiv : the preprint server for biology",
+        "pubdate": "2026 May 26",
+        "doi": "10.64898/2026.05.26.727818",
+        "pmcid": "PMC13232223",
+        "abstract": "Granule cell precursors (GCPs) drive the major postnatal expansion of the cerebellum and are the cells of origin of sonic hedgehog medulloblastoma (SHH MB). Although GCPs are often treated as a uniform population, increasing evidence suggests they are heterogeneous, and whether specific subpopulations show distinct tumorigenic competence remains unclear. Here, we identified a rare Nestin-expressing GCP subpopulation in the normal early postnatal cerebellum and showed that it is spatially restricted, molecularly distinct and highly competent to form tumors. These cells are enriched in the posterior external granule layer and co-express Atoh1 . Using different SHH MB mouse models, we showed that when this rare subpopulation of GCPs is targeted they can give rise to SHH MB with an efficiency comparable to targeting a larger number of Atoh1 -expressing GCPs and that tumors derived from Nestin-expressing GCPs arise in the posterior-lateral cerebellum. Single cell RNA sequencing revealed that Nestin-expressing GCP have a transcriptome indicating reduced neuronal differentiation and enrichment for stem cell genes compared to bulk GCPs and more closely align with SHH MB cells. Together, our findings reveal functionally important heterogeneity within the GCP lineage and suggest that SHH MB arises preferentially from a small subpopulation of GCPs that express Nestin.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42244536/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13232223/"
+      },
+      "analysis": {
+        "topic_relevance_score": 4.7,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 47,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog, shh; Development-to-homeostasis continuity: postnatal, lineage, stem cell; Preferred mechanistic methods: mouse model.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog, shh",
+          "Development-to-homeostasis continuity: postnatal, lineage, stem cell",
+          "Preferred mechanistic methods: mouse model",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: lineage."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 51.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 47
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog",
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "postnatal",
+            "lineage",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "mouse model"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42231162",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42231162",
+        "title": "The roles of cytoplasmic dynein complex in various ocular disorders.",
+        "authors": [
+          "Zhou X",
+          "Xie J",
+          "Tong W",
+          "Fu J"
+        ],
+        "journal": "Molecular medicine (Cambridge, Mass.)",
+        "pubdate": "2026 Jun 2",
+        "doi": "10.1186/s10020-026-01523-3",
+        "pmcid": null,
+        "abstract": "BACKGROUND: The cytoplasmic dynein complex mediates retrograde transport of various intracellular components and plays a critical role in mitosis, nuclear migration, organelle positioning, vesicle trafficking, misfolded protein clearance, and intercellular signaling.\n\nMAIN BODY: Mutations in human cytoplasmic dynein subunits and regulators have been directly linked to various neurological diseases and are increasingly recognized as contributors to ocular degenerative diseases. However, the precise mechanisms underlying ocular morphogenesis and degeneration remain poorly understood. Various animal models, including Drosophila, mouse, and zebrafish, have been established to investigate the pathogenesis of cytoplasmic dynein complex-related ocular disorders. Findings from these models indicate that dynein complex-related ocular pathologies often involve endoplasmic reticulum stress, impaired Notch signaling, and disrupted Sonic Hedgehog pathways. Systematically integrating gene functional data and molecular mechanism clues derived from different models can help refine the \"gene-phenotype-mechanism\" correlation network and may ultimately advance precision diagnosis and targeted therapy.\n\nCONCLUSION: Emerging evidence has highlighted the cytoplasmic dynein complex as a key factor in ocular development and disease. Integrating findings across model systems may enable more precise diagnosis and the development of targeted interventions for dynein-related ocular disorders.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42231162/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 3.9,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 39,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog; Epithelial morphogenesis and tissue architecture: morphogenesis; Development-to-homeostasis continuity: development.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog",
+          "Epithelial morphogenesis and tissue architecture: morphogenesis",
+          "Development-to-homeostasis continuity: development",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 37.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 39
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis"
+          ],
+          "development_homeostasis_continuity": [
+            "development"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42233283",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42233283",
+        "title": "Spatial dissection of ADC/RPT targets defines heterogeneous expression landscapes and therapeutic implications in rhabdoid tumors.",
+        "authors": [
+          "Reitsam NG",
+          "Fincke VE",
+          "Hernandez Ramirez MD",
+          "Mucha M",
+          "Sipos E",
+          "Lisa S",
+          "Enke JS",
+          "Lossner M",
+          "Vokuhl C",
+          "Lapa C",
+          "Hasselblatt M",
+          "Fr\u00fchwald M",
+          "M\u00e4rkl B",
+          "Johann PD"
+        ],
+        "journal": "Neuro-oncology",
+        "pubdate": "2026 Jun 2",
+        "doi": "10.1093/neuonc/noag133",
+        "pmcid": null,
+        "abstract": "BACKGROUND: Rhabdoid tumors (RT) are among the most aggressive pediatric malignancies, characterized by early onset in life, loss of SWI/SNF complex members (SMARCB1 or SMARCA4), and dismal outcomes despite multimodal therapy. Refractory and relapsing RT remain almost uniformly fatal, and targeted or immune-based approaches have yet to demonstrate clinical benefit.\n\nMETHODS: To explore novel therapeutic vulnerabilities, we systematically investigated the expression of clinically actionable surface proteins that could serve as targets for antibody-drug conjugates (ADCs), radiopharmaceutical therapy (RPT), or cellular immunotherapies. Based on large-scale transcriptomic analyses, we prioritized FAP (fibroblast activation protein), CXCR4 (chemokine receptor 4), and IL13RA2 (interleukin receptor 13 RA2) and performed comprehensive protein-level validation by immunohistochemistry in an unprecedented cohort of 60 rhabdoid tumors spanning all molecular subgroups (ATRT-TYR, ATRT-SHH, ATRT-MYC and eMRT).\n\nRESULTS: Integrating these data with spatial and single-nucleus transcriptomic profiling, we identified subgroup- and cell-type-specific expression patterns, including heterogeneous FAP distribution between stromal and tumor compartments and a distinct IL13RA2-positive rhabdoid cell population with melanosomal and stem-like features: Overall 51/60 tumors demonstrated positivity, defined as immunohistochemical H-score above or at least equal to 10, for FAP in the stroma and 34/60 tumors for CXCR4, indicating that a substantial fraction of rhabdoid tumors may be amenable to targeted therapies directed against these epitopes.\n\nCONCLUSION: These findings define a set of biologically and clinically relevant surface targets in RT and provide a translational blueprint for rational ADC and RPT target development in pediatric cancer.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42233283/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 0.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 5,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: development.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: development",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 9.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 5
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ]
+}
