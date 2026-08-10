@@ -1,0 +1,1361 @@
+{
+  "generated_at": "2026-08-10T04:24:04.753650+00:00",
+  "days_back": 7,
+  "topic": "file:topics/taste_hedgehog.txt",
+  "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+  "journal_whitelist_path": null,
+  "search_metadata": {
+    "stages": [
+      {
+        "stage": "default",
+        "source": "pubmed",
+        "retmax": 150,
+        "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+        "returned": 6,
+        "slots_available": 50,
+        "added": 6,
+        "tightened": false,
+        "pool_size_after_stage": 6
+      },
+      {
+        "stage": "biorxiv_fallback",
+        "source": "biorxiv",
+        "retmax": 150,
+        "query": "Hedgehog, SHH, GLI1, GLI2, Gas1, Boc, Cdon, Ptch1, Smoothened, taste, gustatory, lingual, papillae, fungiform",
+        "returned": 0,
+        "slots_available": 44,
+        "added": 0,
+        "tightened": false,
+        "pool_size_after_stage": 6,
+        "error": null
+      },
+      {
+        "stage": "arxiv_skipped",
+        "source": "arxiv",
+        "skipped": true,
+        "pool_size_after_stage": 6
+      }
+    ],
+    "candidate_pool_size": 50,
+    "sources": [
+      "biorxiv",
+      "pubmed"
+    ],
+    "arxiv_request_timeout_seconds": 15,
+    "papers_fetched": 6
+  },
+  "scoring_model": "taste_hedgehog_literature_triage",
+  "final_model": "local-score-sort",
+  "records": [
+    {
+      "paper": {
+        "paper_id": "42557512",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42557512",
+        "title": "Synergistic SHH activation and BMP inhibition remodel progenitor niche for enhanced hair cell generation.",
+        "authors": [
+          "Li C",
+          "He D",
+          "Tang W",
+          "Fu L",
+          "Tan X",
+          "Yao Y",
+          "Yin X"
+        ],
+        "journal": "Science China. Life sciences",
+        "pubdate": "2026 Aug 3",
+        "doi": "10.1007/s11427-025-3285-x",
+        "pmcid": null,
+        "abstract": "Hair cell regeneration from supporting cells declines rapidly during early postnatal development, limiting therapeutic applications. We demonstrate that strategic microenvironmental remodeling can dramatically enhance inner ear progenitor cell (IEPC) function beyond what conventional marker-based approaches predict. Using functional screening focused on differentiation capacity rather than single progenitor markers (Lgr5), we discovered that concurrent Sonic hedgehog activation and BMP inhibition create a synergistic niche environment. This dual signaling approach generated high-purity Sox2+/Ki67+ IEPCs from postnatal day 7 (P7) supporting cells with 50.83%\u00b11.76% hair cell differentiation efficiency. Single-cell RNA sequencing revealed that this strategy drives progenitor reprogramming by activating inner ear developmental gene programs while suppressing supporting cell identity. Regenerated hair cells exhibited functional mechanotransduction, voltage-gated currents, and drug sensitivity profiles. Importantly, this microenvironmental control strategy remained effective up to the P9 stage, demonstrating that niche reconstruction can overcome developmental stage-specific limitations in progenitor function. These findings establish niche remodeling as a powerful framework for enhancing stem cell therapeutic potential.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42557512/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 7.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 70,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog, shh; Development-to-homeostasis continuity: development, developmental, postnatal, regeneration, progenitor, stem cell, niche; Crosstalk, niche dependency, and trophic support: niche.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog, shh",
+          "Development-to-homeostasis continuity: development, developmental, postnatal, regeneration, progenitor, stem cell, niche",
+          "Crosstalk, niche dependency, and trophic support: niche",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 24.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 68.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 70
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog",
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "postnatal",
+            "regeneration",
+            "progenitor",
+            "stem cell",
+            "niche"
+          ],
+          "crosstalk_niche_dependency": [
+            "niche"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42557791",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42557791",
+        "title": "Periodontitis-Associated Clock Signaling Impairs Primary Cilia to Promote Periodontal Stem Cell Senescence.",
+        "authors": [
+          "Zhang X",
+          "Zhu Y",
+          "Ying M",
+          "Hu P",
+          "Ma J",
+          "Chen Y",
+          "Zhang X",
+          "Chen M",
+          "Dai Y",
+          "Wang H",
+          "Fan X",
+          "Hou Y"
+        ],
+        "journal": "Journal of periodontal research",
+        "pubdate": "2026 Aug 5",
+        "doi": "10.1111/jre.70162",
+        "pmcid": null,
+        "abstract": "AIM: To explore circadian involvement in periodontitis and provide insight into mechanisms.\n\nMETHODS: Clinical samples from patients with periodontitis and a ligature-induced periodontitis mouse model were used in the present research. The rhythmic pattern of cortisol, the core circadian rhythm proteins BMAL1 and CLOCK, the expression of senescence markers (p16, p21, and p53), and the percentage and length of primary cilia were detected in hPDLSCs (human periodontal ligament stem cells) exposed to cortisol as an in vitro model of cortisol-associated circadian disruption. BMAL1 expression was manipulated by siRNA transfection to knock down BMAL1 expression, and SR8278 treatment was used to modulate BMAL1-related circadian regulation. Moreover, the effects of SR8278 on the progression of periodontitis were evaluated by micro-CT, mouse behavior tests, the number of primary cilia, and senescence assays.\n\nRESULTS: Patients with periodontitis and ligature-induced periodontitis mice exhibited elevated cortisol levels, reduced BMAL1 expression, increased senescence-associated markers, and decreased primary cilia abundance. Elevated cortisol was associated with circadian disruption, accompanied by reduced BMAL1 expression and impaired ciliary homeostasis. BMAL1 regulated ARL13B expression, a key regulator of ciliogenesis. BMAL1 knockdown impaired Hedgehog signaling and induced hPDLSC senescence. SR8278 partially recovered BMAL1-related circadian alterations and primary cilia abundance while attenuating cellular senescence in both periodontitis model mice and cortisol-treated hPDLSCs.\n\nCONCLUSIONS: Collectively, these findings support the involvement of the cortisol-BMAL1-ARL13B pathway in periodontitis-associated primary cilium dysfunction and hPDLSC senescence. Modulation of BMAL1 partially restored primary cilium homeostasis and attenuated periodontal tissue damage, supporting its potential as a therapeutic target for periodontitis.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42557791/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 6.4,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 64,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Hedgehog co-receptors and modulators: primary cilia, cilium, ciliary; Development-to-homeostasis continuity: homeostasis, stem cell.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Hedgehog co-receptors and modulators: primary cilia, cilium, ciliary",
+          "Development-to-homeostasis continuity: homeostasis, stem cell",
+          "Preferred mechanistic methods: mouse model",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse, tissue."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 65.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 64
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "primary cilia",
+            "cilium",
+            "ciliary"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "homeostasis",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "mouse model"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42561643",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42561643",
+        "title": "Isolation of adipose-derived mesenchymal stromal cells expressing soluble forms of GAS1 and PTEN for experimental cell therapy for glioblastoma.",
+        "authors": [
+          "Tovar-Medina G",
+          "Flor\u00e1n-Hern\u00e1ndez CD",
+          "Avalos-Fuentes JA",
+          "Rodr\u00edguez-Cruz F",
+          "Segovia J"
+        ],
+        "journal": "Cytotherapy",
+        "pubdate": "2026 Jun 10",
+        "doi": "10.1016/j.jcyt.2026.102927",
+        "pmcid": null,
+        "abstract": "BACKGROUND AIMS: Glioblastoma is the most frequent primary brain tumor, and its current treatment mainly prolongs survival, highlighting the need for more effective second-line therapies to improve patient prognosis. Stem cells represent a promising platform for developing cell-based therapies due to their biological characteristics, which enable the delivery of antitumoral agents. Still, there are some limitations, such as invasive delivery methods to overcome the blood-brain barrier, and the need for repeated administration, among others. Here, we propose a cellular therapy based on a stable adipose-derived mesenchymal stem cell line (Ad-MSC) genetically engineered to express the therapeutic genes tGAS1 and PTEN-L, tumor suppressors that interfere with signaling pathways associated with glioblastoma growth and survival, under tetracycline regulation.\n\nMETHODS: The therapeutic strategy was evaluated in both in vitro and in vivo glioblastoma models, with engineered Ad-MSCs administered intranasally in vivo to target glioblastoma tumors.\n\nRESULTS: The therapeutic system showed tropism toward intracranially implanted tumors, inducible expression and release of tGAS1 and PTEN-L, and a significant reduction in tumor volume (p < 0.0001).\n\nCONCLUSIONS: Thus, our data indicates that intranasal administration of Ad-MSC expressing inducible tGAS1 and PTEN-L, represents a promising alternative to overcome the limitations of therapies for glioblastoma.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42561643/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 6.2,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 62,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Hedgehog co-receptors and modulators: gas1; Development-to-homeostasis continuity: stem cell; Crosstalk, niche dependency, and trophic support: mesenchymal.",
+        "why_it_matters": [
+          "Hedgehog co-receptors and modulators: gas1",
+          "Development-to-homeostasis continuity: stem cell",
+          "Crosstalk, niche dependency, and trophic support: mesenchymal",
+          "Interaction bonus: Gas1/co-receptor bridge match",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: tumor, glioblastoma.",
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 24.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 18.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 57.0,
+          "total_penalty": -15.0,
+          "total_interaction_bonus": 18.0,
+          "final_score": 62
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [
+            "gas1"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [
+            "mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Hedgehog co-receptors and modulators",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42556639",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42556639",
+        "title": "Stromal Hedgehog signaling drives segment-specific malignant transformation of gastrointestinal stem cells by producing BMP antagonists.",
+        "authors": [
+          "Li P",
+          "Che M",
+          "Deng Q",
+          "Guo R",
+          "Feng L",
+          "Liu H",
+          "Wu Q",
+          "Wang Z",
+          "Li B"
+        ],
+        "journal": "Cellular and molecular gastroenterology and hepatology",
+        "pubdate": "2026 Aug 5",
+        "doi": "10.1016/j.jcmgh.2026.101854",
+        "pmcid": null,
+        "abstract": "BACKGROUND & AIMS: Hedgehog (HH) signaling plays a complex role in epithelial-stromal interactions, but its effects on gastrointestinal stem cells mediated by heterogeneous stromal cell populations remain incompletely defined. Here, we investigate how stromal HH signaling regulates gastric stem cells and tumorigenesis in a segment-specific manner.\n\nMETHODS: We genetically activated HH signaling in distinct stromal cell lineages using Col1a2-, Pdgfra-, Gli1-, Acta2-, and Prrx1-CreERT mouse lines, combined with lineage tracing, RNA-seq, ChIP-qPCR, and pharmacological interventions. Human gastric cancer data from TCGA were also analyzed.\n\nRESULTS: We show that genetic activation of HH signaling in stromal cells marked by Col1a2, Pdgfra, or Gli1, but not by Acta2, induces tumorigenesis in the stomach and gastroesophageal junction, but not in small or large intestine. HH signaling increases the expression of multiple BMP antagonists in gastric but not colonic stromal cells, via Gli1-mediated transcription. These BMP antagonists in turn activate Wnt/\u03b2-catenin signaling in gastric stem cells, driving their proliferation and initiating gastric cancer expressing CD44 and Sox9, but not Lgr5. Activating BMP or inhibiting Wnt signaling blocks tumor initiation. TCGA patient data analysis reveals elevated HH signaling in gastric cancers, which correlates with suppressed BMP signaling.\n\nCONCLUSIONS: These findings uncover a gastrointestinal segment-specific oncogenic role for HH signaling in Col1a2+Acta2- stromal cells, mediated through the BMP-Wnt/\u03b2-catenin axis.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42556639/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 5.1,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 51,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, gli1; Development-to-homeostasis continuity: lineage, stem cell; Preferred mechanistic methods: lineage tracing, rna-seq.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, gli1",
+          "Development-to-homeostasis continuity: lineage, stem cell",
+          "Preferred mechanistic methods: lineage tracing, rna-seq",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: lineage.",
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 14.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 58.0,
+          "total_penalty": -9.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 51
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "gli1"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "lineage",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "lineage tracing",
+            "rna-seq"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42565472",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42565472",
+        "title": "Osteoclast-lineage Indian hedgehog sustains RANKL-induced osteoclastogenesis and bone resorption via the JNK/c-Fos/NFATc1 axis during postnatal bone remodeling.",
+        "authors": [
+          "Sun J",
+          "Liu S",
+          "Che X",
+          "Yang J",
+          "Li Y",
+          "Dong Z",
+          "Li P",
+          "Guo L",
+          "Wei X",
+          "Chen C",
+          "Wei L",
+          "Wang Y"
+        ],
+        "journal": "Connective tissue research",
+        "pubdate": "2026 Aug 7",
+        "doi": "10.1080/03008207.2026.2705417",
+        "pmcid": null,
+        "abstract": "PURPOSE: Bone remodeling depends on the coordinated balance between osteoclast-mediated resorption and osteoblast-mediated formation. Although Indian hedgehog (Ihh) is known to regulate skeletal development and bone homeostasis, its direct involvement in osteoclastogenesis remains unclear.\n\nMETHODS: We generated a novel mouse model, Ctsk-CreERT2; Ihhfl/fl, to investigate the role of Ihh in osteoclast lineage cells. Skeletal phenotypes were assessed by radiography, micro-CT, histology, dynamic histomorphometry, and three-point bending tests. Bone marrow macrophages were isolated to assess osteoclast precursor viability, RANKL-induced osteoclast differentiation, F-actin ring formation, and bone resorptive activity using CCK-8 assays, TRAP staining, phalloidin staining, and resorption pit assays. Osteoclastogenic gene expression and signaling pathway activation were examined by RT-qPCR and Western blotting.\n\nRESULTS: IhhCKO mice exhibited reduced body weight and an osteosclerotic phenotype, characterized by increased metaphyseal trabecular bone mass, improved femoral peak load and stiffness, and reduced cortical bone parameters. Histological analyses revealed fewer TRAP-positive osteoclasts on trabecular surfaces, increased osteoblast-related parameters, and decreased cortical bone formation indices. In vitro, Ihh deficiency reduced osteoclast precursor viability, impaired RANKL-induced osteoclast formation, decreased F-actin ring number/size and nuclei per osteoclast, and markedly reduced resorption pit formation. Mechanistically, Ihh loss suppressed osteoclast marker and fusion-related genes and diminished RANKL-induced JNK phosphorylation, c-Fos, NFATc1, and CTSK expression.\n\nCONCLUSIONS: Osteoclast-lineage-derived Ihh is required for efficient RANKL-induced osteoclastogenesis and bone resorption, at least in part by sustaining the JNK/c-Fos/NFATc1 axis. These findings identify Ihh as an osteoclast-intrinsic regulator of postnatal bone remodeling.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42565472/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 5.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 50,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, ihh; Development-to-homeostasis continuity: development, postnatal, homeostasis, lineage; Preferred mechanistic methods: mouse model.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, ihh",
+          "Development-to-homeostasis continuity: development, postnatal, homeostasis, lineage",
+          "Preferred mechanistic methods: mouse model",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse, tissue."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 51.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 50
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "ihh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "postnatal",
+            "homeostasis",
+            "lineage"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "mouse model"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42563959",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42563959",
+        "title": "MEOX2: a homeobox transcription factor with multifaceted biological functions and broad disease associations.",
+        "authors": [
+          "Liu Y",
+          "Yi M",
+          "Tang C",
+          "Wang T",
+          "Li X"
+        ],
+        "journal": "Frontiers in cell and developmental biology",
+        "pubdate": "2026",
+        "doi": "10.3389/fcell.2026.1895187",
+        "pmcid": "PMC13441723",
+        "abstract": "The mesenchymal homeobox transcription factor MEOX2 is recognized for its roles in development and homeostasis, but the full landscape of its complex and often contradictory functions in human diseases, along with its potential unifying regulatory logic, remains to be systematically elucidated. This Review synthesizes current evidence to provide a comprehensive overview of MEOX2's widespread roles in both neoplastic and non-neoplastic diseases. MEOX2 is remarkably context-dependent: it acts as an oncogene in glioblastoma and lung cancer, but as a tumour suppressor in breast cancer, hepatocellular carcinoma and other tumour types. Its dysregulation is also linked to neurovascular deficits in Alzheimer disease (AD), cardiovascular disorders, metabolic fibrosis and developmental malformations. This functional versatility stems from MEOX2's role as a key signalling integrator, subject to fine-tuned regulation by epigenetic mechanisms, non-coding RNA networks and core pathways including PI3K/AKT, ERK and Hedgehog (Hh). Given the strong association between MEOX2 expression and clinical outcomes, it has emerged as a potential diagnostic and prognostic biomarker for several diseases. Intervention strategies targeting MEOX2 and its regulatory networks show translational promise. This Review proposes a conceptual framework placing MEOX2 as a 'cross-disease core regulatory node', systematically delineates its complex disease associations and molecular mechanisms, and charts a course for the future development of precision medicine strategies targeting MEOX2.",
+        "full_text": "Introduction\nTranscription factors encoded by the homeobox gene family act as foundational determinants of pattern formation and cell fate during embryonic development. MEOX2, a member of this family, has seen its biological roles continually expanded and redefined since its discovery (Grigoriou et al., 1995). Early studies focused on its antiproliferative effects in vascular smooth muscle and endothelial cells, as well as its expression patterns during cardiovascular development (Skopick et al., 1997; Gorski et al., 1993). However, with the advent of high-throughput sequencing and bioinformatics, aberrant MEOX2 expression patterns in human diseases, particularly cancer, have been extensively uncovered.\n\nMEOX2 is highly context-dependent, making it an intriguing yet challenging target. In GBM, it is upregulated and linked to poor survival (Sch\u00f6nrock et al., 2022; Tachon et al., 2019); in BC, its downregulation predicts worse outcomes (Wang et al., 2022a; Wang et al., 2022b). This \u2018dual\u2019 role is also reflected in its regulatory mechanisms: MEOX2 is not only regulated by epigenetic modifications (e.g., DNA methylation, histone modifications) but is also a direct target of numerous microRNAs (miRNAs) and long non-coding RNAs (lncRNAs), forming an intricate gene regulatory network (Tachon et al., 2021; Liu et al., 2025; Liu X.-X. et al., 2021). Beyond cancer, the roles of MEOX2 in neurodegenerative diseases, cardiovascular pathologies, fibrotic disorders and congenital malformations are gaining increasing attention. In AD, loss of MEOX2 expression in brain endothelial cells is considered a key contributor to blood\u2013brain barrier dysfunction and impaired \u03b2-amyloid clearance (Wu et al., 2005). In the heart, it participates in fibrotic responses and heart failure (HF) progression (Cunnington et al., 2014; Gao et al., 2025). During development, MEOX2 is a critical regulator of anteroposterior patterning of the palate, and its dysfunction can lead to cleft palate (Jin and Ding, 2006; Li and Ding, 2007).\n\nThis Review aims to systematically assess the biological characteristics of MEOX2 and comprehensively synthesize its expression patterns, molecular mechanisms and clinical significance across a spectrum of human diseases, including both neoplastic and non-neoplastic conditions. We further discuss the translational potential of MEOX2 as a diagnostic biomarker and therapeutic target, and offer perspectives on future research directions in light of current limitations. Crucially, MEOX2 plays seemingly contradictory roles in different diseases\u2013acting as a bona fide oncogene in GBM and lung cancer, while often functioning as a tumour suppressor in BC and HCC. Simultaneously, MEOX2 deficiency is a key driver of vascular dysfunction in AD, while it may serve as a protective factor in liver fibrosis. This extreme context-dependency makes MEOX2 a particularly challenging yet promising research target. This Review provides an updated and comprehensive synthesis of MEOX2\u2019s roles across neoplastic and non-neoplastic diseases, establishing it as a cross-disease core regulatory node. By delineating its complex regulatory networks, bidirectional pathological functions and broad translational potential, this Review not only offers a comprehensive knowledge map but also aspires to provide an innovative theoretical framework for the future development of interdisciplinary precision medicine strategies predicated on MEOX2 status.\n\nGene, protein structure and evolutionary conservation\nThe MEOX2 gene is located on human chromosome 7p22.1-p21.3 (Grigoriou et al., 1995). The encoded protein contains several characteristic domains: an N-terminal domain, a histidine/glutamine-rich (His/Gln-rich) region and a C-terminal homeodomain (Candia et al., 1993). The homeodomain is the core region responsible for binding to specific DNA sequences and exerting transcriptional regulatory functions. Studies have shown that the middle region of the MEOX2 protein (between the His/Gln-rich region and the homeodomain, amino acids 101\u2013185) is a critical region for interaction with partner proteins such as RING finger protein 10 (RNF10) (Lin et al., 2005). MEOX2 is highly evolutionarily conserved, with its homeodomain being completely identical in humans, rodents and even amphibians, suggesting it performs essential biological functions in vertebrates (Grigoriou et al., 1995).\n\nMEOX2 and MEOX1 exhibit partial functional redundancy during development but have distinct expression patterns (Reijntjes et al., 2007). Both are homeodomain-containing transcription factors that share a highly conserved DNA-binding homeodomain (Grigoriou et al., 1995). MEOX1 is evolutionarily conserved across vertebrates, and its protein has been shown to occupy conserved promoter regions of target genes such as Tbx18 and Uncx (Skuntz et al., 2009). The \u201cpartial functional redundancy\u201d between MEOX1 and MEOX2 refers to the observation from mouse knockout studies that single-gene deletions produce relatively mild, tissue-restricted phenotypes\u2014MEOX1 deficiency primarily affects sclerotome-derived axial structures (Skuntz et al., 2009), whereas MEOX2 loss impacts limb muscle development (Otto et al., 2010)\u2014whereas double knockouts result in severe synthetic phenotypes, including complete loss of axial skeleton and severe skeletal muscle deficiency (Mankoo et al., 2003). This indicates that the two genes share overlapping functions in certain developmental contexts but also execute non-redundant roles in others. Mechanistically, both MEOX1 and MEOX2 can activate common target genes such as p21CIP1/WAF1 and p16INK4a, though through distinct transcriptional mechanisms (Douville et al., 2011). The domain architecture and principal functional outputs of MEOX2 are summarized in Figure 1.\n\nExpression and transcriptional regulation\nMEOX2 expression is subject to multi-layered and finely tuned regulation. At the transcriptional level, its core promoter activity depends on multiple positive transcription factors, including Sp1, HRF-1 and members of the myocyte enhancer factor 2 (MEF2/RSRF) family (Andr\u00e9s et al., 1995). Mutation of the MEF2 site has a more pronounced effect in cells with high endogenous MEF2 activity, and overexpression of MEF2A transactivates the MEOX2 promoter, revealing a direct regulatory link between MADS-box transcription factors and homeobox genes.\n\nEpigenetic modifications represent another crucial mechanism regulating MEOX2 expression. In lung cancer and glioma, MEOX2 overexpression is often accompanied by decreased repressive histone mark H3K27me3 and increased active mark H3K4me3 at its promoter region (\u00c1vila-Moren et al., 2014; Armas-L\u00f3pez et al., 2017). MEOX2 promoter methylation influences its expression; in glioma stem cells, expression correlates with hypomethylation (Tachon et al., 2021). During lung development and in lung cancer, methylation of the 5\u2032-UTR region of the MEOX2 gene is inversely correlated with gene expression (Cortese et al., 2008). In psoriasis, MEOX2 has also been identified as one of the differentially expressed genes associated with N6-methyladenosine (m6A) methylation (Gan et al., 2024).\n\nAt the post-transcriptional level, MEOX2 is a target of multiple miRNAs, constituting an extensive regulatory network. The miR-130a and miR-301a families have been shown to directly target the 3\u2032untranslated region (3\u2032UTR) of MEOX2, suppressing its expression and playing roles in angiogenesis and HCC progression (Chen and Gorski, 2008; Permuth-Wey et al., 2015; Zhou et al., 2012a). Other miRNAs regulating MEOX2 include miR-148a-3p (in skeletal muscle satellite cell differentiation) (Yin et al., 2020), miR-143-3p (in cervical cancer (CC) indirectly via MEOX2-AS1) (Liu X.-X. et al., 2021) and miR-1200 (in gestational diabetes mellitus (GDM)) (Huang et al., 2021). Recently, circular RNAs (circRNAs) such as circ_0000190 have been found to act as competitive endogenous RNAs (ceRNAs) sponging miR-301a, thereby upregulating MEOX2 and inhibiting triple-negative BC (TNBC) progression (Liu et al., 2025). Additionally, circ_0074673 regulates endothelial cell function via the miR-1200/MEOX2 axis (Huang et al., 2021), and circINSR inhibits sheep adipogenesis differentiation via the miR-152/MEOX2 axis (Zhao et al., 2023). Long non-coding RNAs are also involved: MEOX2-AS1 acts as a ceRNA in CC (Liu X.-X. et al., 2021), LINC01936 potentially interacts with MEOX2 in lung squamous cell carcinoma (Tian et al., 2023) and NRAV is regulated by MEOX2 in gastric cancer (GC) (Beck-Cormier et al., 2014). Furthermore, miR-1 and miR-206 target Meox2 during C2C12 myoblast differentiation (Goljanek-Whysall et al., 2012). During induced pluripotent stem (iPS) cell generation, the miR-130/301/721 family enhances reprogramming efficiency by suppressing Meox2 (Pfaff et al., 2011).\n\nPhysiological functions in normal tissues\nUnder physiological conditions, MEOX2 plays essential roles in embryonic development and tissue homeostasis. During cardiogenesis, MEOX2 exhibits a biphasic expression pattern: it is prominently expressed in the early cardiac tube and maintains expression through the looping stage, with a second wave of expression in the ventricular compact layer at later stages (Skopick et al., 1997). In the adult heart, MEOX2 forms a heterodimer with TCF15 to program the capillary endothelium for fatty acid uptake, thereby contributing to cardiac energy metabolism (Coppiello et al., 2015). In skeletal muscle development, Meox2 is required for proper myoblast proliferation and fibre-type specification; its loss leads to reduced foetal myoblast numbers and an increase in oxidative myofibres (Otto et al., 2010). MEOX2 also collaborates with MEOX1 upstream of somite formation and sclerotome differentiation (Mankoo et al., 2003; Rodrigo et al., 2004). In the vascular system, MEOX2 functions as a negative regulator of angiogenesis, suppressing endothelial cell proliferation and tube formation in response to pro-angiogenic stimuli (Gorski and Leal, 2003; Patel et al., 2005). These physiological roles establish the baseline from which MEOX2 dysregulation\u2014whether through loss or gain of function\u2014can drive distinct pathological outcomes in a tissue- and context-dependent manner. These context-dependent physiological roles of MEOX2 in embryonic development, cell cycle regulation, cardiovascular homeostasis and skeletal muscle differentiation are illustrated in Figure 2.\n\nThe observation that MEOX2 exerts opposing functions across different tumour types may be partially explained by this developmental and tissue-specific regulatory logic. As a transcription factor, MEOX2 does not operate in isolation; its transcriptional output is shaped by the availability of context-specific co-factors, epigenetic landscapes and signalling crosstalk that vary markedly between tissues of origin. For instance, in GBM and lung cancer, MEOX2 potentiates oncogenic signalling through the ERK and GLI1 axes (Sch\u00f6nrock et al., 2022; Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022), whereas in breast and liver cancer, it predominantly suppresses tumour progression via inhibition of PI3K/AKT signalling (Cai et al., 2022; Zhou et al., 2012b). This context dependency is further compounded by the presence of tissue-specific post-translational modifications\u2014such as ERK-dependent phosphorylation at Ser155 (Sch\u00f6nrock et al., 2022)\u2014and differential engagement of non-coding RNA regulatory networks. Thus, developmental lineage and tissue origin provide a framework for understanding MEOX2\u2019s duality, but the final outcome likely reflects a convergence of cell-intrinsic programmes, microenvironmental cues and genetic/epigenetic alterations. A more definitive mechanistic understanding will require systematic comparative analyses of the MEOX2 cistrome and interactome across different cellular contexts.\n\nMolecular functions and downstream pathways\nAs a transcription factor, MEOX2 exerts its functions by regulating the expression of downstream target genes. A classic function is the induction of cell cycle arrest. MEOX2 directly binds to and activates the promoters of the cyclin-dependent kinase inhibitors p21 (CIP1/WAF1) and p16 (INK4a), thereby arresting cells in the G0/G1 phase (Douville et al., 2011; Irelan et al., 2009; Smith et al., 1997). This function is p53-independent and represents a core mechanism by which MEOX2 inhibits cell proliferation. MEOX2 also participates in TGF-\u03b2-induced epithelial cell growth inhibition via transcriptional activation of p21 (Valcourt et al., 2007).\n\nMechanistically, MEOX2 cooperates with SMAD proteins to form transcriptional complexes that synergistically activate p21 expression, thereby enhancing the cytostatic response to TGF-\u03b2 stimulation (Valcourt et al., 2007). This interaction is mediated through the SMAD-binding sites in the p21 promoter, establishing MEOX2 as a direct transcriptional co-regulator of TGF-\u03b2/SMAD signalling (Valcourt et al., 2007). Importantly, MEOX2 also exerts TGF-\u03b2-independent regulation of the cell cycle, as demonstrated by its direct activation of p21 and p16 promoters through homeodomain-mediated DNA binding in the absence of TGF-\u03b2 stimulation (Douville et al., 2011; Smith et al., 1997; Petrovic et al., 2010). This p53-independent mechanism operates in multiple cell types, indicating that MEOX2 acts both downstream of TGF-\u03b2 and as an autonomous cell cycle regulator (Douville et al., 2011; Smith et al., 1997; Petrovic et al., 2010).\n\nMEOX2 acts as an integration node and modulator of several key signalling pathways. In glioma and lung cancer, MEOX2 enhances signalling through the ERK/MAPK and PI3K/AKT/mTOR pathways (Sch\u00f6nrock et al., 2022; Tachon et al., 2021; Cai et al., 2022). In lung cancer, MEOX2 forms a regulatory axis with GLI1, a key effector of the Hh pathway. MEOX2 directly occupies the promoter region of the GLI1 gene and activates its transcription, thereby promoting tumour progression and therapy resistance (Armas-L\u00f3pez et al., 2017). Furthermore, MEOX2 has been shown to interact with the NF-\u03baB pathway components p65 and I\u03baB\u03b2 in the nucleus, exerting bidirectional modulation of NF-\u03baB activity depending on its expression level, thereby influencing inflammatory and angiogenic responses (Chen et al., 2010). MEOX2 also participates in liver fibrosis and laryngeal cancer (LC) progression by regulating PI3K/AKT signalling (Wang et al., 2024; Tian et al., 2018). In cardiomyocytes, MEOX2 regulates AP-1 to participate in chemotherapy-induced cardiotoxicity (Shi et al., 2023; Duan et al., 2023).\n\nDuring development, MEOX2 cooperates with MEOX1 and is essential for somite formation, patterning and differentiation (Mankoo et al., 2003). MEOX2 directly activates the transcription of Bapx1, a key gene for sclerotome differentiation, acting as an upstream regulator of axial skeletal development (Rodrigo et al., 2004). In limb muscle development, MEOX2 cooperates with factors such as PAX3 and SIX1/4 to finely control the temporal expression of the myogenic determination gene Myf5 (Buchberger et al., 2007; Daubas et al., 2015). In heart development, the MEOX2/TCF15 heterodimer regulates fatty acid uptake by heart capillary endothelial cells (Coppiello et al., 2015). In summary, MEOX2, as a transcription factor, directly induces G0/G1 cell cycle arrest by activating p21 and p16, and acts as an integration node for several critical signalling pathways (ERK/MAPK, PI3K/AKT/mTOR, Hh, NF-\u03baB, AP-1), regulating tumour progression, therapy resistance, fibrosis and developmental processes.\n\nExpression and function of MEOX2 in neoplastic diseases\nThe role of MEOX2 in tumorigenesis and progression exhibits marked tissue specificity and disease context dependency, acting either as an oncogene or a tumour suppressor. To systematically synthesize the complex and context-dependent functions of MEOX2 across various tumour types, this section summarises the disease types, molecular mechanisms, signalling pathways and clinical associations in Table 1. The remarkably context-dependent functions of MEOX2 across diverse human malignancies\u2014acting as an oncogene in some tumour types while functioning as a tumour suppressor in others\u2014are systematically summarized in Figure 3.\n\nCentral nervous system tumours\nGBM is a paradigm for the oncogenic role of MEOX2. MEOX2 is significantly overexpressed in GBM tissues and GSCs, correlating with shortened overall survival (Sch\u00f6nrock et al., 2022; Tachon et al., 2019; Proserpio et al., 2022). Functionally, MEOX2 potentiates ERK signalling through a feed-forward mechanism in which ERK-dependent phosphorylation of MEOX2 at Ser155 is crucial for maintaining its protein level and nuclear localisation (Sch\u00f6nrock et al., 2022). Knockdown or knockout of MEOX2 effectively inhibits GSC proliferation and sphere-forming ability and induces apoptosis (Proserpio et al., 2022). Mechanistically, MEOX2 promotes glioma cell proliferation and motility by transcriptionally activating cathepsin S (CTSS) (Wang J. et al., 2022). Moreover, MEOX2 is involved in regulating metabolic reprogramming in GSCs; its knockdown leads to downregulation of genes involved in the hypoxic response and glycolysis, pathways intimately associated with therapy resistance in high-grade glioma (Proserpio et al., 2022). MEOX2 also contributes to GSC survival and adhesion phenotypes via the ERK/MAPK and PI3K/AKT pathways (Tachon et al., 2021). Importantly, MEOX2 expression correlates with the IDH1/2 wild-type molecular subtype, making it an interesting biomarker for this subtype of GBM (Tachon et al., 2019). Therapeutic strategies targeting MEOX2 are being explored; for instance, co-targeting MEOX2 (enriched in the proneural GSC state) and SRGN (enriched in the mesenchymal GSC state) shows synergistic anti-tumour effects in preclinical models (Lu et al., 2025). For diagnosis, immunohistochemical (IHC) detection of MEOX2, together with SOX11, INSM1 and EGFR, has been shown to help distinguish GBM cells from reactive gliosis in limited tissue samples (Soukup et al., 2023). In low-grade glioma (LGG), MEOX2 has been incorporated into prognostic models based on the tumour microenvironment or palmitoylation-related genes, demonstrating good risk stratification ability (Wu et al., 2025; Wang Z. et al., 2025; Du et al., 2024). Additionally, galectin-1 (Gal-1) expression correlates with MEOX2 in GBM (Mart\u00ednez-Bosch et al., 2023). These findings establish MEOX2 as an oncogene and prognostic biomarker in GBM, with functions spanning proliferation, metabolic reprogramming and stemness maintenance. Its utility in prognostic models and potential as a therapeutic target underscore its translational value.\n\nDigestive system tumours\nIn digestive system malignancies, the role of MEOX2 is predominantly tumour-suppressive in most epithelial-derived cancers, with a notable exception in liver cancer stem cells where it contributes to stemness maintenance and therapy resistance.\n\nIn hepatocellular carcinoma (HCC), MEOX2 predominantly exhibits tumour-suppressive properties. Studies have found that MEOX2 expression is lower in HCC tissues than in adjacent non-cancerous tissues, and its low expression correlates with higher Edmondson grade, vascular invasion, capsule invasion and shorter OS and disease-free survival (Zhou et al., 2012b). However, in the context of liver cancer stem cells (CSCs), the role of MEOX2 becomes complex. ABI2 protein recruits and interacts with MEOX2 to co-bind the promoter regions of KLF4 and NANOG and activate their transcription, thereby maintaining the CSC population in HCC, promoting tumour growth, metastasis and sorafenib resistance (Chen et al., 2022). This suggests that MEOX2 function may differ depending on cell state (differentiated cells versus stem cells). Thus, the net effect of MEOX2 in HCC is determined by the balance between its tumour-suppressive activity in differentiated cells and its pro-stemness function in CSCs.\n\nIn gastric cancer (GC), a functional single-nucleotide polymorphism (SNP), rs6489786, enhances binding of MEOX1 or MEOX2 to a distal enhancer, thereby upregulating the oncogenic lncRNA NRAV (Beck-Cormier et al., 2014). Additionally, MEOX2 may be involved in multidrug resistance in GC (Yan et al., 2014). These observations suggest that MEOX2 contributes to GC malignancy predominantly through non-coding RNA-mediated regulatory networks and drug resistance pathways, rather than through direct transcriptional regulation in this context.\n\nIn other digestive malignancies, MEOX2 has been implicated primarily as a prognostic or immune-related biomarker. In oesophageal squamous cell carcinoma (ESCC), bioinformatics analysis identified MEOX2 as a biomarker associated with tumour-associated macrophage infiltration. Its expression is closely correlated with the mRNA levels of colony-stimulating factor 1 (CSF-1) and its receptor CSF-1R, suggesting that MEOX2 may promote macrophage infiltration via the CSF-1/CSF-1R signalling axis (Wang et al., 2021). In colorectal cancer (CRC), MEOX2 is one of six key prognostic genes related to the tumour microenvironment, and its expression correlates with levels of immune cell infiltration (Liu Y. et al., 2021). In pancreatic intraductal papillary mucinous neoplasm (IPMN), downregulation of miR-130a may lead to upregulation of MEOX2, which is associated with high-risk IPMN (Permuth-Wey et al., 2015). In Wilms tumour (nephroblastoma), MEOX2 lies within a homozygous deletion region at 7p21 and is considered a candidate tumour suppressor gene (Ohshima et al., 2009; Blish et al., 2010). Collectively, these findings indicate that MEOX2 functions as a context-dependent regulator in digestive system cancers, with its net effect\u2014tumour suppression or promotion\u2014largely determined by cell differentiation status and the surrounding non-coding RNA regulatory network.\n\nThoracic tumours\nIn thoracic malignancies, MEOX2 exhibits a striking functional dichotomy: it acts as a potent oncogene in NSCLC, driving chemotherapy resistance and epigenetic dysregulation, while functioning predominantly as a tumour suppressor in breast cancer, where its loss correlates with poor prognosis and enhanced metastatic potential.\n\nIn non-small cell lung cancer (NSCLC), MEOX2 is oncogenic; its overexpression drives chemotherapy resistance and poor prognosis (\u00c1vila-Moren et al., 2014). Mechanistic studies have revealed the importance of the MEOX2/GLI1 axis: MEOX2 directly binds to and activates the promoter of GLI1, jointly promoting resistance to cisplatin and EGFR tyrosine kinase inhibitors (TKIs) (e.g., erlotinib, osimertinib), and modulating the activation of EGFR/AKT/ERK signalling (Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022). MEOX2 and GLI1 also induce epigenetic dysregulation of EGFR by reducing inhibitory marks (EZH2 and H3K27me3) and increasing activating histone marks (H3K27Ac/H3K4me3) at EGFR enhancer\u2013promoter regions (Peralta-Arrieta et al., 2022). Furthermore, genome-wide association studies (GWAS) have identified that a genetic variant (rs10278557) within the MEOX2 gene is significantly associated with clinical stage and prognosis of lung adenocarcinoma (Frullanti et al., 2011). In lung squamous cell carcinoma, the downregulated lncRNA LINC01936 is predicted to potentially interact with epithelial\u2013mesenchymal transition (EMT)-related genes including MEOX2 (Tian et al., 2023). In female lung adenocarcinoma, MEOX2 is included in a 12-gene prognostic signature (Sawada et al., 2022). SMARCB1-driven epigenetic alterations of EGFR-GLI1 are regulated by MEOX2 and GLI1 (Trejo-Villegas et al., 2025).\n\nIn breast cancer (BC), MEOX2 mainly functions as a tumour suppressor. Analysis of The Cancer Genome Atlas (TCGA) data and validation in clinical samples both show that MEOX2 is downregulated in BC tissues, and its low expression correlates with shorter OS of patients (Wang et al., 2022a; Wang et al., 2022b; Cai et al., 2022). Functionally, forced expression of MEOX2 inhibits BC cell proliferation, induces G0/G1 cell cycle arrest, suppresses metastatic potential and enhances chemosensitivity (Cai et al., 2022). The anti-cancer mechanisms involve negative regulation of the PI3K/AKT/mTOR and ERK1/2 signalling pathways (Cai et al., 2022). During metastasis, MEOX2 overexpression can inhibit BC cell adhesion to and transendothelial migration across lymphatic endothelial cells by targeting oxidative stress-induced RGS5 (Tang et al., 2025). In TNBC, the circ_0000190/miR-301a/MEOX2 axis has been identified as an important regulatory loop in which MEOX2 is a direct target of miR-301a; dysregulation of this axis promotes TNBC progression (Liu et al., 2025; Liu and Wang, 2021). Additionally, MEOX2 is a molecular feature of tumour-associated high endothelial venules (HEVs); its high expression correlates with extensive T-cell and B-cell infiltration, tertiary lymphoid structure formation and better survival in advanced BC (Sawada et al., 2022). MEOX2 has also been identified as a key angiogenesis-related gene (Wang et al., 2022b).\n\nThese contrasting roles in NSCLC and breast cancer highlight the extreme context dependency of MEOX2 function within thoracic malignancies, underscoring the necessity of tumour-type-specific strategies for therapeutic intervention.\n\nReproductive system tumours\nIn reproductive system tumours, MEOX2 primarily acts as a driver of malignancy. In ovarian cancer (OV), high MEOX2 expression is associated with cisplatin resistance, and silencing MEOX2 enhances chemosensitivity through E2F targets and DNA repair pathways (Wang F. et al., 2025). In cervical cancer (CC), the lncRNA MEOX2-AS1 promotes CC progression by sponging miR-143-3p to upregulate voltage-dependent anion channel 1 (VDAC1) (Liu X.-X. et al., 2021). Furthermore, MEOX2 has been identified as one of the key hub genes associated with lymph node metastasis in CC (Ding et al., 2023). These findings highlight the diversity of MEOX2\u2019s oncogenic mechanisms in reproductive malignancies, ranging from direct transcriptional regulation of DNA repair genes to indirect modulation through non-coding RNA networks.\n\nOther tumours\nBeyond the major tumour types discussed above, MEOX2 has been implicated in several additional malignancies, where its roles range from tumour suppression to stromal heterogeneity and even chromosomal translocation-driven leukaemogenesis. In laryngeal cancer (LC), MEOX2 exerts a tumour-suppressive effect; overexpression of MEOX2 promotes apoptosis by inhibiting the PI3K/AKT pathway (Tian et al., 2018). In acute myeloid leukaemia (AML), a novel NUP98MEOX2 fusion gene has been discovered, providing direct evidence for the involvement of MEOX2 in haematological malignancies (Chonabayashi et al., 2026). Moreover, MEOX2 has been included in a complement system-related prognostic model (Liu and Liu, 2024). In the tumour microenvironment of prostate cancer, a cancer-associated fibroblast (CAF) subpopulation expressing MEOX2 (C3 MEOX2+) has been identified, highlighting the potential role of MEOX2 in tumour stromal heterogeneity (Ding et al., 2025). In melanoma, MEOX2 expression may correlate with disease progression, and its expression differs between intracranial and extracranial metastases (Kraft et al., 2024). Additionally, a functional SNP at the 10q24.33 risk locus affects MEOX2 binding (Cardinale et al., 2022). In kidney renal clear cell carcinoma (KIRC), a five-gene angiogenesis signature including MEOX2 effectively predicts patient prognosis (Zhou et al., 2025). These diverse associations underscore the pleiotropic nature of MEOX2 across distinct oncological contexts and suggest that its contribution to malignancy cannot be generalised, but rather must be evaluated on a tumour-type-specific basis.\n\nExpression and function of MEOX2 in non-neoplastic diseases\nBeyond cancer, dysregulation of MEOX2 expression is also widely involved in the pathogenesis of various non-neoplastic diseases. These encompass neurodegenerative disorders, cardiovascular diseases, metabolic and fibrotic conditions, developmental malformations and inflammatory immune-related diseases. Mirroring its dual role in cancer, the function of MEOX2 in non-neoplastic diseases also exhibits high context dependency: in pathological processes such as AD, pulmonary hypertension (PH) and cardiac fibrosis, its downregulation or loss of function is often a key driver of disease progression; whereas in scenarios like liver fibrosis and diabetic vascular complications, MEOX2 displays protective effects. These complex functional outputs are typically mediated through core signalling pathways such as PI3K/AKT, ERK and TGF-\u03b2, as well as epigenetic regulatory networks. Figure 4 provides an integrated overview of MEOX2-mediated pathogenic and protective mechanisms across these diverse non-neoplastic conditions. This section systematically reviews the expression patterns, molecular mechanisms and clinical associations of MEOX2 across various non-neoplastic diseases, summarised in Table 2.\n\nNeurological disorders\nMEOX2 dysfunction is intimately linked to a spectrum of neurological disorders, where its roles range from vascular pathology in neurodegeneration to synaptic dysfunction in epilepsy and genetic susceptibility in neurodevelopmental conditions.\n\nIn Alzheimer disease (AD), the neurovascular dysfunction hypothesis for MEOX2 has gained broad support. Studies have shown that MEOX2 expression is decreased in brain endothelial cells (BECs) of patients with AD (Wu et al., 2005). Functionally, restoring MEOX2 expression stimulates angiogenesis, inhibits apoptosis and increases the level of LRP1, a major A\u03b2 clearance receptor. In mice, Meox2 deletion leads to reduced brain capillary density and resting cerebral blood flow, loss of the angiogenic response to brain hypoxia, and impaired brain A\u03b2 clearance due to reduced LRP1 levels (Wu et al., 2005). Genetic studies support this hypothesis: in APP/PS1 AD model mice, Meox2 haploinsufficiency exacerbates neuronal loss, especially in areas with plaque deposition, and is accompanied by a significant reduction in plaque-associated microvessels (Soto et al., 2016). These findings directly link MEOX2 insufficiency to vascular pathology and neuronal loss in AD, making it a potential therapeutic target (de la Torre, 2005; Bell, 2012). The establishment of a patient-derived iPSC line (ZZUi0013-A) carrying a novel MEOX2 mutation provides a valuable model for studying the pathological mechanism of MEOX2 in AD (Wang et al., 2019). In cerebrovascular gene studies, MEOX2 is a key gene related to AD pathology (de la Torre, 2005). These findings link MEOX2 deficiency in cerebral vasculature to AD neurovascular pathology, positioning it as a therapeutic target.\n\nBeyond AD, MEOX2 dysfunction has been implicated in several other neurological conditions with distinct pathophysiological mechanisms. In Dravet syndrome (DS), a severe epileptic encephalopathy, conditional Scn1a knockout using the Meox2-Cre driver has successfully recapitulated the seizure phenotypes, and interneuron-specific dual-AAV SCN1A gene replacement based on Meox2-Cre has shown therapeutic efficacy in mouse models (Mich et al., 2025; Williams et al., 2019). In the domain of pain perception, Meox2 heterozygous mice exhibit altered nociceptive function associated with reduced expression of voltage-gated sodium channel genes Scn9a and Scn11a in primary afferent neurons, revealing a previously unrecognized role for MEOX2 in maintaining the transcriptional program of nociceptors (Kokotovi\u0107 et al., 2022). Additionally, systems biology analyses have nominated MEOX2 as a potential candidate risk gene for autism spectrum disorder (ASD) through protein-protein interaction network topology (Remori et al., 2025). Collectively, these findings extend the functional repertoire of MEOX2 beyond vascular biology into neuronal excitability and neurodevelopmental risk.\n\nIn glaucoma research, transcriptomic analysis using the DBA/2J mouse model identified Meox2 as a potential upstream regulator of early gene expression changes in the optic nerve head. While Meox2 haploinsufficiency did not affect intraocular pressure elevation, it significantly increased the number of eyes with axonal damage. Mechanistically, Meox2 may promote axonal survival by controlling intraocular pressure-dependent vascular remodelling and neuroinflammation (Buchanan et al., 2019).\n\nIn the early stages of Huntington disease (HD), transcriptomic analysis revealed that MEOX2 is one of the key transcription factors significantly upregulated upon loss of HTT function, suggesting a role in the transcriptional dysregulation network early in the disease (Koz\u0142owska et al., 2025).\n\nTogether, these neurological associations establish MEOX2 as a key regulator spanning both vascular and neuronal compartments, with its dysfunction contributing to pathogenesis through distinct mechanisms in each context.\n\nCardiovascular diseases\nIn the cardiovascular system, MEOX2 plays a pivotal role in maintaining vascular homeostasis, and its dysregulation\u2014whether through genetic variation, epigenetic silencing or post-translational modification\u2014contributes to a spectrum of pathological conditions including ischaemic heart disease, fibrosis and pulmonary hypertension.\n\nEpidemiological studies indicate that genetic variants of MEOX2 are strong predictors of coronary heart disease (CHD). In the Flemish population cohort, carriers of the MEOX2 GTCCGC haplotype had a significantly increased risk of CHD, myocardial infarction, coronary revascularisation and ischaemic cardiomyopathy (Yang et al., 2015).\n\nIn cardiac fibrosis, the Ski\u2013Zeb2\u2013Meox2 pathway has been revealed as a novel mechanism regulating the phenotype of cardiac myofibroblasts. During fibroblast-to-myofibroblast transition, Meox2 expression decreases, whereas overexpression of Meox2 reverts myofibroblasts towards a fibroblast phenotype (Cunnington et al., 2014). Similarly, in hypertrophic scars, Ski can upregulate Meox2 expression to inhibit Zeb2, thereby reducing the TGF-\u03b21-induced myofibroblast phenotype (Liu et al., 2020).\n\nIn the development of heart failure (HF), recent studies have uncovered a key role for MEOX2 in capillary rarefaction. Under pressure overload, hypertrophic cardiomyocytes secrete the metabolite 3-methyl-2-oxovaleric acid (KMV), which increases Meox2 expression and nuclear accumulation in endothelial cells. Nuclear Meox2 directly binds to the promoter of the senescence-associated gene p21, triggering endothelial senescence and impaired angiogenesis, ultimately leading to capillary rarefaction and promoting HF (Gao et al., 2025). Additionally, OGN, a diagnostic biomarker for HF, is regulated in a manner involving MEOX2 (Zhu et al., 2024). These findings highlight a novel cardiomyocyte-to-endothelial cell signalling axis in which MEOX2 serves as a critical mediator of capillary rarefaction and cardiac dysfunction.\n\nIn the pathology of vascular restenosis, RNF10 has been shown to inhibit excessive proliferation of vascular smooth muscle cells by regulating the MEOX2/AP-1 axis. Overexpression of RNF10 upregulates MEOX2 and inhibits AP-1, thereby reducing neointimal hyperplasia (Li et al., 2019).\n\nIn related vascular stress contexts, chemotherapy-induced cardiotoxicity has also been linked to dysregulation of the RNF10/AP-1/Meox2 axis, as pirarubicin (THP)-induced cardiac inflammation and apoptosis are modulated through this signalling cascade (Shi et al., 2023; Duan et al., 2023). In pulmonary hypertension (PH), hypoxia downregulates MEOX2 (Gax) expression in pulmonary artery smooth muscle cells (PASMCs); conversely, adenoviral-mediated Gax overexpression inhibits hypoxia-induced PASMC proliferation\u2014putatively via the ERK1/2 pathway\u2014and induces apoptosis through the Bcl-2/Bax axis, thereby counteracting hypoxic PH development (Xia et al., 2011; Lin and Mequanint, 2015). These observations position MEOX2 as a common mediator of vascular remodelling across distinct haemodynamic and pharmacological insults.\n\nThese cardiovascular findings collectively position MEOX2 as a critical node connecting metabolic stress, vascular remodelling and cardiac dysfunction, with therapeutic implications for both ischaemic and pressure-overload heart disease.\n\nMetabolic and fibrotic diseases\nIn metabolic and fibrotic diseases, MEOX2 exhibits a predominantly protective role, counteracting pathological processes through inhibition of PI3K/AKT signalling in hepatic stellate cells and modulation of lipid metabolism in adipose and skeletal muscle tissues.\n\nIn liver fibrosis (LF), MEOX2 shows a protective effect. Comparison of differentially expressed genes between adult liver stem/progenitor cells and hepatic stellate cells (HSCs) revealed that MEOX2 is upregulated in HSCs. Functionally, overexpression of MEOX2 significantly inhibits HSC viability and proliferation. Mechanistically, MEOX2 binds to the promoter of PHLPP and upregulates its transcription, thereby inhibiting AKT phosphorylation and slowing the progression of liver fibrosis (Wang et al., 2024).\n\nIn diabetes mellitus and its complications, the role of MEOX2 has been revealed from multiple angles. In gestational diabetes mellitus, placental exosomal circ_0074673 upregulates MEOX2 by sponging miR-1200, inhibiting umbilical vein endothelial cell proliferation, migration and angiogenesis (Huang et al., 2021). Another study found that NAT10, an enzyme mediating RNA ac4C modification, is upregulated in GDM placentas; it stabilises the MEOX2 transcript by increasing ac4C modification at specific sites in the MEOX2 mRNA, thereby inhibiting endothelial cell function (Huang et al., 2025). In the fatty acid metabolism of the diabetic heart, hyperglycaemia promotes the release of lipoprotein lipase (LPL) from cardiomyocytes via TGF-\u03b2 signalling; concurrently, TGF-\u03b2 signalling also promotes nuclear translocation of MEOX2 in endothelial cells, increasing GPIHBP1 expression and accelerating the transport of LPL to the vascular lumen, thereby enhancing fatty acid utilisation by the heart (Chiu et al., 2018). In endothelial colony-forming cells exposed to intrauterine diabetes, MEOX2 promotes migration (Gohn et al., 2017).\n\nIn adipose metabolism, MEOX2 (Gax) has been shown to inhibit insulin-like growth factor-1 (IGF-1)-induced proliferation, differentiation and biological functions of perivascular adipocytes (PVACs) and preadipocytes (3T3-F442A). The mechanism involves inhibition of IGF-1-mediated activation of PI3K/Akt, ERK and FAK/Pyk2 signalling pathways (Liu et al., 2015; Liu et al., 2014; Jiang et al., 2018). Interestingly, in epididymal white adipocytes following long-term PPAR\u03b3 activation, a population of \u2018beige\u2019 adipocytes with thermogenic capacity but molecularly distinct from classical brown adipocytes emerges; these cells do not express the brown fat signature genes Zic1, Lhx8 or Meox2, indicating that MEOX2 is a molecular marker distinguishing white/beige adipocytes from brown adipocytes/myocytes (Petrovic et al., 2010; Wald\u00e9n et al., 2010). In studies of adipogenesis from sheep adipose-derived stromal vascular fraction, circINSR acts via the miR-152/MEOX2 axis (Zhao et al., 2023).\n\nDevelopmental and congenital disorders\nIn developmental biology, MEOX2 is a critical determinant of axial patterning and organogenesis, with its most extensively characterised roles in palatogenesis, somitogenesis and placental development.\n\nIn the pathogenesis of cleft palate, MEOX2 is one of the most intensively studied genes. It has been identified as a key regulator of posterior secondary palate development in mice (Yan et al., 2024; Smith et al., 2012; Hampl et al., 2020). Its expression is dynamic: at E12.5, it occupies most of the palatal shelf, then gradually recedes to the posterior region, while the expression domain of the anterior marker Shox2 expands accordingly; this transition may involve cell fate reprogramming (Li and Ding, 2007). Loss of Meox2 function leads to a unique post-fusion cleft palate, where the palatal shelves fuse but subsequently rupture, providing the first evidence for genes required to maintain post-fusion palatal adhesion (Jin and Ding, 2006). In the cleft palate model of TGF\u03b23-knockout mice, Meox2 is one of the few known cleft palate-related genes whose expression is significantly altered (Ozturk et al., 2013). Human genetic studies have shown that the MEOX2 SNP rs2237493 is significantly associated with non-syndromic cleft palate only in Vietnamese females (Tran et al., 2018). In palatal mucosal differentiation, Meox2 regulates epithelial differentiation (Neupane et al., 2018). In mouse embryonic palatal mesenchymal cells, Meox2 is a marker of stemness maintenance (Shi et al., 2019; Fantauzzo and Soriano, 2017). Msx1 regulates palatal anteroposterior patterning by suppressing Meox2 (Zhu et al., 2022). Single-cell multi-omics decoding has revealed MEOX2 as an important regulator of posterior palate development (Yan et al., 2024).\n\nBeyond palatogenesis, MEOX2 participates in multiple other developmental programs. In congenital scoliosis (CS), MEOX2 has been nominated as a candidate gene within the TBX6-mediated somitogenesis pathway, although large-scale sequencing has not identified high-frequency mutations in MEOX2 itself (Yang Y. et al., 2020). In neural tube defects (NTDs), linkage analysis has placed MEOX2 within a region of interest on chromosome 7, consistent with its potential role in vascular development and neural tube closure (Rampersaud et al., 2005). In placental biology, Meox2-Cre has been extensively employed for conditional knockout of multiple placenta-related genes, including Pkd1/2, Csf1, Dlx3 and IP3R, underscoring its utility as a genetic tool in this organ (Yang F. et al., 2020; Yang L. et al., 2020; Garcia-Gonzalez et al., 2010; Harris et al., 2012; Clark et al., 2012; Kitazawa et al., 2017); conversely, Peg11/Rtl1 knockout placentas exhibit downregulated Meox2 expression, linking MEOX2 to placental vascular integrity (Kitazawa et al., 2017). In bone healing, Meox2 knockdown has been reported to promote bone regeneration, suggesting a potential gene-therapy target for skeletal repair (Kim et al., 2020). Collectively, these diverse developmental roles highlight MEOX2 as a pleiotropic regulator of morphogenesis beyond the palate.\n\nIn skeletal muscle development, Meox2 loss leads to a reduction in fetal myoblast number and a compensatory increase in oxidative muscle fibres (Otto et al., 2010). This process is subject to multilayered post-transcriptional regulation by multiple miRNAs: in chicken skeletal muscle satellite cells, miR-148a-3p regulates differentiation and apoptosis by targeting Meox2 (Yin et al., 2020); in C2C12 myoblasts, miR-1 and miR-206 similarly target Meox2 during myogenic differentiation (Goljanek-Whysall et al., 2012). Additionally, Meox2-Cre-mediated Nle1 deletion disrupts axial skeleton formation (Beck-Cormier et al., 2014), and adrenomedullin 2 (AM2) upregulates MEOX2 to inhibit retinal neovascularisation (Kakihara et al., 2023), further supporting the pleiotropic role of MEOX2 in morphogenesis. In other developmental processes, such as cloaca/perineal muscle development, studies suggest that these muscles originate from hindlimb muscles, and their absence in Met mutants implies that their developmental mechanisms are similar to those of limb muscles, with MEOX2, as an important regulator of limb muscle development, potentially being indirectly involved (Valasek et al., 2005).\n\nThese developmental studies underscore MEOX2\u2019s evolutionary conserved role in morphogenesis and establish a foundation for understanding how its dysregulation contributes to congenital anomalies.\n\nOther diseases\nIn inflammatory and fibrotic conditions, MEOX2 dysregulation has emerged as a recurrent theme. In rheumatoid arthritis (RA), multiple bioinformatics analyses have identified MEOX2 as a diagnostic biomarker, with its altered expression in synovial tissues correlating with immune cell infiltration, particularly neutrophils, and neutrophil extracellular trap (NET)-related gene signatures (Sheng et al., 2025; Yu et al., 2021; Comertpay and Gov, 2020). In psoriasis, MEOX2 has been flagged as a differentially expressed gene associated with m6A RNA methylation, suggesting a potential link to aberrant cell proliferation and neuroregulatory dysfunction in psoriatic lesions (Gan et al., 2024). In wound healing and scar formation, MEOX2 functions as a key transcription factor controlling fibroblast-to-myofibroblast differentiation; its downregulation promotes this transition, while miR-1908 indirectly upregulates Meox2 by targeting Ski, thereby modulating fibrotic outcomes in burn scars (Noizet et al., 2016; Xie et al., 2016).\n\nBeyond inflammation, MEOX2 has been linked to systemic and genetic disorders. In genome-wide association studies of kidney function, loci near MEOX2 (GALNT11 and CDH23) have been associated with declining renal function in European populations (Gorski et al., 2015). In Hutchinson\u2013Gilford progeria syndrome (HGPS), MEOX2 is among the most significantly downregulated genes in patient fibroblasts, consistent with its role in maintaining mesodermal/mesenchymal tissue homeostasis and potentially explaining the accelerated atherosclerosis and developmental defects seen in this disorder (Csoka et al., 2004). Additionally, in influenza A virus host-interaction networks, MEOX2 has been identified as a viral protein-interacting host factor, raising the possibility of its involvement in antiviral responses (Farooq et al., 2020; Lee et al., 2017). These diverse associations underscore the broad pathophysiological reach of MEOX2 across immune-mediated, degenerative and infectious contexts.\n\nClinical translational potential of MEOX2\nThe preceding sections have systematically delineated the complex and context-dependent expression patterns and molecular mechanisms of MEOX2 in numerous neoplastic and non-neoplastic diseases. Importantly, whether in its oncogenic or tumour-suppressive roles, the expression level of MEOX2 shows significant correlation with patient clinicopathological characteristics and survival outcomes, providing a solid data foundation for its use as a diagnostic and prognostic biomarker. Concurrently, as a transcriptional regulatory hub, multiple nodes within its upstream and downstream signalling pathways and non-coding RNA networks hold potential for pharmacological intervention.\n\nAs a diagnostic and prognostic biomarker\nMEOX2 expression has robust prognostic value in several cancers, including glioma, breast cancer, HCC, lung cancer and ovarian cancer (Sch\u00f6nrock et al., 2022; Tachon et al., 2019; Wang et al., 2022a; Cai et al., 2022; Zhou et al., 2012b; Frullanti et al., 2011; Wang F. et al., 2025). This positions MEOX2 as a potential tool for molecular stratification and prognosis assessment in these tumours.\n\nIn terms of ancillary pathological diagnosis, IHC detection of MEOX2 shows practical value. Studies indicate that combined detection of MEOX2, SOX11, INSM1 and EGFR in limited biopsy samples can effectively distinguish GBM cells from reactive gliosis, improving diagnostic accuracy (Soukup et al., 2023).\n\nFurthermore, prognostic signature models based on MEOX2 combined with other genes are being continually developed and refined. For example, in LGG, a palmitoylation-related five-gene signature (CHI3L1, IGFBP2, MEOX2, EMILIN3, SFRP2) and an immune microenvironment-related six-gene signature (MEOX2, PHYHIP, RBBP8, ST18, TCF12, THRB) both demonstrate robust prognostic prediction capabilities (Wu et al., 2025; Wang Z. et al., 2025). In KIRC, a five-gene angiogenesis signature (MEOX2, PLG, PROX1, TEK, TIMP1) effectively predicts patient prognosis (Zhou et al., 2025). In AML, a complement system-related four-gene signature including MEOX2 also has prognostic value (Liu and Liu, 2024). In female lung adenocarcinoma, a 12-gene signature including MEOX2 predicts prognosis (Sawada et al., 2022).\n\nDevelopment strategies as a therapeutic target\nDirect Targeting of MEOX2: For MEOX2-driven tumours (e.g., GBM, lung cancer), direct inhibition of its transcriptional activity or promotion of its degradation is an ideal strategy. Using genetic and pharmacologic approaches, Lu et al. identified FDA-approved drugs targeting MEOX2 (Lu et al., 2025). Virtual molecular screening and subsequent dose-response validation revealed that nilotinib and DHEC (dihydroergocryptine) have inhibitory effects on MEOX2. Mechanistically, these drugs suppress the MEOX2-NOTCH axis in classical (CL) GSCs. Notably, MEOX2 knockdown decreased the sensitivity of CL GSCs to nilotinib and DHEC, further confirming the specificity of these agents. Combined targeting of CL GSCs (via MEOX2 inhibition) and mesenchymal (MES) GSCs (via SRGN inhibition with paliperidone and risperidone) demonstrated enhanced efficacy both in vitro and in vivo (Lu et al., 2025). However, as transcription factors are traditionally considered \u2018undruggable\u2019 targets, developing highly selective, potent small-molecule inhibitors remains challenging. New technologies such as PROteolysis TArgeting Chimeras (PROTACs) may offer new avenues for targeting MEOX2.\n\nCombination Therapy Strategies: Given that MEOX2 typically acts as a signalling pathway hub, intervening in its upstream or downstream pathways in combination may be more feasible and effective. In GBM, co-targeting MEOX2 (enriched in the proneural GSC state) and SRGN (enriched in the mesenchymal GSC state) eliminated heterogeneous GSC populations more effectively than single targeting (Lu et al., 2025). In lung cancer, combining inhibitors of the MEOX2/GLI1 axis with EGFR-TKIs or platinum-based chemotherapy holds promise for overcoming resistance to existing treatments (Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022).\n\nIndirect Intervention via Regulatory Networks (1) miRNA-based therapy: Using miRNA mimics (e.g., miR-301a mimic to target oncogenic MEOX2): or inhibitors (e.g., miR-130a inhibitor to upregulate tumour-suppressive MEOX2) shows preclinical potential for modulating MEOX2 expression and therapeutic efficacy in BC, HCC and other diseases (Liu et al., 2025; Zhou et al., 2012a). Targeting the MEOX2-AS1/miR-143-3p axis may also represent a therapeutic strategy for CC (Liu X.-X. et al., 2021). In pulmonary artery endothelial cells, framework nucleic acids regulate Meox2 by targeting miR-152 (You et al., 2022). (2) Targeting upstream regulators: For example, in cardiovascular disease and liver fibrosis, activating RNF10 or intervening in TGF-\u03b2 signalling can indirectly upregulate MEOX2, exerting protective effects (Wang et al., 2024; Li et al., 2019). In diabetic cardiac complications, modulating the TGF-\u03b2/MEOX2 axis may ameliorate metabolic imbalance (Chiu et al., 2018). In AD, restoring MEOX2 expression holds therapeutic potential (Wu et al., 2005). (3) Targeting downstream effector pathways: Even if direct MEOX2 targeting is not feasible, inhibiting its activated downstream pathways (e.g., PI3K/AKT, ERK, Hh) remains a currently viable therapeutic option, particularly in tumours with high MEOX2 expression (Sch\u00f6nrock et al., 2022; Peralta-Arrieta et al., 2022; Cai et al., 2022). (4) Gene Therapy and Cell Therapy: In monogenic disorders or diseases involving loss of function, restoring MEOX2 function is therapeutically promising. For example, in the vascular pathology of AD, theoretically restoring MEOX2 expression in brain endothelial cells could improve blood\u2013brain barrier function and A\u03b2 clearance (Wu et al., 2005). In DS, Meox2-Cre-mediated, interneuron-specific SCN1A gene replacement has been successfully achieved in mouse models, demonstrating the potential of precision gene therapy (Mich et al., 2025; Williams et al., 2019). Furthermore, in cell therapy, hypoxic preconditioning of HUVECs upregulates a set of genes including MEOX2, enhancing their migration and neurovascular protective capacity, offering a new strategy for treating neonatal hypoxic-ischaemic encephalopathy (Lee et al., 2018).\n\nIn summary, MEOX2 exhibits multi-dimensional potential for clinical translation. Its expression levels correlate significantly with patient prognosis in GBM, BC, lung cancer, OV and other malignancies. Multi-gene models incorporating MEOX2 enhance risk stratification, and IHC detection aids ancillary pathological diagnosis. Direct targeting, combination strategies and indirect interventions via miRNAs, lncRNAs and gene editing are advancing. Gene replacement and cell therapies show preliminary efficacy in AD, DS and neonatal brain ischaemia. These translational strategies are summarised in Table 3.\n\nConclusions and perspectives\nMEOX2, an ancient and multifunctional homeobox transcription factor, exemplifies the translational path from developmental biology to disease medicine. This Review presents MEOX2\u2019s physiological functions and its dual-faceted roles in neoplastic and non-neoplastic diseases. In oncology, whether MEOX2 acts as an \u2018oncogene\u2019 or \u2018tumour suppressor\u2019 is highly dependent on tissue origin and cellular context. In neurodegenerative, cardiovascular, fibrotic and developmental disorders, MEOX2 dysfunction is frequently a key link in disease pathogenesis.\n\nWe recognize that the quality and strength of studies addressing MEOX2 vary considerably across different disease contexts. We stratified the evidence into four levels: Level I (large-scale prospective cohorts or RCTs), Level II (retrospective cohort studies with independent validation), Level III (small series or bioinformatics-derived models without external validation) and Level IV (preclinical studies). The strongest evidence for MEOX2 as a prognostic biomarker resides in gliomas, breast cancer and hepatocellular carcinoma, where multiple retrospective cohort studies have consistently demonstrated independent prognostic value (Level II) (Sch\u00f6nrock et al., 2022; Tachon et al., 2019; Wang et al., 2022a; Cai et al., 2022; Zhou et al., 2012b). By contrast, most multi-gene signatures incorporating MEOX2 have been derived solely from bioinformatics analyses without prospective validation, placing them at Level III (Wu et al., 2025; Wang Z. et al., 2025; Zhou et al., 2025; Liu and Liu, 2024; Feng et al., 2024). Therapeutic intervention strategies\u2014including small-molecule inhibitors (Lu et al., 2025), miRNA-based modulation (Zhou et al., 2012a; Tang et al., 2025), gene replacement (Wu et al., 2005; Mich et al., 2025) and cell therapy (Lee et al., 2018)\u2014all remain at the preclinical stage (Level IV). No randomised controlled trials evaluating MEOX2-directed therapies have been reported, representing a major gap that must be addressed in future research.\n\nDespite significant progress, several major challenges remain. First, the mechanistic basis of MEOX2\u2019s functional duality demands deeper analysis beyond the simple assertion of context dependence. This duality can be parsed into two distinct but interacting layers: pathway dependency and tissue dependency. Pathway dependency refers to the specific signalling cascades engaged by MEOX2 in a given cellular state\u2014in GBM and lung cancer, MEOX2 potentiates ERK/GLI1 signalling (Sch\u00f6nrock et al., 2022; Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022); in breast and laryngeal cancers, it inhibits PI3K/AKT pathways (Cai et al., 2022; Tian et al., 2018). Tissue dependency reflects the pre-existing transcriptional programmes established during development, shaped by tissue-specific co-factor networks (Lin et al., 2005; Valcourt et al., 2007) and epigenetic landscapes (\u00c1vila-Moren et al., 2014; Cortese et al., 2008). These two layers converge to determine net functional outcome, and neither alone is sufficient to predict MEOX2\u2019s role in a given tumour type. Second, targeting specificity and tool scarcity remain formidable obstacles. Distinguishing MEOX2 from its paralogue MEOX1\u2014which shares substantial homeodomain homology (Grigoriou et al., 1995; Sch\u00f6nrock et al., 2022) and partial functional redundancy during development (Reijntjes et al., 2007)\u2014is a major challenge, and no MEOX2-selective inhibitors have been reported. Indirect strategies (miRNAs, RNF10, TGF-\u03b2 modulation) carry off-target risks, as these networks are shared with normal physiological functions (Chen and Gorski, 2008; Dhahri et al., 2020). Third, practical translational barriers include specimen accessibility, lack of standardised detection techniques\u2014as exemplified by the absence of unified IHC scoring criteria for MEOX2 positivity across studies (Soukup et al., 2023)\u2014and economic considerations for routine implementation. Fourth, MEOX2\u2019s relationship with the tumour microenvironment and inflammatory cells has emerged as an important dimension: it correlates with macrophage infiltration in oesophageal cancer (Wang et al., 2021), HEV-associated T/B-cell infiltration in breast cancer (Sawada et al., 2022), and neutrophil infiltration in rheumatoid arthritis (Yu et al., 2021; Comertpay and Gov, 2020). In GBM, MEOX2 expression correlates with galectin-1 and CD4+ T-cell/macrophage patterns (Mart\u00ednez-Bosch et al., 2023). These observations suggest that MEOX2\u2019s oncogenic versus tumour-suppressive effects may be partially mediated through immune regulation, though the precise mechanisms remain poorly defined.\n\nThe challenges discussed above naturally point to several priorities for future investigation. Mechanistically, multi-omics approaches\u2014single-cell multi-omics, spatial transcriptomics, Hi-C and CRISPR screening\u2014could delineate MEOX2\u2019s genome-wide binding landscape and resolve its functional duality across cellular contexts. Translational efforts should focus on two complementary avenues: first, developing selective agents that target MEOX2 protein\u2013protein interaction interfaces (e.g., with RNF10 or SMADs) or use PROTACs and molecular glues to overcome the current lack of MEOX2-specific inhibitors and the challenge of distinguishing it from MEOX1; and second, establishing robust clinical validation frameworks, including large prospective cohorts, standardised detection protocols and exploration of MEOX2 as a liquid biopsy marker, to address the practical barriers currently impeding clinical implementation. Finally, the emerging roles of MEOX2 in the tumour microenvironment and systemic inflammation warrant deeper investigation, as its immune-related functions\u2014correlating with macrophage infiltration, T/B-cell recruitment and neutrophil-associated inflammation\u2014remain mechanistically undefined and could reveal new combination strategies for immunotherapy. Together, these priorities aim to translate the current correlative and preclinical evidence into mechanistic understanding, therapeutic innovation and clinical utility.\n\nIn conclusion, MEOX2 is a hub molecule connecting developmental biology to a wide range of human diseases. In-depth study of MEOX2 will deepen our understanding of fundamental life processes and bring new diagnostic tools and therapeutic hope for diseases currently lacking effective treatments (e.g., high-grade glioma, AD, organ fibrosis). With continuous advances in research tools and concepts, MEOX2 is poised to occupy a significant place in the future of precision medicine.",
+        "source": "pmc_full_text",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42563959/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441723/"
+      },
+      "analysis": {
+        "topic_relevance_score": 3.4,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 34,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Development-to-homeostasis continuity: development, developmental, homeostasis; Crosstalk, niche dependency, and trophic support: mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Development-to-homeostasis continuity: development, developmental, homeostasis",
+          "Crosstalk, niche dependency, and trophic support: mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development.",
+          "Possible descriptive or low-mechanism paper signal: review."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": -5.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 43.0,
+          "total_penalty": -11.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 34
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [
+            "mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ],
+  "scored_records": [
+    {
+      "paper": {
+        "paper_id": "42557512",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42557512",
+        "title": "Synergistic SHH activation and BMP inhibition remodel progenitor niche for enhanced hair cell generation.",
+        "authors": [
+          "Li C",
+          "He D",
+          "Tang W",
+          "Fu L",
+          "Tan X",
+          "Yao Y",
+          "Yin X"
+        ],
+        "journal": "Science China. Life sciences",
+        "pubdate": "2026 Aug 3",
+        "doi": "10.1007/s11427-025-3285-x",
+        "pmcid": null,
+        "abstract": "Hair cell regeneration from supporting cells declines rapidly during early postnatal development, limiting therapeutic applications. We demonstrate that strategic microenvironmental remodeling can dramatically enhance inner ear progenitor cell (IEPC) function beyond what conventional marker-based approaches predict. Using functional screening focused on differentiation capacity rather than single progenitor markers (Lgr5), we discovered that concurrent Sonic hedgehog activation and BMP inhibition create a synergistic niche environment. This dual signaling approach generated high-purity Sox2+/Ki67+ IEPCs from postnatal day 7 (P7) supporting cells with 50.83%\u00b11.76% hair cell differentiation efficiency. Single-cell RNA sequencing revealed that this strategy drives progenitor reprogramming by activating inner ear developmental gene programs while suppressing supporting cell identity. Regenerated hair cells exhibited functional mechanotransduction, voltage-gated currents, and drug sensitivity profiles. Importantly, this microenvironmental control strategy remained effective up to the P9 stage, demonstrating that niche reconstruction can overcome developmental stage-specific limitations in progenitor function. These findings establish niche remodeling as a powerful framework for enhancing stem cell therapeutic potential.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42557512/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 7.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 70,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog, shh; Development-to-homeostasis continuity: development, developmental, postnatal, regeneration, progenitor, stem cell, niche; Crosstalk, niche dependency, and trophic support: niche.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog, shh",
+          "Development-to-homeostasis continuity: development, developmental, postnatal, regeneration, progenitor, stem cell, niche",
+          "Crosstalk, niche dependency, and trophic support: niche",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 24.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 68.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 70
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog",
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "postnatal",
+            "regeneration",
+            "progenitor",
+            "stem cell",
+            "niche"
+          ],
+          "crosstalk_niche_dependency": [
+            "niche"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42557791",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42557791",
+        "title": "Periodontitis-Associated Clock Signaling Impairs Primary Cilia to Promote Periodontal Stem Cell Senescence.",
+        "authors": [
+          "Zhang X",
+          "Zhu Y",
+          "Ying M",
+          "Hu P",
+          "Ma J",
+          "Chen Y",
+          "Zhang X",
+          "Chen M",
+          "Dai Y",
+          "Wang H",
+          "Fan X",
+          "Hou Y"
+        ],
+        "journal": "Journal of periodontal research",
+        "pubdate": "2026 Aug 5",
+        "doi": "10.1111/jre.70162",
+        "pmcid": null,
+        "abstract": "AIM: To explore circadian involvement in periodontitis and provide insight into mechanisms.\n\nMETHODS: Clinical samples from patients with periodontitis and a ligature-induced periodontitis mouse model were used in the present research. The rhythmic pattern of cortisol, the core circadian rhythm proteins BMAL1 and CLOCK, the expression of senescence markers (p16, p21, and p53), and the percentage and length of primary cilia were detected in hPDLSCs (human periodontal ligament stem cells) exposed to cortisol as an in vitro model of cortisol-associated circadian disruption. BMAL1 expression was manipulated by siRNA transfection to knock down BMAL1 expression, and SR8278 treatment was used to modulate BMAL1-related circadian regulation. Moreover, the effects of SR8278 on the progression of periodontitis were evaluated by micro-CT, mouse behavior tests, the number of primary cilia, and senescence assays.\n\nRESULTS: Patients with periodontitis and ligature-induced periodontitis mice exhibited elevated cortisol levels, reduced BMAL1 expression, increased senescence-associated markers, and decreased primary cilia abundance. Elevated cortisol was associated with circadian disruption, accompanied by reduced BMAL1 expression and impaired ciliary homeostasis. BMAL1 regulated ARL13B expression, a key regulator of ciliogenesis. BMAL1 knockdown impaired Hedgehog signaling and induced hPDLSC senescence. SR8278 partially recovered BMAL1-related circadian alterations and primary cilia abundance while attenuating cellular senescence in both periodontitis model mice and cortisol-treated hPDLSCs.\n\nCONCLUSIONS: Collectively, these findings support the involvement of the cortisol-BMAL1-ARL13B pathway in periodontitis-associated primary cilium dysfunction and hPDLSC senescence. Modulation of BMAL1 partially restored primary cilium homeostasis and attenuated periodontal tissue damage, supporting its potential as a therapeutic target for periodontitis.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42557791/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 6.4,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 64,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Hedgehog co-receptors and modulators: primary cilia, cilium, ciliary; Development-to-homeostasis continuity: homeostasis, stem cell.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Hedgehog co-receptors and modulators: primary cilia, cilium, ciliary",
+          "Development-to-homeostasis continuity: homeostasis, stem cell",
+          "Preferred mechanistic methods: mouse model",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse, tissue."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 65.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 64
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "primary cilia",
+            "cilium",
+            "ciliary"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "homeostasis",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "mouse model"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42561643",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42561643",
+        "title": "Isolation of adipose-derived mesenchymal stromal cells expressing soluble forms of GAS1 and PTEN for experimental cell therapy for glioblastoma.",
+        "authors": [
+          "Tovar-Medina G",
+          "Flor\u00e1n-Hern\u00e1ndez CD",
+          "Avalos-Fuentes JA",
+          "Rodr\u00edguez-Cruz F",
+          "Segovia J"
+        ],
+        "journal": "Cytotherapy",
+        "pubdate": "2026 Jun 10",
+        "doi": "10.1016/j.jcyt.2026.102927",
+        "pmcid": null,
+        "abstract": "BACKGROUND AIMS: Glioblastoma is the most frequent primary brain tumor, and its current treatment mainly prolongs survival, highlighting the need for more effective second-line therapies to improve patient prognosis. Stem cells represent a promising platform for developing cell-based therapies due to their biological characteristics, which enable the delivery of antitumoral agents. Still, there are some limitations, such as invasive delivery methods to overcome the blood-brain barrier, and the need for repeated administration, among others. Here, we propose a cellular therapy based on a stable adipose-derived mesenchymal stem cell line (Ad-MSC) genetically engineered to express the therapeutic genes tGAS1 and PTEN-L, tumor suppressors that interfere with signaling pathways associated with glioblastoma growth and survival, under tetracycline regulation.\n\nMETHODS: The therapeutic strategy was evaluated in both in vitro and in vivo glioblastoma models, with engineered Ad-MSCs administered intranasally in vivo to target glioblastoma tumors.\n\nRESULTS: The therapeutic system showed tropism toward intracranially implanted tumors, inducible expression and release of tGAS1 and PTEN-L, and a significant reduction in tumor volume (p < 0.0001).\n\nCONCLUSIONS: Thus, our data indicates that intranasal administration of Ad-MSC expressing inducible tGAS1 and PTEN-L, represents a promising alternative to overcome the limitations of therapies for glioblastoma.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42561643/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 6.2,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 62,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Hedgehog co-receptors and modulators: gas1; Development-to-homeostasis continuity: stem cell; Crosstalk, niche dependency, and trophic support: mesenchymal.",
+        "why_it_matters": [
+          "Hedgehog co-receptors and modulators: gas1",
+          "Development-to-homeostasis continuity: stem cell",
+          "Crosstalk, niche dependency, and trophic support: mesenchymal",
+          "Interaction bonus: Gas1/co-receptor bridge match",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: tumor, glioblastoma.",
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 24.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 18.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 57.0,
+          "total_penalty": -15.0,
+          "total_interaction_bonus": 18.0,
+          "final_score": 62
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [
+            "gas1"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [
+            "mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Hedgehog co-receptors and modulators",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42556639",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42556639",
+        "title": "Stromal Hedgehog signaling drives segment-specific malignant transformation of gastrointestinal stem cells by producing BMP antagonists.",
+        "authors": [
+          "Li P",
+          "Che M",
+          "Deng Q",
+          "Guo R",
+          "Feng L",
+          "Liu H",
+          "Wu Q",
+          "Wang Z",
+          "Li B"
+        ],
+        "journal": "Cellular and molecular gastroenterology and hepatology",
+        "pubdate": "2026 Aug 5",
+        "doi": "10.1016/j.jcmgh.2026.101854",
+        "pmcid": null,
+        "abstract": "BACKGROUND & AIMS: Hedgehog (HH) signaling plays a complex role in epithelial-stromal interactions, but its effects on gastrointestinal stem cells mediated by heterogeneous stromal cell populations remain incompletely defined. Here, we investigate how stromal HH signaling regulates gastric stem cells and tumorigenesis in a segment-specific manner.\n\nMETHODS: We genetically activated HH signaling in distinct stromal cell lineages using Col1a2-, Pdgfra-, Gli1-, Acta2-, and Prrx1-CreERT mouse lines, combined with lineage tracing, RNA-seq, ChIP-qPCR, and pharmacological interventions. Human gastric cancer data from TCGA were also analyzed.\n\nRESULTS: We show that genetic activation of HH signaling in stromal cells marked by Col1a2, Pdgfra, or Gli1, but not by Acta2, induces tumorigenesis in the stomach and gastroesophageal junction, but not in small or large intestine. HH signaling increases the expression of multiple BMP antagonists in gastric but not colonic stromal cells, via Gli1-mediated transcription. These BMP antagonists in turn activate Wnt/\u03b2-catenin signaling in gastric stem cells, driving their proliferation and initiating gastric cancer expressing CD44 and Sox9, but not Lgr5. Activating BMP or inhibiting Wnt signaling blocks tumor initiation. TCGA patient data analysis reveals elevated HH signaling in gastric cancers, which correlates with suppressed BMP signaling.\n\nCONCLUSIONS: These findings uncover a gastrointestinal segment-specific oncogenic role for HH signaling in Col1a2+Acta2- stromal cells, mediated through the BMP-Wnt/\u03b2-catenin axis.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42556639/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 5.1,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 51,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, gli1; Development-to-homeostasis continuity: lineage, stem cell; Preferred mechanistic methods: lineage tracing, rna-seq.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, gli1",
+          "Development-to-homeostasis continuity: lineage, stem cell",
+          "Preferred mechanistic methods: lineage tracing, rna-seq",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: lineage.",
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 14.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 58.0,
+          "total_penalty": -9.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 51
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "gli1"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "lineage",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "lineage tracing",
+            "rna-seq"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42565472",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42565472",
+        "title": "Osteoclast-lineage Indian hedgehog sustains RANKL-induced osteoclastogenesis and bone resorption via the JNK/c-Fos/NFATc1 axis during postnatal bone remodeling.",
+        "authors": [
+          "Sun J",
+          "Liu S",
+          "Che X",
+          "Yang J",
+          "Li Y",
+          "Dong Z",
+          "Li P",
+          "Guo L",
+          "Wei X",
+          "Chen C",
+          "Wei L",
+          "Wang Y"
+        ],
+        "journal": "Connective tissue research",
+        "pubdate": "2026 Aug 7",
+        "doi": "10.1080/03008207.2026.2705417",
+        "pmcid": null,
+        "abstract": "PURPOSE: Bone remodeling depends on the coordinated balance between osteoclast-mediated resorption and osteoblast-mediated formation. Although Indian hedgehog (Ihh) is known to regulate skeletal development and bone homeostasis, its direct involvement in osteoclastogenesis remains unclear.\n\nMETHODS: We generated a novel mouse model, Ctsk-CreERT2; Ihhfl/fl, to investigate the role of Ihh in osteoclast lineage cells. Skeletal phenotypes were assessed by radiography, micro-CT, histology, dynamic histomorphometry, and three-point bending tests. Bone marrow macrophages were isolated to assess osteoclast precursor viability, RANKL-induced osteoclast differentiation, F-actin ring formation, and bone resorptive activity using CCK-8 assays, TRAP staining, phalloidin staining, and resorption pit assays. Osteoclastogenic gene expression and signaling pathway activation were examined by RT-qPCR and Western blotting.\n\nRESULTS: IhhCKO mice exhibited reduced body weight and an osteosclerotic phenotype, characterized by increased metaphyseal trabecular bone mass, improved femoral peak load and stiffness, and reduced cortical bone parameters. Histological analyses revealed fewer TRAP-positive osteoclasts on trabecular surfaces, increased osteoblast-related parameters, and decreased cortical bone formation indices. In vitro, Ihh deficiency reduced osteoclast precursor viability, impaired RANKL-induced osteoclast formation, decreased F-actin ring number/size and nuclei per osteoclast, and markedly reduced resorption pit formation. Mechanistically, Ihh loss suppressed osteoclast marker and fusion-related genes and diminished RANKL-induced JNK phosphorylation, c-Fos, NFATc1, and CTSK expression.\n\nCONCLUSIONS: Osteoclast-lineage-derived Ihh is required for efficient RANKL-induced osteoclastogenesis and bone resorption, at least in part by sustaining the JNK/c-Fos/NFATc1 axis. These findings identify Ihh as an osteoclast-intrinsic regulator of postnatal bone remodeling.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42565472/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 5.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 50,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, ihh; Development-to-homeostasis continuity: development, postnatal, homeostasis, lineage; Preferred mechanistic methods: mouse model.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, ihh",
+          "Development-to-homeostasis continuity: development, postnatal, homeostasis, lineage",
+          "Preferred mechanistic methods: mouse model",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse, tissue."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 51.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 50
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "ihh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "postnatal",
+            "homeostasis",
+            "lineage"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "mouse model"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42563959",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42563959",
+        "title": "MEOX2: a homeobox transcription factor with multifaceted biological functions and broad disease associations.",
+        "authors": [
+          "Liu Y",
+          "Yi M",
+          "Tang C",
+          "Wang T",
+          "Li X"
+        ],
+        "journal": "Frontiers in cell and developmental biology",
+        "pubdate": "2026",
+        "doi": "10.3389/fcell.2026.1895187",
+        "pmcid": "PMC13441723",
+        "abstract": "The mesenchymal homeobox transcription factor MEOX2 is recognized for its roles in development and homeostasis, but the full landscape of its complex and often contradictory functions in human diseases, along with its potential unifying regulatory logic, remains to be systematically elucidated. This Review synthesizes current evidence to provide a comprehensive overview of MEOX2's widespread roles in both neoplastic and non-neoplastic diseases. MEOX2 is remarkably context-dependent: it acts as an oncogene in glioblastoma and lung cancer, but as a tumour suppressor in breast cancer, hepatocellular carcinoma and other tumour types. Its dysregulation is also linked to neurovascular deficits in Alzheimer disease (AD), cardiovascular disorders, metabolic fibrosis and developmental malformations. This functional versatility stems from MEOX2's role as a key signalling integrator, subject to fine-tuned regulation by epigenetic mechanisms, non-coding RNA networks and core pathways including PI3K/AKT, ERK and Hedgehog (Hh). Given the strong association between MEOX2 expression and clinical outcomes, it has emerged as a potential diagnostic and prognostic biomarker for several diseases. Intervention strategies targeting MEOX2 and its regulatory networks show translational promise. This Review proposes a conceptual framework placing MEOX2 as a 'cross-disease core regulatory node', systematically delineates its complex disease associations and molecular mechanisms, and charts a course for the future development of precision medicine strategies targeting MEOX2.",
+        "full_text": "Introduction\nTranscription factors encoded by the homeobox gene family act as foundational determinants of pattern formation and cell fate during embryonic development. MEOX2, a member of this family, has seen its biological roles continually expanded and redefined since its discovery (Grigoriou et al., 1995). Early studies focused on its antiproliferative effects in vascular smooth muscle and endothelial cells, as well as its expression patterns during cardiovascular development (Skopick et al., 1997; Gorski et al., 1993). However, with the advent of high-throughput sequencing and bioinformatics, aberrant MEOX2 expression patterns in human diseases, particularly cancer, have been extensively uncovered.\n\nMEOX2 is highly context-dependent, making it an intriguing yet challenging target. In GBM, it is upregulated and linked to poor survival (Sch\u00f6nrock et al., 2022; Tachon et al., 2019); in BC, its downregulation predicts worse outcomes (Wang et al., 2022a; Wang et al., 2022b). This \u2018dual\u2019 role is also reflected in its regulatory mechanisms: MEOX2 is not only regulated by epigenetic modifications (e.g., DNA methylation, histone modifications) but is also a direct target of numerous microRNAs (miRNAs) and long non-coding RNAs (lncRNAs), forming an intricate gene regulatory network (Tachon et al., 2021; Liu et al., 2025; Liu X.-X. et al., 2021). Beyond cancer, the roles of MEOX2 in neurodegenerative diseases, cardiovascular pathologies, fibrotic disorders and congenital malformations are gaining increasing attention. In AD, loss of MEOX2 expression in brain endothelial cells is considered a key contributor to blood\u2013brain barrier dysfunction and impaired \u03b2-amyloid clearance (Wu et al., 2005). In the heart, it participates in fibrotic responses and heart failure (HF) progression (Cunnington et al., 2014; Gao et al., 2025). During development, MEOX2 is a critical regulator of anteroposterior patterning of the palate, and its dysfunction can lead to cleft palate (Jin and Ding, 2006; Li and Ding, 2007).\n\nThis Review aims to systematically assess the biological characteristics of MEOX2 and comprehensively synthesize its expression patterns, molecular mechanisms and clinical significance across a spectrum of human diseases, including both neoplastic and non-neoplastic conditions. We further discuss the translational potential of MEOX2 as a diagnostic biomarker and therapeutic target, and offer perspectives on future research directions in light of current limitations. Crucially, MEOX2 plays seemingly contradictory roles in different diseases\u2013acting as a bona fide oncogene in GBM and lung cancer, while often functioning as a tumour suppressor in BC and HCC. Simultaneously, MEOX2 deficiency is a key driver of vascular dysfunction in AD, while it may serve as a protective factor in liver fibrosis. This extreme context-dependency makes MEOX2 a particularly challenging yet promising research target. This Review provides an updated and comprehensive synthesis of MEOX2\u2019s roles across neoplastic and non-neoplastic diseases, establishing it as a cross-disease core regulatory node. By delineating its complex regulatory networks, bidirectional pathological functions and broad translational potential, this Review not only offers a comprehensive knowledge map but also aspires to provide an innovative theoretical framework for the future development of interdisciplinary precision medicine strategies predicated on MEOX2 status.\n\nGene, protein structure and evolutionary conservation\nThe MEOX2 gene is located on human chromosome 7p22.1-p21.3 (Grigoriou et al., 1995). The encoded protein contains several characteristic domains: an N-terminal domain, a histidine/glutamine-rich (His/Gln-rich) region and a C-terminal homeodomain (Candia et al., 1993). The homeodomain is the core region responsible for binding to specific DNA sequences and exerting transcriptional regulatory functions. Studies have shown that the middle region of the MEOX2 protein (between the His/Gln-rich region and the homeodomain, amino acids 101\u2013185) is a critical region for interaction with partner proteins such as RING finger protein 10 (RNF10) (Lin et al., 2005). MEOX2 is highly evolutionarily conserved, with its homeodomain being completely identical in humans, rodents and even amphibians, suggesting it performs essential biological functions in vertebrates (Grigoriou et al., 1995).\n\nMEOX2 and MEOX1 exhibit partial functional redundancy during development but have distinct expression patterns (Reijntjes et al., 2007). Both are homeodomain-containing transcription factors that share a highly conserved DNA-binding homeodomain (Grigoriou et al., 1995). MEOX1 is evolutionarily conserved across vertebrates, and its protein has been shown to occupy conserved promoter regions of target genes such as Tbx18 and Uncx (Skuntz et al., 2009). The \u201cpartial functional redundancy\u201d between MEOX1 and MEOX2 refers to the observation from mouse knockout studies that single-gene deletions produce relatively mild, tissue-restricted phenotypes\u2014MEOX1 deficiency primarily affects sclerotome-derived axial structures (Skuntz et al., 2009), whereas MEOX2 loss impacts limb muscle development (Otto et al., 2010)\u2014whereas double knockouts result in severe synthetic phenotypes, including complete loss of axial skeleton and severe skeletal muscle deficiency (Mankoo et al., 2003). This indicates that the two genes share overlapping functions in certain developmental contexts but also execute non-redundant roles in others. Mechanistically, both MEOX1 and MEOX2 can activate common target genes such as p21CIP1/WAF1 and p16INK4a, though through distinct transcriptional mechanisms (Douville et al., 2011). The domain architecture and principal functional outputs of MEOX2 are summarized in Figure 1.\n\nExpression and transcriptional regulation\nMEOX2 expression is subject to multi-layered and finely tuned regulation. At the transcriptional level, its core promoter activity depends on multiple positive transcription factors, including Sp1, HRF-1 and members of the myocyte enhancer factor 2 (MEF2/RSRF) family (Andr\u00e9s et al., 1995). Mutation of the MEF2 site has a more pronounced effect in cells with high endogenous MEF2 activity, and overexpression of MEF2A transactivates the MEOX2 promoter, revealing a direct regulatory link between MADS-box transcription factors and homeobox genes.\n\nEpigenetic modifications represent another crucial mechanism regulating MEOX2 expression. In lung cancer and glioma, MEOX2 overexpression is often accompanied by decreased repressive histone mark H3K27me3 and increased active mark H3K4me3 at its promoter region (\u00c1vila-Moren et al., 2014; Armas-L\u00f3pez et al., 2017). MEOX2 promoter methylation influences its expression; in glioma stem cells, expression correlates with hypomethylation (Tachon et al., 2021). During lung development and in lung cancer, methylation of the 5\u2032-UTR region of the MEOX2 gene is inversely correlated with gene expression (Cortese et al., 2008). In psoriasis, MEOX2 has also been identified as one of the differentially expressed genes associated with N6-methyladenosine (m6A) methylation (Gan et al., 2024).\n\nAt the post-transcriptional level, MEOX2 is a target of multiple miRNAs, constituting an extensive regulatory network. The miR-130a and miR-301a families have been shown to directly target the 3\u2032untranslated region (3\u2032UTR) of MEOX2, suppressing its expression and playing roles in angiogenesis and HCC progression (Chen and Gorski, 2008; Permuth-Wey et al., 2015; Zhou et al., 2012a). Other miRNAs regulating MEOX2 include miR-148a-3p (in skeletal muscle satellite cell differentiation) (Yin et al., 2020), miR-143-3p (in cervical cancer (CC) indirectly via MEOX2-AS1) (Liu X.-X. et al., 2021) and miR-1200 (in gestational diabetes mellitus (GDM)) (Huang et al., 2021). Recently, circular RNAs (circRNAs) such as circ_0000190 have been found to act as competitive endogenous RNAs (ceRNAs) sponging miR-301a, thereby upregulating MEOX2 and inhibiting triple-negative BC (TNBC) progression (Liu et al., 2025). Additionally, circ_0074673 regulates endothelial cell function via the miR-1200/MEOX2 axis (Huang et al., 2021), and circINSR inhibits sheep adipogenesis differentiation via the miR-152/MEOX2 axis (Zhao et al., 2023). Long non-coding RNAs are also involved: MEOX2-AS1 acts as a ceRNA in CC (Liu X.-X. et al., 2021), LINC01936 potentially interacts with MEOX2 in lung squamous cell carcinoma (Tian et al., 2023) and NRAV is regulated by MEOX2 in gastric cancer (GC) (Beck-Cormier et al., 2014). Furthermore, miR-1 and miR-206 target Meox2 during C2C12 myoblast differentiation (Goljanek-Whysall et al., 2012). During induced pluripotent stem (iPS) cell generation, the miR-130/301/721 family enhances reprogramming efficiency by suppressing Meox2 (Pfaff et al., 2011).\n\nPhysiological functions in normal tissues\nUnder physiological conditions, MEOX2 plays essential roles in embryonic development and tissue homeostasis. During cardiogenesis, MEOX2 exhibits a biphasic expression pattern: it is prominently expressed in the early cardiac tube and maintains expression through the looping stage, with a second wave of expression in the ventricular compact layer at later stages (Skopick et al., 1997). In the adult heart, MEOX2 forms a heterodimer with TCF15 to program the capillary endothelium for fatty acid uptake, thereby contributing to cardiac energy metabolism (Coppiello et al., 2015). In skeletal muscle development, Meox2 is required for proper myoblast proliferation and fibre-type specification; its loss leads to reduced foetal myoblast numbers and an increase in oxidative myofibres (Otto et al., 2010). MEOX2 also collaborates with MEOX1 upstream of somite formation and sclerotome differentiation (Mankoo et al., 2003; Rodrigo et al., 2004). In the vascular system, MEOX2 functions as a negative regulator of angiogenesis, suppressing endothelial cell proliferation and tube formation in response to pro-angiogenic stimuli (Gorski and Leal, 2003; Patel et al., 2005). These physiological roles establish the baseline from which MEOX2 dysregulation\u2014whether through loss or gain of function\u2014can drive distinct pathological outcomes in a tissue- and context-dependent manner. These context-dependent physiological roles of MEOX2 in embryonic development, cell cycle regulation, cardiovascular homeostasis and skeletal muscle differentiation are illustrated in Figure 2.\n\nThe observation that MEOX2 exerts opposing functions across different tumour types may be partially explained by this developmental and tissue-specific regulatory logic. As a transcription factor, MEOX2 does not operate in isolation; its transcriptional output is shaped by the availability of context-specific co-factors, epigenetic landscapes and signalling crosstalk that vary markedly between tissues of origin. For instance, in GBM and lung cancer, MEOX2 potentiates oncogenic signalling through the ERK and GLI1 axes (Sch\u00f6nrock et al., 2022; Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022), whereas in breast and liver cancer, it predominantly suppresses tumour progression via inhibition of PI3K/AKT signalling (Cai et al., 2022; Zhou et al., 2012b). This context dependency is further compounded by the presence of tissue-specific post-translational modifications\u2014such as ERK-dependent phosphorylation at Ser155 (Sch\u00f6nrock et al., 2022)\u2014and differential engagement of non-coding RNA regulatory networks. Thus, developmental lineage and tissue origin provide a framework for understanding MEOX2\u2019s duality, but the final outcome likely reflects a convergence of cell-intrinsic programmes, microenvironmental cues and genetic/epigenetic alterations. A more definitive mechanistic understanding will require systematic comparative analyses of the MEOX2 cistrome and interactome across different cellular contexts.\n\nMolecular functions and downstream pathways\nAs a transcription factor, MEOX2 exerts its functions by regulating the expression of downstream target genes. A classic function is the induction of cell cycle arrest. MEOX2 directly binds to and activates the promoters of the cyclin-dependent kinase inhibitors p21 (CIP1/WAF1) and p16 (INK4a), thereby arresting cells in the G0/G1 phase (Douville et al., 2011; Irelan et al., 2009; Smith et al., 1997). This function is p53-independent and represents a core mechanism by which MEOX2 inhibits cell proliferation. MEOX2 also participates in TGF-\u03b2-induced epithelial cell growth inhibition via transcriptional activation of p21 (Valcourt et al., 2007).\n\nMechanistically, MEOX2 cooperates with SMAD proteins to form transcriptional complexes that synergistically activate p21 expression, thereby enhancing the cytostatic response to TGF-\u03b2 stimulation (Valcourt et al., 2007). This interaction is mediated through the SMAD-binding sites in the p21 promoter, establishing MEOX2 as a direct transcriptional co-regulator of TGF-\u03b2/SMAD signalling (Valcourt et al., 2007). Importantly, MEOX2 also exerts TGF-\u03b2-independent regulation of the cell cycle, as demonstrated by its direct activation of p21 and p16 promoters through homeodomain-mediated DNA binding in the absence of TGF-\u03b2 stimulation (Douville et al., 2011; Smith et al., 1997; Petrovic et al., 2010). This p53-independent mechanism operates in multiple cell types, indicating that MEOX2 acts both downstream of TGF-\u03b2 and as an autonomous cell cycle regulator (Douville et al., 2011; Smith et al., 1997; Petrovic et al., 2010).\n\nMEOX2 acts as an integration node and modulator of several key signalling pathways. In glioma and lung cancer, MEOX2 enhances signalling through the ERK/MAPK and PI3K/AKT/mTOR pathways (Sch\u00f6nrock et al., 2022; Tachon et al., 2021; Cai et al., 2022). In lung cancer, MEOX2 forms a regulatory axis with GLI1, a key effector of the Hh pathway. MEOX2 directly occupies the promoter region of the GLI1 gene and activates its transcription, thereby promoting tumour progression and therapy resistance (Armas-L\u00f3pez et al., 2017). Furthermore, MEOX2 has been shown to interact with the NF-\u03baB pathway components p65 and I\u03baB\u03b2 in the nucleus, exerting bidirectional modulation of NF-\u03baB activity depending on its expression level, thereby influencing inflammatory and angiogenic responses (Chen et al., 2010). MEOX2 also participates in liver fibrosis and laryngeal cancer (LC) progression by regulating PI3K/AKT signalling (Wang et al., 2024; Tian et al., 2018). In cardiomyocytes, MEOX2 regulates AP-1 to participate in chemotherapy-induced cardiotoxicity (Shi et al., 2023; Duan et al., 2023).\n\nDuring development, MEOX2 cooperates with MEOX1 and is essential for somite formation, patterning and differentiation (Mankoo et al., 2003). MEOX2 directly activates the transcription of Bapx1, a key gene for sclerotome differentiation, acting as an upstream regulator of axial skeletal development (Rodrigo et al., 2004). In limb muscle development, MEOX2 cooperates with factors such as PAX3 and SIX1/4 to finely control the temporal expression of the myogenic determination gene Myf5 (Buchberger et al., 2007; Daubas et al., 2015). In heart development, the MEOX2/TCF15 heterodimer regulates fatty acid uptake by heart capillary endothelial cells (Coppiello et al., 2015). In summary, MEOX2, as a transcription factor, directly induces G0/G1 cell cycle arrest by activating p21 and p16, and acts as an integration node for several critical signalling pathways (ERK/MAPK, PI3K/AKT/mTOR, Hh, NF-\u03baB, AP-1), regulating tumour progression, therapy resistance, fibrosis and developmental processes.\n\nExpression and function of MEOX2 in neoplastic diseases\nThe role of MEOX2 in tumorigenesis and progression exhibits marked tissue specificity and disease context dependency, acting either as an oncogene or a tumour suppressor. To systematically synthesize the complex and context-dependent functions of MEOX2 across various tumour types, this section summarises the disease types, molecular mechanisms, signalling pathways and clinical associations in Table 1. The remarkably context-dependent functions of MEOX2 across diverse human malignancies\u2014acting as an oncogene in some tumour types while functioning as a tumour suppressor in others\u2014are systematically summarized in Figure 3.\n\nCentral nervous system tumours\nGBM is a paradigm for the oncogenic role of MEOX2. MEOX2 is significantly overexpressed in GBM tissues and GSCs, correlating with shortened overall survival (Sch\u00f6nrock et al., 2022; Tachon et al., 2019; Proserpio et al., 2022). Functionally, MEOX2 potentiates ERK signalling through a feed-forward mechanism in which ERK-dependent phosphorylation of MEOX2 at Ser155 is crucial for maintaining its protein level and nuclear localisation (Sch\u00f6nrock et al., 2022). Knockdown or knockout of MEOX2 effectively inhibits GSC proliferation and sphere-forming ability and induces apoptosis (Proserpio et al., 2022). Mechanistically, MEOX2 promotes glioma cell proliferation and motility by transcriptionally activating cathepsin S (CTSS) (Wang J. et al., 2022). Moreover, MEOX2 is involved in regulating metabolic reprogramming in GSCs; its knockdown leads to downregulation of genes involved in the hypoxic response and glycolysis, pathways intimately associated with therapy resistance in high-grade glioma (Proserpio et al., 2022). MEOX2 also contributes to GSC survival and adhesion phenotypes via the ERK/MAPK and PI3K/AKT pathways (Tachon et al., 2021). Importantly, MEOX2 expression correlates with the IDH1/2 wild-type molecular subtype, making it an interesting biomarker for this subtype of GBM (Tachon et al., 2019). Therapeutic strategies targeting MEOX2 are being explored; for instance, co-targeting MEOX2 (enriched in the proneural GSC state) and SRGN (enriched in the mesenchymal GSC state) shows synergistic anti-tumour effects in preclinical models (Lu et al., 2025). For diagnosis, immunohistochemical (IHC) detection of MEOX2, together with SOX11, INSM1 and EGFR, has been shown to help distinguish GBM cells from reactive gliosis in limited tissue samples (Soukup et al., 2023). In low-grade glioma (LGG), MEOX2 has been incorporated into prognostic models based on the tumour microenvironment or palmitoylation-related genes, demonstrating good risk stratification ability (Wu et al., 2025; Wang Z. et al., 2025; Du et al., 2024). Additionally, galectin-1 (Gal-1) expression correlates with MEOX2 in GBM (Mart\u00ednez-Bosch et al., 2023). These findings establish MEOX2 as an oncogene and prognostic biomarker in GBM, with functions spanning proliferation, metabolic reprogramming and stemness maintenance. Its utility in prognostic models and potential as a therapeutic target underscore its translational value.\n\nDigestive system tumours\nIn digestive system malignancies, the role of MEOX2 is predominantly tumour-suppressive in most epithelial-derived cancers, with a notable exception in liver cancer stem cells where it contributes to stemness maintenance and therapy resistance.\n\nIn hepatocellular carcinoma (HCC), MEOX2 predominantly exhibits tumour-suppressive properties. Studies have found that MEOX2 expression is lower in HCC tissues than in adjacent non-cancerous tissues, and its low expression correlates with higher Edmondson grade, vascular invasion, capsule invasion and shorter OS and disease-free survival (Zhou et al., 2012b). However, in the context of liver cancer stem cells (CSCs), the role of MEOX2 becomes complex. ABI2 protein recruits and interacts with MEOX2 to co-bind the promoter regions of KLF4 and NANOG and activate their transcription, thereby maintaining the CSC population in HCC, promoting tumour growth, metastasis and sorafenib resistance (Chen et al., 2022). This suggests that MEOX2 function may differ depending on cell state (differentiated cells versus stem cells). Thus, the net effect of MEOX2 in HCC is determined by the balance between its tumour-suppressive activity in differentiated cells and its pro-stemness function in CSCs.\n\nIn gastric cancer (GC), a functional single-nucleotide polymorphism (SNP), rs6489786, enhances binding of MEOX1 or MEOX2 to a distal enhancer, thereby upregulating the oncogenic lncRNA NRAV (Beck-Cormier et al., 2014). Additionally, MEOX2 may be involved in multidrug resistance in GC (Yan et al., 2014). These observations suggest that MEOX2 contributes to GC malignancy predominantly through non-coding RNA-mediated regulatory networks and drug resistance pathways, rather than through direct transcriptional regulation in this context.\n\nIn other digestive malignancies, MEOX2 has been implicated primarily as a prognostic or immune-related biomarker. In oesophageal squamous cell carcinoma (ESCC), bioinformatics analysis identified MEOX2 as a biomarker associated with tumour-associated macrophage infiltration. Its expression is closely correlated with the mRNA levels of colony-stimulating factor 1 (CSF-1) and its receptor CSF-1R, suggesting that MEOX2 may promote macrophage infiltration via the CSF-1/CSF-1R signalling axis (Wang et al., 2021). In colorectal cancer (CRC), MEOX2 is one of six key prognostic genes related to the tumour microenvironment, and its expression correlates with levels of immune cell infiltration (Liu Y. et al., 2021). In pancreatic intraductal papillary mucinous neoplasm (IPMN), downregulation of miR-130a may lead to upregulation of MEOX2, which is associated with high-risk IPMN (Permuth-Wey et al., 2015). In Wilms tumour (nephroblastoma), MEOX2 lies within a homozygous deletion region at 7p21 and is considered a candidate tumour suppressor gene (Ohshima et al., 2009; Blish et al., 2010). Collectively, these findings indicate that MEOX2 functions as a context-dependent regulator in digestive system cancers, with its net effect\u2014tumour suppression or promotion\u2014largely determined by cell differentiation status and the surrounding non-coding RNA regulatory network.\n\nThoracic tumours\nIn thoracic malignancies, MEOX2 exhibits a striking functional dichotomy: it acts as a potent oncogene in NSCLC, driving chemotherapy resistance and epigenetic dysregulation, while functioning predominantly as a tumour suppressor in breast cancer, where its loss correlates with poor prognosis and enhanced metastatic potential.\n\nIn non-small cell lung cancer (NSCLC), MEOX2 is oncogenic; its overexpression drives chemotherapy resistance and poor prognosis (\u00c1vila-Moren et al., 2014). Mechanistic studies have revealed the importance of the MEOX2/GLI1 axis: MEOX2 directly binds to and activates the promoter of GLI1, jointly promoting resistance to cisplatin and EGFR tyrosine kinase inhibitors (TKIs) (e.g., erlotinib, osimertinib), and modulating the activation of EGFR/AKT/ERK signalling (Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022). MEOX2 and GLI1 also induce epigenetic dysregulation of EGFR by reducing inhibitory marks (EZH2 and H3K27me3) and increasing activating histone marks (H3K27Ac/H3K4me3) at EGFR enhancer\u2013promoter regions (Peralta-Arrieta et al., 2022). Furthermore, genome-wide association studies (GWAS) have identified that a genetic variant (rs10278557) within the MEOX2 gene is significantly associated with clinical stage and prognosis of lung adenocarcinoma (Frullanti et al., 2011). In lung squamous cell carcinoma, the downregulated lncRNA LINC01936 is predicted to potentially interact with epithelial\u2013mesenchymal transition (EMT)-related genes including MEOX2 (Tian et al., 2023). In female lung adenocarcinoma, MEOX2 is included in a 12-gene prognostic signature (Sawada et al., 2022). SMARCB1-driven epigenetic alterations of EGFR-GLI1 are regulated by MEOX2 and GLI1 (Trejo-Villegas et al., 2025).\n\nIn breast cancer (BC), MEOX2 mainly functions as a tumour suppressor. Analysis of The Cancer Genome Atlas (TCGA) data and validation in clinical samples both show that MEOX2 is downregulated in BC tissues, and its low expression correlates with shorter OS of patients (Wang et al., 2022a; Wang et al., 2022b; Cai et al., 2022). Functionally, forced expression of MEOX2 inhibits BC cell proliferation, induces G0/G1 cell cycle arrest, suppresses metastatic potential and enhances chemosensitivity (Cai et al., 2022). The anti-cancer mechanisms involve negative regulation of the PI3K/AKT/mTOR and ERK1/2 signalling pathways (Cai et al., 2022). During metastasis, MEOX2 overexpression can inhibit BC cell adhesion to and transendothelial migration across lymphatic endothelial cells by targeting oxidative stress-induced RGS5 (Tang et al., 2025). In TNBC, the circ_0000190/miR-301a/MEOX2 axis has been identified as an important regulatory loop in which MEOX2 is a direct target of miR-301a; dysregulation of this axis promotes TNBC progression (Liu et al., 2025; Liu and Wang, 2021). Additionally, MEOX2 is a molecular feature of tumour-associated high endothelial venules (HEVs); its high expression correlates with extensive T-cell and B-cell infiltration, tertiary lymphoid structure formation and better survival in advanced BC (Sawada et al., 2022). MEOX2 has also been identified as a key angiogenesis-related gene (Wang et al., 2022b).\n\nThese contrasting roles in NSCLC and breast cancer highlight the extreme context dependency of MEOX2 function within thoracic malignancies, underscoring the necessity of tumour-type-specific strategies for therapeutic intervention.\n\nReproductive system tumours\nIn reproductive system tumours, MEOX2 primarily acts as a driver of malignancy. In ovarian cancer (OV), high MEOX2 expression is associated with cisplatin resistance, and silencing MEOX2 enhances chemosensitivity through E2F targets and DNA repair pathways (Wang F. et al., 2025). In cervical cancer (CC), the lncRNA MEOX2-AS1 promotes CC progression by sponging miR-143-3p to upregulate voltage-dependent anion channel 1 (VDAC1) (Liu X.-X. et al., 2021). Furthermore, MEOX2 has been identified as one of the key hub genes associated with lymph node metastasis in CC (Ding et al., 2023). These findings highlight the diversity of MEOX2\u2019s oncogenic mechanisms in reproductive malignancies, ranging from direct transcriptional regulation of DNA repair genes to indirect modulation through non-coding RNA networks.\n\nOther tumours\nBeyond the major tumour types discussed above, MEOX2 has been implicated in several additional malignancies, where its roles range from tumour suppression to stromal heterogeneity and even chromosomal translocation-driven leukaemogenesis. In laryngeal cancer (LC), MEOX2 exerts a tumour-suppressive effect; overexpression of MEOX2 promotes apoptosis by inhibiting the PI3K/AKT pathway (Tian et al., 2018). In acute myeloid leukaemia (AML), a novel NUP98MEOX2 fusion gene has been discovered, providing direct evidence for the involvement of MEOX2 in haematological malignancies (Chonabayashi et al., 2026). Moreover, MEOX2 has been included in a complement system-related prognostic model (Liu and Liu, 2024). In the tumour microenvironment of prostate cancer, a cancer-associated fibroblast (CAF) subpopulation expressing MEOX2 (C3 MEOX2+) has been identified, highlighting the potential role of MEOX2 in tumour stromal heterogeneity (Ding et al., 2025). In melanoma, MEOX2 expression may correlate with disease progression, and its expression differs between intracranial and extracranial metastases (Kraft et al., 2024). Additionally, a functional SNP at the 10q24.33 risk locus affects MEOX2 binding (Cardinale et al., 2022). In kidney renal clear cell carcinoma (KIRC), a five-gene angiogenesis signature including MEOX2 effectively predicts patient prognosis (Zhou et al., 2025). These diverse associations underscore the pleiotropic nature of MEOX2 across distinct oncological contexts and suggest that its contribution to malignancy cannot be generalised, but rather must be evaluated on a tumour-type-specific basis.\n\nExpression and function of MEOX2 in non-neoplastic diseases\nBeyond cancer, dysregulation of MEOX2 expression is also widely involved in the pathogenesis of various non-neoplastic diseases. These encompass neurodegenerative disorders, cardiovascular diseases, metabolic and fibrotic conditions, developmental malformations and inflammatory immune-related diseases. Mirroring its dual role in cancer, the function of MEOX2 in non-neoplastic diseases also exhibits high context dependency: in pathological processes such as AD, pulmonary hypertension (PH) and cardiac fibrosis, its downregulation or loss of function is often a key driver of disease progression; whereas in scenarios like liver fibrosis and diabetic vascular complications, MEOX2 displays protective effects. These complex functional outputs are typically mediated through core signalling pathways such as PI3K/AKT, ERK and TGF-\u03b2, as well as epigenetic regulatory networks. Figure 4 provides an integrated overview of MEOX2-mediated pathogenic and protective mechanisms across these diverse non-neoplastic conditions. This section systematically reviews the expression patterns, molecular mechanisms and clinical associations of MEOX2 across various non-neoplastic diseases, summarised in Table 2.\n\nNeurological disorders\nMEOX2 dysfunction is intimately linked to a spectrum of neurological disorders, where its roles range from vascular pathology in neurodegeneration to synaptic dysfunction in epilepsy and genetic susceptibility in neurodevelopmental conditions.\n\nIn Alzheimer disease (AD), the neurovascular dysfunction hypothesis for MEOX2 has gained broad support. Studies have shown that MEOX2 expression is decreased in brain endothelial cells (BECs) of patients with AD (Wu et al., 2005). Functionally, restoring MEOX2 expression stimulates angiogenesis, inhibits apoptosis and increases the level of LRP1, a major A\u03b2 clearance receptor. In mice, Meox2 deletion leads to reduced brain capillary density and resting cerebral blood flow, loss of the angiogenic response to brain hypoxia, and impaired brain A\u03b2 clearance due to reduced LRP1 levels (Wu et al., 2005). Genetic studies support this hypothesis: in APP/PS1 AD model mice, Meox2 haploinsufficiency exacerbates neuronal loss, especially in areas with plaque deposition, and is accompanied by a significant reduction in plaque-associated microvessels (Soto et al., 2016). These findings directly link MEOX2 insufficiency to vascular pathology and neuronal loss in AD, making it a potential therapeutic target (de la Torre, 2005; Bell, 2012). The establishment of a patient-derived iPSC line (ZZUi0013-A) carrying a novel MEOX2 mutation provides a valuable model for studying the pathological mechanism of MEOX2 in AD (Wang et al., 2019). In cerebrovascular gene studies, MEOX2 is a key gene related to AD pathology (de la Torre, 2005). These findings link MEOX2 deficiency in cerebral vasculature to AD neurovascular pathology, positioning it as a therapeutic target.\n\nBeyond AD, MEOX2 dysfunction has been implicated in several other neurological conditions with distinct pathophysiological mechanisms. In Dravet syndrome (DS), a severe epileptic encephalopathy, conditional Scn1a knockout using the Meox2-Cre driver has successfully recapitulated the seizure phenotypes, and interneuron-specific dual-AAV SCN1A gene replacement based on Meox2-Cre has shown therapeutic efficacy in mouse models (Mich et al., 2025; Williams et al., 2019). In the domain of pain perception, Meox2 heterozygous mice exhibit altered nociceptive function associated with reduced expression of voltage-gated sodium channel genes Scn9a and Scn11a in primary afferent neurons, revealing a previously unrecognized role for MEOX2 in maintaining the transcriptional program of nociceptors (Kokotovi\u0107 et al., 2022). Additionally, systems biology analyses have nominated MEOX2 as a potential candidate risk gene for autism spectrum disorder (ASD) through protein-protein interaction network topology (Remori et al., 2025). Collectively, these findings extend the functional repertoire of MEOX2 beyond vascular biology into neuronal excitability and neurodevelopmental risk.\n\nIn glaucoma research, transcriptomic analysis using the DBA/2J mouse model identified Meox2 as a potential upstream regulator of early gene expression changes in the optic nerve head. While Meox2 haploinsufficiency did not affect intraocular pressure elevation, it significantly increased the number of eyes with axonal damage. Mechanistically, Meox2 may promote axonal survival by controlling intraocular pressure-dependent vascular remodelling and neuroinflammation (Buchanan et al., 2019).\n\nIn the early stages of Huntington disease (HD), transcriptomic analysis revealed that MEOX2 is one of the key transcription factors significantly upregulated upon loss of HTT function, suggesting a role in the transcriptional dysregulation network early in the disease (Koz\u0142owska et al., 2025).\n\nTogether, these neurological associations establish MEOX2 as a key regulator spanning both vascular and neuronal compartments, with its dysfunction contributing to pathogenesis through distinct mechanisms in each context.\n\nCardiovascular diseases\nIn the cardiovascular system, MEOX2 plays a pivotal role in maintaining vascular homeostasis, and its dysregulation\u2014whether through genetic variation, epigenetic silencing or post-translational modification\u2014contributes to a spectrum of pathological conditions including ischaemic heart disease, fibrosis and pulmonary hypertension.\n\nEpidemiological studies indicate that genetic variants of MEOX2 are strong predictors of coronary heart disease (CHD). In the Flemish population cohort, carriers of the MEOX2 GTCCGC haplotype had a significantly increased risk of CHD, myocardial infarction, coronary revascularisation and ischaemic cardiomyopathy (Yang et al., 2015).\n\nIn cardiac fibrosis, the Ski\u2013Zeb2\u2013Meox2 pathway has been revealed as a novel mechanism regulating the phenotype of cardiac myofibroblasts. During fibroblast-to-myofibroblast transition, Meox2 expression decreases, whereas overexpression of Meox2 reverts myofibroblasts towards a fibroblast phenotype (Cunnington et al., 2014). Similarly, in hypertrophic scars, Ski can upregulate Meox2 expression to inhibit Zeb2, thereby reducing the TGF-\u03b21-induced myofibroblast phenotype (Liu et al., 2020).\n\nIn the development of heart failure (HF), recent studies have uncovered a key role for MEOX2 in capillary rarefaction. Under pressure overload, hypertrophic cardiomyocytes secrete the metabolite 3-methyl-2-oxovaleric acid (KMV), which increases Meox2 expression and nuclear accumulation in endothelial cells. Nuclear Meox2 directly binds to the promoter of the senescence-associated gene p21, triggering endothelial senescence and impaired angiogenesis, ultimately leading to capillary rarefaction and promoting HF (Gao et al., 2025). Additionally, OGN, a diagnostic biomarker for HF, is regulated in a manner involving MEOX2 (Zhu et al., 2024). These findings highlight a novel cardiomyocyte-to-endothelial cell signalling axis in which MEOX2 serves as a critical mediator of capillary rarefaction and cardiac dysfunction.\n\nIn the pathology of vascular restenosis, RNF10 has been shown to inhibit excessive proliferation of vascular smooth muscle cells by regulating the MEOX2/AP-1 axis. Overexpression of RNF10 upregulates MEOX2 and inhibits AP-1, thereby reducing neointimal hyperplasia (Li et al., 2019).\n\nIn related vascular stress contexts, chemotherapy-induced cardiotoxicity has also been linked to dysregulation of the RNF10/AP-1/Meox2 axis, as pirarubicin (THP)-induced cardiac inflammation and apoptosis are modulated through this signalling cascade (Shi et al., 2023; Duan et al., 2023). In pulmonary hypertension (PH), hypoxia downregulates MEOX2 (Gax) expression in pulmonary artery smooth muscle cells (PASMCs); conversely, adenoviral-mediated Gax overexpression inhibits hypoxia-induced PASMC proliferation\u2014putatively via the ERK1/2 pathway\u2014and induces apoptosis through the Bcl-2/Bax axis, thereby counteracting hypoxic PH development (Xia et al., 2011; Lin and Mequanint, 2015). These observations position MEOX2 as a common mediator of vascular remodelling across distinct haemodynamic and pharmacological insults.\n\nThese cardiovascular findings collectively position MEOX2 as a critical node connecting metabolic stress, vascular remodelling and cardiac dysfunction, with therapeutic implications for both ischaemic and pressure-overload heart disease.\n\nMetabolic and fibrotic diseases\nIn metabolic and fibrotic diseases, MEOX2 exhibits a predominantly protective role, counteracting pathological processes through inhibition of PI3K/AKT signalling in hepatic stellate cells and modulation of lipid metabolism in adipose and skeletal muscle tissues.\n\nIn liver fibrosis (LF), MEOX2 shows a protective effect. Comparison of differentially expressed genes between adult liver stem/progenitor cells and hepatic stellate cells (HSCs) revealed that MEOX2 is upregulated in HSCs. Functionally, overexpression of MEOX2 significantly inhibits HSC viability and proliferation. Mechanistically, MEOX2 binds to the promoter of PHLPP and upregulates its transcription, thereby inhibiting AKT phosphorylation and slowing the progression of liver fibrosis (Wang et al., 2024).\n\nIn diabetes mellitus and its complications, the role of MEOX2 has been revealed from multiple angles. In gestational diabetes mellitus, placental exosomal circ_0074673 upregulates MEOX2 by sponging miR-1200, inhibiting umbilical vein endothelial cell proliferation, migration and angiogenesis (Huang et al., 2021). Another study found that NAT10, an enzyme mediating RNA ac4C modification, is upregulated in GDM placentas; it stabilises the MEOX2 transcript by increasing ac4C modification at specific sites in the MEOX2 mRNA, thereby inhibiting endothelial cell function (Huang et al., 2025). In the fatty acid metabolism of the diabetic heart, hyperglycaemia promotes the release of lipoprotein lipase (LPL) from cardiomyocytes via TGF-\u03b2 signalling; concurrently, TGF-\u03b2 signalling also promotes nuclear translocation of MEOX2 in endothelial cells, increasing GPIHBP1 expression and accelerating the transport of LPL to the vascular lumen, thereby enhancing fatty acid utilisation by the heart (Chiu et al., 2018). In endothelial colony-forming cells exposed to intrauterine diabetes, MEOX2 promotes migration (Gohn et al., 2017).\n\nIn adipose metabolism, MEOX2 (Gax) has been shown to inhibit insulin-like growth factor-1 (IGF-1)-induced proliferation, differentiation and biological functions of perivascular adipocytes (PVACs) and preadipocytes (3T3-F442A). The mechanism involves inhibition of IGF-1-mediated activation of PI3K/Akt, ERK and FAK/Pyk2 signalling pathways (Liu et al., 2015; Liu et al., 2014; Jiang et al., 2018). Interestingly, in epididymal white adipocytes following long-term PPAR\u03b3 activation, a population of \u2018beige\u2019 adipocytes with thermogenic capacity but molecularly distinct from classical brown adipocytes emerges; these cells do not express the brown fat signature genes Zic1, Lhx8 or Meox2, indicating that MEOX2 is a molecular marker distinguishing white/beige adipocytes from brown adipocytes/myocytes (Petrovic et al., 2010; Wald\u00e9n et al., 2010). In studies of adipogenesis from sheep adipose-derived stromal vascular fraction, circINSR acts via the miR-152/MEOX2 axis (Zhao et al., 2023).\n\nDevelopmental and congenital disorders\nIn developmental biology, MEOX2 is a critical determinant of axial patterning and organogenesis, with its most extensively characterised roles in palatogenesis, somitogenesis and placental development.\n\nIn the pathogenesis of cleft palate, MEOX2 is one of the most intensively studied genes. It has been identified as a key regulator of posterior secondary palate development in mice (Yan et al., 2024; Smith et al., 2012; Hampl et al., 2020). Its expression is dynamic: at E12.5, it occupies most of the palatal shelf, then gradually recedes to the posterior region, while the expression domain of the anterior marker Shox2 expands accordingly; this transition may involve cell fate reprogramming (Li and Ding, 2007). Loss of Meox2 function leads to a unique post-fusion cleft palate, where the palatal shelves fuse but subsequently rupture, providing the first evidence for genes required to maintain post-fusion palatal adhesion (Jin and Ding, 2006). In the cleft palate model of TGF\u03b23-knockout mice, Meox2 is one of the few known cleft palate-related genes whose expression is significantly altered (Ozturk et al., 2013). Human genetic studies have shown that the MEOX2 SNP rs2237493 is significantly associated with non-syndromic cleft palate only in Vietnamese females (Tran et al., 2018). In palatal mucosal differentiation, Meox2 regulates epithelial differentiation (Neupane et al., 2018). In mouse embryonic palatal mesenchymal cells, Meox2 is a marker of stemness maintenance (Shi et al., 2019; Fantauzzo and Soriano, 2017). Msx1 regulates palatal anteroposterior patterning by suppressing Meox2 (Zhu et al., 2022). Single-cell multi-omics decoding has revealed MEOX2 as an important regulator of posterior palate development (Yan et al., 2024).\n\nBeyond palatogenesis, MEOX2 participates in multiple other developmental programs. In congenital scoliosis (CS), MEOX2 has been nominated as a candidate gene within the TBX6-mediated somitogenesis pathway, although large-scale sequencing has not identified high-frequency mutations in MEOX2 itself (Yang Y. et al., 2020). In neural tube defects (NTDs), linkage analysis has placed MEOX2 within a region of interest on chromosome 7, consistent with its potential role in vascular development and neural tube closure (Rampersaud et al., 2005). In placental biology, Meox2-Cre has been extensively employed for conditional knockout of multiple placenta-related genes, including Pkd1/2, Csf1, Dlx3 and IP3R, underscoring its utility as a genetic tool in this organ (Yang F. et al., 2020; Yang L. et al., 2020; Garcia-Gonzalez et al., 2010; Harris et al., 2012; Clark et al., 2012; Kitazawa et al., 2017); conversely, Peg11/Rtl1 knockout placentas exhibit downregulated Meox2 expression, linking MEOX2 to placental vascular integrity (Kitazawa et al., 2017). In bone healing, Meox2 knockdown has been reported to promote bone regeneration, suggesting a potential gene-therapy target for skeletal repair (Kim et al., 2020). Collectively, these diverse developmental roles highlight MEOX2 as a pleiotropic regulator of morphogenesis beyond the palate.\n\nIn skeletal muscle development, Meox2 loss leads to a reduction in fetal myoblast number and a compensatory increase in oxidative muscle fibres (Otto et al., 2010). This process is subject to multilayered post-transcriptional regulation by multiple miRNAs: in chicken skeletal muscle satellite cells, miR-148a-3p regulates differentiation and apoptosis by targeting Meox2 (Yin et al., 2020); in C2C12 myoblasts, miR-1 and miR-206 similarly target Meox2 during myogenic differentiation (Goljanek-Whysall et al., 2012). Additionally, Meox2-Cre-mediated Nle1 deletion disrupts axial skeleton formation (Beck-Cormier et al., 2014), and adrenomedullin 2 (AM2) upregulates MEOX2 to inhibit retinal neovascularisation (Kakihara et al., 2023), further supporting the pleiotropic role of MEOX2 in morphogenesis. In other developmental processes, such as cloaca/perineal muscle development, studies suggest that these muscles originate from hindlimb muscles, and their absence in Met mutants implies that their developmental mechanisms are similar to those of limb muscles, with MEOX2, as an important regulator of limb muscle development, potentially being indirectly involved (Valasek et al., 2005).\n\nThese developmental studies underscore MEOX2\u2019s evolutionary conserved role in morphogenesis and establish a foundation for understanding how its dysregulation contributes to congenital anomalies.\n\nOther diseases\nIn inflammatory and fibrotic conditions, MEOX2 dysregulation has emerged as a recurrent theme. In rheumatoid arthritis (RA), multiple bioinformatics analyses have identified MEOX2 as a diagnostic biomarker, with its altered expression in synovial tissues correlating with immune cell infiltration, particularly neutrophils, and neutrophil extracellular trap (NET)-related gene signatures (Sheng et al., 2025; Yu et al., 2021; Comertpay and Gov, 2020). In psoriasis, MEOX2 has been flagged as a differentially expressed gene associated with m6A RNA methylation, suggesting a potential link to aberrant cell proliferation and neuroregulatory dysfunction in psoriatic lesions (Gan et al., 2024). In wound healing and scar formation, MEOX2 functions as a key transcription factor controlling fibroblast-to-myofibroblast differentiation; its downregulation promotes this transition, while miR-1908 indirectly upregulates Meox2 by targeting Ski, thereby modulating fibrotic outcomes in burn scars (Noizet et al., 2016; Xie et al., 2016).\n\nBeyond inflammation, MEOX2 has been linked to systemic and genetic disorders. In genome-wide association studies of kidney function, loci near MEOX2 (GALNT11 and CDH23) have been associated with declining renal function in European populations (Gorski et al., 2015). In Hutchinson\u2013Gilford progeria syndrome (HGPS), MEOX2 is among the most significantly downregulated genes in patient fibroblasts, consistent with its role in maintaining mesodermal/mesenchymal tissue homeostasis and potentially explaining the accelerated atherosclerosis and developmental defects seen in this disorder (Csoka et al., 2004). Additionally, in influenza A virus host-interaction networks, MEOX2 has been identified as a viral protein-interacting host factor, raising the possibility of its involvement in antiviral responses (Farooq et al., 2020; Lee et al., 2017). These diverse associations underscore the broad pathophysiological reach of MEOX2 across immune-mediated, degenerative and infectious contexts.\n\nClinical translational potential of MEOX2\nThe preceding sections have systematically delineated the complex and context-dependent expression patterns and molecular mechanisms of MEOX2 in numerous neoplastic and non-neoplastic diseases. Importantly, whether in its oncogenic or tumour-suppressive roles, the expression level of MEOX2 shows significant correlation with patient clinicopathological characteristics and survival outcomes, providing a solid data foundation for its use as a diagnostic and prognostic biomarker. Concurrently, as a transcriptional regulatory hub, multiple nodes within its upstream and downstream signalling pathways and non-coding RNA networks hold potential for pharmacological intervention.\n\nAs a diagnostic and prognostic biomarker\nMEOX2 expression has robust prognostic value in several cancers, including glioma, breast cancer, HCC, lung cancer and ovarian cancer (Sch\u00f6nrock et al., 2022; Tachon et al., 2019; Wang et al., 2022a; Cai et al., 2022; Zhou et al., 2012b; Frullanti et al., 2011; Wang F. et al., 2025). This positions MEOX2 as a potential tool for molecular stratification and prognosis assessment in these tumours.\n\nIn terms of ancillary pathological diagnosis, IHC detection of MEOX2 shows practical value. Studies indicate that combined detection of MEOX2, SOX11, INSM1 and EGFR in limited biopsy samples can effectively distinguish GBM cells from reactive gliosis, improving diagnostic accuracy (Soukup et al., 2023).\n\nFurthermore, prognostic signature models based on MEOX2 combined with other genes are being continually developed and refined. For example, in LGG, a palmitoylation-related five-gene signature (CHI3L1, IGFBP2, MEOX2, EMILIN3, SFRP2) and an immune microenvironment-related six-gene signature (MEOX2, PHYHIP, RBBP8, ST18, TCF12, THRB) both demonstrate robust prognostic prediction capabilities (Wu et al., 2025; Wang Z. et al., 2025). In KIRC, a five-gene angiogenesis signature (MEOX2, PLG, PROX1, TEK, TIMP1) effectively predicts patient prognosis (Zhou et al., 2025). In AML, a complement system-related four-gene signature including MEOX2 also has prognostic value (Liu and Liu, 2024). In female lung adenocarcinoma, a 12-gene signature including MEOX2 predicts prognosis (Sawada et al., 2022).\n\nDevelopment strategies as a therapeutic target\nDirect Targeting of MEOX2: For MEOX2-driven tumours (e.g., GBM, lung cancer), direct inhibition of its transcriptional activity or promotion of its degradation is an ideal strategy. Using genetic and pharmacologic approaches, Lu et al. identified FDA-approved drugs targeting MEOX2 (Lu et al., 2025). Virtual molecular screening and subsequent dose-response validation revealed that nilotinib and DHEC (dihydroergocryptine) have inhibitory effects on MEOX2. Mechanistically, these drugs suppress the MEOX2-NOTCH axis in classical (CL) GSCs. Notably, MEOX2 knockdown decreased the sensitivity of CL GSCs to nilotinib and DHEC, further confirming the specificity of these agents. Combined targeting of CL GSCs (via MEOX2 inhibition) and mesenchymal (MES) GSCs (via SRGN inhibition with paliperidone and risperidone) demonstrated enhanced efficacy both in vitro and in vivo (Lu et al., 2025). However, as transcription factors are traditionally considered \u2018undruggable\u2019 targets, developing highly selective, potent small-molecule inhibitors remains challenging. New technologies such as PROteolysis TArgeting Chimeras (PROTACs) may offer new avenues for targeting MEOX2.\n\nCombination Therapy Strategies: Given that MEOX2 typically acts as a signalling pathway hub, intervening in its upstream or downstream pathways in combination may be more feasible and effective. In GBM, co-targeting MEOX2 (enriched in the proneural GSC state) and SRGN (enriched in the mesenchymal GSC state) eliminated heterogeneous GSC populations more effectively than single targeting (Lu et al., 2025). In lung cancer, combining inhibitors of the MEOX2/GLI1 axis with EGFR-TKIs or platinum-based chemotherapy holds promise for overcoming resistance to existing treatments (Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022).\n\nIndirect Intervention via Regulatory Networks (1) miRNA-based therapy: Using miRNA mimics (e.g., miR-301a mimic to target oncogenic MEOX2): or inhibitors (e.g., miR-130a inhibitor to upregulate tumour-suppressive MEOX2) shows preclinical potential for modulating MEOX2 expression and therapeutic efficacy in BC, HCC and other diseases (Liu et al., 2025; Zhou et al., 2012a). Targeting the MEOX2-AS1/miR-143-3p axis may also represent a therapeutic strategy for CC (Liu X.-X. et al., 2021). In pulmonary artery endothelial cells, framework nucleic acids regulate Meox2 by targeting miR-152 (You et al., 2022). (2) Targeting upstream regulators: For example, in cardiovascular disease and liver fibrosis, activating RNF10 or intervening in TGF-\u03b2 signalling can indirectly upregulate MEOX2, exerting protective effects (Wang et al., 2024; Li et al., 2019). In diabetic cardiac complications, modulating the TGF-\u03b2/MEOX2 axis may ameliorate metabolic imbalance (Chiu et al., 2018). In AD, restoring MEOX2 expression holds therapeutic potential (Wu et al., 2005). (3) Targeting downstream effector pathways: Even if direct MEOX2 targeting is not feasible, inhibiting its activated downstream pathways (e.g., PI3K/AKT, ERK, Hh) remains a currently viable therapeutic option, particularly in tumours with high MEOX2 expression (Sch\u00f6nrock et al., 2022; Peralta-Arrieta et al., 2022; Cai et al., 2022). (4) Gene Therapy and Cell Therapy: In monogenic disorders or diseases involving loss of function, restoring MEOX2 function is therapeutically promising. For example, in the vascular pathology of AD, theoretically restoring MEOX2 expression in brain endothelial cells could improve blood\u2013brain barrier function and A\u03b2 clearance (Wu et al., 2005). In DS, Meox2-Cre-mediated, interneuron-specific SCN1A gene replacement has been successfully achieved in mouse models, demonstrating the potential of precision gene therapy (Mich et al., 2025; Williams et al., 2019). Furthermore, in cell therapy, hypoxic preconditioning of HUVECs upregulates a set of genes including MEOX2, enhancing their migration and neurovascular protective capacity, offering a new strategy for treating neonatal hypoxic-ischaemic encephalopathy (Lee et al., 2018).\n\nIn summary, MEOX2 exhibits multi-dimensional potential for clinical translation. Its expression levels correlate significantly with patient prognosis in GBM, BC, lung cancer, OV and other malignancies. Multi-gene models incorporating MEOX2 enhance risk stratification, and IHC detection aids ancillary pathological diagnosis. Direct targeting, combination strategies and indirect interventions via miRNAs, lncRNAs and gene editing are advancing. Gene replacement and cell therapies show preliminary efficacy in AD, DS and neonatal brain ischaemia. These translational strategies are summarised in Table 3.\n\nConclusions and perspectives\nMEOX2, an ancient and multifunctional homeobox transcription factor, exemplifies the translational path from developmental biology to disease medicine. This Review presents MEOX2\u2019s physiological functions and its dual-faceted roles in neoplastic and non-neoplastic diseases. In oncology, whether MEOX2 acts as an \u2018oncogene\u2019 or \u2018tumour suppressor\u2019 is highly dependent on tissue origin and cellular context. In neurodegenerative, cardiovascular, fibrotic and developmental disorders, MEOX2 dysfunction is frequently a key link in disease pathogenesis.\n\nWe recognize that the quality and strength of studies addressing MEOX2 vary considerably across different disease contexts. We stratified the evidence into four levels: Level I (large-scale prospective cohorts or RCTs), Level II (retrospective cohort studies with independent validation), Level III (small series or bioinformatics-derived models without external validation) and Level IV (preclinical studies). The strongest evidence for MEOX2 as a prognostic biomarker resides in gliomas, breast cancer and hepatocellular carcinoma, where multiple retrospective cohort studies have consistently demonstrated independent prognostic value (Level II) (Sch\u00f6nrock et al., 2022; Tachon et al., 2019; Wang et al., 2022a; Cai et al., 2022; Zhou et al., 2012b). By contrast, most multi-gene signatures incorporating MEOX2 have been derived solely from bioinformatics analyses without prospective validation, placing them at Level III (Wu et al., 2025; Wang Z. et al., 2025; Zhou et al., 2025; Liu and Liu, 2024; Feng et al., 2024). Therapeutic intervention strategies\u2014including small-molecule inhibitors (Lu et al., 2025), miRNA-based modulation (Zhou et al., 2012a; Tang et al., 2025), gene replacement (Wu et al., 2005; Mich et al., 2025) and cell therapy (Lee et al., 2018)\u2014all remain at the preclinical stage (Level IV). No randomised controlled trials evaluating MEOX2-directed therapies have been reported, representing a major gap that must be addressed in future research.\n\nDespite significant progress, several major challenges remain. First, the mechanistic basis of MEOX2\u2019s functional duality demands deeper analysis beyond the simple assertion of context dependence. This duality can be parsed into two distinct but interacting layers: pathway dependency and tissue dependency. Pathway dependency refers to the specific signalling cascades engaged by MEOX2 in a given cellular state\u2014in GBM and lung cancer, MEOX2 potentiates ERK/GLI1 signalling (Sch\u00f6nrock et al., 2022; Armas-L\u00f3pez et al., 2017; Peralta-Arrieta et al., 2022); in breast and laryngeal cancers, it inhibits PI3K/AKT pathways (Cai et al., 2022; Tian et al., 2018). Tissue dependency reflects the pre-existing transcriptional programmes established during development, shaped by tissue-specific co-factor networks (Lin et al., 2005; Valcourt et al., 2007) and epigenetic landscapes (\u00c1vila-Moren et al., 2014; Cortese et al., 2008). These two layers converge to determine net functional outcome, and neither alone is sufficient to predict MEOX2\u2019s role in a given tumour type. Second, targeting specificity and tool scarcity remain formidable obstacles. Distinguishing MEOX2 from its paralogue MEOX1\u2014which shares substantial homeodomain homology (Grigoriou et al., 1995; Sch\u00f6nrock et al., 2022) and partial functional redundancy during development (Reijntjes et al., 2007)\u2014is a major challenge, and no MEOX2-selective inhibitors have been reported. Indirect strategies (miRNAs, RNF10, TGF-\u03b2 modulation) carry off-target risks, as these networks are shared with normal physiological functions (Chen and Gorski, 2008; Dhahri et al., 2020). Third, practical translational barriers include specimen accessibility, lack of standardised detection techniques\u2014as exemplified by the absence of unified IHC scoring criteria for MEOX2 positivity across studies (Soukup et al., 2023)\u2014and economic considerations for routine implementation. Fourth, MEOX2\u2019s relationship with the tumour microenvironment and inflammatory cells has emerged as an important dimension: it correlates with macrophage infiltration in oesophageal cancer (Wang et al., 2021), HEV-associated T/B-cell infiltration in breast cancer (Sawada et al., 2022), and neutrophil infiltration in rheumatoid arthritis (Yu et al., 2021; Comertpay and Gov, 2020). In GBM, MEOX2 expression correlates with galectin-1 and CD4+ T-cell/macrophage patterns (Mart\u00ednez-Bosch et al., 2023). These observations suggest that MEOX2\u2019s oncogenic versus tumour-suppressive effects may be partially mediated through immune regulation, though the precise mechanisms remain poorly defined.\n\nThe challenges discussed above naturally point to several priorities for future investigation. Mechanistically, multi-omics approaches\u2014single-cell multi-omics, spatial transcriptomics, Hi-C and CRISPR screening\u2014could delineate MEOX2\u2019s genome-wide binding landscape and resolve its functional duality across cellular contexts. Translational efforts should focus on two complementary avenues: first, developing selective agents that target MEOX2 protein\u2013protein interaction interfaces (e.g., with RNF10 or SMADs) or use PROTACs and molecular glues to overcome the current lack of MEOX2-specific inhibitors and the challenge of distinguishing it from MEOX1; and second, establishing robust clinical validation frameworks, including large prospective cohorts, standardised detection protocols and exploration of MEOX2 as a liquid biopsy marker, to address the practical barriers currently impeding clinical implementation. Finally, the emerging roles of MEOX2 in the tumour microenvironment and systemic inflammation warrant deeper investigation, as its immune-related functions\u2014correlating with macrophage infiltration, T/B-cell recruitment and neutrophil-associated inflammation\u2014remain mechanistically undefined and could reveal new combination strategies for immunotherapy. Together, these priorities aim to translate the current correlative and preclinical evidence into mechanistic understanding, therapeutic innovation and clinical utility.\n\nIn conclusion, MEOX2 is a hub molecule connecting developmental biology to a wide range of human diseases. In-depth study of MEOX2 will deepen our understanding of fundamental life processes and bring new diagnostic tools and therapeutic hope for diseases currently lacking effective treatments (e.g., high-grade glioma, AD, organ fibrosis). With continuous advances in research tools and concepts, MEOX2 is poised to occupy a significant place in the future of precision medicine.",
+        "source": "pmc_full_text",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42563959/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13441723/"
+      },
+      "analysis": {
+        "topic_relevance_score": 3.4,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 34,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Development-to-homeostasis continuity: development, developmental, homeostasis; Crosstalk, niche dependency, and trophic support: mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Development-to-homeostasis continuity: development, developmental, homeostasis",
+          "Crosstalk, niche dependency, and trophic support: mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development.",
+          "Possible descriptive or low-mechanism paper signal: review."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": -5.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 43.0,
+          "total_penalty": -11.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 34
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [
+            "mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ]
+}
