@@ -14,10 +14,10 @@ jobs:
 
     steps:
       - name: Check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
 
@@ -27,7 +27,7 @@ jobs:
           python -m pip install openai requests python-dotenv
 
       - name: Restore seen-paper cache
-        uses: actions/cache@v4
+        uses: actions/cache@v5
         with:
           path: data/
           key: seen-papers-${{ github.ref_name }}
