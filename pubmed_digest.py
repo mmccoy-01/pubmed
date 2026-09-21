@@ -236,7 +236,7 @@ def open_with_retry(request: urllib.request.Request):
             retry_after = exc.headers.get("Retry-After")
             delay = float(retry_after) if retry_after and retry_after.isdigit() else 1.5 * (2**attempt)
             time.sleep(delay)
-        except urllib.error.URLError:
+        except (urllib.error.URLError, TimeoutError):
             if attempt == MAX_HTTP_RETRIES - 1:
                 raise
             time.sleep(1.0 * (2**attempt))
@@ -1135,11 +1135,23 @@ def fetch_new_papers(
 
     pubmed_pmids = [item.split(":", 1)[1] for item in candidate_ids if item.startswith("pubmed:")]
     summaries = fetch_summaries(pubmed_pmids)
-    biorxiv_entries = (
-        fetch_biorxiv_entry_map(days_back, max(candidate_pool_size * 3, 100), topic_label, query)
-        if "biorxiv" in resolved_sources
-        else {}
-    )
+    if "biorxiv" in resolved_sources and any(item.startswith("biorxiv:") for item in candidate_ids):
+        try:
+            biorxiv_entries = fetch_biorxiv_entry_map(
+                days_back,
+                max(candidate_pool_size * 3, 100),
+                topic_label,
+                query,
+            )
+        except Exception as exc:  # noqa: BLE001
+            print(
+                f"warning: bioRxiv fetch failed while hydrating records; "
+                f"continuing without bioRxiv papers: {exc}",
+                file=sys.stderr,
+            )
+            biorxiv_entries = {}
+    else:
+        biorxiv_entries = {}
     if "arxiv" in resolved_sources and any(item.startswith("arxiv:") for item in candidate_ids):
         try:
             arxiv_entries = fetch_arxiv_entry_map(days_back, max(candidate_pool_size * 3, 100), topic_label, query)
