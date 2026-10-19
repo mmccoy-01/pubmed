@@ -1,0 +1,1073 @@
+{
+  "generated_at": "2026-10-19T08:19:54.514251+00:00",
+  "days_back": 7,
+  "topic": "file:topics/taste_hedgehog.txt",
+  "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+  "journal_whitelist_path": null,
+  "search_metadata": {
+    "stages": [
+      {
+        "stage": "default",
+        "source": "pubmed",
+        "retmax": 150,
+        "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+        "returned": 5,
+        "slots_available": 50,
+        "added": 5,
+        "tightened": false,
+        "pool_size_after_stage": 5
+      },
+      {
+        "stage": "biorxiv_fallback",
+        "source": "biorxiv",
+        "retmax": 150,
+        "query": "Hedgehog, SHH, GLI1, GLI2, Gas1, Boc, Cdon, Ptch1, Smoothened, taste, gustatory, lingual, papillae, fungiform",
+        "returned": 0,
+        "slots_available": 45,
+        "added": 0,
+        "tightened": false,
+        "pool_size_after_stage": 5,
+        "error": null
+      },
+      {
+        "stage": "arxiv_skipped",
+        "source": "arxiv",
+        "skipped": true,
+        "pool_size_after_stage": 5
+      }
+    ],
+    "candidate_pool_size": 50,
+    "sources": [
+      "biorxiv",
+      "pubmed"
+    ],
+    "arxiv_request_timeout_seconds": 15,
+    "papers_fetched": 5
+  },
+  "scoring_model": "taste_hedgehog_literature_triage",
+  "final_model": "local-score-sort",
+  "records": [
+    {
+      "paper": {
+        "paper_id": "42888876",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42888876",
+        "title": "Hepatic Progenitor Cells and the Ductular Reaction: Pathophysiological Role in the Progression of Liver Disease.",
+        "authors": [
+          "Wang P",
+          "Li M",
+          "Zhou Z",
+          "Luo K",
+          "Lu Y",
+          "Zhang Z",
+          "Su J",
+          "Zhang S",
+          "Tu Y",
+          "Luo H",
+          "Li Q",
+          "Jia X"
+        ],
+        "journal": "Liver international : official journal of the International Association for the Study of the Liver",
+        "pubdate": "2026 Nov",
+        "doi": "10.1111/liv.70935",
+        "pmcid": null,
+        "abstract": "Ductular reaction (DR), a defining histological hallmark of diverse acute and chronic liver injuries, is fundamentally driven by the activation of hepatic progenitor cells (HPCs) and their complex, spatiotemporal bidirectional crosstalk within the hepatic niche. As bipotent precursor cells, HPCs initiate compensatory regeneration when mature hepatocyte proliferation is compromised. However, DR is not a uniform process but a multiphase dynamic reaction: transient early activation facilitates parenchymal restoration, whereas persistent, dysregulated HPC expansion fuels progressive fibrogenesis. The convergence of conserved developmental signalling cascades-including Hippo-YAP, Hedgehog, Notch and TGF-\u03b2-strictly governs HPC fate commitment and biliary epithelial proliferation. Concurrently, DR orchestrates intricate inflammatory circuitries by recruiting innate and adaptive immune cells, activating hepatic stellate cells and remodelling the extracellular matrix, thereby establishing a pro-fibrotic niche that perpetuates chronic injury. This review systematically categorizes the disease-specific morphological and molecular subtypes of DR across heterogeneous liver disorders, including metabolic dysfunction-associated steatotic liver disease (MASLD), viral hepatitis and cholestatic liver diseases, highlighting its robust value as an independent histological and serological prognostic biomarker. Leveraging recent mechanistic breakthroughs from single-cell transcriptomics, lineage tracing and spatial imaging, we comprehensively evaluate widely adopted preclinical models and summarise emerging therapeutic strategies targeting the HPC-DR axis, such as small-molecule compounds, phytochemicals and cytokine modulators. Despite substantial advances in deciphering the HPC-DR axis, critical translational bottlenecks impede its clinical application. Collectively, this review integrates state-of-the-art multidimensional evidence to reconstruct the pathogenic network of HPC-DR interactions, providing mechanistic insights to facilitate precise prognostic evaluation and the development of novel targeted interventions for chronic liver diseases.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42888876/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 7.8,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 78,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Epithelial morphogenesis and tissue architecture: epithelial; Development-to-homeostasis continuity: development, developmental, regeneration, lineage, progenitor, niche.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Development-to-homeostasis continuity: development, developmental, regeneration, lineage, progenitor, niche",
+          "Crosstalk, niche dependency, and trophic support: crosstalk, niche",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible descriptive or low-mechanism paper signal, softened by bridge terms: lineage tracing."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 18.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": -2.5,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 12.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 67.0,
+          "total_penalty": -2.5,
+          "total_interaction_bonus": 12.0,
+          "final_score": 78
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "regeneration",
+            "lineage",
+            "progenitor",
+            "niche"
+          ],
+          "crosstalk_niche_dependency": [
+            "crosstalk",
+            "niche"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "lineage tracing"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42883793",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42883793",
+        "title": "Establishment of a Three-Dimensional In Vitro Model of Taste Bud Cells for Fat Taste Investigation.",
+        "authors": [
+          "Saidou-Diab\u00e9 S",
+          "Sayed Khan A",
+          "Khan NA",
+          "Hichami A"
+        ],
+        "journal": "International journal of molecular sciences",
+        "pubdate": "2026 Sep 24",
+        "doi": "10.3390/ijms27198545",
+        "pmcid": null,
+        "abstract": "Fat taste is emerging as a sixth primary taste modality, with CD36 identified as a key receptor for oral detection of long-chain fatty acids. Tastants bind to receptors on taste bud cells (TBCs), triggering intracellular calcium mobilization, neurotransmitter release, activation of gustatory afferent fibers, and transmission of sensory information to the brain. Conventional two-dimensional (2D) culture systems fail to reproduce the complex three-dimensional (3D) architecture and cell-to-cell interactions essential in vivo. Here, we developed a 3D model of mouse TBCs to investigate the cellular mechanisms underlying fat taste perception. Immortalized CD36-positive TBCs and circumvallate papilla-derived TBCs were co-cultured under 2D and 3D conditions. In 3D conditions, TBCs self-organized into spheroids displaying organelles, intercellular junctions, and expression of markers of the three major TBC types. Compared to 2D-cultured cells, spheroids exhibited higher expression of taste receptors, including CD36, sweet receptor T1R2, umami receptor T1R1. Wnt/\u03b2-catenin and Sonic Hedgehog pathways, controlling differentiation, were upregulated. Spheroids showed enhanced responses to linoleic acid, with greater intracellular calcium mobilization and serotonin release. This model recapitulates more faithfully structural and functional properties of native taste tissue, providing a physiologically relevant in vitro platform for studies of fat taste mechanisms and potential factors modulating TBC function.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42883793/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.7,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 47,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog; Taste and lingual system: taste, taste bud, gustatory, circumvallate.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog",
+          "Taste and lingual system: taste, taste bud, gustatory, circumvallate",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo, mouse, tissue."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 28.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 48.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 47
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [
+            "taste",
+            "taste bud",
+            "gustatory",
+            "circumvallate"
+          ],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Taste and lingual system"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42883963",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42883963",
+        "title": "Mouse Mesonephros Promotes Differentiation of Oogonial Stem Cells into Follicle-like Structures via the PI3K/AKT Signaling Pathway.",
+        "authors": [
+          "Chen J",
+          "Wang Z",
+          "Xiao R",
+          "Zhang S",
+          "Hao Y",
+          "Wang X"
+        ],
+        "journal": "International journal of molecular sciences",
+        "pubdate": "2026 Sep 29",
+        "doi": "10.3390/ijms27198719",
+        "pmcid": null,
+        "abstract": "While the mesonephros persists in the adult mouse ovary and contributes to folliculogenesis, its inductive role in oogonial stem cell (OSC) differentiation remains uncertain. In this study, we investigated whether mesonephros-derived cells direct OSCs toward follicle-like structures in vitro. OSCs were co-cultured with mesonephros cells, and morphological assessments and factor expression analyses were conducted at multiple time points. On day 14 of co-culture, 10\u00d7 Genomics single-cell and bulk RNA sequencing were performed to profile transcriptomic changes, while renal capsule transplantation was conducted to evaluate the functional potential of co-cultured clusters in recipient mice. Transcriptomic analyses revealed a robust expression of mesonephros-specific genes and a significant enrichment of PI3K/AKT pathway-associated genes in co-cultured cells. Notably, transplanted clusters exhibited signs of estrogen secretion with maintained graft integrity. Collectively, these findings demonstrate that the mesonephros promotes OSC differentiation into follicle-like structures, with the PI3K/AKT pathway identified as a candidate mediator of this process. Our study provides novel insights into the developmental regulation of ovarian folliculogenesis and offers a valuable experimental model for future investigations.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42883963/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 2.3,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 23,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: developmental, stem cell.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: developmental, stem cell",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 24.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 23
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "developmental",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42882511",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42882511",
+        "title": "Potential Physiological Convergence Between GLP-1 Receptor Signaling and Hepatocyte TAZ in Metabolic Liver Disease: From Metabolic Homeostasis to Fibrotic Remodeling.",
+        "authors": [
+          "Gholam MF"
+        ],
+        "journal": "Cells",
+        "pubdate": "2026 Oct 4",
+        "doi": "10.3390/cells15191813",
+        "pmcid": null,
+        "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) progresses when nutrient excess, insulin resistance, adipose dysfunction, and hepatocellular stress overwhelm hepatic adaptation. Glucagon-like peptide-1 receptor agonists (GLP-1RAs) improve weight, glycemic control, and steatohepatitis, and semaglutide has demonstrated histological improvement in metabolic dysfunction-associated steatohepatitis (MASH). In parallel, the transcriptional coactivator with PDZ-binding motif (TAZ; WWTR1) has emerged as a nutrient-, cholesterol-, and mechanics-responsive regulator linking stressed hepatocytes to inflammation and fibrogenesis through Hippo-YAP/TAZ signaling and Indian hedgehog. This narrative review integrates incretin physiology with cell-specific TAZ biology across the gut-brain-axis, adipose tissue, pancreatic islets, liver sinusoidal endothelial cells, hepatocytes, immune cells, and hepatic stellate cells. Recent evidence that semaglutide can signal through intrahepatic sinusoidal endothelial GLP-1 receptors provides a weight-loss-independent route to reduced hepatic inflammation and fibrosis; however, it does not establish that TAZ is a downstream mediator. The evidence therefore supports a multilevel convergence model in which GLP-1RAs lower metabolic and inflammatory inputs that favor TAZ activation, while direct GLP-1RA-to-TAZ signaling remains a testable hypothesis. Receptor-validated, cell-specific, weight-controlled, and longitudinal human studies are needed to distinguish mediation from parallel response and to determine whether TAZ-pathway biomarkers can guide mechanism-based therapy.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42882511/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 1.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 15,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: homeostasis.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: homeostasis",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible descriptive or low-mechanism paper signal: review."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": -5.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 18.0,
+          "total_penalty": -5.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 15
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42877971",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42877971",
+        "title": "Conquering Infant and Young Children Medulloblastoma in Resource-Limited Settings: Challenges, Opportunities, and Treatment Outcomes.",
+        "authors": [
+          "Amayiri N",
+          "Khattab E",
+          "Abu Shanab M",
+          "Al-Hussaini M",
+          "Obeidat M",
+          "Maraqa B",
+          "Hashem H",
+          "Ibrahimi AK",
+          "Rihani R",
+          "Sarhan N",
+          "Bouffet E"
+        ],
+        "journal": "Pediatric blood & cancer",
+        "pubdate": "2026 Oct 15",
+        "doi": "10.1002/1545-5017.70771",
+        "pmcid": null,
+        "abstract": "BACKGROUND: Infant and young children medulloblastoma poses significant treatment challenges due to high recurrence rates and the severe neurodevelopmental risks associated with craniospinal irradiation (CSI). Outcome data from low-middle-income countries (LMICs) remain scarce.\n\nMETHODS: A retrospective chart review was conducted for children (age <5 years) diagnosed with medulloblastoma at King Hussein Cancer Center, Jordan, between 2010 and 2023.\n\nRESULTS: Twenty-seven patients were identified. The median age was 2 years (range, 0.5-4.3 years) with 78% males, and over half (52%) presented with metastatic disease. Twelve patients (44%) had \u2264 1.5 cm2 residual tumor. Seventeen patients (63%) required ventriculoperitoneal shunt placement. Seven (26%) developed postoperative complications. Ten tumors were of classic histology, eight desmoplastic, six anaplastic, and three MBEN. Sixteen tumors (59%) were molecularly subgrouped: SHH (fourteen), Group-3 (two). Patients received various treatment protocols: HeadStart 1&2-like protocols (seventeen), SKK-92 (eight), and BBSFOP (two). Although 21 patients were planned for autologous stem cell transplantation (ASCT), only 13 received it (three received SKK-92 due to financial constraints, two prematurely stopped therapy, two developed early tumor progression, and one shifted to BBSFOP protocol due to chemotherapy toxicity). At a median follow-up of 7.4 years (range, 2.5-16 years), 17 patients (63%) are alive. Twelve patients (44%) are alive in CR1 without radiotherapy (five of whom also avoided ASCT), three in CR2 after CSI-36 Gy, one in CR3 after ASCT then CSI-23.4 Gy, and one patient lost to follow-up after salvage CSI-36 Gy. Two patients developed secondary tumors: one died from high-grade glioma and one developed thyroid carcinoma. Two survivors needed cataract surgery, and four had hearing loss. Ten survivors need hormonal supplements.\n\nCONCLUSIONS: Some infants and young children with medulloblastoma can achieve durable cure without ACST or radiotherapy, even in LMICs. While these therapies remain critical salvage options, lifelong comprehensive support is imperative to optimize survival and quality of life.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42877971/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 0,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: shh; Development-to-homeostasis continuity: stem cell.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: shh",
+          "Development-to-homeostasis continuity: stem cell",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor, medulloblastoma.",
+          "Possible clinical, behavioral, or perception-only context signal, softened by bridge terms: stem cell.",
+          "Possible descriptive or low-mechanism paper signal: review."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": -4.0,
+            "weak_mechanism_penalty": -5.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 19.0,
+          "total_penalty": -21.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 0
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ],
+  "scored_records": [
+    {
+      "paper": {
+        "paper_id": "42888876",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42888876",
+        "title": "Hepatic Progenitor Cells and the Ductular Reaction: Pathophysiological Role in the Progression of Liver Disease.",
+        "authors": [
+          "Wang P",
+          "Li M",
+          "Zhou Z",
+          "Luo K",
+          "Lu Y",
+          "Zhang Z",
+          "Su J",
+          "Zhang S",
+          "Tu Y",
+          "Luo H",
+          "Li Q",
+          "Jia X"
+        ],
+        "journal": "Liver international : official journal of the International Association for the Study of the Liver",
+        "pubdate": "2026 Nov",
+        "doi": "10.1111/liv.70935",
+        "pmcid": null,
+        "abstract": "Ductular reaction (DR), a defining histological hallmark of diverse acute and chronic liver injuries, is fundamentally driven by the activation of hepatic progenitor cells (HPCs) and their complex, spatiotemporal bidirectional crosstalk within the hepatic niche. As bipotent precursor cells, HPCs initiate compensatory regeneration when mature hepatocyte proliferation is compromised. However, DR is not a uniform process but a multiphase dynamic reaction: transient early activation facilitates parenchymal restoration, whereas persistent, dysregulated HPC expansion fuels progressive fibrogenesis. The convergence of conserved developmental signalling cascades-including Hippo-YAP, Hedgehog, Notch and TGF-\u03b2-strictly governs HPC fate commitment and biliary epithelial proliferation. Concurrently, DR orchestrates intricate inflammatory circuitries by recruiting innate and adaptive immune cells, activating hepatic stellate cells and remodelling the extracellular matrix, thereby establishing a pro-fibrotic niche that perpetuates chronic injury. This review systematically categorizes the disease-specific morphological and molecular subtypes of DR across heterogeneous liver disorders, including metabolic dysfunction-associated steatotic liver disease (MASLD), viral hepatitis and cholestatic liver diseases, highlighting its robust value as an independent histological and serological prognostic biomarker. Leveraging recent mechanistic breakthroughs from single-cell transcriptomics, lineage tracing and spatial imaging, we comprehensively evaluate widely adopted preclinical models and summarise emerging therapeutic strategies targeting the HPC-DR axis, such as small-molecule compounds, phytochemicals and cytokine modulators. Despite substantial advances in deciphering the HPC-DR axis, critical translational bottlenecks impede its clinical application. Collectively, this review integrates state-of-the-art multidimensional evidence to reconstruct the pathogenic network of HPC-DR interactions, providing mechanistic insights to facilitate precise prognostic evaluation and the development of novel targeted interventions for chronic liver diseases.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42888876/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 7.8,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 78,
+        "recommendation_label": "highly relevant",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Epithelial morphogenesis and tissue architecture: epithelial; Development-to-homeostasis continuity: development, developmental, regeneration, lineage, progenitor, niche.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Development-to-homeostasis continuity: development, developmental, regeneration, lineage, progenitor, niche",
+          "Crosstalk, niche dependency, and trophic support: crosstalk, niche",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible descriptive or low-mechanism paper signal, softened by bridge terms: lineage tracing."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 18.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": -2.5,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 12.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 67.0,
+          "total_penalty": -2.5,
+          "total_interaction_bonus": 12.0,
+          "final_score": 78
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "regeneration",
+            "lineage",
+            "progenitor",
+            "niche"
+          ],
+          "crosstalk_niche_dependency": [
+            "crosstalk",
+            "niche"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "lineage tracing"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42883793",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42883793",
+        "title": "Establishment of a Three-Dimensional In Vitro Model of Taste Bud Cells for Fat Taste Investigation.",
+        "authors": [
+          "Saidou-Diab\u00e9 S",
+          "Sayed Khan A",
+          "Khan NA",
+          "Hichami A"
+        ],
+        "journal": "International journal of molecular sciences",
+        "pubdate": "2026 Sep 24",
+        "doi": "10.3390/ijms27198545",
+        "pmcid": null,
+        "abstract": "Fat taste is emerging as a sixth primary taste modality, with CD36 identified as a key receptor for oral detection of long-chain fatty acids. Tastants bind to receptors on taste bud cells (TBCs), triggering intracellular calcium mobilization, neurotransmitter release, activation of gustatory afferent fibers, and transmission of sensory information to the brain. Conventional two-dimensional (2D) culture systems fail to reproduce the complex three-dimensional (3D) architecture and cell-to-cell interactions essential in vivo. Here, we developed a 3D model of mouse TBCs to investigate the cellular mechanisms underlying fat taste perception. Immortalized CD36-positive TBCs and circumvallate papilla-derived TBCs were co-cultured under 2D and 3D conditions. In 3D conditions, TBCs self-organized into spheroids displaying organelles, intercellular junctions, and expression of markers of the three major TBC types. Compared to 2D-cultured cells, spheroids exhibited higher expression of taste receptors, including CD36, sweet receptor T1R2, umami receptor T1R1. Wnt/\u03b2-catenin and Sonic Hedgehog pathways, controlling differentiation, were upregulated. Spheroids showed enhanced responses to linoleic acid, with greater intracellular calcium mobilization and serotonin release. This model recapitulates more faithfully structural and functional properties of native taste tissue, providing a physiologically relevant in vitro platform for studies of fat taste mechanisms and potential factors modulating TBC function.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42883793/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.7,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 47,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, sonic hedgehog; Taste and lingual system: taste, taste bud, gustatory, circumvallate.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, sonic hedgehog",
+          "Taste and lingual system: taste, taste bud, gustatory, circumvallate",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo, mouse, tissue."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 28.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 48.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 47
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "sonic hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [
+            "taste",
+            "taste bud",
+            "gustatory",
+            "circumvallate"
+          ],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Taste and lingual system"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42883963",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42883963",
+        "title": "Mouse Mesonephros Promotes Differentiation of Oogonial Stem Cells into Follicle-like Structures via the PI3K/AKT Signaling Pathway.",
+        "authors": [
+          "Chen J",
+          "Wang Z",
+          "Xiao R",
+          "Zhang S",
+          "Hao Y",
+          "Wang X"
+        ],
+        "journal": "International journal of molecular sciences",
+        "pubdate": "2026 Sep 29",
+        "doi": "10.3390/ijms27198719",
+        "pmcid": null,
+        "abstract": "While the mesonephros persists in the adult mouse ovary and contributes to folliculogenesis, its inductive role in oogonial stem cell (OSC) differentiation remains uncertain. In this study, we investigated whether mesonephros-derived cells direct OSCs toward follicle-like structures in vitro. OSCs were co-cultured with mesonephros cells, and morphological assessments and factor expression analyses were conducted at multiple time points. On day 14 of co-culture, 10\u00d7 Genomics single-cell and bulk RNA sequencing were performed to profile transcriptomic changes, while renal capsule transplantation was conducted to evaluate the functional potential of co-cultured clusters in recipient mice. Transcriptomic analyses revealed a robust expression of mesonephros-specific genes and a significant enrichment of PI3K/AKT pathway-associated genes in co-cultured cells. Notably, transplanted clusters exhibited signs of estrogen secretion with maintained graft integrity. Collectively, these findings demonstrate that the mesonephros promotes OSC differentiation into follicle-like structures, with the PI3K/AKT pathway identified as a candidate mediator of this process. Our study provides novel insights into the developmental regulation of ovarian folliculogenesis and offers a valuable experimental model for future investigations.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42883963/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 2.3,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 23,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: developmental, stem cell.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: developmental, stem cell",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: mouse."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 24.0,
+          "total_penalty": -3.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 23
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "developmental",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42882511",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42882511",
+        "title": "Potential Physiological Convergence Between GLP-1 Receptor Signaling and Hepatocyte TAZ in Metabolic Liver Disease: From Metabolic Homeostasis to Fibrotic Remodeling.",
+        "authors": [
+          "Gholam MF"
+        ],
+        "journal": "Cells",
+        "pubdate": "2026 Oct 4",
+        "doi": "10.3390/cells15191813",
+        "pmcid": null,
+        "abstract": "Metabolic dysfunction-associated steatotic liver disease (MASLD) progresses when nutrient excess, insulin resistance, adipose dysfunction, and hepatocellular stress overwhelm hepatic adaptation. Glucagon-like peptide-1 receptor agonists (GLP-1RAs) improve weight, glycemic control, and steatohepatitis, and semaglutide has demonstrated histological improvement in metabolic dysfunction-associated steatohepatitis (MASH). In parallel, the transcriptional coactivator with PDZ-binding motif (TAZ; WWTR1) has emerged as a nutrient-, cholesterol-, and mechanics-responsive regulator linking stressed hepatocytes to inflammation and fibrogenesis through Hippo-YAP/TAZ signaling and Indian hedgehog. This narrative review integrates incretin physiology with cell-specific TAZ biology across the gut-brain-axis, adipose tissue, pancreatic islets, liver sinusoidal endothelial cells, hepatocytes, immune cells, and hepatic stellate cells. Recent evidence that semaglutide can signal through intrahepatic sinusoidal endothelial GLP-1 receptors provides a weight-loss-independent route to reduced hepatic inflammation and fibrosis; however, it does not establish that TAZ is a downstream mediator. The evidence therefore supports a multilevel convergence model in which GLP-1RAs lower metabolic and inflammatory inputs that favor TAZ activation, while direct GLP-1RA-to-TAZ signaling remains a testable hypothesis. Receptor-validated, cell-specific, weight-controlled, and longitudinal human studies are needed to distinguish mediation from parallel response and to determine whether TAZ-pathway biomarkers can guide mechanism-based therapy.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42882511/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 1.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 15,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: homeostasis.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: homeostasis",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible descriptive or low-mechanism paper signal: review."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": -5.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 18.0,
+          "total_penalty": -5.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 15
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42877971",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42877971",
+        "title": "Conquering Infant and Young Children Medulloblastoma in Resource-Limited Settings: Challenges, Opportunities, and Treatment Outcomes.",
+        "authors": [
+          "Amayiri N",
+          "Khattab E",
+          "Abu Shanab M",
+          "Al-Hussaini M",
+          "Obeidat M",
+          "Maraqa B",
+          "Hashem H",
+          "Ibrahimi AK",
+          "Rihani R",
+          "Sarhan N",
+          "Bouffet E"
+        ],
+        "journal": "Pediatric blood & cancer",
+        "pubdate": "2026 Oct 15",
+        "doi": "10.1002/1545-5017.70771",
+        "pmcid": null,
+        "abstract": "BACKGROUND: Infant and young children medulloblastoma poses significant treatment challenges due to high recurrence rates and the severe neurodevelopmental risks associated with craniospinal irradiation (CSI). Outcome data from low-middle-income countries (LMICs) remain scarce.\n\nMETHODS: A retrospective chart review was conducted for children (age <5 years) diagnosed with medulloblastoma at King Hussein Cancer Center, Jordan, between 2010 and 2023.\n\nRESULTS: Twenty-seven patients were identified. The median age was 2 years (range, 0.5-4.3 years) with 78% males, and over half (52%) presented with metastatic disease. Twelve patients (44%) had \u2264 1.5 cm2 residual tumor. Seventeen patients (63%) required ventriculoperitoneal shunt placement. Seven (26%) developed postoperative complications. Ten tumors were of classic histology, eight desmoplastic, six anaplastic, and three MBEN. Sixteen tumors (59%) were molecularly subgrouped: SHH (fourteen), Group-3 (two). Patients received various treatment protocols: HeadStart 1&2-like protocols (seventeen), SKK-92 (eight), and BBSFOP (two). Although 21 patients were planned for autologous stem cell transplantation (ASCT), only 13 received it (three received SKK-92 due to financial constraints, two prematurely stopped therapy, two developed early tumor progression, and one shifted to BBSFOP protocol due to chemotherapy toxicity). At a median follow-up of 7.4 years (range, 2.5-16 years), 17 patients (63%) are alive. Twelve patients (44%) are alive in CR1 without radiotherapy (five of whom also avoided ASCT), three in CR2 after CSI-36 Gy, one in CR3 after ASCT then CSI-23.4 Gy, and one patient lost to follow-up after salvage CSI-36 Gy. Two patients developed secondary tumors: one died from high-grade glioma and one developed thyroid carcinoma. Two survivors needed cataract surgery, and four had hearing loss. Ten survivors need hormonal supplements.\n\nCONCLUSIONS: Some infants and young children with medulloblastoma can achieve durable cure without ACST or radiotherapy, even in LMICs. While these therapies remain critical salvage options, lifelong comprehensive support is imperative to optimize survival and quality of life.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42877971/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 0,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: shh; Development-to-homeostasis continuity: stem cell.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: shh",
+          "Development-to-homeostasis continuity: stem cell",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor, medulloblastoma.",
+          "Possible clinical, behavioral, or perception-only context signal, softened by bridge terms: stem cell.",
+          "Possible descriptive or low-mechanism paper signal: review."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": -4.0,
+            "weak_mechanism_penalty": -5.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 19.0,
+          "total_penalty": -21.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 0
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ]
+}
