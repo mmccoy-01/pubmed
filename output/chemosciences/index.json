@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "runs": [
+    {
+      "id": "2026-10-26",
+      "start": "2026-10-19",
+      "end": "2026-10-25",
+      "count": 10,
+      "candidates": 101,
+      "eligible": 42,
+      "path": "2026-10-26/digest.json"
+    },
+    {
+      "id": "2026-10-19",
+      "start": "2026-10-12",
+      "end": "2026-10-18",
+      "count": 10,
+      "candidates": 94,
+      "eligible": 34,
+      "path": "2026-10-19/digest.json"
+    },
+    {
+      "id": "2026-10-12",
+      "start": "2026-10-05",
+      "end": "2026-10-11",
+      "count": 10,
+      "candidates": 75,
+      "eligible": 35,
+      "path": "2026-10-12/digest.json"
+    },
+    {
+      "id": "2026-10-05",
+      "start": "2026-09-28",
+      "end": "2026-10-04",
+      "count": 10,
+      "candidates": 67,
+      "eligible": 33,
+      "path": "2026-10-05/digest.json"
+    }
+  ]
+}

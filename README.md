@@ -1,5 +1,9 @@
 # Gustatory Development & Signaling Digest
 
+The independent [Chemosciences Observatory](CHEMOSCIENCES.md) adds a separate,
+key-free weekly search across taste, smell, chemesthesis, internal sensing, and
+related tissue biology. It does not alter this PhD search or its scoring.
+
 Forked from https://github.com/felizvida/pubmed and hosted at [katalepsara.com/PhD_Dashboard](https://katalepsara.com/PhD_Dashboard/).
 
 A personalized, ontology-driven literature digest focused on gustatory system biology, developmental signaling, Hedgehog pathway regulation, tissue homeostasis, and epithelial sensory organ maintenance.

@@ -1,0 +1,688 @@
+{
+  "name": "chemosciences_discovery",
+  "version": "1.0.0",
+  "description": "Independent signal-first chemosciences ontology. No affiliation, journal, species, or modality preference; no automated quality claims.",
+  "queries": {
+    "taste": "(gustat*[Title/Abstract] OR \"taste bud*\"[Title/Abstract] OR \"taste receptor*\"[Title/Abstract] OR \"taste cell*\"[Title/Abstract] OR \"taste perception\"[Title/Abstract] OR \"taste transduction\"[Title/Abstract] OR \"taste dysfunction\"[Title/Abstract] OR \"taste loss\"[Title/Abstract] OR dysgeusia[Title/Abstract] OR ageusia[Title/Abstract] OR fungiform[Title/Abstract] OR circumvallate[Title/Abstract] OR \"chorda tympani\"[Title/Abstract]) OR (\"taste alteration*\"[Title/Abstract] OR \"taste acceptance\"[Title/Abstract] OR \"taste reactivity\"[Title/Abstract] OR \"conditioned taste aversion\"[Title/Abstract] OR \"conditioned taste avoidance\"[Title/Abstract] OR \"taste sensitivity\"[Title/Abstract] OR \"taste prediction\"[Title/Abstract]) OR ((TAS2R*[Title/Abstract] OR TAS1R*[Title/Abstract] OR T1R1[Title/Abstract] OR T1R2[Title/Abstract] OR T1R3[Title/Abstract]) AND (receptor*[Title/Abstract] OR taste[Title/Abstract] OR gustat*[Title/Abstract]))",
+    "smell": "(olfact*[Title/Abstract] OR \"odorant receptor*\"[Title/Abstract] OR \"odor perception\"[Title/Abstract] OR \"odor coding\"[Title/Abstract] OR \"odor discrimination\"[Title/Abstract] OR \"smell loss\"[Title/Abstract] OR anosmia[Title/Abstract] OR hyposmia[Title/Abstract] OR parosmia[Title/Abstract] OR retronasal[Title/Abstract])",
+    "chemesthesis": "(chemesthe*[Title/Abstract] OR \"trigeminal chemosens*\"[Title/Abstract] OR \"chemical nociception\"[Title/Abstract] OR \"nasal irritation\"[Title/Abstract] OR \"oral pungency\"[Title/Abstract]) OR ((TRPA1[Title/Abstract] OR TRPV1[Title/Abstract] OR TRPM8[Title/Abstract]) AND (oral[Title/Abstract] OR nasal[Title/Abstract] OR lingual[Title/Abstract] OR trigeminal[Title/Abstract] OR chemosens*[Title/Abstract]))",
+    "distributed_sensing": "(\"tuft cell*\"[Title/Abstract] OR \"solitary chemosensory cell*\"[Title/Abstract] OR \"extraoral taste\"[Title/Abstract] OR \"ectopic olfactory receptor*\"[Title/Abstract] OR neuropod*[Title/Abstract]) OR ((\"brush cell*\"[Title/Abstract] OR enteroendocrine[Title/Abstract] OR \"carotid body\"[Title/Abstract] OR \"central chemorece*\"[Title/Abstract]) AND (chemosens*[Title/Abstract] OR chemorece*[Title/Abstract] OR \"nutrient sensing\"[Title/Abstract] OR \"chemical sensing\"[Title/Abstract] OR \"taste receptor*\"[Title/Abstract] OR \"odorant receptor*\"[Title/Abstract]))",
+    "integration": "(\"flavor perception\"[Title/Abstract] OR \"flavour perception\"[Title/Abstract] OR taste-odor[Title/Abstract] OR odor-taste[Title/Abstract] OR olfactory-gustatory[Title/Abstract] OR gustatory-olfactory[Title/Abstract] OR \"multisensory flavor\"[Title/Abstract] OR \"multisensory flavour\"[Title/Abstract]) OR ((taste[Title/Abstract] OR gustat*[Title/Abstract]) AND (odor*[Title/Abstract] OR olfact*[Title/Abstract] OR smell[Title/Abstract]) AND (predict*[Title/Abstract] OR integrat*[Title/Abstract] OR crossmodal[Title/Abstract] OR cross-modal[Title/Abstract] OR multisensory[Title/Abstract]))",
+    "tissue_bridge": "((\"dental pulp\"[Title/Abstract] OR \"salivary gland\"[Title/Abstract] OR \"oral epithelium\"[Title/Abstract] OR \"lingual epithelium\"[Title/Abstract] OR \"nasal mucosa\"[Title/Abstract]) AND (innervation[Title/Abstract] OR trigeminal[Title/Abstract] OR \"sensory neuron*\"[Title/Abstract] OR neuroepithelial[Title/Abstract] OR neuro-epithelial[Title/Abstract]) AND (regenerat*[Title/Abstract] OR \"stem cell*\"[Title/Abstract] OR progenitor*[Title/Abstract] OR differentiation[Title/Abstract] OR homeostasis[Title/Abstract])) OR ((\"salivary gland\"[Title/Abstract]) AND (organoid*[Title/Abstract]) AND (progenitor*[Title/Abstract] OR pluripotent[Title/Abstract]))",
+    "internal_sensing": "(chemosensitiv*[Title/Abstract] OR chemorece*[Title/Abstract]) AND (CO2[Title/Abstract] OR \"carbon dioxide\"[Title/Abstract] OR oxygen[Title/Abstract] OR hypoxia[Title/Abstract] OR pH[Title/Abstract]) AND (neuron*[Title/Abstract] OR glomus[Title/Abstract] OR \"carotid body\"[Title/Abstract] OR ventilat*[Title/Abstract])",
+    "orosensory_methods": "(orosens*[Title/Abstract]) OR ((lick*[Title/Abstract]) AND (microstructure[Title/Abstract] OR microstructural[Title/Abstract]) AND (tool*[Title/Abstract] OR software[Title/Abstract] OR analysis[Title/Abstract] OR method*[Title/Abstract]))"
+  },
+  "concepts": [
+    {
+      "id": "taste",
+      "label": "Taste",
+      "kind": "domain",
+      "weight": 12,
+      "cap": 24,
+      "terms": [
+        "taste",
+        "gustat*",
+        "taste bud*",
+        "taste cell*",
+        "TAS2R*",
+        "TAS1R*",
+        "T1R1",
+        "T1R2",
+        "T1R3",
+        "circumvallate",
+        "fungiform",
+        "chorda tympani",
+        "dysgeusia",
+        "ageusia",
+        "orosens*"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "smell",
+      "label": "Smell",
+      "kind": "domain",
+      "weight": 12,
+      "cap": 24,
+      "terms": [
+        "olfact*",
+        "odor*",
+        "odour*",
+        "odorant receptor*",
+        "odor perception",
+        "odor coding",
+        "odor discrimination",
+        "anosmia",
+        "hyposmia",
+        "parosmia",
+        "retronasal"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "chemesthesis",
+      "label": "Chemesthesis",
+      "kind": "domain",
+      "weight": 12,
+      "cap": 24,
+      "terms": [
+        "chemesthe*",
+        "trigeminal",
+        "pungency",
+        "TRPA1",
+        "TRPV1",
+        "TRPM8",
+        "chemical nociception"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "distributed",
+      "label": "Distributed chemical sensing",
+      "kind": "domain",
+      "weight": 12,
+      "cap": 24,
+      "terms": [
+        "tuft cell*",
+        "solitary chemosensory",
+        "extraoral",
+        "extra-nasal",
+        "extra-olfactory",
+        "ectopic olfactory",
+        "brush cell*",
+        "neuropod*",
+        "enteroendocrine",
+        "L cell*",
+        "GLUTag"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "internal",
+      "label": "Internal chemical sensing",
+      "kind": "domain",
+      "weight": 10,
+      "cap": 20,
+      "terms": [
+        "chemorece*",
+        "chemosensitiv*",
+        "carotid body",
+        "glomus cell*",
+        "retrotrapezoid"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "oral_bridge",
+      "label": "Oral & dental biology",
+      "kind": "domain",
+      "weight": 8,
+      "cap": 16,
+      "terms": [
+        "dental pulp",
+        "salivary gland*",
+        "Wharton*s duct*",
+        "oral epithelium",
+        "lingual epithelium",
+        "salivary organoid*"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "epithelial_renewal",
+      "label": "Epithelial renewal & regeneration",
+      "kind": "biology",
+      "weight": 9,
+      "cap": 18,
+      "terms": [
+        "regenerat*",
+        "epithelial renewal",
+        "turnover",
+        "tissue repair",
+        "homeostasis",
+        "homeostatic",
+        "epitheli*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "cell_identity",
+      "label": "Cell identity & progenitors",
+      "kind": "biology",
+      "weight": 10,
+      "cap": 20,
+      "terms": [
+        "progenitor*",
+        "stem cell*",
+        "lineage*",
+        "cell fate",
+        "differentiation",
+        "basal cell*",
+        "sustentacular",
+        "multipotent",
+        "pluripotent",
+        "quiescen*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "tissue_context",
+      "label": "Tissue context & microenvironment",
+      "kind": "biology",
+      "weight": 7,
+      "cap": 14,
+      "terms": [
+        "microenvironment*",
+        "niche*",
+        "extracellular matrix",
+        "mucosa*",
+        "mesenchym*",
+        "stromal",
+        "regional",
+        "region-specific",
+        "tissue of origin",
+        "mucin",
+        "saliva*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "neuroepithelial",
+      "label": "Nerve–tissue communication",
+      "kind": "biology",
+      "weight": 9,
+      "cap": 18,
+      "terms": [
+        "innervat*",
+        "denervat*",
+        "neuroepitheli*",
+        "neuro-epitheli*",
+        "trigeminal neuron*",
+        "Schwann",
+        "nerve regeneration",
+        "extracellular vesicle*",
+        "trophic"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "immunity",
+      "label": "Immune–sensory interactions",
+      "kind": "biology",
+      "weight": 8,
+      "cap": 16,
+      "terms": [
+        "inflamm*",
+        "immun*",
+        "cytokine*",
+        "IL-13",
+        "IL13",
+        "IL-17",
+        "IL-25",
+        "interleukin*",
+        "NLRP3",
+        "infection",
+        "microbiot*",
+        "microbial",
+        "bacterial",
+        "parasite*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "environment",
+      "label": "Environment & exposure",
+      "kind": "biology",
+      "weight": 6,
+      "cap": 12,
+      "terms": [
+        "pollut*",
+        "exposure",
+        "environment*",
+        "xenobiotic",
+        "temperature",
+        "hypoxia",
+        "hypoxic",
+        "oxidative stress",
+        "pH",
+        "acidification",
+        "acidity"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "sensory_circuits",
+      "label": "Sensory circuits & coding",
+      "kind": "biology",
+      "weight": 8,
+      "cap": 16,
+      "terms": [
+        "odor representation*",
+        "odor coding",
+        "neural representation*",
+        "neuronal circuit*",
+        "sensory circuit*",
+        "olfactory bulb",
+        "piriform",
+        "sensory neuron*",
+        "neurotransmitter*",
+        "neuron*",
+        "synap*",
+        "afferent*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "multisensory",
+      "label": "Crossmodal perception & learning",
+      "kind": "biology",
+      "weight": 9,
+      "cap": 18,
+      "terms": [
+        "crossmodal",
+        "cross-modal",
+        "multisensory",
+        "odor-taste",
+        "taste-odor",
+        "flavor perception",
+        "flavour perception",
+        "associative learning",
+        "conditioned taste",
+        "taste acceptance",
+        "taste reactivity",
+        "palatability",
+        "palatability-related",
+        "percept*",
+        "lick*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "metabolic_state",
+      "label": "Nutrients & internal state",
+      "kind": "biology",
+      "weight": 7,
+      "cap": 14,
+      "terms": [
+        "nutrient*",
+        "metaboli*",
+        "metabolis*",
+        "satiety",
+        "satiation",
+        "feeding",
+        "appetite",
+        "obesity",
+        "diet-induced",
+        "high-fat",
+        "GLP-1",
+        "incretin",
+        "fatty acid*",
+        "fat taste"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "clinical_function",
+      "label": "Sensory function & recovery",
+      "kind": "biology",
+      "weight": 8,
+      "cap": 16,
+      "terms": [
+        "taste alteration*",
+        "taste dysfunction",
+        "olfactory dysfunction",
+        "smell loss",
+        "taste loss",
+        "anosmia",
+        "parosmia",
+        "olfactory function",
+        "taste sensitivity",
+        "pain",
+        "pulpitis",
+        "radiotherapy",
+        "recovery",
+        "clinical outcome*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "development_aging",
+      "label": "Development & aging",
+      "kind": "biology",
+      "weight": 6,
+      "cap": 12,
+      "terms": [
+        "development*",
+        "aging",
+        "ageing",
+        "pediatric",
+        "early-life",
+        "early life",
+        "postnatal",
+        "embryonic",
+        "lifespan",
+        "maturation",
+        "immature"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "receptor_pharmacology",
+      "label": "Receptor recognition & modulation",
+      "kind": "mechanism",
+      "weight": 8,
+      "cap": 16,
+      "terms": [
+        "receptor*",
+        "ligand*",
+        "agonist*",
+        "antagonist*",
+        "binding pocket*",
+        "gating",
+        "allosteric",
+        "pharmacolog*",
+        "transduction"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "sensory_transduction",
+      "label": "Sensory transduction",
+      "kind": "mechanism",
+      "weight": 8,
+      "cap": 16,
+      "terms": [
+        "calcium mobilization",
+        "calcium signaling",
+        "calcium signalling",
+        "cAMP",
+        "ATP",
+        "TRPM5",
+        "PLCB2",
+        "GNAT3",
+        "GPR120",
+        "CD36",
+        "TAS2R*",
+        "TAS1R*",
+        "TRPA1",
+        "TRPV1",
+        "TRPM8"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "pou2f3",
+      "label": "POU2F3 cell programs",
+      "kind": "mechanism",
+      "weight": 9,
+      "cap": 18,
+      "terms": [
+        "POU2F3",
+        "Skn-1a"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "sox_identity",
+      "label": "SOX cell-identity programs",
+      "kind": "mechanism",
+      "weight": 7,
+      "cap": 14,
+      "terms": [
+        "SOX2",
+        "SOX9",
+        "SOX10",
+        "p63",
+        "TP63",
+        "TRP63",
+        "KRT5",
+        "KRT14",
+        "LGR5",
+        "LGR6"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "growth_signals",
+      "label": "Growth-factor & developmental signaling",
+      "kind": "mechanism",
+      "weight": 7,
+      "cap": 14,
+      "terms": [
+        "EGFR",
+        "RasGRP1",
+        "Wnt",
+        "Notch",
+        "hedgehog",
+        "SHH",
+        "BMP",
+        "YAP",
+        "TAZ",
+        "RANKL",
+        "retinoic acid",
+        "retinoid*"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "odor_metabolism",
+      "label": "Odorant processing before receptors",
+      "kind": "mechanism",
+      "weight": 9,
+      "cap": 18,
+      "terms": [
+        "nasal metabolism",
+        "odorant metabolism",
+        "odorous metabolite*",
+        "xenobiotic enzyme*",
+        "salivary mucin",
+        "oral processing",
+        "odorant availability"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "chromatin",
+      "label": "Gene regulation & chromatin",
+      "kind": "mechanism",
+      "weight": 6,
+      "cap": 12,
+      "terms": [
+        "chromatin",
+        "epigen*",
+        "transcription factor*",
+        "enhancer*",
+        "gene regulatory",
+        "transcriptional regulation"
+      ],
+      "linkable": true
+    },
+    {
+      "id": "organoids",
+      "label": "Organoids & tissue models",
+      "kind": "method",
+      "weight": 4,
+      "cap": 8,
+      "terms": [
+        "organoid*",
+        "spheroid*",
+        "air-liquid interface",
+        "three-dimensional",
+        "3D model*",
+        "cell culture",
+        "co-cultur*",
+        "in vitro"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "omics",
+      "label": "Single-cell & spatial profiling",
+      "kind": "method",
+      "weight": 4,
+      "cap": 8,
+      "terms": [
+        "single-cell",
+        "single cell",
+        "spatial transcriptom*",
+        "scRNA*",
+        "lineage tracing",
+        "fate mapping",
+        "RNA-seq",
+        "proteom*",
+        "transcriptom*"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "computation",
+      "label": "Computational & structural methods",
+      "kind": "method",
+      "weight": 4,
+      "cap": 8,
+      "terms": [
+        "in silico",
+        "molecular dynamics",
+        "simulation*",
+        "computational",
+        "cryo-EM",
+        "machine learning",
+        "deep learning",
+        "signaling map",
+        "signalling map",
+        "knowledge resource",
+        "network analysis"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "perturbation",
+      "label": "Functional perturbation",
+      "kind": "method",
+      "weight": 4,
+      "cap": 8,
+      "terms": [
+        "knockout",
+        "knock-out",
+        "ablation",
+        "silencing",
+        "inhibition",
+        "electrophysiology",
+        "calcium imaging",
+        "loss-of-function",
+        "gain-of-function",
+        "mutant*"
+      ],
+      "linkable": false
+    },
+    {
+      "id": "human_studies",
+      "label": "Human & clinical studies",
+      "kind": "method",
+      "weight": 4,
+      "cap": 8,
+      "terms": [
+        "human",
+        "patient*",
+        "participant*",
+        "cohort",
+        "randomized",
+        "randomised",
+        "clinical",
+        "sensory evaluation",
+        "sensory test*"
+      ],
+      "linkable": false
+    }
+  ],
+  "group_caps": {
+    "domain": 24,
+    "biology": 36,
+    "mechanism": 20,
+    "method": 8
+  },
+  "interaction_cap": 12,
+  "interactions": [
+    {
+      "id": "lineage_context",
+      "label": "Cell identity in tissue context",
+      "points": 7,
+      "requires_any_from_each": [
+        [
+          "cell_identity"
+        ],
+        [
+          "tissue_context",
+          "immunity",
+          "growth_signals",
+          "neuroepithelial"
+        ]
+      ]
+    },
+    {
+      "id": "sensory_environment",
+      "label": "Environmental context changes sensory signaling",
+      "points": 6,
+      "requires_any_from_each": [
+        [
+          "taste",
+          "smell",
+          "chemesthesis",
+          "distributed"
+        ],
+        [
+          "environment",
+          "odor_metabolism"
+        ],
+        [
+          "sensory_circuits",
+          "sensory_transduction",
+          "receptor_pharmacology"
+        ]
+      ]
+    },
+    {
+      "id": "cross_system",
+      "label": "Multiple chemical-sensing systems",
+      "points": 5,
+      "requires_any_from_each": [
+        [
+          "taste"
+        ],
+        [
+          "smell",
+          "distributed",
+          "chemesthesis"
+        ]
+      ]
+    },
+    {
+      "id": "neuroepithelial_bridge",
+      "label": "Sensory innervation and tissue renewal",
+      "points": 7,
+      "requires_any_from_each": [
+        [
+          "neuroepithelial"
+        ],
+        [
+          "epithelial_renewal",
+          "cell_identity"
+        ]
+      ]
+    }
+  ],
+  "selection": {
+    "digest_size": 5,
+    "reading_list_size": 10,
+    "minimum_score": 48,
+    "diversity_penalty": 12,
+    "max_reviews_in_digest": 1
+  },
+  "nonbiological_sensor_terms": [
+    "gas sensor*",
+    "chemiresistive sensor*",
+    "fluorescent probe*",
+    "electronic tongue",
+    "artificial olfactory chip"
+  ]
+}
