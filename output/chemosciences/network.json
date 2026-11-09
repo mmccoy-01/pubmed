@@ -2,6 +2,4921 @@
   "schema_version": 1,
   "nodes": [
     {
+      "id": "42993090",
+      "title": "TAS1R3 biases bone marrow stromal cell fate toward adipogenesis through PLCβ4-p38 signaling.",
+      "authors": [
+        "Yoshimura A",
+        "Matsubara T",
+        "Addison WN",
+        "Higashi S",
+        "Inoue M",
+        "Kaminuma O",
+        "Takeuchi H",
+        "Kokabu S"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42993090/",
+      "doi": "10.1093/stmcls/sxag059",
+      "related": [],
+      "journal": "Stem cells (Dayton, Ohio)",
+      "preprint": false,
+      "score": 100,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "TAS1R*",
+            "taste",
+            "taste bud*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "distributed",
+          "label": "Distributed chemical sensing",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "extraoral"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "cell_identity",
+          "label": "Cell identity & progenitors",
+          "kind": "biology",
+          "points": 20,
+          "terms": [
+            "cell fate",
+            "differentiation",
+            "lineage*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 14,
+          "terms": [
+            "mesenchym*",
+            "stromal"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "nutrient*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "pharmacolog*",
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "TAS1R*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "transcriptom*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "inhibition"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched cell identity & progenitors, sensory transduction, tissue context & microenvironment. Combination: cell identity in tissue context.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [
+        "2026-11-09"
+      ],
+      "versions": []
+    },
+    {
+      "id": "42975462",
+      "title": "Ocean Acidification Impairs Olfaction in the Large Yellow Croaker, Larimichthys crocea, by Disrupting Sensory Integrity and Neural Processing.",
+      "authors": [
+        "Gong C",
+        "Hu K",
+        "Wang M",
+        "Ge X",
+        "Yu Y",
+        "Shan C",
+        "Xue J",
+        "Wu C",
+        "Liu G",
+        "Shi W"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42975462/",
+      "doi": "10.1021/acs.est.6c10481",
+      "related": [],
+      "journal": "Environmental science & technology",
+      "preprint": false,
+      "score": 90,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "odorant receptor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 12,
+          "terms": [
+            "acidification",
+            "oxidative stress",
+            "pH"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "metaboli*",
+            "metabolis*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "olfactory function"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "maturation"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "ligand*",
+            "receptor*",
+            "transduction"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "calcium signaling"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "organoids",
+          "label": "Organoids & tissue models",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "in vitro"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "proteom*",
+            "transcriptom*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched environment & exposure, epithelial renewal & regeneration, sensory function & recovery. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [
+        "2026-11-09"
+      ],
+      "versions": []
+    },
+    {
+      "id": "42989084",
+      "title": "A glutamatergic circuit from the piriform cortex to the mediodorsal thalamus regulates trigeminal neuropathic pain and comorbid cognitive impairment in mice.",
+      "authors": [
+        "Zhang SH",
+        "Jia XY",
+        "Shen KL",
+        "Lie Y",
+        "Lei-Xie",
+        "Wu YZ",
+        "Gao J",
+        "An MZ",
+        "Lin ZY",
+        "Zhou HH",
+        "Xu LS",
+        "Zhou QH"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42989084/",
+      "doi": "10.1186/s10194-026-02486-w",
+      "related": [],
+      "journal": "The journal of headache and pain",
+      "preprint": false,
+      "score": 84,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "chemesthesis",
+          "label": "Chemesthesis",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "trigeminal"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "immun*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "neuron*",
+            "piriform"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "pain"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "calcium signalling"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "inhibition"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "patient*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, sensory circuits & coding, immune–sensory interactions.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [
+        "2026-11-09"
+      ],
+      "versions": []
+    },
+    {
+      "id": "42996909",
+      "title": "Beyond basic taste: mechanisms, measurement, and food-matrix translation of non-basic oral sensations.",
+      "authors": [
+        "Ameer M",
+        "Saeed S",
+        "Zafar MS",
+        "Huang M"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42996909/",
+      "doi": "10.3389/fnut.2026.1962396",
+      "related": [],
+      "journal": "Frontiers in nutrition",
+      "preprint": false,
+      "score": 82,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "taste"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "retronasal"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "chemesthesis",
+          "label": "Chemesthesis",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "TRPA1",
+            "TRPM8",
+            "TRPV1",
+            "pungency"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "saliva*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "fatty acid*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "TRPA1",
+            "TRPM8",
+            "TRPV1"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "odor_metabolism",
+          "label": "Odorant processing before receptors",
+          "kind": "mechanism",
+          "points": 9,
+          "terms": [
+            "oral processing"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human",
+            "sensory evaluation"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, odorant processing before receptors, receptor recognition & modulation. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [
+        "2026-11-09"
+      ],
+      "versions": []
+    },
+    {
+      "id": "42996413",
+      "title": "Localized SARS-CoV-2 Infection Triggers a Tissue-Wide Antiviral Response and Functional Impairment of Olfactory Sensory Neurons.",
+      "authors": [
+        "Liu J",
+        "Akhtar MS",
+        "Liu H",
+        "Kim Y",
+        "Ramirez BM",
+        "Weidner AL",
+        "Chan A",
+        "Collins M",
+        "Rothenburg S",
+        "Coffey LL",
+        "Gong Q"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42996413/",
+      "doi": "10.64898/2026.09.19.752823",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 79,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "anosmia",
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "cell_identity",
+          "label": "Cell identity & progenitors",
+          "kind": "biology",
+          "points": 10,
+          "terms": [
+            "sustentacular"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "immun*",
+            "infection",
+            "inflamm*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "neuron*",
+            "sensory neuron*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "anosmia",
+            "olfactory dysfunction"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "transduction"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "single cell",
+            "single-cell"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched immune–sensory interactions, sensory circuits & coding, cell identity & progenitors. Combination: cell identity in tissue context.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [
+        "2026-11-09"
+      ],
+      "versions": []
+    },
+    {
+      "id": "42977007",
+      "title": "Qi Yin San Liang San prevents gefitinib-induced nociceptive hypersensitivity by modulating TRPV1 channel activity.",
+      "authors": [
+        "Yan K",
+        "Guo PX",
+        "Liang QY",
+        "Xu PT",
+        "Jin T",
+        "Chen LY",
+        "Liang CB",
+        "Guo MY",
+        "Liu XL"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42977007/",
+      "doi": "10.1016/j.jep.2026.122587",
+      "related": [],
+      "journal": "Journal of ethnopharmacology",
+      "preprint": false,
+      "score": 76,
+      "concepts": [
+        {
+          "id": "chemesthesis",
+          "label": "Chemesthesis",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "TRPV1"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "immun*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "pain"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "pharmacolog*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "TRPV1"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "RNA-seq"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "calcium imaging"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory transduction, sensory function & recovery, immune–sensory interactions.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42973688",
+      "title": "Staphylococcus aureus-derived xanthine exacerbates allergic rhinitis-induced olfactory dysfunction through promoting Th17 cell differentiation and IL-17A production.",
+      "authors": [
+        "Hu Y",
+        "Wang W",
+        "Yang T",
+        "Song X",
+        "Wang Y",
+        "Cheng Y",
+        "Mou Y",
+        "Ren C",
+        "Song X"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973688/",
+      "doi": "10.1002/cti2.70127",
+      "related": [],
+      "journal": "Clinical & translational immunology",
+      "preprint": false,
+      "score": 75,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "cell_identity",
+          "label": "Cell identity & progenitors",
+          "kind": "biology",
+          "points": 20,
+          "terms": [
+            "differentiation"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "infection",
+            "microbial"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "metaboli*",
+            "metabolis*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "olfactory dysfunction",
+            "olfactory function"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "proteom*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "patient*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched cell identity & progenitors, sensory function & recovery, immune–sensory interactions. Combination: cell identity in tissue context.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42973033",
+      "title": "[Progress in research on olfactory dysfunction in patients with obstructive sleep apnea].",
+      "authors": [
+        "Ni S",
+        "Feng C",
+        "Wu S",
+        "Wang Y"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973033/",
+      "doi": "10.13201/j.issn.2096-7993.2026.11.012",
+      "related": [],
+      "journal": "Lin chuang er bi yan hou tou jing wai ke za zhi = Journal of clinical otorhinolaryngology head and neck surgery",
+      "preprint": false,
+      "score": 74,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "inflamm*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "hypoxia"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neurotransmitter*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "olfactory dysfunction"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "development*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "clinical",
+            "patient*"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, epithelial renewal & regeneration, immune–sensory interactions. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42977262",
+      "title": "The Oral Microbiota-Taste Axis: Microbial Influences on Gustatory Perception and Food Sensory Experience.",
+      "authors": [
+        "Hasija T",
+        "Khare P"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42977262/",
+      "doi": "10.1111/jtxs.70125",
+      "related": [],
+      "journal": "Journal of texture studies",
+      "preprint": false,
+      "score": 74,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "gustat*",
+            "taste",
+            "taste bud*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "microbial",
+            "microbiot*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "environment*",
+            "pH"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 18,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "metaboli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "taste sensitivity"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, immune–sensory interactions, sensory function & recovery. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42979762",
+      "title": "Remodeling of the olfactory mucosa: maturation of glia, fibroblasts and vascular compartments after birth.",
+      "authors": [
+        "Senf K",
+        "Karius J",
+        "Neuhaus EM"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42979762/",
+      "doi": "10.1242/jcs.265236",
+      "related": [],
+      "journal": "Journal of cell science",
+      "preprint": false,
+      "score": 74,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "cell_identity",
+          "label": "Cell identity & progenitors",
+          "kind": "biology",
+          "points": 10,
+          "terms": [
+            "basal cell*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 14,
+          "terms": [
+            "extracellular matrix",
+            "mucosa*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "exposure"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 12,
+          "terms": [
+            "embryonic",
+            "maturation",
+            "postnatal"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "sox_identity",
+          "label": "SOX cell-identity programs",
+          "kind": "mechanism",
+          "points": 7,
+          "terms": [
+            "SOX10"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched tissue context & microenvironment, development & aging, cell identity & progenitors. Combination: cell identity in tissue context.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [
+        "2026-11-09"
+      ],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42985702",
+      "title": "Convergence of sweet and umami in the mammalian taste bud.",
+      "authors": [
+        "Uddin SA",
+        "Boonrawd T",
+        "Kim Y",
+        "Rodriguez HR",
+        "Yu Y",
+        "Jamshidi P",
+        "Lee H"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42985702/",
+      "doi": "10.1016/j.isci.2026.118025",
+      "related": [],
+      "journal": "iScience",
+      "preprint": false,
+      "score": 73,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "gustat*",
+            "taste",
+            "taste bud*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "neuroepithelial",
+          "label": "Nerve–tissue communication",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "innervat*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "conditioned taste"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "nutrient*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "calcium imaging"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, nerve–tissue communication, receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42989404",
+      "title": "Neuroepigenetic programming by the maternal environment. Part B: independent contribution of methylation and hydroxymethylation in the offspring's olfactory bulb following preconceptional weight loss in mice.",
+      "authors": [
+        "Badonnel K",
+        "Chaulot-Talmon A",
+        "Costes V",
+        "Frambourg A",
+        "Costa-Monteiro-Moreira G",
+        "Jouin M",
+        "Bourgeois-Brunel L",
+        "Gabory A",
+        "Kiefer H",
+        "Jammes H",
+        "Baly C"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42989404/",
+      "doi": "10.1186/s13148-026-02175-0",
+      "related": [],
+      "journal": "Clinical epigenetics",
+      "preprint": false,
+      "score": 72,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 12,
+          "terms": [
+            "environment*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "neuron*",
+            "olfactory bulb",
+            "synap*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "metaboli*",
+            "metabolis*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "early life",
+            "early-life"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "chromatin",
+          "label": "Gene regulation & chromatin",
+          "kind": "mechanism",
+          "points": 6,
+          "terms": [
+            "chromatin",
+            "epigen*",
+            "transcriptional regulation"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched sensory circuits & coding, environment & exposure, nutrients & internal state. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42988058",
+      "title": "Masitinib-loaded poly(lactic-co-glycolic acid) nanoparticles reinstate lysosomal acidification and drive immunomodulation in Alzheimer's disease.",
+      "authors": [
+        "Huang Q",
+        "Chen Y",
+        "Liu Y",
+        "Lv Y",
+        "Xie X",
+        "Liyang C",
+        "Tong F",
+        "Gao H",
+        "Sun J"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42988058/",
+      "doi": "10.1016/j.jconrel.2026.115518",
+      "related": [],
+      "journal": "Journal of controlled release : official journal of the Controlled Release Society",
+      "preprint": false,
+      "score": 70,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "chemesthesis",
+          "label": "Chemesthesis",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "trigeminal"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "immun*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 12,
+          "terms": [
+            "acidification",
+            "pH"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "transcriptom*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "clinical"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched immune–sensory interactions, environment & exposure, receptor recognition & modulation. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42996087",
+      "title": "Targeting cyclic-AMP/phosphodiesterase signaling to quiet nasal tuft cell calcium responses.",
+      "authors": [
+        "Polen K",
+        "Kuek LE",
+        "Ma Z",
+        "Adappa ND",
+        "Palmer JN",
+        "Carey RM",
+        "Lee RJ"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42996087/",
+      "doi": "10.64898/2026.10.21.760783",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 70,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "taste"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "distributed",
+          "label": "Distributed chemical sensing",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "solitary chemosensory",
+            "tuft cell*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "IL-25",
+            "interleukin*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "agonist*",
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "TRPM5",
+            "cAMP"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "organoids",
+          "label": "Organoids & tissue models",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "air-liquid interface",
+            "in vitro"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "single cell"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "inhibition"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human",
+            "patient*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched epithelial renewal & regeneration, immune–sensory interactions, receptor recognition & modulation. Combination: multiple chemical-sensing systems.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42978966",
+      "title": "Intranasal nano-immunotherapy for glioma: bypassing the blood-brain barrier, reprogramming the immune microenvironment, and bridging preclinical validation.",
+      "authors": [
+        "Li L",
+        "Wu M",
+        "Li L"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978966/",
+      "doi": "10.3389/fimmu.2026.1950362",
+      "related": [],
+      "journal": "Frontiers in immunology",
+      "preprint": false,
+      "score": 68,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "chemesthesis",
+          "label": "Chemesthesis",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "trigeminal"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 14,
+          "terms": [
+            "microenvironment*",
+            "mucosa*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "neuroepithelial",
+          "label": "Nerve–tissue communication",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "extracellular vesicle*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "bacterial",
+            "immun*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "exposure"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "agonist*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "chromatin",
+          "label": "Gene regulation & chromatin",
+          "kind": "mechanism",
+          "points": 6,
+          "terms": [
+            "gene regulatory"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched immune–sensory interactions, tissue context & microenvironment, nerve–tissue communication. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42971452",
+      "title": "Identifying Key Odorant Compounds and Assessing Odor Additivity in Complex Mixtures via Machine Learning: A Multi-Regional Case Study in China.",
+      "authors": [
+        "Chen X",
+        "Wang L",
+        "Liu J",
+        "Han H",
+        "Zhang J",
+        "Shen W",
+        "Wu C",
+        "Liao H",
+        "Yu C",
+        "Liu Y",
+        "Li M"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971452/",
+      "doi": "10.1016/j.envpol.2026.129461",
+      "related": [],
+      "journal": "Environmental pollution (Barking, Essex : 1987)",
+      "preprint": false,
+      "score": 67,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor perception",
+            "odor*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 14,
+          "terms": [
+            "regional"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "pollut*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "development*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "computation",
+          "label": "Computational & structural methods",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "machine learning"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched tissue context & microenvironment, crossmodal perception & learning, development & aging.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42973036",
+      "title": "Small-Pore Chitosan Microcarriers Support Surface-Adherent Growth of Induced Pluripotent Stem Cell-Derived Neural Stem Cells and Improve Intranasal Therapy of Murine Anosmia.",
+      "authors": [
+        "Chen CK",
+        "Lee CW",
+        "Jiang RS",
+        "Wu TJ",
+        "Lin ZI",
+        "Chen JA",
+        "Chung HH",
+        "Liao YH",
+        "Chi PL"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42973036/",
+      "doi": "10.1002/adhm.71945",
+      "related": [],
+      "journal": "Advanced healthcare materials",
+      "preprint": false,
+      "score": 67,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "anosmia",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*",
+            "regenerat*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "cell_identity",
+          "label": "Cell identity & progenitors",
+          "kind": "biology",
+          "points": 20,
+          "terms": [
+            "differentiation",
+            "pluripotent",
+            "stem cell*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "microenvironment*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "anosmia",
+            "recovery"
+          ],
+          "title_match": true,
+          "linkable": true
+        }
+      ],
+      "why": "Matched cell identity & progenitors, sensory function & recovery, epithelial renewal & regeneration. Combination: cell identity in tissue context.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42971198",
+      "title": "Neuropeptidergic-glutamatergic circuit regulates selective forgetting of olfactory learning.",
+      "authors": [
+        "Onishi Y",
+        "Arai M",
+        "Sato N",
+        "Takamatsu M",
+        "Teo JH",
+        "Kitazono T",
+        "Ishihara T"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971198/",
+      "doi": "10.1016/j.cub.2026.10.015",
+      "related": [],
+      "journal": "Current biology : CB",
+      "preprint": false,
+      "score": 64,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "environment*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*",
+            "sensory neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "recovery"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "silencing"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, receptor recognition & modulation, sensory circuits & coding. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42989344",
+      "title": "Diffuse mild TBI reveals spatially selective vulnerability from early olfactory disruption to delayed substantia nigra involvement.",
+      "authors": [
+        "Edwards S",
+        "Arthur E",
+        "Collins-Praino L",
+        "Corrigan F"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42989344/",
+      "doi": "10.1186/s40478-026-02404-w",
+      "related": [],
+      "journal": "Acta neuropathologica communications",
+      "preprint": false,
+      "score": 64,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*",
+            "turnover"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "region-specific"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "immun*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*",
+            "olfactory bulb"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched epithelial renewal & regeneration, immune–sensory interactions, receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42970311",
+      "title": "Olfactory Receptor 51E2 Activation by β-Ionone Induces a Senescence-Like Phenotype and Increases Susceptibility to Senolytic Treatment in Colorectal Cancer.",
+      "authors": [
+        "Kim JS",
+        "Kim JA",
+        "Jung YH",
+        "Choi JW",
+        "Shin SW",
+        "Kang B",
+        "Min BS",
+        "Lee H",
+        "Chung S",
+        "Lee SJ"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42970311/",
+      "doi": "10.14336/AD.2026.1095",
+      "related": [],
+      "journal": "Aging and disease",
+      "preprint": false,
+      "score": 62,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "distributed",
+          "label": "Distributed chemical sensing",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "ectopic olfactory"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "cell_identity",
+          "label": "Cell identity & progenitors",
+          "kind": "biology",
+          "points": 10,
+          "terms": [
+            "cell fate"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "agonist*",
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "chromatin",
+          "label": "Gene regulation & chromatin",
+          "kind": "mechanism",
+          "points": 6,
+          "terms": [
+            "chromatin"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "organoids",
+          "label": "Organoids & tissue models",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "in vitro",
+            "organoid*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "clinical",
+            "human",
+            "patient*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched receptor recognition & modulation, cell identity & progenitors, gene regulation & chromatin.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42996977",
+      "title": "Enteroendocrine signaling in irritable bowel syndrome: beyond cell counts toward stimulus-responsive physiological profiling.",
+      "authors": [
+        "Han J",
+        "Lang Y",
+        "Yao K",
+        "Mi J"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42996977/",
+      "doi": "10.3389/fmed.2026.1992567",
+      "related": [],
+      "journal": "Frontiers in medicine",
+      "preprint": false,
+      "score": 62,
+      "concepts": [
+        {
+          "id": "distributed",
+          "label": "Distributed chemical sensing",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "enteroendocrine"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "tissue_context",
+          "label": "Tissue context & microenvironment",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "mucosa*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "metaboli*",
+            "metabolis*",
+            "nutrient*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "pain"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "organoids",
+          "label": "Organoids & tissue models",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "organoid*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "transcriptom*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, receptor recognition & modulation, nutrients & internal state.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42999147",
+      "title": "Food perception alone stimulates oviposition through serotonin signaling in Drosophila.",
+      "authors": [
+        "Ng TC",
+        "Oh M",
+        "Shrivastava A",
+        "Arntsen C",
+        "Sankpal S",
+        "Chong MW",
+        "Kamalakkannan A",
+        "Chung J",
+        "Stanley M",
+        "Lyu Y"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42999147/",
+      "doi": "10.64898/2026.10.08.757633",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 62,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "odor*",
+            "odorant receptor*",
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "environment*",
+            "exposure"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 18,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "feeding",
+            "nutrient*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "lifespan"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, receptor recognition & modulation, sensory circuits & coding. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42990872",
+      "title": "Integrated machine learning and in vitro pipeline for TRPA1-active chemesthetic flavor compounds: From predictive screening to molecular mechanisms.",
+      "authors": [
+        "Wen X",
+        "Zhang Q",
+        "Wang S",
+        "Shi Q",
+        "Wang J",
+        "Fan W",
+        "Guan S",
+        "Chai G"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42990872/",
+      "doi": "10.1016/j.crfs.2026.101611",
+      "related": [],
+      "journal": "Current research in food science",
+      "preprint": false,
+      "score": 61,
+      "concepts": [
+        {
+          "id": "chemesthesis",
+          "label": "Chemesthesis",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "TRPA1",
+            "chemesthe*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "ligand*",
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "TRPA1"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "organoids",
+          "label": "Organoids & tissue models",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "in vitro"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "computation",
+          "label": "Computational & structural methods",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "computational",
+            "machine learning",
+            "molecular dynamics",
+            "simulation*"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory transduction, crossmodal perception & learning, receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42968695",
+      "title": "The Associations Between Olfactory Bulb Morphology, Volume Change, and Olfactory Recovery.",
+      "authors": [
+        "Li Z",
+        "Gebler J",
+        "Li S",
+        "Kim K",
+        "Joshi A",
+        "Xu X",
+        "Haehner A",
+        "Avaro V",
+        "Calegari F",
+        "Hummel T"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968695/",
+      "doi": "10.1002/ohn.70432",
+      "related": [],
+      "journal": "Otolaryngology--head and neck surgery : official journal of American Academy of Otolaryngology-Head and Neck Surgery",
+      "preprint": false,
+      "score": 60,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "olfactory bulb"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "olfactory dysfunction",
+            "recovery",
+            "smell loss"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "patient*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, sensory circuits & coding.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42978777",
+      "title": "Prediction of the binding modes between key differential flavor compounds in tobacco leaves at different maturity stages and the olfactory receptor OR1D2.",
+      "authors": [
+        "Hu X",
+        "Xu W",
+        "Zhang L",
+        "Yang S",
+        "Pan S",
+        "Xue Y",
+        "Bai M",
+        "Wu Y",
+        "Yang Y",
+        "Wang Y",
+        "Zhang Y"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42978777/",
+      "doi": "10.3389/fpls.2026.1894360",
+      "related": [],
+      "journal": "Frontiers in plant science",
+      "preprint": false,
+      "score": 60,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "metaboli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "computation",
+          "label": "Computational & structural methods",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "molecular dynamics",
+            "simulation*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched receptor recognition & modulation, crossmodal perception & learning, nutrients & internal state.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42987648",
+      "title": "Multi-omics and receptor-level computational analyses identify candidate bitterness-related metabolites during Musang king durian pulp ripening.",
+      "authors": [
+        "Yan T",
+        "Yuan S",
+        "Zhang S",
+        "Li Z",
+        "Tang Y",
+        "Wang R",
+        "Xiao Y",
+        "Fan R",
+        "Lai Y",
+        "Nan J",
+        "Zhang Y",
+        "Ao P"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42987648/",
+      "doi": "10.1016/j.foodchem.2026.151949",
+      "related": [],
+      "journal": "Food chemistry",
+      "preprint": false,
+      "score": 60,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "TAS2R*",
+            "taste"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 14,
+          "terms": [
+            "metaboli*",
+            "metabolis*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "immature"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "TAS2R*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "transcriptom*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "computation",
+          "label": "Computational & structural methods",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "computational",
+            "simulation*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched receptor recognition & modulation, nutrients & internal state, sensory transduction.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42989960",
+      "title": "A Nature-Derived Peptide Promotes Satiety Hormone Response and Weight Loss In Vivo.",
+      "authors": [
+        "Abramov M",
+        "Goldfarb E",
+        "Haham D",
+        "Akiva E",
+        "van Klinken JW",
+        "Barbash Z"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42989960/",
+      "doi": "10.1080/19390211.2026.2752609",
+      "related": [],
+      "journal": "Journal of dietary supplements",
+      "preprint": false,
+      "score": 59,
+      "concepts": [
+        {
+          "id": "distributed",
+          "label": "Distributed chemical sensing",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "L cell*",
+            "enteroendocrine"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "exposure"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 14,
+          "terms": [
+            "GLP-1",
+            "appetite",
+            "diet-induced",
+            "nutrient*",
+            "obesity",
+            "satiety"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "agonist*",
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "clinical"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched nutrients & internal state, epithelial renewal & regeneration, receptor recognition & modulation. Combination: environmental context changes sensory signaling.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42986465",
+      "title": "Effects of plant community scenes and odors on thermal perception and physiological responses in a mildly warm environment.",
+      "authors": [
+        "Li J",
+        "Wang K",
+        "Xu C",
+        "Jin H"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42986465/",
+      "doi": "10.1007/s00484-026-03330-1",
+      "related": [],
+      "journal": "International journal of biometeorology",
+      "preprint": false,
+      "score": 58,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 12,
+          "terms": [
+            "environment*",
+            "exposure",
+            "temperature"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 18,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human",
+            "participant*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, environment & exposure.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42986489",
+      "title": "Photobiomodulation for radiotherapy-induced dysgeusia in head and neck cancer patients: a pilot randomized clinical trial.",
+      "authors": [
+        "Viana PP",
+        "Pinto FC",
+        "Oliveira VB",
+        "Batista HEL",
+        "Silva VIP",
+        "de Oliveira DHIP",
+        "Chaves FN",
+        "da Silva Sampieri MB"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42986489/",
+      "doi": "10.1007/s10103-026-05090-1",
+      "related": [],
+      "journal": "Lasers in medical science",
+      "preprint": false,
+      "score": 57,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "dysgeusia",
+            "taste"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "radiotherapy"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "clinical",
+            "patient*",
+            "randomized"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, crossmodal perception & learning.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42981009",
+      "title": "Olfactory function in patients with rheumatoid arthritis and its association with disease activity: a cross-sectional case-control study.",
+      "authors": [
+        "Sen O",
+        "Simsek E",
+        "Baran E"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42981009/",
+      "doi": "10.1007/s10067-026-08513-0",
+      "related": [],
+      "journal": "Clinical rheumatology",
+      "preprint": false,
+      "score": 56,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "anosmia",
+            "hyposmia",
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "inflamm*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "anosmia",
+            "olfactory function"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "participant*",
+            "patient*"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, immune–sensory interactions.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42980444",
+      "title": "Olfactory Perception Regularities of Structurally Related γ-Lactones: Insights from OR2W1 Selectivity.",
+      "authors": [
+        "Hu B",
+        "Lv H",
+        "Zheng H",
+        "Jiang Y",
+        "Ma N",
+        "Xiao Z",
+        "Wang H"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42980444/",
+      "doi": "10.1021/acs.jafc.6c10444",
+      "related": [],
+      "journal": "Journal of agricultural and food chemistry",
+      "preprint": false,
+      "score": 54,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 18,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "binding pocket*",
+            "ligand*",
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42995972",
+      "title": "Olfactory neuroepithelium biomarker platform: a proof from Alzheimer's disease.",
+      "authors": [
+        "Ishizuka K",
+        "Shang G",
+        "Malik S",
+        "Doty C",
+        "Dave S",
+        "Rowan N",
+        "Lema Y",
+        "Lane A",
+        "Sawa A"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42995972/",
+      "doi": "10.64898/2026.10.18.759991",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 54,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "neuroepithelial",
+          "label": "Nerve–tissue communication",
+          "kind": "biology",
+          "points": 18,
+          "terms": [
+            "neuroepitheli*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "omics",
+          "label": "Single-cell & spatial profiling",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "single cell",
+            "single-cell"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched nerve–tissue communication, sensory circuits & coding.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42977762",
+      "title": "TAAR5 Pharmacology.",
+      "authors": [
+        "Fontana R",
+        "Espinoza S"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42977762/",
+      "doi": "10.1007/164_2026_860",
+      "related": [],
+      "journal": "Handbook of experimental pharmacology",
+      "preprint": false,
+      "score": 53,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "odor*",
+            "odorant receptor*",
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "microbiot*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neurotransmitter*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "pharmacolog*",
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        }
+      ],
+      "why": "Matched receptor recognition & modulation, epithelial renewal & regeneration, immune–sensory interactions.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42981382",
+      "title": "Shapley fields reveal mosaic chemotopic organization in the mouse Olfactory bulb across diverse chemical feature sets.",
+      "authors": [
+        "Milićević N",
+        "Burton SD",
+        "Wachowiak M",
+        "Itskov V"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42981382/",
+      "doi": "10.1371/journal.pcbi.1014917",
+      "related": [],
+      "journal": "PLoS computational biology",
+      "preprint": false,
+      "score": 53,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "neural representation*",
+            "olfactory bulb"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory circuits & coding, crossmodal perception & learning.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42994164",
+      "title": "The outcome of fluticasone nasal spray on anosmia and triamcinolone oral paste in dysgeusia in COVID-19 patients.",
+      "authors": [
+        "Singh CV"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42994164/",
+      "doi": "10.1016/j.amjoto.2026.104975",
+      "related": [],
+      "journal": "American journal of otolaryngology",
+      "preprint": false,
+      "score": 53,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "dysgeusia"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "anosmia"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "anosmia"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "patient*"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery. Combination: multiple chemical-sensing systems.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42971148",
+      "title": "Lower Olfactory Sensitivity in Retronasal Olfaction.",
+      "authors": [
+        "Balaji Vilvanathan S",
+        "Frasnelli J"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971148/",
+      "doi": "10.1111/coa.70191",
+      "related": [],
+      "journal": "Clinical otolaryngology : official journal of ENT-UK ; official journal of Netherlands Society for Oto-Rhino-Laryngology & Cervico-Facial Surgery",
+      "preprint": false,
+      "score": 50,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "gustat*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "odour*",
+            "olfact*",
+            "retronasal"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "olfactory function"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "participant*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, sensory function & recovery. Combination: multiple chemical-sensing systems.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42974913",
+      "title": "Class-wide sequence, structural, and docking-profile diversity of insect odorant receptors and structural specialization of Orco.",
+      "authors": [
+        "Zhang T",
+        "Yang X",
+        "Fu Y",
+        "Xue W",
+        "Zhang Y",
+        "Duan S",
+        "Yin Y",
+        "Guo Y",
+        "Gao C",
+        "Liu Y",
+        "Li G",
+        "Xu C",
+        "Lu H"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42974913/",
+      "doi": "10.7554/eLife.110877",
+      "related": [],
+      "journal": "eLife",
+      "preprint": false,
+      "score": 50,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "odorant receptor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "cell_identity",
+          "label": "Cell identity & progenitors",
+          "kind": "biology",
+          "points": 10,
+          "terms": [
+            "lineage*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "binding pocket*",
+            "ligand*",
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        }
+      ],
+      "why": "Matched receptor recognition & modulation, cell identity & progenitors.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42990264",
+      "title": "Spontaneous neural activity in the developing ant olfactory system.",
+      "authors": [
+        "Frank DD",
+        "Kronauer DJC"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42990264/",
+      "doi": "10.64898/2026.10.25.761666",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 50,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*",
+            "olfactory bulb",
+            "sensory neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "development*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "calcium imaging"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched receptor recognition & modulation, sensory circuits & coding, development & aging.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42999101",
+      "title": "Dynamics of dopamine transients in human olfactory epithelium during reward learning.",
+      "authors": [
+        "Paul Sands L",
+        "Batten SR",
+        "Hartle AE",
+        "Lohrenz T",
+        "White J",
+        "Barbosa LS",
+        "Matt Howe W",
+        "Bang D",
+        "Dayan P",
+        "Yang Q",
+        "Dede A",
+        "Sheriff A",
+        "Lane G",
+        "Tan BK",
+        "Lenkowski P",
+        "Zelano C",
+        "Read Montague P"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42999101/",
+      "doi": "10.64898/2026.10.07.757414",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 50,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "epithelial_renewal",
+          "label": "Epithelial renewal & regeneration",
+          "kind": "biology",
+          "points": 18,
+          "terms": [
+            "epitheli*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "human"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched epithelial renewal & regeneration.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42981389",
+      "title": "A disynaptic trigeminal circuit for the transformation and integration of oral chemesthesis in male mice.",
+      "authors": [
+        "Liu F",
+        "Cui K",
+        "Mao J",
+        "Wang H",
+        "Li B",
+        "Guo L",
+        "Zhang N",
+        "Li Y",
+        "Ruan S",
+        "Pei W",
+        "Hao Z",
+        "Zhang Q",
+        "Chai G",
+        "Liu C",
+        "Zhang C",
+        "Wang J",
+        "Zhang S",
+        "Li L",
+        "Zhang YF",
+        "Xie J"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42981389/",
+      "doi": "10.1126/sciadv.aeh5390",
+      "related": [],
+      "journal": "Science advances",
+      "preprint": false,
+      "score": 49,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "taste"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "chemesthesis",
+          "label": "Chemesthesis",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "TRPM8",
+            "TRPV1",
+            "chemesthe*",
+            "trigeminal"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "neuron*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_transduction",
+          "label": "Sensory transduction",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "TRPM8",
+            "TRPV1"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "calcium imaging"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory circuits & coding, sensory transduction. Combination: multiple chemical-sensing systems.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42993565",
+      "title": "Respiratory phase orchestrates human olfactory cortical dynamics.",
+      "authors": [
+        "Hathaway AY",
+        "Coleman TP"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42993565/",
+      "doi": "10.1073/pnas.2619920123",
+      "related": [],
+      "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+      "preprint": false,
+      "score": 49,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "olfactory function"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "human",
+            "participant*"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched crossmodal perception & learning, sensory function & recovery.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42968229",
+      "title": "Deep learning-based prediction of insect odorant receptor-ligand interactions for behavioral regulator discovery.",
+      "authors": [
+        "Wang S",
+        "Wang P",
+        "Agnihotri A",
+        "Xu W",
+        "Wang G"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42968229/",
+      "doi": "10.1002/ps.71454",
+      "related": [],
+      "journal": "Pest management science",
+      "preprint": false,
+      "score": 48,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "odorant receptor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "ligand*",
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "computation",
+          "label": "Computational & structural methods",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "computational",
+            "deep learning"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42971514",
+      "title": "Diffusion tensor imaging and structural MRI reveal early microstructural injury and progressive atrophy of the olfactory bulb in type 1 diabetic rats.",
+      "authors": [
+        "Gao L",
+        "Huang M",
+        "Chen J",
+        "Wang X"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42971514/",
+      "doi": "10.1016/j.mri.2026.110837",
+      "related": [],
+      "journal": "Magnetic resonance imaging",
+      "preprint": false,
+      "score": 48,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "immunity",
+          "label": "Immune–sensory interactions",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "immun*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "olfactory bulb"
+          ],
+          "title_match": true,
+          "linkable": true
+        }
+      ],
+      "why": "Matched sensory circuits & coding, immune–sensory interactions.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42990309",
+      "title": "Odor representations are structured by heterogeneous tuning and concentration-dependence of functionally distinct olfactory sensory neuron subpopulations.",
+      "authors": [
+        "Castro JB",
+        "Burton SD",
+        "Hallkaj J",
+        "Wachowiak M"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42990309/",
+      "doi": "10.64898/2026.10.27.762248",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 48,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor coding",
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 16,
+          "terms": [
+            "neuron*",
+            "odor coding",
+            "odor representation*",
+            "olfactory bulb",
+            "sensory neuron*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 8,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched sensory circuits & coding, receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42980439",
+      "title": "Targeting Olfaction for Control: OR17 and Its Ligand E-β-Caryophyllene Contribute to Host Location in Phthorimaea Absoluta.",
+      "authors": [
+        "Zhan Y",
+        "Zhang J",
+        "Jin M",
+        "Li J",
+        "Francis F",
+        "Liu Y"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42980439/",
+      "doi": "10.1021/acs.jafc.6c04606",
+      "related": [],
+      "journal": "Journal of agricultural and food chemistry",
+      "preprint": false,
+      "score": 44,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*",
+            "odorant receptor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "ligand*",
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "perturbation",
+          "label": "Functional perturbation",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "silencing"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42985974",
+      "title": "Somatotopic Organization of Sensory Inputs From Taste Appendages in the Subesophageal Zone and Brain of the Honey Bee Apis mellifera.",
+      "authors": [
+        "Pitzalis M",
+        "Larcher V",
+        "Sanchez MGB",
+        "Giurfa M",
+        "Carcaud J",
+        "Sandoz JC"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42985974/",
+      "doi": "10.1002/cne.70221",
+      "related": [],
+      "journal": "The Journal of comparative neurology",
+      "preprint": false,
+      "score": 44,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "gustat*",
+            "taste"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "afferent*",
+            "sensory circuit*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "metabolic_state",
+          "label": "Nutrients & internal state",
+          "kind": "biology",
+          "points": 7,
+          "terms": [
+            "feeding"
+          ],
+          "title_match": false,
+          "linkable": true
+        }
+      ],
+      "why": "Matched sensory circuits & coding, nutrients & internal state. Combination: multiple chemical-sensing systems.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42999204",
+      "title": "Olfactory Deficits and Structural Anomalies of the Peripheral Olfactory System in 22q11.2 Deletion Syndrome.",
+      "authors": [
+        "Roalf DR",
+        "McDonald-McGinn DM",
+        "Atkins A",
+        "Calkins ME",
+        "Crowley TB",
+        "Freedman P",
+        "Gallagher RS",
+        "Mastracchio C",
+        "McGinn DE",
+        "Moran A",
+        "Olson A",
+        "Pecsok MK",
+        "Rockart L",
+        "Tran O",
+        "Zackai EH",
+        "Emanuel BS",
+        "Ruparel K",
+        "Shinohara RT",
+        "White LK",
+        "Schmitt JE",
+        "Gur RE"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42999204/",
+      "doi": "10.64898/2026.10.05.756775",
+      "related": [],
+      "journal": "bioRxiv : the preprint server for biology",
+      "preprint": true,
+      "score": 44,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor discrimination",
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "sensory_circuits",
+          "label": "Sensory circuits & coding",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "olfactory bulb"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "olfactory function"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "participant*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery, sensory circuits & coding.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42998481",
+      "title": "Machine learning identifies drivers behind the emergence of actinobacteria as novel odor contributors in stratified reservoirs.",
+      "authors": [
+        "Liu X",
+        "Fu M",
+        "Pan S",
+        "Huang T",
+        "Ma B",
+        "Liu X",
+        "Pei T",
+        "Sekar R",
+        "Adamovich B",
+        "Sang H",
+        "Wang K",
+        "Xi G",
+        "Gulakhmadov A",
+        "Kosolapov DB",
+        "Wang Q",
+        "Zhang H"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42998481/",
+      "doi": "10.1016/j.jhazmat.2026.144049",
+      "related": [],
+      "journal": "Journal of hazardous materials",
+      "preprint": false,
+      "score": 43,
+      "concepts": [
+        {
+          "id": "taste",
+          "label": "Taste",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "taste"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "odor*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "environment",
+          "label": "Environment & exposure",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "environment*",
+            "temperature"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "computation",
+          "label": "Computational & structural methods",
+          "kind": "method",
+          "points": 8,
+          "terms": [
+            "machine learning"
+          ],
+          "title_match": true,
+          "linkable": false
+        }
+      ],
+      "why": "Matched environment & exposure. Combination: multiple chemical-sensing systems.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42980450",
+      "title": "Receptor-Selective and Concentration-Dependent Responses to Vanillin-Ethyl Vanillin Mixtures: An Integrated Sensory and Statistical-Physics Analysis.",
+      "authors": [
+        "Yan Q",
+        "Quan Q",
+        "Zhao G",
+        "Xie F",
+        "Nie C",
+        "Wang J",
+        "Sun B",
+        "Pu D"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42980450/",
+      "doi": "10.1021/acs.jafc.6c06124",
+      "related": [],
+      "journal": "Journal of agricultural and food chemistry",
+      "preprint": false,
+      "score": 41,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "odor*",
+            "olfact*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "multisensory",
+          "label": "Crossmodal perception & learning",
+          "kind": "biology",
+          "points": 9,
+          "terms": [
+            "percept*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "ligand*",
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "human",
+            "sensory evaluation"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched receptor recognition & modulation, crossmodal perception & learning.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42979641",
+      "title": "What's New in Olfactory Neuroblastoma: Updated Literature Review through the 2024 NASBS Annual Meeting.",
+      "authors": [
+        "Liu L",
+        "Trent MS",
+        "Choby G",
+        "Geltzeiler M",
+        "Gunn MB",
+        "Lechner M",
+        "Gompel JJV",
+        "Kuan EC"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42979641/",
+      "doi": "10.1055/a-2805-9694",
+      "related": [],
+      "journal": "Journal of neurological surgery. Part B, Skull base",
+      "preprint": false,
+      "score": 36,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "clinical_function",
+          "label": "Sensory function & recovery",
+          "kind": "biology",
+          "points": 8,
+          "terms": [
+            "radiotherapy"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "patient*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched sensory function & recovery.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42994249",
+      "title": "Predicting cerebrospinal fluid α-synuclein seed amplification assay positivity in borderline hyposmia.",
+      "authors": [
+        "Jiao YX",
+        "Han PW",
+        "Yang PB",
+        "He S",
+        "Liu X",
+        "Li CH",
+        "Zhang JW",
+        "Chen S"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42994249/",
+      "doi": "10.1016/j.parkreldis.2026.109041",
+      "related": [],
+      "journal": "Parkinsonism & related disorders",
+      "preprint": false,
+      "score": 34,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 24,
+          "terms": [
+            "hyposmia",
+            "olfact*"
+          ],
+          "title_match": true,
+          "linkable": false
+        },
+        {
+          "id": "development_aging",
+          "label": "Development & aging",
+          "kind": "biology",
+          "points": 6,
+          "terms": [
+            "development*"
+          ],
+          "title_match": false,
+          "linkable": true
+        },
+        {
+          "id": "human_studies",
+          "label": "Human & clinical studies",
+          "kind": "method",
+          "points": 4,
+          "terms": [
+            "clinical",
+            "cohort",
+            "participant*"
+          ],
+          "title_match": false,
+          "linkable": false
+        }
+      ],
+      "why": "Matched development & aging.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
+      "id": "42988649",
+      "title": "A single receptor sends young female mosquitoes to flowers.",
+      "authors": [
+        "Sobhy IS",
+        "Berry C"
+      ],
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42988649/",
+      "doi": "10.1016/j.pt.2026.10.012",
+      "related": [],
+      "journal": "Trends in parasitology",
+      "preprint": false,
+      "score": 28,
+      "concepts": [
+        {
+          "id": "smell",
+          "label": "Smell",
+          "kind": "domain",
+          "points": 12,
+          "terms": [
+            "odor*",
+            "odorant receptor*"
+          ],
+          "title_match": false,
+          "linkable": false
+        },
+        {
+          "id": "receptor_pharmacology",
+          "label": "Receptor recognition & modulation",
+          "kind": "mechanism",
+          "points": 16,
+          "terms": [
+            "receptor*"
+          ],
+          "title_match": true,
+          "linkable": true
+        }
+      ],
+      "why": "Matched receptor recognition & modulation.",
+      "weeks": [
+        "2026-11-09"
+      ],
+      "selected_weeks": [],
+      "editor_weeks": [],
+      "versions": []
+    },
+    {
       "id": "42966258",
       "title": "Salivary fluoropyrimidine detection and selective Trpm5 mRNA downregulation in taste papillae of male Wistar rats after repeated capecitabine administration.",
       "authors": [
