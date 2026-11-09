@@ -1,0 +1,2185 @@
+{
+  "generated_at": "2026-11-09T10:43:20.149670+00:00",
+  "days_back": 7,
+  "topic": "file:topics/taste_hedgehog.txt",
+  "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+  "journal_whitelist_path": null,
+  "search_metadata": {
+    "stages": [
+      {
+        "stage": "default",
+        "source": "pubmed",
+        "retmax": 150,
+        "query": "(\n  Hedgehog[Title/Abstract]\n  OR SHH[Title/Abstract]\n  OR GLI1[Title/Abstract]\n  OR GLI2[Title/Abstract]\n  OR Gas1[Title/Abstract]\n  OR Boc[Title/Abstract]\n  OR Cdon[Title/Abstract]\n  OR Ptch1[Title/Abstract]\n  OR Smoothened[Title/Abstract]\n)\nAND\n(\n  taste[Title/Abstract]\n  OR gustatory[Title/Abstract]\n  OR lingual[Title/Abstract]\n  OR papillae[Title/Abstract]\n  OR fungiform[Title/Abstract]\n  OR circumvallate[Title/Abstract]\n  OR epithelium[Title/Abstract]\n  OR epithelial[Title/Abstract]\n  OR morphogenesis[Title/Abstract]\n  OR homeostasis[Title/Abstract]\n  OR stem cell[Title/Abstract]\n)",
+        "returned": 9,
+        "slots_available": 50,
+        "added": 9,
+        "tightened": false,
+        "pool_size_after_stage": 9
+      },
+      {
+        "stage": "biorxiv_fallback",
+        "source": "biorxiv",
+        "retmax": 150,
+        "query": "Hedgehog, SHH, GLI1, GLI2, Gas1, Boc, Cdon, Ptch1, Smoothened, taste, gustatory, lingual, papillae, fungiform",
+        "returned": 1,
+        "slots_available": 41,
+        "added": 1,
+        "tightened": false,
+        "pool_size_after_stage": 10,
+        "error": null
+      },
+      {
+        "stage": "arxiv_skipped",
+        "source": "arxiv",
+        "skipped": true,
+        "pool_size_after_stage": 10
+      }
+    ],
+    "candidate_pool_size": 50,
+    "sources": [
+      "biorxiv",
+      "pubmed"
+    ],
+    "arxiv_request_timeout_seconds": 15,
+    "papers_fetched": 10
+  },
+  "scoring_model": "taste_hedgehog_literature_triage",
+  "final_model": "local-score-sort",
+  "records": [
+    {
+      "paper": {
+        "paper_id": "42996009",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42996009",
+        "title": "Heterochronic Uncoupling of Brain and Face Morphogenesis Drives Premature Fusion in Ciliary Transition Zone Mutants.",
+        "authors": [
+          "Hu D",
+          "Devine J",
+          "Liu W",
+          "Marcucio RS",
+          "Hallgr\u00edmsson B",
+          "Green RM",
+          "Young NM"
+        ],
+        "journal": "bioRxiv : the preprint server for biology",
+        "pubdate": "2026 Oct 20",
+        "doi": "10.64898/2026.10.19.760125",
+        "pmcid": "PMC13738561",
+        "abstract": "UNLABELLED: Normal facial development is highly coordinated with embryonic brain expansion, suggesting the forebrain acts as a physical scaffold dictating the spatial timing of facial prominence apposition and fusion. To test this idea, we compared B9d1 ciliary transition zone mutants, which exhibit altered Hedgehog signaling and premature facial fusion, to a normal murine developmental morphospace. At e11.5, mutant brains are significantly reduced in size, yet intrinsic facial prominence size remains largely normal. Projecting e11.5 and e12.5 mutants into the normal morphospace reveals a severe heterochronic uncoupling: the delayed, narrowed neurocranium mechanically forces normal-sized facial prominences into premature convergence. These results indicate that when brain growth slows, facial prominences initiate contact earlier in restricted spatial bounds. Conversely, this model predicts that an accelerated, expanded brain may act as a physical wedge, increasing the likelihood of cleft lip. By mathematically modeling these structural dependencies, we propose that palatogenesis operates on a continuous phenotypic spectrum, where premature fusion and cleft lip represent alternative physical outcomes conditioned on the underlying brain developmental trajectory.\n\nSUMMARY STATEMENT: 3D developmental morphospace modeling reveals that delayed brain growth in transition zone mutants imposes a mechanical constraint, physically forcing normal-sized facial prominences into premature midline fusion.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42996009/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13738561/"
+      },
+      "analysis": {
+        "topic_relevance_score": 8.3,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 83,
+        "recommendation_label": "core must-read",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Hedgehog co-receptors and modulators: ciliary; Epithelial morphogenesis and tissue architecture: morphogenesis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Hedgehog co-receptors and modulators: ciliary",
+          "Epithelial morphogenesis and tissue architecture: morphogenesis",
+          "Development-to-homeostasis continuity: development, developmental, embryonic",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 16.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 81.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 83
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "ciliary"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "embryonic"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "murine"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42993555",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42993555",
+        "title": "A thermosensitive bovine placenta decellularized extracellular matrix/Pluronic F127 composite hydrogel supports lineage specification and glia-associated development in hiPSC-derived human spinal cord organoids.",
+        "authors": [
+          "Li H",
+          "Xu H",
+          "Hu C",
+          "Ma Y",
+          "Liu Y",
+          "Liu R",
+          "Zhao Y",
+          "Bai J",
+          "Liu S",
+          "Gao X",
+          "Wang Y",
+          "Gui B",
+          "Luo R",
+          "Ju C",
+          "Huang D",
+          "Jia S",
+          "He B",
+          "Wu W",
+          "Wang Z",
+          "Zhu L"
+        ],
+        "journal": "Journal of materials chemistry. B",
+        "pubdate": "2026 Nov 6",
+        "doi": "10.1039/d6tb01610c",
+        "pmcid": null,
+        "abstract": "Human spinal cord organoids (hSCOs) provide valuable platforms for modeling spinal cord development, disease, and injury-related processes, but their maturation and cellular complexity remain strongly influenced by the culture matrix. Here, we developed a thermosensitive bovine placenta decellularized extracellular matrix/Pluronic F127 composite hydrogel (BP-dECM/PF127CH) as a cost-effective, ECM-rich three-dimensional matrix for the generation of hiPSC-derived hSCOs. The composite hydrogel exhibited a thermosensitive sol-gel transition at physiological temperature, an interconnected porous microarchitecture, and favorable cytocompatibility with hiPSCs, with levels of apoptosis, viability, and proliferation comparable to those observed with Matrigel. Under identical RA/SHH-based caudal-ventral induction conditions, BP-dECM/PF127CH-cultured hSCOs demonstrated significantly enhanced folding morphogenesis and, by Day 22, yielded 4.82-fold more NKX6.1+ ventral progenitors and 3.28-fold more PAX6+ cells comparable to Matrigel. This matrix-driven developmental reshaping resulted in 2.74-fold more HB9+ motor neurons, 2.19-fold more GFAP+ astrocytes, 1.29-fold more TMEM119+ microglia together with coordinated upregulation of VGLUT1 and GAD67 (1.55-fold each), indicating enhanced regional progenitor patterning, motor neuron differentiation, glial lineage diversification and balanced excitatory/inhibitory synaptic specification, while preserving global neuronal differentiation (Tuj1, MAP2) and myelination (MBP). With 99.62% DNA removal and retention of laminin and fibronectin, BP-dECM/PF127CH combines native ECM instructiveness with practical thermosensitive handling at 20-30-fold lower cost than Matrigel. This composite hydrogel establishes a versatile and scalable platform for engineering advanced organoid models with enhanced structural and cellular fidelity.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42993555/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.2,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 42,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Epithelial morphogenesis and tissue architecture: morphogenesis, patterning; Development-to-homeostasis continuity: development, developmental, lineage, progenitor.",
+        "why_it_matters": [
+          "Epithelial morphogenesis and tissue architecture: morphogenesis, patterning",
+          "Development-to-homeostasis continuity: development, developmental, lineage, progenitor",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 16.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 40.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 42
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis",
+            "patterning"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "lineage",
+            "progenitor"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42994546",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42994546",
+        "title": "Circulating GDF-15: an intriguing candidate biomarker for the differential diagnosis of ovarian masses.",
+        "authors": [
+          "Cicolani G",
+          "Farina A",
+          "Straface G",
+          "Granato T",
+          "Megiorni F",
+          "Viggiani V",
+          "Angeloni A",
+          "Mancini P",
+          "Anastasi E"
+        ],
+        "journal": "Clinica chimica acta; international journal of clinical chemistry",
+        "pubdate": "2026 Nov 6",
+        "doi": "10.1016/j.cca.2026.122959",
+        "pmcid": null,
+        "abstract": "Epithelial ovarian cancer (EOC) remains one of the most lethal gynecological malignancies. Growth differentiation factor-15 (GDF-15), a stress-responsive cytokine, has emerged as a potential biomarker in several cancers. However, its biological and diagnostic significance in ovarian pathology remains poorly defined. This retrospective, single-centre, proof-of-concept study aimed to evaluate circulating GDF-15 levels in EOC and benign ovarian cysts (BOC). A total of 48 women with histologically confirmed EOC and 40 patients with BOC were included. Circulating GDF-15 levels were assessed by ELISA and Western blot (WB) analysis. Circulating GDF-15 levels were significantly higher in EOC patients compared with BOC. Receiver operating characteristic (ROC) analysis identified an optimal diagnostic threshold of 1020 pg/mL, yielding an Area Under the Curve (AUC) of 0.924 (95% CI: 0.863-0.984) with 93.8% sensitivity and 82.5% specificity (optimism-corrected via bootstrap resampling: 91.2% sensitivity and 80.5% specificity p < 0.0001). Vimentin, was evaluated by WB in serum samples and by immunofluorescence in tumour tissue sections. Vimentin expression was predominantly detected in sera from EOC patients. Immunofluorescence analysis of tumour tissue showed distinct populations of GDF-15-positive and vimentin-positive cells without direct structural colocalization. In conclusion, GDF-15 shows promise as a complementary biomarker within multi-marker panels, assisting with diagnosis in challenging scenarios such as indeterminate adnexal masses and gray zones with borderline or discordant results from conventional markers.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42994546/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.1,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 41,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Hedgehog co-receptors and modulators: boc; Epithelial morphogenesis and tissue architecture: epithelial; Preferred mechanistic methods: immunofluorescence.",
+        "why_it_matters": [
+          "Hedgehog co-receptors and modulators: boc",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Preferred mechanistic methods: immunofluorescence",
+          "Interaction bonus: Gas1/co-receptor bridge match",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: epithelial."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 12.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 18.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 27.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 18.0,
+          "final_score": 41
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [
+            "boc"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "immunofluorescence"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Hedgehog co-receptors and modulators",
+          "Epithelial morphogenesis and tissue architecture",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42981876",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42981876",
+        "title": "Discovery of the first orally bioavailable GLI1 PROTAC for the treatment of colorectal cancer.",
+        "authors": [
+          "Xin YB",
+          "Yang ZY",
+          "Luo YF",
+          "Du YL",
+          "Li RN",
+          "Wu Q",
+          "Chen YY",
+          "Li XY",
+          "Qiao YX",
+          "Lu MC",
+          "Long YQ"
+        ],
+        "journal": "European journal of medicinal chemistry",
+        "pubdate": "2026 Oct 31",
+        "doi": "10.1016/j.ejmech.2026.119480",
+        "pmcid": null,
+        "abstract": "The Hedgehog (Hh) pathway is a highly conserved regulator of embryonic development and tissue homeostasis, and its aberrant activation drives various cancers. Although SMO-targeted therapies have shown clinical value, their limitations in SMO-mutant or Hh-independent tumors underscore the need for alternative strategies, thereby making the downstream transcription factor GLI1 an attractive target. In this study, we developed a series of novel small molecule GLI1 degraders using proteolysis-targeting chimera (PROTAC) technology. Among them, LRG20 exhibited potent GLI1 degradation activity in HT-29 colorectal cancer cells (DC50 = 16.93 \u00b1 1.59 nM, Dmax = 91.1 \u00b1 4.3%), preferentially degrading GLI1/GLI2 over GLI3 without obvious degradation of representative CRBN neo-substrates. Mechanistic studies supported that LRG20 induces GLI1 degradation via the CRBN-dependent ubiquitin-proteasome pathway. Cellular assays demonstrated that LRG20 potently inhibited tumor cell proliferation (HT-29, IC50 = 0.10 \u00b1 0.06 \u03bcM). In vivo, it displayed favorable pharmacokinetic properties (F = 18.8%; T1/2 = 4.32 h) and significantly suppressed tumor growth in an HT-29 xenograft model (TGI = 70.89%) without observable toxicity. Collectively, this study identified LRG20 as the first orally bioavailable GLI1-targeting PROTAC, offering a promising strategy for the treatment of GLI1-related diseases.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42981876/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 40,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, gli1, gli2, gli3; Development-to-homeostasis continuity: development, embryonic, homeostasis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, gli1, gli2, gli3",
+          "Development-to-homeostasis continuity: development, embryonic, homeostasis",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 44.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 40
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "gli1",
+            "gli2",
+            "gli3"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "embryonic",
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42998416",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42998416",
+        "title": "Amuc_1100 suppresses T cell viability and CXCL12\u2011induced T cell migration through GLI2 upregulation.",
+        "authors": [
+          "Ren X",
+          "Liu Y",
+          "Du Y",
+          "Yang J",
+          "Yang X",
+          "Lin F",
+          "Yang K",
+          "Ye S"
+        ],
+        "journal": "Tissue & cell",
+        "pubdate": "2026 Nov 5",
+        "doi": "10.1016/j.tice.2026.104123",
+        "pmcid": null,
+        "abstract": "Maintaining intestinal homeostasis requires precise regulation of intestinal T cell trafficking. Dysregulated T cell activity is a key driver of chronic inflammation, as seen in inflammatory bowel disease. The gut commensal Akkermansia muciniphila and its membrane-associated protein Amuc_1100 exhibit anti\u2011inflammatory effects and are negatively correlated with disease severity. However, their direct mechanistic impact on T cell activity remains undefined. This study reveals that Amuc_1100 modulates human T cell function by activating TLR2, which upregulates the transcription factor GLI2. Mechanistically, GLI2 upregulation leads to downregulation of CD25 and CXCR4, ultimately suppressing T cell viability and CXCL12-induced T cell migration. To comprehensively characterize the impact of Amuc_1100 on T cell migration, we employed a D\u2074-Chip featuring four parallel units for high\u2011throughput, real\u2011time analysis. Its confined cell-isolation structure positions individual T cells under tissue\u2011like physical constraints, enabling observation of their migration within a stable CXCL12 gradient and providing a physiologically relevant model for quantifying single\u2011cell migratory behavior. D\u2074-Chip analysis demonstrated that Amuc_1100 broadly impairs T cell migration, as evidenced by significant reductions in the number of migrating cells, their average displacement towards gradient, average accumulated migration distance, and average migration velocity, coupled with an increased frequency of migration pauses compared to the control. GLI2 inhibition reversed these effects, confirming that Amuc_1100 modulates GLI2 to suppress T cell migration. Collectively, this work identifies GLI2 as a novel therapeutic target for modulating T cell homing in intestinal inflammation and establishes a microfluidic platform for discovering potential drugs targeting dysregulated T cell responses.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42998416/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 3.1,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 31,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: gli2; Development-to-homeostasis continuity: homeostasis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: gli2",
+          "Development-to-homeostasis continuity: homeostasis",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 29.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 31
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "gli2"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42993326",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42993326",
+        "title": "CircIKBKB promotes hepatocellular carcinoma stemness and EMT via TAF15-PTCH1-mediated Hedgehog activation.",
+        "authors": [
+          "Yi T",
+          "Hu K",
+          "Pan M",
+          "Xie X",
+          "Ning D",
+          "Lan J",
+          "Liang Y",
+          "He Y",
+          "Huang G",
+          "Huang H",
+          "Zhao Y",
+          "Lei P",
+          "Tan S",
+          "Wang R"
+        ],
+        "journal": "Functional & integrative genomics",
+        "pubdate": "2026 Nov 6",
+        "doi": "10.1007/s10142-026-02062-0",
+        "pmcid": null,
+        "abstract": "Hepatocellular carcinoma (HCC) represents one of the leading causes of cancer-related mortality worldwide. Accumulating studies in recent years have confirmed that circular RNAs (circRNAs) are involved in the regulation of tumor initiation and progression. Nevertheless, the precise functions and underlying molecular mechanisms of circRNAs in HCC remain to be thoroughly investigated. In this study, we identified a circular RNA derived from the IKBKB gene, designated circIKBKB (database accession number: hsa_circ_0084102), which exhibits significantly elevated expression in HCC cell lines. Functional experiments demonstrated that circIKBKB promotes HCC cell proliferation, sustains cancer stemness properties, and induces epithelial-mesenchymal transition (EMT). Mechanistically, circIKBKB directly interacts with the RNA-binding protein TATA-box binding protein associated factor 15 (TAF15) and suppresses its polyubiquitination-mediated proteasomal degradation, thereby maintaining intracellular TAF15 protein stability. The upregulated TAF15 further binds to Patched 1 (PTCH1) mRNA and enhances its transcript stability, which consequently drives aberrant activation of the Hedgehog signaling pathway. Both in vitro and in vivo validation assays confirmed that overexpression of PTCH1 partially reversed the phenotypic effects induced by circIKBKB knockdown. Collectively, our findings uncover the regulatory mechanism of circIKBKB in mediating aberrant activation of the Hedgehog pathway in HCC, and this work may provide a potential interventional strategy for HCC treatment.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42993326/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 2.8,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 28,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, ptch1; Hedgehog co-receptors and modulators: patched; Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, ptch1",
+          "Hedgehog co-receptors and modulators: patched",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor, carcinoma.",
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 12.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 41.0,
+          "total_penalty": -15.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 28
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "ptch1"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "patched"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42982360",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42982360",
+        "title": "TWIST family in cervical cancer biology: From molecular mechanisms to clinical implications.",
+        "authors": [
+          "Sayed U",
+          "Kubaev A",
+          "Polatova D",
+          "Ali MK",
+          "Mishra S",
+          "Singhal D",
+          "Bainsal N",
+          "Vahdati SN"
+        ],
+        "journal": "Experimental cell research",
+        "pubdate": "2026 Nov 4",
+        "doi": "10.1016/j.yexcr.2026.115215",
+        "pmcid": null,
+        "abstract": "Despite ongoing clinical efforts, cervical cancer remains one of the most common gynecologic tumors, largely due to its metastatic potential and resistance to chemotherapy. The transcriptional regulator TWIST has been implicated in these features, in part through the induction of epithelial-mesenchymal transition (EMT). The expression of TWIST is delicately regulated by several exogenous factors, including hypoxia-driven HIF-1\u03b1 signaling and TGF-\u03b2 pathways, as well as endogenous oncogenic cascades such as Wnt/\u03b2-catenin, NF-\u03baB, PI3K/Akt, Hedgehog, Notch, and IL-6/JAK2/STAT3. Moreover, the E6 and E7 proteins from high-risk human papillomavirus strains promote TWIST upregulation, facilitating cellular plasticity and evasion of senescence. Post-transcriptional and epigenetic regulation is orchestrated by complex networks of non-coding RNAs and key transcription factors such as Mist1, FOXC1, and LMX-1A. Importantly, hypermethylation of the TWIST1 promoter has been proposed as a candidate biomarker for cervical intraepithelial neoplasia. TWIST has been reported to promote tumor-associated phenotypes through E-cadherin downregulation, induction of matrix metalloproteinases, and maintenance of stem cell-like properties. TWIST has been associated with chemotherapy and radiotherapy resistance, potentially through mechanisms involving DNA-damage responses and MDR1/P-glycoprotein-mediated drug efflux. The tumor microenvironment affects its expression and activity, including hypoxia, cancer-associated fibroblasts, inflammatory cytokines, tumor-associated macrophages, and extracellular vesicles. In a clinical context, high levels of TWIST are linked to poor outcomes in cervical cancer. Growing evidence links it to immune evasion through regulation of PD-L1, immunosuppressive cytokine signaling, macrophage polarization, T-cell exclusion, and immune resistance associated with cancer stem cells, underscoring its importance for translation in the current era of immune checkpoint blockade.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42982360/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 2.7,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 27,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Development-to-homeostasis continuity: maintenance, stem cell; Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Development-to-homeostasis continuity: maintenance, stem cell",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 37.0,
+          "total_penalty": -12.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 27
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "maintenance",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "10.64898/2026.10.30.762990",
+        "source_db": "biorxiv",
+        "seen_key": "biorxiv:10.64898/2026.10.30.762990",
+        "title": "Megakaryocytic proteomic signatures define myeloproliferative neoplasms",
+        "authors": [
+          "Raman, I.",
+          "Bennett, C.",
+          "Pasricha, S.-R.",
+          "Ataide, R.",
+          "Pettikiriarachchi, A.",
+          "Yousef, J.",
+          "Gianni, L. F.",
+          "Yannakou, C. K.",
+          "Emery-Corbin, S. J.",
+          "Tsui, E.",
+          "Zhu, Y.",
+          "Rajasekhar, P.",
+          "Motyer, A.",
+          "Juneja, S.",
+          "Spall, S."
+        ],
+        "journal": "bioRxiv: cancer biology",
+        "pubdate": "2026-11-02",
+        "doi": "10.64898/2026.10.30.762990",
+        "pmcid": null,
+        "abstract": "The classical Philadelphia-negative myeloproliferative neoplasms (MPNs) are clonal stem cell disorders of the bone marrow with significant niche dysregulation driven in part by abnormal megakaryocytes. The three classical MPNs: polycythemia vera (PV), essential thrombocythemia (ET) and primary myelofibrosis (PMF), display established megakaryocytic morphological differences which aid in their diagnostic classification. The paucity of megakaryocytes in the bone marrow aspirate has previously limited a proteomic analysis of megakaryocytes in clinical samples. We aimed to undertake an unbiased proteomic analysis of in situ megakaryocytes from the bone marrow of patients with PV, ET, and PMF. Using a novel, deep visual proteomics strategy, we dissected and analyzed megakaryocytes from 60 MPN patients and 20 controls (patients with limited stage non-Hodgkin lymphoma who had uninvolved bone marrow). We reveal that megakaryocyte proteomics from MPN patients are distinct to those from control patients, and further, that the megakaryocytes from the three MPNs have unique, disease-specific signatures. The disease-specific megakaryocyte proteome highlights novel pathways of disease.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://www.biorxiv.org/content/10.64898/2026.10.30.762990v1",
+        "link_label": "bioRxiv",
+        "pmc_url": "https://www.biorxiv.org/content/10.64898/2026.10.30.762990v1.full.pdf"
+      },
+      "analysis": {
+        "topic_relevance_score": 2.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 25,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: stem cell, niche; Crosstalk, niche dependency, and trophic support: niche; Preferred mechanistic methods: in situ.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: stem cell, niche",
+          "Crosstalk, niche dependency, and trophic support: niche",
+          "Preferred mechanistic methods: in situ",
+          "Source modifier: Emerging biology preprint."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 3.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 34.0,
+          "total_penalty": -12.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 25
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "stem cell",
+            "niche"
+          ],
+          "crosstalk_niche_dependency": [
+            "niche"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "in situ"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42992022",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42992022",
+        "title": "MiR-145 reprogramming facilitates fibrotic trajectory in the tumor microenvironment.",
+        "authors": [
+          "Lin Z",
+          "Bennett M",
+          "Tassone P",
+          "Curry JM",
+          "Martinez-Outschoorn U"
+        ],
+        "journal": "Frontiers in cell and developmental biology",
+        "pubdate": "2026",
+        "doi": "10.3389/fcell.2026.1850756",
+        "pmcid": "PMC13737585",
+        "abstract": "The fibrotic subtype of the tumor microenvironment characterized by epithelial-mesenchymal transition, fibrosis, angiogenesis and immune exclusion, predicts poor outcomes across diverse malignancies, yet the role of miR-145 in this context remains unexplored. Leveraging The Cancer Genome Atlas head and neck squamous cell carcinoma (HNSCC) and breast cancer (BRCA) databases, we demonstrate that miR-145 reprogramming recapitulates a noninflamed fibrotic phenotype with immune exclusion. In high miR-145 tumors, EMT programs persist alongside abundant cancer-associated fibroblasts, matrix remodeling and angiogenesis, with upregulation of NOTCH, TGF-\u03b2, myogenesis, hypoxia, Hedgehog, and Wnt/\u03b2-catenin signaling and downregulation of interferon-\u03b3 and JAK-STAT pathways. Our findings illustrate that cancer-stromal juxtacrine interactions activate NOTCH signaling, forming a positive feedback loop that amplifies miR-145 expression and is reinforced by miR-145 promoter hypomethylation. High miR-145 promotes autophagy and mitochondrial oxidative phosphorylation (OXPHOS) metabolism in cancer cells, with GAPDH serving as a central hub linking metabolism, noninflamed immune modulation, and poor clinical outcomes. In vivo, high miR-145 carcinoma cells co-engrafted with fibroblasts drive tumor growth through enhanced metabolism, angiogenesis and immune evasion. This study establishes miR-145 as a driver and biomarker of the fibrotic tumor microenvironment to better inform future cancer therapy strategies.",
+        "full_text": "Highlights\nmiR-145 promotes epithelial-mesenchymal transition (EMT), NOTCH, angiogenesis, fibrosis, and TGF-\u03b2 signaling in the tumor microenvironment (TME).miR-145 facilitates cancer immune evasion with deficient antigen processing and presentation (APP) and tumor immune exclusion.High miR-145 is a marker of fibrotic cancer subtype and predicts poor outcomes.\n\nIntroduction\nThe tumor microenvironment is a key determinant of clinical outcome and therapeutic response, making TME-based classifications a promising source of novel drivers and biomarkers. TME comprises fibroblasts, endothelial cells, pericytes, mesenchymal stem cells, immune cells, and extracellular matrix components surrounding carcinoma cells. Based on immune and stromal characteristics, tumors can be classified into four TME subtypes: immune-enriched, non-fibrotic (IE); immune-enriched, fibrotic (IE/F); fibrotic (F); and immune-depleted (D) (Bagaev et al., 2021). The immune-favorable IE and IE/F subtypes show the greatest benefit from immunotherapy, whereas the F and D subtypes suppress anti-tumor immune infiltration and are associated with worse outcomes (Bagaev et al., 2021). To date, the connection between miR-145 and TME subtypes has not been addressed.\n\nImmune evasion in cancer is linked to adverse outcomes. Aggressive tumors evade immune surveillance by recruiting immunosuppressive cells, including regulatory T cells (Tregs), myeloid derived suppressor cells (MDSCs), and tumor-associated macrophages (TAMs), while limiting infiltration and activity of effector immune cells. MDSCs play a central role in immune escape by suppressing cytotoxic T lymphocytes (CTLs), Natural Killer (NK) cells, and dendritic cells (DCs) through factors such as TGF-\u03b2, CCL2/5, CXCL2, IL-6/10, and VEGF. EMT and its transcription factors can induce cancer immune evasion (Imodoye and Adedokun, 2023). Developmental pathways such as TGF-\u03b2, NOTCH and Wnt signaling are involved in EMT programs in cancer (Sabit et al., 2025; Pelullo et al., 2019). EMT promotes immune evasion by disrupting immune synapse formation through E-cadherin loss, impairing antigen presentation, inducing autophagy-mediated resistance to CTL killing, and upregulating immune checkpoints (PD-L1, PD-L2, CTLA-4). EMT also enhances cancer stem cell traits, reduces CD8+ T-cell infiltration, and promotes recruitment of immunosuppressive cells (M Mullins et al., 2022; Hou et al., 2019). Recent spatial and single-cell transcriptomic studies in HNSCC identified a CAF subset expressing high levels of CXCL chemokines (CXCL9/10/12), MHC-I molecules, and Galectin-9 that suppresses anti-tumor immunity by promoting CD8+ T-cell dysfunction and exclusion (Li et al., 2024). In oral squamous cell carcinoma, FAP+ fibroblasts further drive immune evasion through WNT2-mediated \u03b2-catenin activation in macrophages, inducing a tumor-promoting C1QC+ phenotype that promotes T-cell exhaustion and resistance to anti-PD-1 therapy (Chen et al., 2026). Although miR-145 regulates multiple oncogenic pathways (Li et al., 2025; Xu et al., 2019; Cho et al., 2023; Johannessen et al., 2017; Gonz\u00e1lez-Cant\u00f3 et al., 2024; Zeng et al., 2021), its specific role in mediating immune evasion remains undefined.\n\nMicroRNAs (miRNAs) are small non-coding RNAs that regulate gene expression post-transcriptionally and play crucial role in tumorigenesis and cancer progression (Peng and Croce, 2016; Markopoulos et al., 2017; Wu et al., 2025). While most studies have focused on miR-145 in carcinoma cells, its effects on cancer aggressiveness remain controversial (Xu et al., 2019; Cho et al., 2023; Johannessen et al., 2017; Gonz\u00e1lez-Cant\u00f3 et al., 2024; Zeng et al., 2021). Emerging evidence highlights important functions of miR-145 in non-cancer cells within the tumor microenvironment. Chivukula et al. reported that miR-143/145 expression is largely restricted to intestinal mesenchymal cells, including smooth muscle and pericryptal myofibroblasts (Chivukula et al., 2014). Similarly, Dimitrova et al. found that miR-145 is enriched in endothelial cells in lung cancer, where it promotes neoangiogenesis through Camk1d (Dimitrova et al., 2016). Given that miRNA expression is highly cell type\u2013specific, its role in heterogeneous tumors should be interpreted in the context of both cancer and non-cancer cellular components of the TME.\n\nWe have focused on miR-145 in the TME of HNSCC and BRCA due to its dysregulation and shared TME features, including EMT, NOTCH signaling, angiogenesis, fibrosis, and immune exclusion. This study reveals that miR-145 expression is highest in the fibrotic TME subtype, highlighting the importance of understanding its regulatory mechanisms within the TME to inform cancer therapy strategies.\n\nCell culture and treatment\nHuman breast carcinoma cell lines (MCF7, MDA231) and head and neck squamous carcinoma cell lines (FaDu, Detroit562) were obtained from ATCC. hTERT-immortalized human skin fibroblasts (hTERT-BJ1) were purchased from Clontech and engineered to express green fluorescent protein (GFP) or red fluorescent protein (RFP). Primary mouse embryonic fibroblasts (MEFs) were isolated from mouse embryo stroma. Cells were cultured in DMEM or EMEM supplemented with 10% fetal bovine serum, 100 U/mL penicillin, and 100 U/mL streptomycin. The mouse carcinoma cell line MOC1 was kindly provided by Dr. Ravi Uppaluri. For demethylation studies, cells were treated with 3 \u03bcM of 5-Aza-2\u2032-deoxycytidine (5-Aza; A3656, Sigma) for 96 h.\n\nCo-culture and cell sorting\nFibroblasts and cancer cells were co-cultured at a 4:1 ratio, with a total of 1 \u00d7 105 cells seeded per well in 12-well plates. As controls, fibroblasts or carcinoma cells were cultured alone at the same total cell number. For cell separation, GFP- or RFP-expressing fibroblasts and cancer cells were cultured either in co-culture or homotypic culture in 10-cm dishes for 4 days, followed by fluorescence-activated cell sorting (FACS) performed by the Flow Cytometry Core Facility at the Sidney Kimmel Comprehensive Cancer Center at Thomas Jefferson University. Sorted cells were collected and used for subsequent analyses.\n\nGeneration of stable cell lines\nLentiviral plasmids encoding precursor miR-145, scrambled control, NOTCH1\u0394NT, and empty vector control were purchased from GeneCopoeia. Lentiviral production, transfection, and transduction were performed according to the manufacturer\u2019s instructions to establish stable cell lines.\n\nFlow cytometry analysis\nCancer cells were co-cultured with BJ1 fibroblasts or maintained in homotypic culture. After 4 days, cells were processed at room temperature using immunofluorescence (IF) buffer (PBS, 1% BSA, 0.1% Tween-20). Cells were fixed with 4% paraformaldehyde for 15 min, blocked with IF buffer containing 5% normal goat serum for 30 min, and incubated with anti-NOTCH1 primary antibody for 1 h followed by fluorochrome-conjugated secondary antibody for 30 min. After washing with IF buffer, cells were resuspended in PBS and analyzed by flow cytometry.\n\nMitoTracker Orange (M7510), LysoTracker Blue (L7525), and LysoSensor Blue (L7533) (Invitrogen) staining was performed according to the manufacturer\u2019s instructions and quantified by flow cytometry.\n\nDNA methylation analysis\nCpG islands were predicted using the CpGPlot in the EMBOSS from EMBL-EBI. DNA was isolated from cell lines using FitAmp General Tissue DNA Isolation Kit (P-1003-1, Epigentek). DNA Methylation at premiR-145 promoter region containing CpG rich islands were screened using OneStep qMethyl\u2122kit (D5310, ZYMO Research). Primer sequences were as follows:premiR-145Me-F1CAGGCTAGGAACTGAATGGTTpremiR-145Me-R1CTGGAGTTCTCTTCTGCATCCpremiR-145Me-F2GCACCAGTTCTCATGTGGATpremiR-145Me-R2AGTTCTGCAGGTCTGTTTAGTG\n\nMiR array\nCell culture media was collected, and total RNA was isolated using exoEasy Maxi and RNeasy Plus kits (Qiagen). MiRNA array was performed at MetaOmics Core Facility at the Sidney Kimmel Comprehensive Cancer Center at Thomas Jefferson University.\n\nQuantitative RT-PCR\nCells were harvested and total RNA was isolated using trizol (invitrogen). TaqMan miRNA assays (Applied Biosystems) were used to quantify the expression of miRNAs according to the manufacturer\u2019s instructions. The mean cycle threshold (CT) value was determined from three PCR replicates. Data was reported using the 2-\u0394\u0394Ct method. Experiments were normalized to RNU48.\n\nProteomic assay\nAll MS runs were performed at Applied Biomics (www.appliedbiomics.com) for Mass and Proteomics Spectrometry. Protocol details have been previously published extensively (Lin et al., 2024).\n\nAntibody\nNOTCH1(ab52627, abcam), cyclin-D1(NBP1-35732, Novus Biologicals), SQSTM1(18420-1-AP, proteintech), COMMD1 (NBP2-4633, Novusbio), P53 (SC-126, Santa Cruz Biotechnology), DNMT1(5032, Cell Signaling),CD8A (98941, Cell Signaling), Jagged1 (70109, Cell Signaling), VEGFR2 (9698, Cell Signaling), B-actin (A5441, Sigma), and tubulin (T4026, Sigma) antibodies were used.\n\nOCR assessment\nA Seahorse Bioscience XF24 Extracellular Flux Analyzer in a 24-well format was used. MOC1 cells were seeded in the 24-well plate with 100 \u03bcL of growth media. After 2 h, additional 200 \u03bcL of growth medium was added to each well. On the second day, cells were incubated in non-buffered seahorse media containing 5 mM glucose and 10 mm lactate in a CO2 free incubator for 2 h. Cells were subjected to the mito stress test according to the manufacturer\u2019s manual.\n\nGlucose assay\nIntracellular Glucose was measured using the Glucose (GO) Assay Kit (Sigma, GAGO20-1KT) according to the manufacturer\u2019s manual.\n\nATP assay\nIntracellular ATP level was measured using the ATP Determination Kit (ThermoFisher A22066) according to the manufacturer\u2019s manual.\n\nIHC assay\nMouse tumor paraffin sections were de-paraffinized and rehydrated. Antigen retrieval was performed in 10 mM citrate buffer pH 6.0 for 10 min in a pressure cooker. Each section was first blocked with 3% H2O2 for endogenous peroxidase for 15 min, second with an avidin-biotin blocking kit for endogenous biotin, third with preferred blocking solution for 1 h at room temperature. Then incubated with primary antibody overnight at 4 \u00b0C and with secondary antibody for 1 h, followed by an avidin-biotinylated horseradish peroxidase complex. Immune-complexes were visualized using the Opti-View DAB IHC Detection Kit and Opti-View Amplification Kit. Lastly, all sections were counterstained with hematoxylin and sealed with mounting medium.\n\nAnimal studies\nAll animal experiments were performed in compliance with Thomas Jefferson University Institutional Animal Care and Use Committee (IACUC) policies.\n\nTo evaluate the in vivo tumor-promoting effects of miR-145, Detroit562 expressing either precursor miR-145 or scramble control, and hTERT-BJ1cells were coinjected into the dorsal subcutaneous flank of nude mice (NCRNU; Taconic Farms; at 6 weeks of age). Cancer cells (1 million cells) and hTERT-BJ1 (0.3 million) fibroblasts were resuspended in 100ul of sterile PBS just before injection. Tumors were measured at the chasing time. After 28 days post-injection, tumors were excised to determine their size. Volumes were calculated using the ellipsoid formula (X2Y)/2 where X is the width or short axis and Y is the length or long axis. P values less than 0.05 were considered significant based on the Mann-Whitney U test.\n\nIn addition, MOC1 expressing either precursor miR-145 or scramble control, and MEF cells were coinjected into the dorsal subcutaneous flank of female mice (C57BL/6; Jackson lab; at 6 weeks of age). Cancer cells (1 million) and MEF fibroblasts (1 million) were resuspended in 100 ul of sterile PBS just before injection. Tumors were measured at the chasing time. The growth of tumor xenografts was assessed at 21 days.\n\nStatistical analysis\nData was expressed as means \u00b1 standard error of the mean. One-way or two-way analysis of variance (ANOVA) was applied to grouped analyses using Prism 10 software (GraphPad Software Inc., La Jolla, CA). The unpaired Mann-Whitney U test was used for statistical comparison in vivo. The p-values less than 0.05 were set to define statistical significance. R (http://www.R-project.org) was adopted to analyze miRNAseq and RNAseq data in The Cancer Genome Atlas (TCGA) breast cancer (BRCA) and head and neck squamous cell carcinoma (HNSCC) databases. Statistical significance was defined as p-values of less than 0.05.\n\nHigh miR-145 expression correlates with the fibrotic subtypes in human HNSCC and BRCA\nTo investigate the role of miR-145, miRNA-seq and RNA-seq data from TCGA HNSCC database was retrieved and classified into four distinct TME subtypes: IE, IE/F, F, and D. Overall survival analysis showed that the F subtype had the poorest prognosis (Figure 1A). Consistently, miR-145 expression was highest in F tumors (Figure 1B). Gene Set Variation Analysis (GSVA) of Hallmark pathways revealed positive correlations between miR-145 and EMT, angiogenesis, NOTCH, hypoxia, TGF-\u03b2, Hedgehog, myogenesis, and Wnt/\u03b2-catenin signaling, and negative correlations with OXPHOS and IFN-\u03b3 pathways (Supplementary Figures 1A\u2013C). MiR-145 expression was consistent with the contingent Hallmark pathways in the F subtype (Figures 1C,D; Supplementary Figure 1D). Also, miR-145 expression was correlated with a panel of genes from diverse signaling pathways such as angiogenesis, EMT and immunosuppression. In addition, miR-145 expression positively correlated with markers of CAFs (ACTA2, COL1A1), angiogenesis (PECAM1, ANGPT1), EMT transcription factors (SNAI1, TWIST1, ZEB1), and TGF-\u03b2 signaling (TGFB2, TGFB3), while negatively correlating with the immune marker CD8A (Supplementary Figures 2A\u2013C). Together, these findings suggest that miR-145 may serve as a biomarker of the fibrotic subtype.\n\nTCGA HNSCC and BRCA miRNA-seq/RNA-seq datasets were stratified into the top and bottom 25% of miR-145 expression. Gene Set Enrichment Analysis (GSEA) identified 12 Hallmark, 37 Reactome, and 322 Gene Ontology (GO) pathways significantly enriched in miR-145-high tumors across both cancer types (Figure 1E; Supplementary Figures 3A,B). Hallmark pathways included EMT, angiogenesis, NOTCH, hypoxia, TGF\u03b2, HEDGEHOG, Wnt/\u03b2-catenin, and myogenesis signaling, consistent with TME reprogramming (Figure 1E). Reactome analysis highlighted extracellular matrix (ECM) remodeling pathways, including ECM organization, proteoglycan and collagen formation, integrin and laminin interactions, matrix metalloproteinase activation, and ECM degradation (Supplementary Figure 3A). Gene Ontology analysis further revealed enrichment of angiogenic and lymphangiogenic programs, including sprouting angiogenesis, vasculogenesis, endothelial cell migration and proliferation, VEGF and PDGFR signaling, TGF\u03b2 responses, growth factor activity, integrin and proteoglycan binding, Wnt signaling, lymphatic vessel development, and SMAD-mediated signaling (Supplementary Figure 3B). Together, these findings indicate that high miR-145 expression is associated with extensive ECM remodeling and enhanced angiogenic/lymphangiogenic TME programs.\n\nDeconvolution of TME cell types using xCell analyses revealed that high miR-145 expression was associated with increased endothelial cells and decreased immune cell infiltration in both HNSCC and BRCA (Figure 1F). Innate immune populations, including mast cells and plasmacytoid dendritic cells (pDCs), were reduced, with more pronounced depletion of adaptive immune cells, particularly B and T lymphocytes. Mast cells in the TME can exert either tumor-promoting or tumor-suppressive effects. Their anti-tumor activity includes releasing cytotoxic cytokines such as TNF\u03b1 and recruiting dendritic cells and effector T Cells through chemokines. Similarly, pDCs are rare TME residents that undergo functional reprogramming. Although healthy pDCs promote antitumor immunity through robust production of type I interferons (IFN-\u03b1/\u03b2), they can also acquire protumorigenic functions within the TME. Consistent with this immunosuppressive phenotype, OncoLnc analysis showed significantly worse overall survival in HNSCC and BRCA patients with low expression of the cytotoxic T-cell marker CD8A (Supplementary Figure 3C).\n\nTo further unravel the fibrotic landscape of miR-145, using single-sample GSEA (ssGSEA) of the TCGA HNSCC RNA-seq dataset, we found that tumors with high miR-145 expression displayed a highly fibrotic, immune-excluded phenotype. These tumors were enriched for angiogenesis, CAFs and extracellular matrix remodeling (Figure 2A), consistent with elevated TGF-\u03b2 signaling. Malignant cells exhibited enhanced EMT and immune-evasive features, including increased MDSC recruitment, reduced antigen processing and presentation (APP), and diminished infiltration of effector immune cells, as reflected by lower M1 macrophage, Th1, NK cell, and CD8+ T-cell signatures (Figures 2B\u2013G). This immune-suppressive phenotype was further supported by downregulation of the JAK\u2013STAT signaling pathway (Figure 2H).\n\nEcotyper deconvolution allowed us to define carcinoma cell states and ecotypes (Luca et al., 2021). MiR-145\u2013high tumors were enriched for Carcinoma Ecotype 1 (CE1) and depleted for CE9 and CE10 ecotypes (Figures 2I, J). Importantly, CE1 is associated with poor prognosis, low lymphocyte infiltration, and abundant periostin positive (POSTN+) fibroblasts, whereas CE9 and CE10 are linked to improved survival and enhanced immune activity (Luca et al., 2021). Consistent with CE1, miR-145\u2013high tumors were enriched for POSTN + fibroblasts (state 3-S03), partial EMT-like epithelial cells (state 3-S03), and ANGPTL2+/NID2+ tip-like endothelial cells (state 2-S02), all associated with tumor progression and neovascularization (Supplementary Figures 4A\u2013C). In contrast, cytotoxic GZMB + CD8 T cells (state 3-S03), GZMK + CD8 T cells (state 1-S01), CE9/CE10-associated T cells, and PRF1+ NK cells (state 1-S01) were reduced (Supplementary Figures 4D,E). Macrophage polarization also shifted toward an unfavorable phenotype, with decreased M1 macrophages (state 3-S03) and increased M2 macrophages (states 5 and 6-S05 and S06) (Supplementary Figures 4F). Together, these findings indicate that high miR-145 expression is associated with a non inflamed fibrotic tumor microenvironment.\n\nMiR-145 in cancer cells can be upregulated by fibroblasts\nTo investigate the mechanism of miR-145 expression, we established a coculture system of fibroblasts and carcinoma cells at a 4:1 ratio. After 4 days of homotypic culture or coculture, exosomes were isolated from conditioned media and analyzed by miRNA array. miR-145 was highly enriched in fibroblast-derived exosomes compared with those from MCF7 breast carcinoma cells under homotypic culture (Figure 3A). Consistently, intracellular miR-145 expression was markedly higher in fibroblasts (hTERT-BJ1) than in breast carcinoma cells (MCF7, MDA231) or head and neck squamous carcinoma cells (FaDu, Detroit562) (Figure 3B).\n\nTo assess the effect of fibroblasts on miR-145 expression in carcinoma cells, two coculture systems were used: a transwell setup with physical separation and a direct-contact coculture followed by GFP/RFP-based cell sorting. Only direct cell-cell juxtacrine interaction markedly induced miR-145 expression in carcinoma cells (Figure 3C).\n\nGlobal protein interaction network analysis and functional prediction\nTo Identify putative targets of miR-145 regulation in cancer cells, we performed a proteomic assay with Detroit562 cells ectopically expressing precursor miR-145 or scramble control. Twenty-one proteins showing >1.5-fold differential expression were identified as candidate miR-145-regulated targets (Figure 4A). Among them, phosphoserine phosphatase (PSPH) was the most upregulated protein in miR-145-overexpressing cells. PSPH is a key enzyme in the serine biosynthesis pathway and is metabolically linked to glycolysis. Notably, elevated PSPH expressions have been associated with poor prognosis in HNSCC. To investigate the biological significance of these proteins, all differentially expressed candidates were analyzed using STRING to construct a protein\u2013protein interaction (PPI) network and identify associated cellular functions (Figure 4B). The analysis revealed that glyceraldehyde-3-phosphate dehydrogenase (GAPDH) occupied the most connected node within the network. Subsequent focused analysis of GAPDH and its interacting partners highlighted cell death, proliferation, ATP production, and oxidative stress as the principal associated biological processes. Functional enrichment further identified glycolysis/glycogen metabolism, mitochondrial electron transport, and immune-related pathways, with oxidation- and methylation-related annotations also significantly represented. Importantly, elevated GAPDH expression was associated with reduced overall survival in the TCGA HNSCC cohort (p = 0.01; Figure 4C). High GAPDH expression is also linked to a non-inflamed tumor microenvironment including fibrotic and immune-depleted subtypes (Figure 4D).\n\nConversely, miR-145 may promote autophagy, as two autophagy-related proteins were downregulated upon miR-145 overexpression: the F-actin-capping protein CAPZB and SQSTM1 (Figure 4A). CAPZB mediates actin-dependent autophagosome formation, and SQSTM1 recruits ubiquitinated cargo as a classic selective autophagy receptor and a negative reporter of autophagy activity. Since lysosomes are essential for autophagic degradation and cellular adaptation to nutrient or oxygen deprivation, we evaluated lysosomal activity using LysoTracker and LysoSensor (pH sensor) assays. Multiple cancer cell lines overexpressing miR-145 showed increased LysoTracker and LysoSensor signals compared with controls, consistent with enhanced autophagy (Figure 4E; Supplementary Figures 5A,B).\n\nMiR-145 stimulated mitochondrial activity\nMitochondrial dysfunction is a hallmark of cancer and is linked to metastasis and drug resistance. Using the mitochondria-selective probe Mitotracker Orange, we found that miR-145 increased mitochondrial mass and membrane hyperpolarization in MCF7, MDA231, FaDu, and Detroit562 cells (Figure 5A). Consistently, ATP production and glucose uptake were also elevated following miR-145 overexpression (Figures 5B,C), indicating enhanced mitochondrial activity.\n\nmiR-145 promotes tumor growth with aggressive characteristics\nTo investigate the role of miR-145 in tumor metabolism, Seahorse XF Cell Mito Stress Tests were performed in MOC1 and Detroit562 cells. The assay reflects key parameters of mitochondrial function by simultaneously measuring the oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) over time in the presence of mitochondrial metabolic modulators. OCR and ECAR rates are key indicators of mitochondrial respiration and glycolysis respectively. miR-145 overexpression increased both OCR and ECAR, indicating enhanced mitochondrial OXPHOS and glycolysis (Figures 6A,B; Supplementary Figures 5C).\n\nIn vivo, miR-145-overexpressing MOC1 cells coinjected with MEF fibroblasts formed larger tumors than controls (Figure 6C). Vessel analysis using ImageJ from tumor tissue H&E staining revealed that miR-145 promoted tumor angiogenesis and lymphangiogenesis (Figure 6D; Supplementary Figure 6A). miR-145 also increased expression of VEGFR2 and Jagged1 (Figure 6E; Supplementary Figure 6B) and reduced CD8A+ cytotoxic T-cell infiltration (Figure 6F). We also observed significantly increased fibrosis in miR-145-overexpressing MOC1 tumors compared with controls (Figure 6G). Likewise, Detroit562 cells overexpressing miR-145 co-injected with BJ1 fibroblasts promoted tumor growth (Figure 6H; Supplementary Figure 6C) with suppressed SQSTM1 and induced TOMM20 expression (Figure 6I; Supplementary Figure 6D), consistent with elevated mitochondrial activity. Low SQSTM1 is associated with high autophagy but future studies are required to determine conclusively the role of miR-145 on autophagy in vivo. Collectively, these findings suggest that miR-145 promotes tumorigenesis through enhanced metabolism, angiogenesis, and immune evasion.\n\nMiR-145 is regulated by NOTCH signaling and DNA hypomethylation\nThe requirement for carcinoma\u2013fibroblast juxtacrine interaction to induce miR-145 suggested involvement of membrane-bound NOTCH signaling. As expected, coculture markedly increased NOTCH1 expression in carcinoma cells, as shown by IF and flow cytometry (Figures 7A,B; Supplementary Figures 7A,B). Western blot showed that miR145 overexpression induced the functional, cleaved intracellular domain of the Notch1 receptor (NICD) (Figure 7C). In the TCGA-HNSC dataset, the fibrotic subtype exhibited the highest expression of both miR-145 and the NOTCH signaling pathway. Consistently, this subtype also showed the highest expression of the cell-surface Notch ligand JAG1 (Figure 7D), which initiates NOTCH signaling in neighboring cells. Moreover, NOTCH1\u0394NT overexpression significantly elevated miR-145 levels across multiple cell lines compared with controls (Figure 7E; Supplementary Figure 7C). Together, these findings demonstrate a positive feedback loop between NOTCH signaling and miR-145.\n\nEpigenetic changes, particularly DNA methylation, occur early in tumor development and can regulate gene expression. To determine whether DNA methylation controls miR-145 expression, bioinformatics and methylation-specific PCR analyses were performed. miR-145 promoter methylation was markedly reduced in cocultured cancer cells compared with homotypic cultures (Figures 7F,G), while BJ1 cells exhibited lower methylation levels than carcinoma cells (Supplementary Figure 7D). Furthermore, treatment with the DNA methylation inhibitor azacitidine (5-Aza) significantly increased miR-145 expression in cancer cells (Figure 7H). Western blot showed increased TP53 and reduced DNMT1 and COMMD1 expression in hTert-Bj1 and MCF7 cells (Supplementary Figure 7E). p53 can promote miR-145 post-transcriptional maturation. The DNMT1 gene encodes DNA methyltransferase 1, the primary enzyme responsible for maintaining DNA methylation patterns during cell division. COMMD1 is a negative regulator of NF\u03baB-HIF signaling. These findings indicate that miR-145 upregulation in tumors is driven by both NOTCH signaling and promoter DNA hypomethylation.\n\nDiscussion\nThis study integrates experimental and computational approaches to identify miR-145 as a key driver of carcinoma aggressiveness and the fibrotic tumor microenvironment subtype. A model is proposed in Figure 8. MiR-145 facilitates the fibrotic phenotype by activating heterotypic signaling pathways, including EMT, Angiogenesis, NOTCH, TGFB, HYPOXIA, Wnt/\u03b2-Catenin, Hedgehog and Myogenesis, while suppressing IFN-\u03b3 and JAK-STAT signaling. Elevated miR-145 is associated with CAF activation, extracellular matrix remodeling, and an immune-evasive TME. The data suggest that cancer\u2013stromal juxtacrine interactions enhance NOTCH signaling in a positive feedback loop with miR-145, further reinforced by miR-145 promoter hypomethylation. Functionally, miR-145 overexpression induces autophagy and mitochondrial metabolism in vitro, and drives aggressive tumor growth in vivo, characterized by increased fibrosis, angiogenesis and reduced cytotoxic T-cell infiltration.\n\nMiR-145 is highly expressed in the tumor stromal compartment (Chivukula et al., 2014; Dimitrova et al., 2016), although most prior studies have focused on cancer cells. In human vascular smooth muscle cells, JAG1/NOTCH signaling induces miR-143/145 expression (Boucher et al., 2011), while p53 promotes miR-145 post-transcriptional maturation (Suzuki et al., 2009). Within the tumor microenvironment, paracrine and juxtacrine signaling coordinate communication between tumor and stromal cells. Paracrine factors such as cytokines, growth factors, chemokines, and TGF-\u03b2 released by cancer cells and cancer-associated fibroblasts promote tumor growth, stemness, therapy resistance, immune evasion, and TME remodeling (Masih et al., 2022). Juxtacrine signaling requires direct cell-cell contact, with NOTCH signaling serving as a major communication pathway among cancer cells, CAFs, endothelial cells, immune cells, and tumor-associated macrophages (Lu et al., 2014; Parikainen et al., 2026). Other contact-dependent interactions, such as PD-L1/PD-1 signaling, also facilitate immune evasion (Yang et al., 2018). Cytonemes are specialized, actin-based membrane protrusions that mediate targeted, long-range cell-to-cell signaling. In cancer, tumor cells hijack cytonemes to establish direct communication with stromal cells by delivering growth factors, morphogen and receptor complexes that promote proliferation, invasion, and therapy resistance. Cytoneme biogenesis is initiated by morphogen\u2013receptor signaling, including Hedgehog\u2013Ihog and Wnt\u2013Frizzled. Related membrane protrusions, such as tunneling nanotubes, further support tumor\u2013stromal communication by transferring microRNAs, oncogenic proteins mutant KRAS, and even organelles, including mitochondria (Yamada et al., 2026; Ma et al., 2025). In addition, extracellular vesicle-mediated miRNA communication has emerged as a mechanism by which tumor and stromal cells remodel the TME, promoting cancer progression through enhanced angiogenesis, EMT, matrix remodeling, tumor stiffness and Immune evasion (Cocks et al., 2021; Sheta et al., 2023; Feng et al., 2026). Future studies will need to determine how crosstalk mediated by miR-145 occurs. Our data show that miR-145 induction in vitro depends on direct fibroblast-cancer cell contact and activation of membrane-bound NOTCH signaling. Notably, miR-145 also enhances NOTCH signaling, suggesting a reciprocal positive-feedback loop whose molecular basis remains to be elucidated.\n\nTumor angiogenesis is a hallmark of cancer progression, and the miR-143/145 cluster has emerged as an important regulator of neovascularization. Our data show that miR-145 promotes recruitment of CAFs, pericytes, and endothelial cells, remodels the extracellular matrix, enhances sprouting angiogenesis, and enriches EMT, NOTCH, hypoxia, and autophagy pathways within the tumor microenvironment. Tumor-associated angiogenesis arises from sprouting of existing vessels or differentiation of bone marrow- or tumor-derived stem cells, regulated by complex interactions among cells, ECM components, and physical factors such as pH, temperature, interstitial fluid pressure, and hypoxia (Korneev et al., 2017). CAFs further support angiogenesis through ECM remodeling and secretion of pro-angiogenic factors. Resistance to anti-angiogenic therapy commonly involves activation of NOTCH and hypoxia signaling, recruitment of bone marrow\u2013derived cells, increased pericyte coverage, and enhanced invasion and metastasis to access normal vasculature (Bergers and Hanahan, 2008). Autophagy promotes tumor cell survival under stress (Sukhai et al., 2013; Zhitomi et al., 2016; Ibrahim et al., 2016) and can facilitate escape from anti-angiogenic treatment. Our data suggests that miR-145 induces autophagy, but future studies are required to determine conclusively its role on autophagy and whether tumors with high miR-145 expression may benefit from combined targeting of angiogenesis and autophagy.\n\nMitochondria play a central and multifunctional role in malignant tumor progression (Zong et al., 2016; Moreno-Sanchez et al., 2014). Mitochondrial oxidative phosphorylation supplies a substantial fraction of tumor ATP production (Dielschneider et al., 2017), and growing evidence links enhanced mitochondrial metabolism to metastatic potential. GAPDH as a classical cytosolic glycolytic enzyme can translocate to mitochondria under oxidative stress and apoptosis. Mitochondrial GAPDH regulates mitophagy, supports heme trafficking, and coordinates metabolic crosstalk with mitochondrial respiratory complexes (Nakajima et al., 2017; Tristan et al., 2011). Beyond its housekeeping role, GAPDH is a metabolic and oncogenic biomarker associated with aggressive disease and poor overall and relapse-free survival across multiple cancers, including lung, HNSCC, diffuse large B Cell lymphoma and gastrointestinal cancers (R\u00e9villion et al., 2000; Wiel et al., 2019; Peng et al., 2023; Liu et al., 2017; Chiche et al., 2019). Elevated GAPDH expression is also linked to a non-inflamed tumor microenvironment including fibrotic and immune-depleted subtypes characterized by reduced CD8+ T Cell infiltration, hypoxia-driven metabolic reprogramming, extracellular matrix remodeling, and immune exclusion, all of which promote tumor progression and therapy resistance (Peng et al., 2023; Liu et al., 2017; Chiche et al., 2019; Cohen et al., 2022). Collectively, our findings suggest that miR-145 promotes angiogenesis and mitochondrial activity, thereby enhancing tumor aggressiveness.\n\nEMT promotes cancer immune evasion through multiple mechanisms. Mesenchymal-like cancer cells undergoing EMT drive the accumulation of Tregs and MDSCs, suppressing T Cell function. EMT transcription factors (Snail, Twist, and Zeb1) promote M2-like macrophage polarization and inhibit cytotoxic T lymphocytes through IL-4, IL-10, TGF-\u03b2, PD-L1, arginase I, and IDO-1. EMT also impairs antigen processing and presentation, further weakening anti-tumor immunity. While targeting EMT, its upstream regulators (e.g., TGF-\u03b2 and Wnt), or epigenetic modulators (LSD1 and HDACs) can restore immune function, EMT reversal may also increase metastatic risk (Holmgaard et al., 2018; Yang et al., 2017; Duan et al., 2017). Consistent with these findings, our data clarify that miR-145 significantly upregulates EMT, TGF-\u03b2, and Wnt signaling pathways, contributing to immune evasion.\n\nIn summary, our findings identify miR-145 as a key driver of a fibrotic tumor microenvironment. miR-145 upregulation in cancer cells is promoted by promoter hypomethylation and activated NOTCH signaling. Functionally, miR-145 enhances autophagy and mitochondrial metabolism in vitro, while promoting tumor growth in vivo through coordinating EMT, angiogenesis, fibrosis, TGF-\u03b2 signaling, and immune evasion characterized by reduced CD8+ T cell infiltration. Although functional validation using miR-145 knockdown or knockout models would provide additional mechanistic insights, miR-145 expression is markedly downregulated in tumor tissues compared with normal controls. Therefore, we focused on characterizing its baseline expression and functional associations across TME subtypes. This study identifies miR-145 as a potential biomarker of the fibrotic tumor microenvironment, providing a foundation for future mechanistic studies and therapeutic strategies.",
+        "source": "pmc_full_text",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42992022/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13737585/"
+      },
+      "analysis": {
+        "topic_relevance_score": 1.4,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 14,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Development-to-homeostasis continuity: developmental; Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Development-to-homeostasis continuity: developmental",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor, carcinoma."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 4.5,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 23.5,
+          "total_penalty": -12.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 14
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "developmental"
+          ],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42982653",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42982653",
+        "title": "Ghost cell-negative, CTNNB1-mutated odontogenic carcinoma arising in calcifying odontogenic cyst: case report with a reappraisal of the ghost cell-based classification.",
+        "authors": [
+          "Oh KY"
+        ],
+        "journal": "Oral surgery, oral medicine, oral pathology and oral radiology",
+        "pubdate": "2026 Oct 15",
+        "doi": "10.1016/j.oooo.2026.10.003",
+        "pmcid": null,
+        "abstract": "Although ghost cells have been recognized as a diagnostic clue to odontogenic ghost cell lesions like ghost cell odontogenic carcinoma (GCOC), some cases show minimal or no ghost cells in the recurrent or metastatic setting, questioning the integrity of the current classification based solely on histology. Here, we present a case of ghost cell-negative, CTNNB1-mutated odontogenic carcinoma arising in calcifying odontogenic cyst (COC). A 14-year-old female presented with a well-demarcated radiolucent lesion in the right mandible. Histologically, the lesion was composed of cystic and solid structures. The cystic component was generally suggestive of COC but also showed invasive epithelial nests. The solid component consisted of undifferentiated tumor cells but had neither ghost cells nor dentinoid, precluding the diagnosis of GCOC. Immunohistochemically, tumor cells were positive for \u03b2-catenin (nuclear), SATB2, CD10, and CDX2. Whole-exome sequencing revealed a CTNNB1 hotspot mutation G34E (c.101G>A, p.Gly34Glu). No pathogenic mutations were identified in MAPK and SHH pathway genes. A final diagnosis of WNT pathway-altered odontogenic carcinoma was made. The newly proposed, molecularly defined category \"WNT pathway-altered odontogenic tumors\" may overcome the limitations of the classic ghost cell-based classification by encompassing currently unclassified cases.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42982653/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 0.6,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 6,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: shh; Epithelial morphogenesis and tissue architecture: epithelial.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: shh",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: epithelial.",
+          "Possible clinical, behavioral, or perception-only context signal: case report."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": -8.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 18.0,
+          "total_penalty": -14.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 6
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ],
+  "scored_records": [
+    {
+      "paper": {
+        "paper_id": "42996009",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42996009",
+        "title": "Heterochronic Uncoupling of Brain and Face Morphogenesis Drives Premature Fusion in Ciliary Transition Zone Mutants.",
+        "authors": [
+          "Hu D",
+          "Devine J",
+          "Liu W",
+          "Marcucio RS",
+          "Hallgr\u00edmsson B",
+          "Green RM",
+          "Young NM"
+        ],
+        "journal": "bioRxiv : the preprint server for biology",
+        "pubdate": "2026 Oct 20",
+        "doi": "10.64898/2026.10.19.760125",
+        "pmcid": "PMC13738561",
+        "abstract": "UNLABELLED: Normal facial development is highly coordinated with embryonic brain expansion, suggesting the forebrain acts as a physical scaffold dictating the spatial timing of facial prominence apposition and fusion. To test this idea, we compared B9d1 ciliary transition zone mutants, which exhibit altered Hedgehog signaling and premature facial fusion, to a normal murine developmental morphospace. At e11.5, mutant brains are significantly reduced in size, yet intrinsic facial prominence size remains largely normal. Projecting e11.5 and e12.5 mutants into the normal morphospace reveals a severe heterochronic uncoupling: the delayed, narrowed neurocranium mechanically forces normal-sized facial prominences into premature convergence. These results indicate that when brain growth slows, facial prominences initiate contact earlier in restricted spatial bounds. Conversely, this model predicts that an accelerated, expanded brain may act as a physical wedge, increasing the likelihood of cleft lip. By mathematically modeling these structural dependencies, we propose that palatogenesis operates on a continuous phenotypic spectrum, where premature fusion and cleft lip represent alternative physical outcomes conditioned on the underlying brain developmental trajectory.\n\nSUMMARY STATEMENT: 3D developmental morphospace modeling reveals that delayed brain growth in transition zone mutants imposes a mechanical constraint, physically forcing normal-sized facial prominences into premature midline fusion.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42996009/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13738561/"
+      },
+      "analysis": {
+        "topic_relevance_score": 8.3,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 83,
+        "recommendation_label": "core must-read",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Hedgehog co-receptors and modulators: ciliary; Epithelial morphogenesis and tissue architecture: morphogenesis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Hedgehog co-receptors and modulators: ciliary",
+          "Epithelial morphogenesis and tissue architecture: morphogenesis",
+          "Development-to-homeostasis continuity: development, developmental, embryonic",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 24.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 16.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 81.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 83
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "ciliary"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "embryonic"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "murine"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42993555",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42993555",
+        "title": "A thermosensitive bovine placenta decellularized extracellular matrix/Pluronic F127 composite hydrogel supports lineage specification and glia-associated development in hiPSC-derived human spinal cord organoids.",
+        "authors": [
+          "Li H",
+          "Xu H",
+          "Hu C",
+          "Ma Y",
+          "Liu Y",
+          "Liu R",
+          "Zhao Y",
+          "Bai J",
+          "Liu S",
+          "Gao X",
+          "Wang Y",
+          "Gui B",
+          "Luo R",
+          "Ju C",
+          "Huang D",
+          "Jia S",
+          "He B",
+          "Wu W",
+          "Wang Z",
+          "Zhu L"
+        ],
+        "journal": "Journal of materials chemistry. B",
+        "pubdate": "2026 Nov 6",
+        "doi": "10.1039/d6tb01610c",
+        "pmcid": null,
+        "abstract": "Human spinal cord organoids (hSCOs) provide valuable platforms for modeling spinal cord development, disease, and injury-related processes, but their maturation and cellular complexity remain strongly influenced by the culture matrix. Here, we developed a thermosensitive bovine placenta decellularized extracellular matrix/Pluronic F127 composite hydrogel (BP-dECM/PF127CH) as a cost-effective, ECM-rich three-dimensional matrix for the generation of hiPSC-derived hSCOs. The composite hydrogel exhibited a thermosensitive sol-gel transition at physiological temperature, an interconnected porous microarchitecture, and favorable cytocompatibility with hiPSCs, with levels of apoptosis, viability, and proliferation comparable to those observed with Matrigel. Under identical RA/SHH-based caudal-ventral induction conditions, BP-dECM/PF127CH-cultured hSCOs demonstrated significantly enhanced folding morphogenesis and, by Day 22, yielded 4.82-fold more NKX6.1+ ventral progenitors and 3.28-fold more PAX6+ cells comparable to Matrigel. This matrix-driven developmental reshaping resulted in 2.74-fold more HB9+ motor neurons, 2.19-fold more GFAP+ astrocytes, 1.29-fold more TMEM119+ microglia together with coordinated upregulation of VGLUT1 and GAD67 (1.55-fold each), indicating enhanced regional progenitor patterning, motor neuron differentiation, glial lineage diversification and balanced excitatory/inhibitory synaptic specification, while preserving global neuronal differentiation (Tuj1, MAP2) and myelination (MBP). With 99.62% DNA removal and retention of laminin and fibronectin, BP-dECM/PF127CH combines native ECM instructiveness with practical thermosensitive handling at 20-30-fold lower cost than Matrigel. This composite hydrogel establishes a versatile and scalable platform for engineering advanced organoid models with enhanced structural and cellular fidelity.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42993555/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.2,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 42,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Epithelial morphogenesis and tissue architecture: morphogenesis, patterning; Development-to-homeostasis continuity: development, developmental, lineage, progenitor.",
+        "why_it_matters": [
+          "Epithelial morphogenesis and tissue architecture: morphogenesis, patterning",
+          "Development-to-homeostasis continuity: development, developmental, lineage, progenitor",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 16.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 40.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 42
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "morphogenesis",
+            "patterning"
+          ],
+          "development_homeostasis_continuity": [
+            "development",
+            "developmental",
+            "lineage",
+            "progenitor"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Epithelial morphogenesis and tissue architecture",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42994546",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42994546",
+        "title": "Circulating GDF-15: an intriguing candidate biomarker for the differential diagnosis of ovarian masses.",
+        "authors": [
+          "Cicolani G",
+          "Farina A",
+          "Straface G",
+          "Granato T",
+          "Megiorni F",
+          "Viggiani V",
+          "Angeloni A",
+          "Mancini P",
+          "Anastasi E"
+        ],
+        "journal": "Clinica chimica acta; international journal of clinical chemistry",
+        "pubdate": "2026 Nov 6",
+        "doi": "10.1016/j.cca.2026.122959",
+        "pmcid": null,
+        "abstract": "Epithelial ovarian cancer (EOC) remains one of the most lethal gynecological malignancies. Growth differentiation factor-15 (GDF-15), a stress-responsive cytokine, has emerged as a potential biomarker in several cancers. However, its biological and diagnostic significance in ovarian pathology remains poorly defined. This retrospective, single-centre, proof-of-concept study aimed to evaluate circulating GDF-15 levels in EOC and benign ovarian cysts (BOC). A total of 48 women with histologically confirmed EOC and 40 patients with BOC were included. Circulating GDF-15 levels were assessed by ELISA and Western blot (WB) analysis. Circulating GDF-15 levels were significantly higher in EOC patients compared with BOC. Receiver operating characteristic (ROC) analysis identified an optimal diagnostic threshold of 1020 pg/mL, yielding an Area Under the Curve (AUC) of 0.924 (95% CI: 0.863-0.984) with 93.8% sensitivity and 82.5% specificity (optimism-corrected via bootstrap resampling: 91.2% sensitivity and 80.5% specificity p < 0.0001). Vimentin, was evaluated by WB in serum samples and by immunofluorescence in tumour tissue sections. Vimentin expression was predominantly detected in sera from EOC patients. Immunofluorescence analysis of tumour tissue showed distinct populations of GDF-15-positive and vimentin-positive cells without direct structural colocalization. In conclusion, GDF-15 shows promise as a complementary biomarker within multi-marker panels, assisting with diagnosis in challenging scenarios such as indeterminate adnexal masses and gray zones with borderline or discordant results from conventional markers.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42994546/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.1,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 41,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Hedgehog co-receptors and modulators: boc; Epithelial morphogenesis and tissue architecture: epithelial; Preferred mechanistic methods: immunofluorescence.",
+        "why_it_matters": [
+          "Hedgehog co-receptors and modulators: boc",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Preferred mechanistic methods: immunofluorescence",
+          "Interaction bonus: Gas1/co-receptor bridge match",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: epithelial."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 12.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 18.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 27.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 18.0,
+          "final_score": 41
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [
+            "boc"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "immunofluorescence"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Hedgehog co-receptors and modulators",
+          "Epithelial morphogenesis and tissue architecture",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42981876",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42981876",
+        "title": "Discovery of the first orally bioavailable GLI1 PROTAC for the treatment of colorectal cancer.",
+        "authors": [
+          "Xin YB",
+          "Yang ZY",
+          "Luo YF",
+          "Du YL",
+          "Li RN",
+          "Wu Q",
+          "Chen YY",
+          "Li XY",
+          "Qiao YX",
+          "Lu MC",
+          "Long YQ"
+        ],
+        "journal": "European journal of medicinal chemistry",
+        "pubdate": "2026 Oct 31",
+        "doi": "10.1016/j.ejmech.2026.119480",
+        "pmcid": null,
+        "abstract": "The Hedgehog (Hh) pathway is a highly conserved regulator of embryonic development and tissue homeostasis, and its aberrant activation drives various cancers. Although SMO-targeted therapies have shown clinical value, their limitations in SMO-mutant or Hh-independent tumors underscore the need for alternative strategies, thereby making the downstream transcription factor GLI1 an attractive target. In this study, we developed a series of novel small molecule GLI1 degraders using proteolysis-targeting chimera (PROTAC) technology. Among them, LRG20 exhibited potent GLI1 degradation activity in HT-29 colorectal cancer cells (DC50 = 16.93 \u00b1 1.59 nM, Dmax = 91.1 \u00b1 4.3%), preferentially degrading GLI1/GLI2 over GLI3 without obvious degradation of representative CRBN neo-substrates. Mechanistic studies supported that LRG20 induces GLI1 degradation via the CRBN-dependent ubiquitin-proteasome pathway. Cellular assays demonstrated that LRG20 potently inhibited tumor cell proliferation (HT-29, IC50 = 0.10 \u00b1 0.06 \u03bcM). In vivo, it displayed favorable pharmacokinetic properties (F = 18.8%; T1/2 = 4.32 h) and significantly suppressed tumor growth in an HT-29 xenograft model (TGI = 70.89%) without observable toxicity. Collectively, this study identified LRG20 as the first orally bioavailable GLI1-targeting PROTAC, offering a promising strategy for the treatment of GLI1-related diseases.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42981876/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 4.0,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 40,
+        "recommendation_label": "worth-reading",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, gli1, gli2, gli3; Development-to-homeostasis continuity: development, embryonic, homeostasis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, gli1, gli2, gli3",
+          "Development-to-homeostasis continuity: development, embryonic, homeostasis",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: development."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 24.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 44.0,
+          "total_penalty": -6.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 40
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "gli1",
+            "gli2",
+            "gli3"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "development",
+            "embryonic",
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42998416",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42998416",
+        "title": "Amuc_1100 suppresses T cell viability and CXCL12\u2011induced T cell migration through GLI2 upregulation.",
+        "authors": [
+          "Ren X",
+          "Liu Y",
+          "Du Y",
+          "Yang J",
+          "Yang X",
+          "Lin F",
+          "Yang K",
+          "Ye S"
+        ],
+        "journal": "Tissue & cell",
+        "pubdate": "2026 Nov 5",
+        "doi": "10.1016/j.tice.2026.104123",
+        "pmcid": null,
+        "abstract": "Maintaining intestinal homeostasis requires precise regulation of intestinal T cell trafficking. Dysregulated T cell activity is a key driver of chronic inflammation, as seen in inflammatory bowel disease. The gut commensal Akkermansia muciniphila and its membrane-associated protein Amuc_1100 exhibit anti\u2011inflammatory effects and are negatively correlated with disease severity. However, their direct mechanistic impact on T cell activity remains undefined. This study reveals that Amuc_1100 modulates human T cell function by activating TLR2, which upregulates the transcription factor GLI2. Mechanistically, GLI2 upregulation leads to downregulation of CD25 and CXCR4, ultimately suppressing T cell viability and CXCL12-induced T cell migration. To comprehensively characterize the impact of Amuc_1100 on T cell migration, we employed a D\u2074-Chip featuring four parallel units for high\u2011throughput, real\u2011time analysis. Its confined cell-isolation structure positions individual T cells under tissue\u2011like physical constraints, enabling observation of their migration within a stable CXCL12 gradient and providing a physiologically relevant model for quantifying single\u2011cell migratory behavior. D\u2074-Chip analysis demonstrated that Amuc_1100 broadly impairs T cell migration, as evidenced by significant reductions in the number of migrating cells, their average displacement towards gradient, average accumulated migration distance, and average migration velocity, coupled with an increased frequency of migration pauses compared to the control. GLI2 inhibition reversed these effects, confirming that Amuc_1100 modulates GLI2 to suppress T cell migration. Collectively, this work identifies GLI2 as a novel therapeutic target for modulating T cell homing in intestinal inflammation and establishes a microfluidic platform for discovering potential drugs targeting dysregulated T cell responses.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42998416/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 3.1,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 31,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: gli2; Development-to-homeostasis continuity: homeostasis.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: gli2",
+          "Development-to-homeostasis continuity: homeostasis",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "No major local rule-based concerns flagged."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 9.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": 0.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 29.0,
+          "total_penalty": 0.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 31
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "gli2"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "homeostasis"
+          ],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42993326",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42993326",
+        "title": "CircIKBKB promotes hepatocellular carcinoma stemness and EMT via TAF15-PTCH1-mediated Hedgehog activation.",
+        "authors": [
+          "Yi T",
+          "Hu K",
+          "Pan M",
+          "Xie X",
+          "Ning D",
+          "Lan J",
+          "Liang Y",
+          "He Y",
+          "Huang G",
+          "Huang H",
+          "Zhao Y",
+          "Lei P",
+          "Tan S",
+          "Wang R"
+        ],
+        "journal": "Functional & integrative genomics",
+        "pubdate": "2026 Nov 6",
+        "doi": "10.1007/s10142-026-02062-0",
+        "pmcid": null,
+        "abstract": "Hepatocellular carcinoma (HCC) represents one of the leading causes of cancer-related mortality worldwide. Accumulating studies in recent years have confirmed that circular RNAs (circRNAs) are involved in the regulation of tumor initiation and progression. Nevertheless, the precise functions and underlying molecular mechanisms of circRNAs in HCC remain to be thoroughly investigated. In this study, we identified a circular RNA derived from the IKBKB gene, designated circIKBKB (database accession number: hsa_circ_0084102), which exhibits significantly elevated expression in HCC cell lines. Functional experiments demonstrated that circIKBKB promotes HCC cell proliferation, sustains cancer stemness properties, and induces epithelial-mesenchymal transition (EMT). Mechanistically, circIKBKB directly interacts with the RNA-binding protein TATA-box binding protein associated factor 15 (TAF15) and suppresses its polyubiquitination-mediated proteasomal degradation, thereby maintaining intracellular TAF15 protein stability. The upregulated TAF15 further binds to Patched 1 (PTCH1) mRNA and enhances its transcript stability, which consequently drives aberrant activation of the Hedgehog signaling pathway. Both in vitro and in vivo validation assays confirmed that overexpression of PTCH1 partially reversed the phenotypic effects induced by circIKBKB knockdown. Collectively, our findings uncover the regulatory mechanism of circIKBKB in mediating aberrant activation of the Hedgehog pathway in HCC, and this work may provide a potential interventional strategy for HCC treatment.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42993326/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 2.8,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 28,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog, ptch1; Hedgehog co-receptors and modulators: patched; Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog, ptch1",
+          "Hedgehog co-receptors and modulators: patched",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor, carcinoma.",
+          "Possible pure in vitro or immortalized cell-line context signal, softened by bridge terms: in vivo."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 20.0,
+            "hedgehog_coreceptors_modulators": 12.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": -3.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 41.0,
+          "total_penalty": -15.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 28
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog",
+            "ptch1"
+          ],
+          "hedgehog_coreceptors_modulators": [
+            "patched"
+          ],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Hedgehog co-receptors and modulators",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42982360",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42982360",
+        "title": "TWIST family in cervical cancer biology: From molecular mechanisms to clinical implications.",
+        "authors": [
+          "Sayed U",
+          "Kubaev A",
+          "Polatova D",
+          "Ali MK",
+          "Mishra S",
+          "Singhal D",
+          "Bainsal N",
+          "Vahdati SN"
+        ],
+        "journal": "Experimental cell research",
+        "pubdate": "2026 Nov 4",
+        "doi": "10.1016/j.yexcr.2026.115215",
+        "pmcid": null,
+        "abstract": "Despite ongoing clinical efforts, cervical cancer remains one of the most common gynecologic tumors, largely due to its metastatic potential and resistance to chemotherapy. The transcriptional regulator TWIST has been implicated in these features, in part through the induction of epithelial-mesenchymal transition (EMT). The expression of TWIST is delicately regulated by several exogenous factors, including hypoxia-driven HIF-1\u03b1 signaling and TGF-\u03b2 pathways, as well as endogenous oncogenic cascades such as Wnt/\u03b2-catenin, NF-\u03baB, PI3K/Akt, Hedgehog, Notch, and IL-6/JAK2/STAT3. Moreover, the E6 and E7 proteins from high-risk human papillomavirus strains promote TWIST upregulation, facilitating cellular plasticity and evasion of senescence. Post-transcriptional and epigenetic regulation is orchestrated by complex networks of non-coding RNAs and key transcription factors such as Mist1, FOXC1, and LMX-1A. Importantly, hypermethylation of the TWIST1 promoter has been proposed as a candidate biomarker for cervical intraepithelial neoplasia. TWIST has been reported to promote tumor-associated phenotypes through E-cadherin downregulation, induction of matrix metalloproteinases, and maintenance of stem cell-like properties. TWIST has been associated with chemotherapy and radiotherapy resistance, potentially through mechanisms involving DNA-damage responses and MDR1/P-glycoprotein-mediated drug efflux. The tumor microenvironment affects its expression and activity, including hypoxia, cancer-associated fibroblasts, inflammatory cytokines, tumor-associated macrophages, and extracellular vesicles. In a clinical context, high levels of TWIST are linked to poor outcomes in cervical cancer. Growing evidence links it to immune evasion through regulation of PD-L1, immunosuppressive cytokine signaling, macrophage polarization, T-cell exclusion, and immune resistance associated with cancer stem cells, underscoring its importance for translation in the current era of immune checkpoint blockade.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42982360/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 2.7,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 27,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Development-to-homeostasis continuity: maintenance, stem cell; Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Development-to-homeostasis continuity: maintenance, stem cell",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 37.0,
+          "total_penalty": -12.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 27
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "maintenance",
+            "stem cell"
+          ],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "10.64898/2026.10.30.762990",
+        "source_db": "biorxiv",
+        "seen_key": "biorxiv:10.64898/2026.10.30.762990",
+        "title": "Megakaryocytic proteomic signatures define myeloproliferative neoplasms",
+        "authors": [
+          "Raman, I.",
+          "Bennett, C.",
+          "Pasricha, S.-R.",
+          "Ataide, R.",
+          "Pettikiriarachchi, A.",
+          "Yousef, J.",
+          "Gianni, L. F.",
+          "Yannakou, C. K.",
+          "Emery-Corbin, S. J.",
+          "Tsui, E.",
+          "Zhu, Y.",
+          "Rajasekhar, P.",
+          "Motyer, A.",
+          "Juneja, S.",
+          "Spall, S."
+        ],
+        "journal": "bioRxiv: cancer biology",
+        "pubdate": "2026-11-02",
+        "doi": "10.64898/2026.10.30.762990",
+        "pmcid": null,
+        "abstract": "The classical Philadelphia-negative myeloproliferative neoplasms (MPNs) are clonal stem cell disorders of the bone marrow with significant niche dysregulation driven in part by abnormal megakaryocytes. The three classical MPNs: polycythemia vera (PV), essential thrombocythemia (ET) and primary myelofibrosis (PMF), display established megakaryocytic morphological differences which aid in their diagnostic classification. The paucity of megakaryocytes in the bone marrow aspirate has previously limited a proteomic analysis of megakaryocytes in clinical samples. We aimed to undertake an unbiased proteomic analysis of in situ megakaryocytes from the bone marrow of patients with PV, ET, and PMF. Using a novel, deep visual proteomics strategy, we dissected and analyzed megakaryocytes from 60 MPN patients and 20 controls (patients with limited stage non-Hodgkin lymphoma who had uninvolved bone marrow). We reveal that megakaryocyte proteomics from MPN patients are distinct to those from control patients, and further, that the megakaryocytes from the three MPNs have unique, disease-specific signatures. The disease-specific megakaryocyte proteome highlights novel pathways of disease.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://www.biorxiv.org/content/10.64898/2026.10.30.762990v1",
+        "link_label": "bioRxiv",
+        "pmc_url": "https://www.biorxiv.org/content/10.64898/2026.10.30.762990v1.full.pdf"
+      },
+      "analysis": {
+        "topic_relevance_score": 2.5,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 25,
+        "recommendation_label": "bridge/peripheral",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Development-to-homeostasis continuity: stem cell, niche; Crosstalk, niche dependency, and trophic support: niche; Preferred mechanistic methods: in situ.",
+        "why_it_matters": [
+          "Development-to-homeostasis continuity: stem cell, niche",
+          "Crosstalk, niche dependency, and trophic support: niche",
+          "Preferred mechanistic methods: in situ",
+          "Source modifier: Emerging biology preprint."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 0.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 18.0,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 7.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 3.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 34.0,
+          "total_penalty": -12.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 25
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "stem cell",
+            "niche"
+          ],
+          "crosstalk_niche_dependency": [
+            "niche"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [
+            "in situ"
+          ],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support",
+          "Preferred mechanistic methods"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42992022",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42992022",
+        "title": "MiR-145 reprogramming facilitates fibrotic trajectory in the tumor microenvironment.",
+        "authors": [
+          "Lin Z",
+          "Bennett M",
+          "Tassone P",
+          "Curry JM",
+          "Martinez-Outschoorn U"
+        ],
+        "journal": "Frontiers in cell and developmental biology",
+        "pubdate": "2026",
+        "doi": "10.3389/fcell.2026.1850756",
+        "pmcid": "PMC13737585",
+        "abstract": "The fibrotic subtype of the tumor microenvironment characterized by epithelial-mesenchymal transition, fibrosis, angiogenesis and immune exclusion, predicts poor outcomes across diverse malignancies, yet the role of miR-145 in this context remains unexplored. Leveraging The Cancer Genome Atlas head and neck squamous cell carcinoma (HNSCC) and breast cancer (BRCA) databases, we demonstrate that miR-145 reprogramming recapitulates a noninflamed fibrotic phenotype with immune exclusion. In high miR-145 tumors, EMT programs persist alongside abundant cancer-associated fibroblasts, matrix remodeling and angiogenesis, with upregulation of NOTCH, TGF-\u03b2, myogenesis, hypoxia, Hedgehog, and Wnt/\u03b2-catenin signaling and downregulation of interferon-\u03b3 and JAK-STAT pathways. Our findings illustrate that cancer-stromal juxtacrine interactions activate NOTCH signaling, forming a positive feedback loop that amplifies miR-145 expression and is reinforced by miR-145 promoter hypomethylation. High miR-145 promotes autophagy and mitochondrial oxidative phosphorylation (OXPHOS) metabolism in cancer cells, with GAPDH serving as a central hub linking metabolism, noninflamed immune modulation, and poor clinical outcomes. In vivo, high miR-145 carcinoma cells co-engrafted with fibroblasts drive tumor growth through enhanced metabolism, angiogenesis and immune evasion. This study establishes miR-145 as a driver and biomarker of the fibrotic tumor microenvironment to better inform future cancer therapy strategies.",
+        "full_text": "Highlights\nmiR-145 promotes epithelial-mesenchymal transition (EMT), NOTCH, angiogenesis, fibrosis, and TGF-\u03b2 signaling in the tumor microenvironment (TME).miR-145 facilitates cancer immune evasion with deficient antigen processing and presentation (APP) and tumor immune exclusion.High miR-145 is a marker of fibrotic cancer subtype and predicts poor outcomes.\n\nIntroduction\nThe tumor microenvironment is a key determinant of clinical outcome and therapeutic response, making TME-based classifications a promising source of novel drivers and biomarkers. TME comprises fibroblasts, endothelial cells, pericytes, mesenchymal stem cells, immune cells, and extracellular matrix components surrounding carcinoma cells. Based on immune and stromal characteristics, tumors can be classified into four TME subtypes: immune-enriched, non-fibrotic (IE); immune-enriched, fibrotic (IE/F); fibrotic (F); and immune-depleted (D) (Bagaev et al., 2021). The immune-favorable IE and IE/F subtypes show the greatest benefit from immunotherapy, whereas the F and D subtypes suppress anti-tumor immune infiltration and are associated with worse outcomes (Bagaev et al., 2021). To date, the connection between miR-145 and TME subtypes has not been addressed.\n\nImmune evasion in cancer is linked to adverse outcomes. Aggressive tumors evade immune surveillance by recruiting immunosuppressive cells, including regulatory T cells (Tregs), myeloid derived suppressor cells (MDSCs), and tumor-associated macrophages (TAMs), while limiting infiltration and activity of effector immune cells. MDSCs play a central role in immune escape by suppressing cytotoxic T lymphocytes (CTLs), Natural Killer (NK) cells, and dendritic cells (DCs) through factors such as TGF-\u03b2, CCL2/5, CXCL2, IL-6/10, and VEGF. EMT and its transcription factors can induce cancer immune evasion (Imodoye and Adedokun, 2023). Developmental pathways such as TGF-\u03b2, NOTCH and Wnt signaling are involved in EMT programs in cancer (Sabit et al., 2025; Pelullo et al., 2019). EMT promotes immune evasion by disrupting immune synapse formation through E-cadherin loss, impairing antigen presentation, inducing autophagy-mediated resistance to CTL killing, and upregulating immune checkpoints (PD-L1, PD-L2, CTLA-4). EMT also enhances cancer stem cell traits, reduces CD8+ T-cell infiltration, and promotes recruitment of immunosuppressive cells (M Mullins et al., 2022; Hou et al., 2019). Recent spatial and single-cell transcriptomic studies in HNSCC identified a CAF subset expressing high levels of CXCL chemokines (CXCL9/10/12), MHC-I molecules, and Galectin-9 that suppresses anti-tumor immunity by promoting CD8+ T-cell dysfunction and exclusion (Li et al., 2024). In oral squamous cell carcinoma, FAP+ fibroblasts further drive immune evasion through WNT2-mediated \u03b2-catenin activation in macrophages, inducing a tumor-promoting C1QC+ phenotype that promotes T-cell exhaustion and resistance to anti-PD-1 therapy (Chen et al., 2026). Although miR-145 regulates multiple oncogenic pathways (Li et al., 2025; Xu et al., 2019; Cho et al., 2023; Johannessen et al., 2017; Gonz\u00e1lez-Cant\u00f3 et al., 2024; Zeng et al., 2021), its specific role in mediating immune evasion remains undefined.\n\nMicroRNAs (miRNAs) are small non-coding RNAs that regulate gene expression post-transcriptionally and play crucial role in tumorigenesis and cancer progression (Peng and Croce, 2016; Markopoulos et al., 2017; Wu et al., 2025). While most studies have focused on miR-145 in carcinoma cells, its effects on cancer aggressiveness remain controversial (Xu et al., 2019; Cho et al., 2023; Johannessen et al., 2017; Gonz\u00e1lez-Cant\u00f3 et al., 2024; Zeng et al., 2021). Emerging evidence highlights important functions of miR-145 in non-cancer cells within the tumor microenvironment. Chivukula et al. reported that miR-143/145 expression is largely restricted to intestinal mesenchymal cells, including smooth muscle and pericryptal myofibroblasts (Chivukula et al., 2014). Similarly, Dimitrova et al. found that miR-145 is enriched in endothelial cells in lung cancer, where it promotes neoangiogenesis through Camk1d (Dimitrova et al., 2016). Given that miRNA expression is highly cell type\u2013specific, its role in heterogeneous tumors should be interpreted in the context of both cancer and non-cancer cellular components of the TME.\n\nWe have focused on miR-145 in the TME of HNSCC and BRCA due to its dysregulation and shared TME features, including EMT, NOTCH signaling, angiogenesis, fibrosis, and immune exclusion. This study reveals that miR-145 expression is highest in the fibrotic TME subtype, highlighting the importance of understanding its regulatory mechanisms within the TME to inform cancer therapy strategies.\n\nCell culture and treatment\nHuman breast carcinoma cell lines (MCF7, MDA231) and head and neck squamous carcinoma cell lines (FaDu, Detroit562) were obtained from ATCC. hTERT-immortalized human skin fibroblasts (hTERT-BJ1) were purchased from Clontech and engineered to express green fluorescent protein (GFP) or red fluorescent protein (RFP). Primary mouse embryonic fibroblasts (MEFs) were isolated from mouse embryo stroma. Cells were cultured in DMEM or EMEM supplemented with 10% fetal bovine serum, 100 U/mL penicillin, and 100 U/mL streptomycin. The mouse carcinoma cell line MOC1 was kindly provided by Dr. Ravi Uppaluri. For demethylation studies, cells were treated with 3 \u03bcM of 5-Aza-2\u2032-deoxycytidine (5-Aza; A3656, Sigma) for 96 h.\n\nCo-culture and cell sorting\nFibroblasts and cancer cells were co-cultured at a 4:1 ratio, with a total of 1 \u00d7 105 cells seeded per well in 12-well plates. As controls, fibroblasts or carcinoma cells were cultured alone at the same total cell number. For cell separation, GFP- or RFP-expressing fibroblasts and cancer cells were cultured either in co-culture or homotypic culture in 10-cm dishes for 4 days, followed by fluorescence-activated cell sorting (FACS) performed by the Flow Cytometry Core Facility at the Sidney Kimmel Comprehensive Cancer Center at Thomas Jefferson University. Sorted cells were collected and used for subsequent analyses.\n\nGeneration of stable cell lines\nLentiviral plasmids encoding precursor miR-145, scrambled control, NOTCH1\u0394NT, and empty vector control were purchased from GeneCopoeia. Lentiviral production, transfection, and transduction were performed according to the manufacturer\u2019s instructions to establish stable cell lines.\n\nFlow cytometry analysis\nCancer cells were co-cultured with BJ1 fibroblasts or maintained in homotypic culture. After 4 days, cells were processed at room temperature using immunofluorescence (IF) buffer (PBS, 1% BSA, 0.1% Tween-20). Cells were fixed with 4% paraformaldehyde for 15 min, blocked with IF buffer containing 5% normal goat serum for 30 min, and incubated with anti-NOTCH1 primary antibody for 1 h followed by fluorochrome-conjugated secondary antibody for 30 min. After washing with IF buffer, cells were resuspended in PBS and analyzed by flow cytometry.\n\nMitoTracker Orange (M7510), LysoTracker Blue (L7525), and LysoSensor Blue (L7533) (Invitrogen) staining was performed according to the manufacturer\u2019s instructions and quantified by flow cytometry.\n\nDNA methylation analysis\nCpG islands were predicted using the CpGPlot in the EMBOSS from EMBL-EBI. DNA was isolated from cell lines using FitAmp General Tissue DNA Isolation Kit (P-1003-1, Epigentek). DNA Methylation at premiR-145 promoter region containing CpG rich islands were screened using OneStep qMethyl\u2122kit (D5310, ZYMO Research). Primer sequences were as follows:premiR-145Me-F1CAGGCTAGGAACTGAATGGTTpremiR-145Me-R1CTGGAGTTCTCTTCTGCATCCpremiR-145Me-F2GCACCAGTTCTCATGTGGATpremiR-145Me-R2AGTTCTGCAGGTCTGTTTAGTG\n\nMiR array\nCell culture media was collected, and total RNA was isolated using exoEasy Maxi and RNeasy Plus kits (Qiagen). MiRNA array was performed at MetaOmics Core Facility at the Sidney Kimmel Comprehensive Cancer Center at Thomas Jefferson University.\n\nQuantitative RT-PCR\nCells were harvested and total RNA was isolated using trizol (invitrogen). TaqMan miRNA assays (Applied Biosystems) were used to quantify the expression of miRNAs according to the manufacturer\u2019s instructions. The mean cycle threshold (CT) value was determined from three PCR replicates. Data was reported using the 2-\u0394\u0394Ct method. Experiments were normalized to RNU48.\n\nProteomic assay\nAll MS runs were performed at Applied Biomics (www.appliedbiomics.com) for Mass and Proteomics Spectrometry. Protocol details have been previously published extensively (Lin et al., 2024).\n\nAntibody\nNOTCH1(ab52627, abcam), cyclin-D1(NBP1-35732, Novus Biologicals), SQSTM1(18420-1-AP, proteintech), COMMD1 (NBP2-4633, Novusbio), P53 (SC-126, Santa Cruz Biotechnology), DNMT1(5032, Cell Signaling),CD8A (98941, Cell Signaling), Jagged1 (70109, Cell Signaling), VEGFR2 (9698, Cell Signaling), B-actin (A5441, Sigma), and tubulin (T4026, Sigma) antibodies were used.\n\nOCR assessment\nA Seahorse Bioscience XF24 Extracellular Flux Analyzer in a 24-well format was used. MOC1 cells were seeded in the 24-well plate with 100 \u03bcL of growth media. After 2 h, additional 200 \u03bcL of growth medium was added to each well. On the second day, cells were incubated in non-buffered seahorse media containing 5 mM glucose and 10 mm lactate in a CO2 free incubator for 2 h. Cells were subjected to the mito stress test according to the manufacturer\u2019s manual.\n\nGlucose assay\nIntracellular Glucose was measured using the Glucose (GO) Assay Kit (Sigma, GAGO20-1KT) according to the manufacturer\u2019s manual.\n\nATP assay\nIntracellular ATP level was measured using the ATP Determination Kit (ThermoFisher A22066) according to the manufacturer\u2019s manual.\n\nIHC assay\nMouse tumor paraffin sections were de-paraffinized and rehydrated. Antigen retrieval was performed in 10 mM citrate buffer pH 6.0 for 10 min in a pressure cooker. Each section was first blocked with 3% H2O2 for endogenous peroxidase for 15 min, second with an avidin-biotin blocking kit for endogenous biotin, third with preferred blocking solution for 1 h at room temperature. Then incubated with primary antibody overnight at 4 \u00b0C and with secondary antibody for 1 h, followed by an avidin-biotinylated horseradish peroxidase complex. Immune-complexes were visualized using the Opti-View DAB IHC Detection Kit and Opti-View Amplification Kit. Lastly, all sections were counterstained with hematoxylin and sealed with mounting medium.\n\nAnimal studies\nAll animal experiments were performed in compliance with Thomas Jefferson University Institutional Animal Care and Use Committee (IACUC) policies.\n\nTo evaluate the in vivo tumor-promoting effects of miR-145, Detroit562 expressing either precursor miR-145 or scramble control, and hTERT-BJ1cells were coinjected into the dorsal subcutaneous flank of nude mice (NCRNU; Taconic Farms; at 6 weeks of age). Cancer cells (1 million cells) and hTERT-BJ1 (0.3 million) fibroblasts were resuspended in 100ul of sterile PBS just before injection. Tumors were measured at the chasing time. After 28 days post-injection, tumors were excised to determine their size. Volumes were calculated using the ellipsoid formula (X2Y)/2 where X is the width or short axis and Y is the length or long axis. P values less than 0.05 were considered significant based on the Mann-Whitney U test.\n\nIn addition, MOC1 expressing either precursor miR-145 or scramble control, and MEF cells were coinjected into the dorsal subcutaneous flank of female mice (C57BL/6; Jackson lab; at 6 weeks of age). Cancer cells (1 million) and MEF fibroblasts (1 million) were resuspended in 100 ul of sterile PBS just before injection. Tumors were measured at the chasing time. The growth of tumor xenografts was assessed at 21 days.\n\nStatistical analysis\nData was expressed as means \u00b1 standard error of the mean. One-way or two-way analysis of variance (ANOVA) was applied to grouped analyses using Prism 10 software (GraphPad Software Inc., La Jolla, CA). The unpaired Mann-Whitney U test was used for statistical comparison in vivo. The p-values less than 0.05 were set to define statistical significance. R (http://www.R-project.org) was adopted to analyze miRNAseq and RNAseq data in The Cancer Genome Atlas (TCGA) breast cancer (BRCA) and head and neck squamous cell carcinoma (HNSCC) databases. Statistical significance was defined as p-values of less than 0.05.\n\nHigh miR-145 expression correlates with the fibrotic subtypes in human HNSCC and BRCA\nTo investigate the role of miR-145, miRNA-seq and RNA-seq data from TCGA HNSCC database was retrieved and classified into four distinct TME subtypes: IE, IE/F, F, and D. Overall survival analysis showed that the F subtype had the poorest prognosis (Figure 1A). Consistently, miR-145 expression was highest in F tumors (Figure 1B). Gene Set Variation Analysis (GSVA) of Hallmark pathways revealed positive correlations between miR-145 and EMT, angiogenesis, NOTCH, hypoxia, TGF-\u03b2, Hedgehog, myogenesis, and Wnt/\u03b2-catenin signaling, and negative correlations with OXPHOS and IFN-\u03b3 pathways (Supplementary Figures 1A\u2013C). MiR-145 expression was consistent with the contingent Hallmark pathways in the F subtype (Figures 1C,D; Supplementary Figure 1D). Also, miR-145 expression was correlated with a panel of genes from diverse signaling pathways such as angiogenesis, EMT and immunosuppression. In addition, miR-145 expression positively correlated with markers of CAFs (ACTA2, COL1A1), angiogenesis (PECAM1, ANGPT1), EMT transcription factors (SNAI1, TWIST1, ZEB1), and TGF-\u03b2 signaling (TGFB2, TGFB3), while negatively correlating with the immune marker CD8A (Supplementary Figures 2A\u2013C). Together, these findings suggest that miR-145 may serve as a biomarker of the fibrotic subtype.\n\nTCGA HNSCC and BRCA miRNA-seq/RNA-seq datasets were stratified into the top and bottom 25% of miR-145 expression. Gene Set Enrichment Analysis (GSEA) identified 12 Hallmark, 37 Reactome, and 322 Gene Ontology (GO) pathways significantly enriched in miR-145-high tumors across both cancer types (Figure 1E; Supplementary Figures 3A,B). Hallmark pathways included EMT, angiogenesis, NOTCH, hypoxia, TGF\u03b2, HEDGEHOG, Wnt/\u03b2-catenin, and myogenesis signaling, consistent with TME reprogramming (Figure 1E). Reactome analysis highlighted extracellular matrix (ECM) remodeling pathways, including ECM organization, proteoglycan and collagen formation, integrin and laminin interactions, matrix metalloproteinase activation, and ECM degradation (Supplementary Figure 3A). Gene Ontology analysis further revealed enrichment of angiogenic and lymphangiogenic programs, including sprouting angiogenesis, vasculogenesis, endothelial cell migration and proliferation, VEGF and PDGFR signaling, TGF\u03b2 responses, growth factor activity, integrin and proteoglycan binding, Wnt signaling, lymphatic vessel development, and SMAD-mediated signaling (Supplementary Figure 3B). Together, these findings indicate that high miR-145 expression is associated with extensive ECM remodeling and enhanced angiogenic/lymphangiogenic TME programs.\n\nDeconvolution of TME cell types using xCell analyses revealed that high miR-145 expression was associated with increased endothelial cells and decreased immune cell infiltration in both HNSCC and BRCA (Figure 1F). Innate immune populations, including mast cells and plasmacytoid dendritic cells (pDCs), were reduced, with more pronounced depletion of adaptive immune cells, particularly B and T lymphocytes. Mast cells in the TME can exert either tumor-promoting or tumor-suppressive effects. Their anti-tumor activity includes releasing cytotoxic cytokines such as TNF\u03b1 and recruiting dendritic cells and effector T Cells through chemokines. Similarly, pDCs are rare TME residents that undergo functional reprogramming. Although healthy pDCs promote antitumor immunity through robust production of type I interferons (IFN-\u03b1/\u03b2), they can also acquire protumorigenic functions within the TME. Consistent with this immunosuppressive phenotype, OncoLnc analysis showed significantly worse overall survival in HNSCC and BRCA patients with low expression of the cytotoxic T-cell marker CD8A (Supplementary Figure 3C).\n\nTo further unravel the fibrotic landscape of miR-145, using single-sample GSEA (ssGSEA) of the TCGA HNSCC RNA-seq dataset, we found that tumors with high miR-145 expression displayed a highly fibrotic, immune-excluded phenotype. These tumors were enriched for angiogenesis, CAFs and extracellular matrix remodeling (Figure 2A), consistent with elevated TGF-\u03b2 signaling. Malignant cells exhibited enhanced EMT and immune-evasive features, including increased MDSC recruitment, reduced antigen processing and presentation (APP), and diminished infiltration of effector immune cells, as reflected by lower M1 macrophage, Th1, NK cell, and CD8+ T-cell signatures (Figures 2B\u2013G). This immune-suppressive phenotype was further supported by downregulation of the JAK\u2013STAT signaling pathway (Figure 2H).\n\nEcotyper deconvolution allowed us to define carcinoma cell states and ecotypes (Luca et al., 2021). MiR-145\u2013high tumors were enriched for Carcinoma Ecotype 1 (CE1) and depleted for CE9 and CE10 ecotypes (Figures 2I, J). Importantly, CE1 is associated with poor prognosis, low lymphocyte infiltration, and abundant periostin positive (POSTN+) fibroblasts, whereas CE9 and CE10 are linked to improved survival and enhanced immune activity (Luca et al., 2021). Consistent with CE1, miR-145\u2013high tumors were enriched for POSTN + fibroblasts (state 3-S03), partial EMT-like epithelial cells (state 3-S03), and ANGPTL2+/NID2+ tip-like endothelial cells (state 2-S02), all associated with tumor progression and neovascularization (Supplementary Figures 4A\u2013C). In contrast, cytotoxic GZMB + CD8 T cells (state 3-S03), GZMK + CD8 T cells (state 1-S01), CE9/CE10-associated T cells, and PRF1+ NK cells (state 1-S01) were reduced (Supplementary Figures 4D,E). Macrophage polarization also shifted toward an unfavorable phenotype, with decreased M1 macrophages (state 3-S03) and increased M2 macrophages (states 5 and 6-S05 and S06) (Supplementary Figures 4F). Together, these findings indicate that high miR-145 expression is associated with a non inflamed fibrotic tumor microenvironment.\n\nMiR-145 in cancer cells can be upregulated by fibroblasts\nTo investigate the mechanism of miR-145 expression, we established a coculture system of fibroblasts and carcinoma cells at a 4:1 ratio. After 4 days of homotypic culture or coculture, exosomes were isolated from conditioned media and analyzed by miRNA array. miR-145 was highly enriched in fibroblast-derived exosomes compared with those from MCF7 breast carcinoma cells under homotypic culture (Figure 3A). Consistently, intracellular miR-145 expression was markedly higher in fibroblasts (hTERT-BJ1) than in breast carcinoma cells (MCF7, MDA231) or head and neck squamous carcinoma cells (FaDu, Detroit562) (Figure 3B).\n\nTo assess the effect of fibroblasts on miR-145 expression in carcinoma cells, two coculture systems were used: a transwell setup with physical separation and a direct-contact coculture followed by GFP/RFP-based cell sorting. Only direct cell-cell juxtacrine interaction markedly induced miR-145 expression in carcinoma cells (Figure 3C).\n\nGlobal protein interaction network analysis and functional prediction\nTo Identify putative targets of miR-145 regulation in cancer cells, we performed a proteomic assay with Detroit562 cells ectopically expressing precursor miR-145 or scramble control. Twenty-one proteins showing >1.5-fold differential expression were identified as candidate miR-145-regulated targets (Figure 4A). Among them, phosphoserine phosphatase (PSPH) was the most upregulated protein in miR-145-overexpressing cells. PSPH is a key enzyme in the serine biosynthesis pathway and is metabolically linked to glycolysis. Notably, elevated PSPH expressions have been associated with poor prognosis in HNSCC. To investigate the biological significance of these proteins, all differentially expressed candidates were analyzed using STRING to construct a protein\u2013protein interaction (PPI) network and identify associated cellular functions (Figure 4B). The analysis revealed that glyceraldehyde-3-phosphate dehydrogenase (GAPDH) occupied the most connected node within the network. Subsequent focused analysis of GAPDH and its interacting partners highlighted cell death, proliferation, ATP production, and oxidative stress as the principal associated biological processes. Functional enrichment further identified glycolysis/glycogen metabolism, mitochondrial electron transport, and immune-related pathways, with oxidation- and methylation-related annotations also significantly represented. Importantly, elevated GAPDH expression was associated with reduced overall survival in the TCGA HNSCC cohort (p = 0.01; Figure 4C). High GAPDH expression is also linked to a non-inflamed tumor microenvironment including fibrotic and immune-depleted subtypes (Figure 4D).\n\nConversely, miR-145 may promote autophagy, as two autophagy-related proteins were downregulated upon miR-145 overexpression: the F-actin-capping protein CAPZB and SQSTM1 (Figure 4A). CAPZB mediates actin-dependent autophagosome formation, and SQSTM1 recruits ubiquitinated cargo as a classic selective autophagy receptor and a negative reporter of autophagy activity. Since lysosomes are essential for autophagic degradation and cellular adaptation to nutrient or oxygen deprivation, we evaluated lysosomal activity using LysoTracker and LysoSensor (pH sensor) assays. Multiple cancer cell lines overexpressing miR-145 showed increased LysoTracker and LysoSensor signals compared with controls, consistent with enhanced autophagy (Figure 4E; Supplementary Figures 5A,B).\n\nMiR-145 stimulated mitochondrial activity\nMitochondrial dysfunction is a hallmark of cancer and is linked to metastasis and drug resistance. Using the mitochondria-selective probe Mitotracker Orange, we found that miR-145 increased mitochondrial mass and membrane hyperpolarization in MCF7, MDA231, FaDu, and Detroit562 cells (Figure 5A). Consistently, ATP production and glucose uptake were also elevated following miR-145 overexpression (Figures 5B,C), indicating enhanced mitochondrial activity.\n\nmiR-145 promotes tumor growth with aggressive characteristics\nTo investigate the role of miR-145 in tumor metabolism, Seahorse XF Cell Mito Stress Tests were performed in MOC1 and Detroit562 cells. The assay reflects key parameters of mitochondrial function by simultaneously measuring the oxygen consumption rate (OCR) and extracellular acidification rate (ECAR) over time in the presence of mitochondrial metabolic modulators. OCR and ECAR rates are key indicators of mitochondrial respiration and glycolysis respectively. miR-145 overexpression increased both OCR and ECAR, indicating enhanced mitochondrial OXPHOS and glycolysis (Figures 6A,B; Supplementary Figures 5C).\n\nIn vivo, miR-145-overexpressing MOC1 cells coinjected with MEF fibroblasts formed larger tumors than controls (Figure 6C). Vessel analysis using ImageJ from tumor tissue H&E staining revealed that miR-145 promoted tumor angiogenesis and lymphangiogenesis (Figure 6D; Supplementary Figure 6A). miR-145 also increased expression of VEGFR2 and Jagged1 (Figure 6E; Supplementary Figure 6B) and reduced CD8A+ cytotoxic T-cell infiltration (Figure 6F). We also observed significantly increased fibrosis in miR-145-overexpressing MOC1 tumors compared with controls (Figure 6G). Likewise, Detroit562 cells overexpressing miR-145 co-injected with BJ1 fibroblasts promoted tumor growth (Figure 6H; Supplementary Figure 6C) with suppressed SQSTM1 and induced TOMM20 expression (Figure 6I; Supplementary Figure 6D), consistent with elevated mitochondrial activity. Low SQSTM1 is associated with high autophagy but future studies are required to determine conclusively the role of miR-145 on autophagy in vivo. Collectively, these findings suggest that miR-145 promotes tumorigenesis through enhanced metabolism, angiogenesis, and immune evasion.\n\nMiR-145 is regulated by NOTCH signaling and DNA hypomethylation\nThe requirement for carcinoma\u2013fibroblast juxtacrine interaction to induce miR-145 suggested involvement of membrane-bound NOTCH signaling. As expected, coculture markedly increased NOTCH1 expression in carcinoma cells, as shown by IF and flow cytometry (Figures 7A,B; Supplementary Figures 7A,B). Western blot showed that miR145 overexpression induced the functional, cleaved intracellular domain of the Notch1 receptor (NICD) (Figure 7C). In the TCGA-HNSC dataset, the fibrotic subtype exhibited the highest expression of both miR-145 and the NOTCH signaling pathway. Consistently, this subtype also showed the highest expression of the cell-surface Notch ligand JAG1 (Figure 7D), which initiates NOTCH signaling in neighboring cells. Moreover, NOTCH1\u0394NT overexpression significantly elevated miR-145 levels across multiple cell lines compared with controls (Figure 7E; Supplementary Figure 7C). Together, these findings demonstrate a positive feedback loop between NOTCH signaling and miR-145.\n\nEpigenetic changes, particularly DNA methylation, occur early in tumor development and can regulate gene expression. To determine whether DNA methylation controls miR-145 expression, bioinformatics and methylation-specific PCR analyses were performed. miR-145 promoter methylation was markedly reduced in cocultured cancer cells compared with homotypic cultures (Figures 7F,G), while BJ1 cells exhibited lower methylation levels than carcinoma cells (Supplementary Figure 7D). Furthermore, treatment with the DNA methylation inhibitor azacitidine (5-Aza) significantly increased miR-145 expression in cancer cells (Figure 7H). Western blot showed increased TP53 and reduced DNMT1 and COMMD1 expression in hTert-Bj1 and MCF7 cells (Supplementary Figure 7E). p53 can promote miR-145 post-transcriptional maturation. The DNMT1 gene encodes DNA methyltransferase 1, the primary enzyme responsible for maintaining DNA methylation patterns during cell division. COMMD1 is a negative regulator of NF\u03baB-HIF signaling. These findings indicate that miR-145 upregulation in tumors is driven by both NOTCH signaling and promoter DNA hypomethylation.\n\nDiscussion\nThis study integrates experimental and computational approaches to identify miR-145 as a key driver of carcinoma aggressiveness and the fibrotic tumor microenvironment subtype. A model is proposed in Figure 8. MiR-145 facilitates the fibrotic phenotype by activating heterotypic signaling pathways, including EMT, Angiogenesis, NOTCH, TGFB, HYPOXIA, Wnt/\u03b2-Catenin, Hedgehog and Myogenesis, while suppressing IFN-\u03b3 and JAK-STAT signaling. Elevated miR-145 is associated with CAF activation, extracellular matrix remodeling, and an immune-evasive TME. The data suggest that cancer\u2013stromal juxtacrine interactions enhance NOTCH signaling in a positive feedback loop with miR-145, further reinforced by miR-145 promoter hypomethylation. Functionally, miR-145 overexpression induces autophagy and mitochondrial metabolism in vitro, and drives aggressive tumor growth in vivo, characterized by increased fibrosis, angiogenesis and reduced cytotoxic T-cell infiltration.\n\nMiR-145 is highly expressed in the tumor stromal compartment (Chivukula et al., 2014; Dimitrova et al., 2016), although most prior studies have focused on cancer cells. In human vascular smooth muscle cells, JAG1/NOTCH signaling induces miR-143/145 expression (Boucher et al., 2011), while p53 promotes miR-145 post-transcriptional maturation (Suzuki et al., 2009). Within the tumor microenvironment, paracrine and juxtacrine signaling coordinate communication between tumor and stromal cells. Paracrine factors such as cytokines, growth factors, chemokines, and TGF-\u03b2 released by cancer cells and cancer-associated fibroblasts promote tumor growth, stemness, therapy resistance, immune evasion, and TME remodeling (Masih et al., 2022). Juxtacrine signaling requires direct cell-cell contact, with NOTCH signaling serving as a major communication pathway among cancer cells, CAFs, endothelial cells, immune cells, and tumor-associated macrophages (Lu et al., 2014; Parikainen et al., 2026). Other contact-dependent interactions, such as PD-L1/PD-1 signaling, also facilitate immune evasion (Yang et al., 2018). Cytonemes are specialized, actin-based membrane protrusions that mediate targeted, long-range cell-to-cell signaling. In cancer, tumor cells hijack cytonemes to establish direct communication with stromal cells by delivering growth factors, morphogen and receptor complexes that promote proliferation, invasion, and therapy resistance. Cytoneme biogenesis is initiated by morphogen\u2013receptor signaling, including Hedgehog\u2013Ihog and Wnt\u2013Frizzled. Related membrane protrusions, such as tunneling nanotubes, further support tumor\u2013stromal communication by transferring microRNAs, oncogenic proteins mutant KRAS, and even organelles, including mitochondria (Yamada et al., 2026; Ma et al., 2025). In addition, extracellular vesicle-mediated miRNA communication has emerged as a mechanism by which tumor and stromal cells remodel the TME, promoting cancer progression through enhanced angiogenesis, EMT, matrix remodeling, tumor stiffness and Immune evasion (Cocks et al., 2021; Sheta et al., 2023; Feng et al., 2026). Future studies will need to determine how crosstalk mediated by miR-145 occurs. Our data show that miR-145 induction in vitro depends on direct fibroblast-cancer cell contact and activation of membrane-bound NOTCH signaling. Notably, miR-145 also enhances NOTCH signaling, suggesting a reciprocal positive-feedback loop whose molecular basis remains to be elucidated.\n\nTumor angiogenesis is a hallmark of cancer progression, and the miR-143/145 cluster has emerged as an important regulator of neovascularization. Our data show that miR-145 promotes recruitment of CAFs, pericytes, and endothelial cells, remodels the extracellular matrix, enhances sprouting angiogenesis, and enriches EMT, NOTCH, hypoxia, and autophagy pathways within the tumor microenvironment. Tumor-associated angiogenesis arises from sprouting of existing vessels or differentiation of bone marrow- or tumor-derived stem cells, regulated by complex interactions among cells, ECM components, and physical factors such as pH, temperature, interstitial fluid pressure, and hypoxia (Korneev et al., 2017). CAFs further support angiogenesis through ECM remodeling and secretion of pro-angiogenic factors. Resistance to anti-angiogenic therapy commonly involves activation of NOTCH and hypoxia signaling, recruitment of bone marrow\u2013derived cells, increased pericyte coverage, and enhanced invasion and metastasis to access normal vasculature (Bergers and Hanahan, 2008). Autophagy promotes tumor cell survival under stress (Sukhai et al., 2013; Zhitomi et al., 2016; Ibrahim et al., 2016) and can facilitate escape from anti-angiogenic treatment. Our data suggests that miR-145 induces autophagy, but future studies are required to determine conclusively its role on autophagy and whether tumors with high miR-145 expression may benefit from combined targeting of angiogenesis and autophagy.\n\nMitochondria play a central and multifunctional role in malignant tumor progression (Zong et al., 2016; Moreno-Sanchez et al., 2014). Mitochondrial oxidative phosphorylation supplies a substantial fraction of tumor ATP production (Dielschneider et al., 2017), and growing evidence links enhanced mitochondrial metabolism to metastatic potential. GAPDH as a classical cytosolic glycolytic enzyme can translocate to mitochondria under oxidative stress and apoptosis. Mitochondrial GAPDH regulates mitophagy, supports heme trafficking, and coordinates metabolic crosstalk with mitochondrial respiratory complexes (Nakajima et al., 2017; Tristan et al., 2011). Beyond its housekeeping role, GAPDH is a metabolic and oncogenic biomarker associated with aggressive disease and poor overall and relapse-free survival across multiple cancers, including lung, HNSCC, diffuse large B Cell lymphoma and gastrointestinal cancers (R\u00e9villion et al., 2000; Wiel et al., 2019; Peng et al., 2023; Liu et al., 2017; Chiche et al., 2019). Elevated GAPDH expression is also linked to a non-inflamed tumor microenvironment including fibrotic and immune-depleted subtypes characterized by reduced CD8+ T Cell infiltration, hypoxia-driven metabolic reprogramming, extracellular matrix remodeling, and immune exclusion, all of which promote tumor progression and therapy resistance (Peng et al., 2023; Liu et al., 2017; Chiche et al., 2019; Cohen et al., 2022). Collectively, our findings suggest that miR-145 promotes angiogenesis and mitochondrial activity, thereby enhancing tumor aggressiveness.\n\nEMT promotes cancer immune evasion through multiple mechanisms. Mesenchymal-like cancer cells undergoing EMT drive the accumulation of Tregs and MDSCs, suppressing T Cell function. EMT transcription factors (Snail, Twist, and Zeb1) promote M2-like macrophage polarization and inhibit cytotoxic T lymphocytes through IL-4, IL-10, TGF-\u03b2, PD-L1, arginase I, and IDO-1. EMT also impairs antigen processing and presentation, further weakening anti-tumor immunity. While targeting EMT, its upstream regulators (e.g., TGF-\u03b2 and Wnt), or epigenetic modulators (LSD1 and HDACs) can restore immune function, EMT reversal may also increase metastatic risk (Holmgaard et al., 2018; Yang et al., 2017; Duan et al., 2017). Consistent with these findings, our data clarify that miR-145 significantly upregulates EMT, TGF-\u03b2, and Wnt signaling pathways, contributing to immune evasion.\n\nIn summary, our findings identify miR-145 as a key driver of a fibrotic tumor microenvironment. miR-145 upregulation in cancer cells is promoted by promoter hypomethylation and activated NOTCH signaling. Functionally, miR-145 enhances autophagy and mitochondrial metabolism in vitro, while promoting tumor growth in vivo through coordinating EMT, angiogenesis, fibrosis, TGF-\u03b2 signaling, and immune evasion characterized by reduced CD8+ T cell infiltration. Although functional validation using miR-145 knockdown or knockout models would provide additional mechanistic insights, miR-145 expression is markedly downregulated in tumor tissues compared with normal controls. Therefore, we focused on characterizing its baseline expression and functional associations across TME subtypes. This study identifies miR-145 as a potential biomarker of the fibrotic tumor microenvironment, providing a foundation for future mechanistic studies and therapeutic strategies.",
+        "source": "pmc_full_text",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42992022/",
+        "link_label": "PubMed",
+        "pmc_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13737585/"
+      },
+      "analysis": {
+        "topic_relevance_score": 1.4,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 14,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: hedgehog; Development-to-homeostasis continuity: developmental; Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: hedgehog",
+          "Development-to-homeostasis continuity: developmental",
+          "Crosstalk, niche dependency, and trophic support: epithelial-mesenchymal",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal: cancer, tumor, carcinoma."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 0.0,
+            "development_homeostasis_continuity": 4.5,
+            "crosstalk_niche_dependency": 9.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -12.0,
+            "clinical_behavioral_penalty": 0.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 23.5,
+          "total_penalty": -12.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 14
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "hedgehog"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [],
+          "development_homeostasis_continuity": [
+            "developmental"
+          ],
+          "crosstalk_niche_dependency": [
+            "epithelial-mesenchymal"
+          ],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Development-to-homeostasis continuity",
+          "Crosstalk, niche dependency, and trophic support"
+        ],
+        "promotion_flags": []
+      }
+    },
+    {
+      "paper": {
+        "paper_id": "42982653",
+        "source_db": "pubmed",
+        "seen_key": "pubmed:42982653",
+        "title": "Ghost cell-negative, CTNNB1-mutated odontogenic carcinoma arising in calcifying odontogenic cyst: case report with a reappraisal of the ghost cell-based classification.",
+        "authors": [
+          "Oh KY"
+        ],
+        "journal": "Oral surgery, oral medicine, oral pathology and oral radiology",
+        "pubdate": "2026 Oct 15",
+        "doi": "10.1016/j.oooo.2026.10.003",
+        "pmcid": null,
+        "abstract": "Although ghost cells have been recognized as a diagnostic clue to odontogenic ghost cell lesions like ghost cell odontogenic carcinoma (GCOC), some cases show minimal or no ghost cells in the recurrent or metastatic setting, questioning the integrity of the current classification based solely on histology. Here, we present a case of ghost cell-negative, CTNNB1-mutated odontogenic carcinoma arising in calcifying odontogenic cyst (COC). A 14-year-old female presented with a well-demarcated radiolucent lesion in the right mandible. Histologically, the lesion was composed of cystic and solid structures. The cystic component was generally suggestive of COC but also showed invasive epithelial nests. The solid component consisted of undifferentiated tumor cells but had neither ghost cells nor dentinoid, precluding the diagnosis of GCOC. Immunohistochemically, tumor cells were positive for \u03b2-catenin (nuclear), SATB2, CD10, and CDX2. Whole-exome sequencing revealed a CTNNB1 hotspot mutation G34E (c.101G>A, p.Gly34Glu). No pathogenic mutations were identified in MAPK and SHH pathway genes. A final diagnosis of WNT pathway-altered odontogenic carcinoma was made. The newly proposed, molecularly defined category \"WNT pathway-altered odontogenic tumors\" may overcome the limitations of the classic ghost cell-based classification by encompassing currently unclassified cases.",
+        "full_text": "",
+        "source": "abstract_only",
+        "entry_url": "https://pubmed.ncbi.nlm.nih.gov/42982653/",
+        "link_label": "PubMed",
+        "pmc_url": null
+      },
+      "analysis": {
+        "topic_relevance_score": 0.6,
+        "impact_score": "n/a",
+        "interestingness_score": "n/a",
+        "awe_factor": "n/a",
+        "surprise_factor": "n/a",
+        "rigor_score": "n/a",
+        "overall_recommendation_score": 6,
+        "recommendation_label": "low-priority",
+        "one_paragraph_summary": "Locally scored against the taste_hedgehog_literature_triage ontology. Strongest signals: Core Hedgehog pathway: shh; Epithelial morphogenesis and tissue architecture: epithelial.",
+        "why_it_matters": [
+          "Core Hedgehog pathway: shh",
+          "Epithelial morphogenesis and tissue architecture: epithelial",
+          "Source modifier: Established indexed literature."
+        ],
+        "concerns": [
+          "Possible cancer-only or oncology-dominant context signal, softened by bridge terms: epithelial.",
+          "Possible clinical, behavioral, or perception-only context signal: case report."
+        ],
+        "target_reader": "Michael's Hedgehog/taste-organ literature triage workflow",
+        "scoring_method": "local_rules",
+        "score_breakdown": {
+          "positive_categories": {
+            "core_hedgehog_pathway": 10.0,
+            "hedgehog_coreceptors_modulators": 0.0,
+            "taste_lingual_system": 0.0,
+            "epithelial_morphogenesis": 8.0,
+            "development_homeostasis_continuity": 0.0,
+            "crosstalk_niche_dependency": 0.0,
+            "transcriptional_regulatory_logic": 0.0,
+            "preferred_methods": 0.0,
+            "bridge_systems": 0.0
+          },
+          "penalties": {
+            "oncology_only_penalty": -6.0,
+            "clinical_behavioral_penalty": -8.0,
+            "weak_mechanism_penalty": 0.0,
+            "pure_in_vitro_penalty": 0.0
+          },
+          "interaction_bonuses": {
+            "core_project_match": 0.0,
+            "gas1_bridge_match": 0.0,
+            "mechanistic_tissue_logic": 0.0,
+            "chromatin_signal_interpretation": 0.0
+          },
+          "source_bonus": 2.0,
+          "promotion_bonus": 0.0,
+          "raw_positive_score": 18.0,
+          "total_penalty": -14.0,
+          "total_interaction_bonus": 0.0,
+          "final_score": 6
+        },
+        "matched_terms": {
+          "core_hedgehog_pathway": [
+            "shh"
+          ],
+          "hedgehog_coreceptors_modulators": [],
+          "taste_lingual_system": [],
+          "epithelial_morphogenesis": [
+            "epithelial"
+          ],
+          "development_homeostasis_continuity": [],
+          "crosstalk_niche_dependency": [],
+          "transcriptional_regulatory_logic": [],
+          "preferred_methods": [],
+          "bridge_systems": []
+        },
+        "tags": [
+          "Core Hedgehog pathway",
+          "Epithelial morphogenesis and tissue architecture"
+        ],
+        "promotion_flags": []
+      }
+    }
+  ]
+}
