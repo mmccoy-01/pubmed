@@ -2,6 +2,15 @@
   "schema_version": 1,
   "runs": [
     {
+      "id": "2026-11-16",
+      "start": "2026-11-09",
+      "end": "2026-11-15",
+      "count": 10,
+      "candidates": 103,
+      "eligible": 47,
+      "path": "2026-11-16/digest.json"
+    },
+    {
       "id": "2026-11-09",
       "start": "2026-11-02",
       "end": "2026-11-08",
